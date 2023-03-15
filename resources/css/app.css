@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title-main {
+        @apply mb-[27px];
+    }
+    .text-subtitle {
+        @apply text-redColor text-[16px] uppercase mb-[14px];
+    }
+    .text-title {
+        @apply text-blackColor text-[46px] uppercase;
+    }
+}
