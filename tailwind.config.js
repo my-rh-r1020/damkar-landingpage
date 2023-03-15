@@ -7,6 +7,7 @@ module.exports = {
                 greyColor: "#848484",
                 blackColor: "#020202",
                 redColor: "#CB1330",
+                bgGreyColor: "#faf8f8",
             },
         },
     },

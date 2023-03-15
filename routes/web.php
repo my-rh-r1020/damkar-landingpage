@@ -23,5 +23,10 @@ Route::get('/', fn () => view('landing', [
     "titleContact" => "We Help With Any Fire Issues And Emergencies", "spanContact" => "Qadipiscing elit, sed do eiusmod tempor.",
     "descContact" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
     "subServices" => "What We Do",
-    "titleServices" => "Get An Inside Look At The Lives Of Those Who Serve"
+    "titleServices" => "Get An Inside Look At The Lives Of Those Who Serve",
+    "subPrevention" => "Prevention Services",
+    "titlePrevention" => "Promoting Safety At Your Home & Office",
+    "descPrevention" => "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia eiusmod consequuntur do tempor incididunt ut labore.",
+    "subTestimonials" => "Testimonials",
+    "titleTestimonials" => "What They Say"
 ]));
