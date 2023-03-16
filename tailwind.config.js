@@ -7,7 +7,12 @@ module.exports = {
                 greyColor: "#848484",
                 blackColor: "#020202",
                 redColor: "#CB1330",
+                redColorAlt: "#E60F32",
                 bgGreyColor: "#faf8f8",
+            },
+            fontFamily: {
+                poppins: "Poppins",
+                bebasNeue: "Bebas Neue",
             },
         },
     },

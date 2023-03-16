@@ -6,14 +6,17 @@
     .contact-column {
         @apply w-full px-[15px] md:w-1/2;
     }
+    .contact-button {
+        @apply uppercase pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
+    }
     .title-main {
         @apply mb-[27px];
     }
     .text-subtitle {
-        @apply text-redColor text-[16px] uppercase mb-[14px];
+        @apply font-bebasNeue text-redColor text-[16px] uppercase mb-[14px];
     }
     .text-title {
-        @apply text-blackColor text-[46px] uppercase;
+        @apply font-bebasNeue text-blackColor text-[46px] uppercase;
     }
     .services-data {
         @apply pt-[35px] flex w-full flex-wrap lg:px-4;
@@ -25,7 +28,7 @@
         @apply bg-white text-center py-8;
     }
     .services-title {
-        @apply text-[17px] font-bold uppercase mb-2;
+        @apply font-bebasNeue text-[17px] uppercase mb-2;
     }
     .services-subtitle {
         @apply text-base text-greyColor;
@@ -35,5 +38,17 @@
     }
     .services-gallery-images {
         @apply h-auto lg:h-[450px] w-full object-cover;
+    }
+    .testimonials-data {
+        @apply pt-[50px] flex flex-wrap;
+    }
+    .testimonials-column {
+        @apply w-full md:w-1/2 lg:w-1/3 lg:px-4;
+    }
+    .testimonials-card {
+        @apply px-[30px] py-[35px] hover:cursor-pointer;
+    }
+    .testimonials-card-title {
+        @apply text-[17px] text-center;
     }
 }

@@ -9,6 +9,9 @@
 
     {{-- Tailwind --}}
     @vite('resources/css/app.css')
+
+    {{-- Font Google --}}
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,11 +33,10 @@
                     <p class="text-[17px] text-greyColor mt-[30px]">{{ $descContact }}</p>
                 </div>
                 <div>
-                    <a href="#" class="uppercase pt-[15px] pb-[14px] px-[55px] bg-[#E60F32] text-white text-[17px]
-                ">Get In Touch</a>
+                    <a href="#" class="contact-button">Get In Touch</a>
                     <div class="mt-[10px]">
                         <span>Call Icon</span>
-                        <span>0 800 555 44 33</span>
+                        <span class="font-bebasNeue">0 800 555 44 33</span>
                     </div>
                 </div>
             </div>
@@ -118,11 +120,11 @@
 
     {{-- Prevention Services --}}
     <section class="py-[90px] bg-white">
-        <div class="px-[50px] flex">
+        <div class="px-[50px] flex flex-wrap">
             <div class="w-full md:w-1/2 lg:w-1/3">
                 <img src="" alt="prevention-thumbnail">
             </div>
-            <div class="w-full md:w-1/2 lg:w-2/3 px-[30px]">
+            <div class="w-full md:w-1/2 lg:w-2/3 lg:px-[30px]">
                 <div class="text-main mt-[75px]">
                     <h6 class="text-subtitle">{{ $subPrevention }}</h6>
                     <h3 class="text-title">{{ $titlePrevention }}</h3>
@@ -141,13 +143,45 @@
                 <h6 class="text-subtitle">{{ $subTestimonials }}</h6>
                 <h3 class="text-title">{{ $titleTestimonials }}</h3>
             </div>
-            <div class="pt-[35px] flex flex-wrap">
-                <div class="w-full md:w-1/2 lg:w-1/3">
-
+            <div class="testimonials-data">
+                <div class="testimonials-column">
+                    <div class="testimonials-card bg-white">
+                        <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
+                    </div>
+                </div>
+                <div class="testimonials-column">
+                    <div class="testimonials-card bg-redColorAlt">
+                        <p class="testimonials-card-title text-white">{{ $descTestimonials }}</p>
+                    </div>
+                </div>
+                <div class="testimonials-column">
+                    <div class="testimonials-card bg-white">
+                        <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    {{-- Blog --}}
+    <section class="py-[90px]">
+        <div class="px-[50px]">
+            <div class="title-main text-center">
+                <h6 class="text-subtitle">{{ $subBlog }}</h6>
+                <h3 class="text-title">{{ $titleBlog }}</h3>
+            </div>
+            <div class="pt-[35px]"></div>
+        </div>
+    </section>
+
+    {{-- Footer --}}
+    <footer class="pt-[70px] pb-[20px] bg-blackColor">
+        <div class="px-[50px]">
+            <div class="px-[15px]">
+                <img src="images/logo-fire-dark.png" alt="logo-damkar" class="mx-auto">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
