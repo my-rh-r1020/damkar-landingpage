@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 @layer components {
-    .contact-column {
-        @apply w-full px-[15px] md:w-1/2;
-    }
-    .contact-button {
-        @apply uppercase pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
-    }
     .title-main {
         @apply mb-[27px];
     }
     .text-subtitle {
-        @apply font-bebasNeue text-redColor text-[16px] uppercase mb-[14px];
+        @apply font-bebasNeue text-redColor text-[16px] mb-[14px];
     }
     .text-title {
-        @apply font-bebasNeue text-blackColor text-[46px] uppercase;
+        @apply font-bebasNeue text-blackColor text-[46px];
+    }
+    .nav-span {
+        @apply p-[12px];
+    }
+    .contact-column {
+        @apply w-full px-[15px] md:w-1/2;
+    }
+    .contact-button {
+        @apply pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
     .services-data {
         @apply pt-[35px] flex w-full flex-wrap lg:px-4;
@@ -28,7 +31,7 @@
         @apply bg-white text-center py-8;
     }
     .services-title {
-        @apply font-bebasNeue text-[17px] uppercase mb-2;
+        @apply font-bebasNeue text-[17px] mb-2;
     }
     .services-subtitle {
         @apply text-base text-greyColor;
@@ -38,6 +41,12 @@
     }
     .services-gallery-images {
         @apply h-auto lg:h-[450px] w-full object-cover;
+    }
+    .prevention-data {
+        @apply px-[50px] flex flex-wrap;
+    }
+    .prevention-column {
+        @apply w-full md:w-1/2;
     }
     .testimonials-data {
         @apply pt-[50px] flex flex-wrap;
@@ -52,7 +61,7 @@
         @apply text-[17px] text-center;
     }
     .footer-link {
-        @apply font-bebasNeue py-[9px] px-[14px] text-[#d2d3d5] text-[17px] uppercase hover:text-white;
+        @apply font-bebasNeue py-[9px] px-[14px] text-[#d2d3d5] text-[17px] hover:text-white;
     }
     .footer-social-icons {
         @apply text-2xl text-white border border-[#3f3d47] p-2;
