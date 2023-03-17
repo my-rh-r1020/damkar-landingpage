@@ -51,4 +51,10 @@
     .testimonials-card-title {
         @apply text-[17px] text-center;
     }
+    .footer-link {
+        @apply font-bebasNeue py-[9px] px-[14px] text-[#d2d3d5] text-[17px] uppercase hover:text-white;
+    }
+    .footer-social-icons {
+        @apply text-2xl text-white border border-[#3f3d47] p-2;
+    }
 }

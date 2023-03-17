@@ -12,6 +12,9 @@
 
     {{-- Font Google --}}
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    {{-- Boxicons --}}
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -98,6 +101,9 @@
             <div class="services-gallery-data">
                 <a href="#" target="_blank">
                     <img src="images/response-time.jpg" alt="response-time" class="services-gallery-images">
+                    <div class="top-1">
+                        <h5 class="uppercase font-bebasNeue text-xl text-blackColor">Response Time</h5>
+                    </div>
                 </a>
             </div>
             <div class="services-gallery-data">
@@ -179,6 +185,20 @@
         <div class="px-[50px]">
             <div class="px-[15px]">
                 <img src="images/logo-fire-dark.png" alt="logo-damkar" class="mx-auto">
+            </div>
+            <ul class="text-center px-[15px] pt-8 pb-[20px]">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">About Us</a>
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Contact Us</a>
+            </ul>
+            <div class="pb-[50px] text-center">
+                <a href="#">
+                    <i class='bx bxl-facebook footer-social-icons hover:text-[#1877F2]'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-twitter footer-social-icons hover:text-[#1DA1F2]'></i>
+                </a>
             </div>
         </div>
     </footer>
