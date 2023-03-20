@@ -10,11 +10,11 @@
             <a href="#" class="footer-link">Contact Us</a>
         </ul>
         <div class="pb-[50px] text-center">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">
                 <i class='bx bxl-facebook footer-social-icons hover:text-[#1877F2]'></i>
             </a>
-            <a href="#">
-                <i class='bx bxl-twitter footer-social-icons hover:text-[#1DA1F2]'></i>
+            <a href="https://www.instagram.com/tanjungpinang.fire/" target="_blank">
+                <i class='bx bxl-instagram footer-social-icons hover:text-[#E4405F]'></i>
             </a>
         </div>
     </div>

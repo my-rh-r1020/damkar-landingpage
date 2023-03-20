@@ -21,6 +21,9 @@
     .contact-button {
         @apply pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
+    .contact-icon {
+        @apply p-[14px] mr-[14px] bg-[#FAF8F8] rounded-full;
+    }
     .services-data {
         @apply pt-[35px] flex w-full flex-wrap lg:px-4;
     }
@@ -28,13 +31,22 @@
         @apply w-full px-[15px] pb-4 md:w-1/2 lg:w-1/3 xl:w-1/4;
     }
     .services-card {
-        @apply bg-white text-center py-8;
+        @apply bg-white py-8;
+    }
+    .services-text-main {
+        @apply text-center mb-8 mt-2;
     }
     .services-title {
-        @apply font-bebasNeue text-[17px] mb-2;
+        @apply font-bebasNeue text-2xl mb-2;
     }
     .services-subtitle {
         @apply text-base text-greyColor;
+    }
+    .services-point {
+        @apply flex flex-wrap justify-center mb-2;
+    }
+    .services-point-icon {
+        @apply p-[3px] mx-1 bg-[#D8D8D8] hover:bg-redColor;
     }
     .services-gallery-data {
         @apply w-full md:w-1/2 xl:w-1/4;

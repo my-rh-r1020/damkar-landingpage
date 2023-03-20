@@ -10,6 +10,9 @@
     {{-- Tailwind --}}
     @vite('resources/css/app.css')
 
+    {{-- Swiper CSS --}}
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     {{-- Font Google --}}
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -19,6 +22,26 @@
 
 <body>
     @yield('bodyMain')
+
+    {{-- Swiper JS --}}
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiperHeroBanner = new Swiper(".hero-banner", {
+            spaceBetween: 30,
+            effect: "fade",
+            centeredSlides: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        })
+    </script>
 </body>
 
 </html>

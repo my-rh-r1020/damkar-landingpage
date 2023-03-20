@@ -9,12 +9,14 @@
                 <span class="text-blackColor text-[22px]">{{ $spanContact }}</span>
                 <p class="text-[17px] text-greyColor mt-[30px]">{{ $descContact }}</p>
             </div>
-            <div>
-                <a href="#" class="contact-button">Get In Touch</a>
-                <div class="mt-[10px]">
-                    <span>Call Icon</span>
-                    <span class="font-bebasNeue">0 800 555 44 33</span>
-                </div>
+            <div class="flex flex-wrap items-center">
+                <a href="#" class="contact-button mr-10">Get In Touch</a>
+                <a href="tel:077124949" class="flex flex-wrap items-center">
+                    <span class="contact-icon">
+                        <i class='bx bx-phone-call text-2xl'></i>
+                    </span>
+                    <span class="text-[17px] font-bebasNeue">0771 24949</span>
+                </a>
             </div>
         </div>
         <div class="contact-column lg:w-2/3">

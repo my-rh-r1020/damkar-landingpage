@@ -1,4 +1,4 @@
-<header class="bg-slate-300">
+<header class="bg-white">
     <div class="px-[50px] pt-[2px] pb-[5px]">
         <div class="flex flex-wrap justify-between">
             {{-- Logo --}}
