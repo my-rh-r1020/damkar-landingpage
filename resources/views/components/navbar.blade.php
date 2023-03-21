@@ -1,5 +1,5 @@
 <header class="bg-white">
-    <div class="px-[50px] pt-[2px] pb-[5px]">
+    <div class="main-layout pt-[2px] pb-[5px]">
         <div class="flex flex-wrap justify-between">
             {{-- Logo --}}
             <div class="py-[9px] pl-[15px]">

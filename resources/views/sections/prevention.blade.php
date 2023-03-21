@@ -1,5 +1,5 @@
 <section class="py-[90px] bg-white">
-    <div class="prevention-data">
+    <div class="main-layout">
         <div class="prevention-column lg:w-1/3">
             <img src="" alt="prevention-thumbnail">
         </div>
