@@ -3,7 +3,7 @@
         <div class="contact-column lg:w-1/3">
             <div class="title-main">
                 <h6 class="text-subtitle">{{ $subContact }}</h6>
-                <h3 class="text-title">{{ $titleContact }}</h3>
+                <h3 class="text-title leading-none">{{ $titleContact }}</h3>
             </div>
             <div class="mb-[40px]">
                 <span class="text-blackColor text-[22px]">{{ $spanContact }}</span>

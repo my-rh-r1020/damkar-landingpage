@@ -1,7 +1,10 @@
 <footer class="pt-[70px] pb-[20px] bg-blackColor">
     <div class="px-[50px]">
         <div class="px-[15px]">
-            <img src="images/logo-fire-dark.png" alt="logo-damkar" class="mx-auto">
+            <div class="flex flex-wrap items-center justify-center text-[18px]">
+                <img src="images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
+                <span class="uppercase font-bebasNeue ml-[6px] leading-none text-white">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
+            </div>
         </div>
         <ul class="text-center px-[15px] pt-8 pb-[20px]">
             <a href="#" class="footer-link">Home</a>
