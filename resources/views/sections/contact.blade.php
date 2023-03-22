@@ -7,7 +7,9 @@
             </div>
             <div class="mb-[40px]">
                 <span class="text-blackColor text-[22px]">{{ $spanContact }}</span>
-                <p class="text-[17px] text-greyColor mt-[30px] text-justify">{{ $descContact }}</p>
+                <p class="text-[17px] text-greyColor mt-[30px] text-justify">
+                    Pencegahan dan Pengendalian Kebakaran <br> Pemadaman Kebakaran <br> Penyelamatan <br> Pemberdayaan Masyarakat <br> Penanganan Bahan Berbahaya dan Beracun
+                </p>
             </div>
             <div class="flex flex-wrap items-center">
                 <a href="#" class="contact-button mr-10">Get In Touch</a>

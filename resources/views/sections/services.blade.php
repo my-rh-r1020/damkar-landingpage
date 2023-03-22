@@ -2,7 +2,7 @@
     <div class="main-layout">
         <div class="title-main text-center">
             <h6 class="text-subtitle">{{ $subServices }}</h6>
-            <h3 class="text-title">{{ $titleServices }}</h3>
+            <h3 class="text-title leading-none">Layanan Utama <br> Dinas Pemadam Kebakaran dan Penyelamatan</h3>
         </div>
         <div class="services-data">
             <div class="services-column">
@@ -10,7 +10,7 @@
                     <div class="services-card">
                         <img src="icons/1-pemadam.png" alt="emergency-help" class="mx-auto h-[90px]">
                         <div class="services-text-main">
-                            <h4 class="services-title">Emergency Help</h4>
+                            <h4 class="services-title">Pemadam <br> Kebakaran</h4>
                             <span class="services-subtitle">Sed do elusm ad tempor</span>
                         </div>
                         <div class="services-point">
@@ -29,7 +29,7 @@
                     <div class="services-card">
                         <img src="icons/2-pencegahan.png" alt="smoke-alarms" class="mx-auto h-[90px]">
                         <div class="services-text-main">
-                            <h4 class="services-title">Smoke Alarms</h4>
+                            <h4 class="services-title">Pencegahan & <br> Pengendalian</h4>
                             <span class="services-subtitle">Sed do elusm ad tempor</span>
                         </div>
                         <div class="services-point">
@@ -45,7 +45,7 @@
                     <div class="services-card">
                         <img src="icons/3-penyelamatan.png" alt="fire-extinguisher" class="mx-auto h-[90px]">
                         <div class="services-text-main">
-                            <h4 class="services-title">Fire Statements</h4>
+                            <h4 class="services-title">Penyelamatan <br> Masyarakat</h4>
                             <span class="services-subtitle">Sed do elusm ad tempor</span>
                         </div>
                         <div class="services-point">
@@ -61,7 +61,7 @@
                     <div class="services-card">
                         <img src="icons/4-penanganan.png" alt="fire-stations" class="mx-auto h-[90px]">
                         <div class="services-text-main">
-                            <h4 class="services-title">Fire Stations</h4>
+                            <h4 class="services-title">Penanganan <br> Bahan Beracun</h4>
                             <span class="services-subtitle">Sed do elusm ad tempor</span>
                         </div>
                         <div class="services-point">
@@ -76,7 +76,7 @@
     </div>
 
     {{-- Services Images --}}
-    <div class="pt-[90px] flex flex-wrap">
+    <div class="py-[90px] flex flex-wrap">
         <div class="services-gallery-data">
             <a href="#" target="_blank">
                 <div class="relative">
@@ -154,13 +154,17 @@
     </div>
 
     {{-- Services Instructions --}}
-    <div class="pt-[90px]">
-        <div class="main-layout flex flex-wrap w-full">
-            <div class="w-full px-[15px] md:w-1/2 lg:w-1/3">
-                <div class="title-main">
-                    <h3 class="text-title">We Help Other</h3>
-                </div>
+    <div class="main-layout flex flex-wrap w-full">
+        <div class="w-full px-[15px] md:w-1/2 lg:w-1/3">
+            <a href="#" class="flex flex-wrap items-center">
+                <span class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300">
+                    <i class='bx bx-play text-[16px] lg:text-3xl'></i>
+                </span>
+            </a>
+            <div class="title-main mt-[45px]">
+                <h3 class="text-title leading-none">We Help Our Citizens Avoid Fire Accidents</h3>
             </div>
         </div>
+        <div class="w-full px-[15px] md:w-1/2 lg:w-2/3"></div>
     </div>
 </section>

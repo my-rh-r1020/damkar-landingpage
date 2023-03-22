@@ -7,16 +7,22 @@
         <div class="testimonials-data">
             <div class="testimonials-column">
                 <div class="testimonials-card bg-white">
+                    <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
                     <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
+                </div>
+                <div>
+                    <img src="images/bg-user.png" alt="user-profile" class="w-[75px]">
                 </div>
             </div>
             <div class="testimonials-column">
                 <div class="testimonials-card bg-redColorAlt">
+                    <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-white'></i>
                     <p class="testimonials-card-title text-white">{{ $descTestimonials }}</p>
                 </div>
             </div>
             <div class="testimonials-column">
                 <div class="testimonials-card bg-white">
+                    <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
                     <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                 </div>
             </div>

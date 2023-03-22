@@ -19,11 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 // Routing with Arrow Function
 Route::get('/', fn () => view('landing', [
-    "subContact" => "Contact Us",
-    "titleContact" => "We Help With Any Fire Issues And Emergencies", "spanContact" => "Qadipiscing elit, sed do eiusmod tempor.",
-    "descContact" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "subContact" => "Hubungi Kami",
+    "titleContact" => "Pantang Pulang Sebelum Padam",
+    "spanContact" => "Waspada Penyebab Kebakaran",
     "subServices" => "What We Do",
-    "titleServices" => "Get An Inside Look At The Lives Of Those Who Serve",
     "subPrevention" => "Prevention Services",
     "titlePrevention" => "Promoting Safety At Your Home & Office",
     "descPrevention" => "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia eiusmod consequuntur do tempor incididunt ut labore.",
