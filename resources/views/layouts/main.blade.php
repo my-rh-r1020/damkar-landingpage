@@ -40,6 +40,15 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+        });
+        let swiperTestimonials = new Swiper('.testi-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
         })
     </script>
 </body>

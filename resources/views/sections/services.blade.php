@@ -164,6 +164,34 @@
             <div class="title-main mt-[45px]">
                 <h3 class="text-title leading-none">We Help Our Citizens Avoid Fire Accidents</h3>
             </div>
+            {{-- Accordion --}}
+            <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
+                      Item 1
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse">
+                    <div class="accordion-body bg-white py-2 px-4">
+                      Content for Item 1 goes here.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
+                      Item 2
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse">
+                    <div class="accordion-body bg-white py-2 px-4">
+                      Content for Item 2 goes here.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
         </div>
         <div class="w-full px-[15px] md:w-1/2 lg:w-2/3"></div>
     </div>

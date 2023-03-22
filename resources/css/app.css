@@ -87,6 +87,21 @@
     .testimonials-card-title {
         @apply text-[17px] mt-4;
     }
+    .testimonials-user-card {
+        @apply mt-[40px];
+    }
+    .testimonials-user-img {
+        @apply w-[75px] mx-auto;
+    }
+    .testimonials-user-profile {
+        @apply text-center mt-5;
+    }
+    .testimonials-user-name {
+        @apply font-bebasNeue text-[19px];
+    }
+    .testimonials-user-job {
+        @apply text-[15px] text-[#797C7F];
+    }
     .footer-link {
         @apply font-bebasNeue py-[9px] px-[14px] text-[#d2d3d5] text-[17px] hover:text-white;
     }
