@@ -41,14 +41,21 @@
                 clickable: true,
             },
         });
-        let swiperTestimonials = new Swiper('.testi-swiper', {
-            slidesPerView: 3,
-            spaceBetween: 30,
+        let swiperTestimonials = new Swiper('.testimonials-list', {
+            slidesPerView: 1,
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
         })
     </script>
 </body>
