@@ -1,4 +1,4 @@
-<section class="py-[90px] bg-white">
+<section class="section-layout bg-white">
     <div class="main-layout flex w-full flex-wrap">
         <div class="contact-column lg:w-1/3">
             <div class="title-main">
@@ -21,9 +21,9 @@
                 </a>
             </div>
         </div>
-        <div class="contact-column lg:w-2/3">
-            <img src="" alt="contact-image">
-            <img src="" alt="contact-image">
+        <div class="w-full md:w-1/2 lg:w-2/3 px-[15px] relative">
+            <img src="images/contact-img1.jpg" alt="contact-image" class="absolute top-0 right-0 pr-[15px]">
+            <img src="images/contact-img2.jpg" alt="contact-image" class="absolute top-40 left-0 pl-[15px]">
         </div>
     </div>
 </section>

@@ -1,4 +1,4 @@
-<section class="py-[90px] bg-bgGreyColor">
+<section class="section-layout bg-bgGreyColor">
     <div class="main-layout">
         <div class="title-main text-center">
             <h6 class="text-subtitle">{{ $subServices }}</h6>
@@ -76,7 +76,7 @@
     </div>
 
     {{-- Services Images --}}
-    <div class="py-[90px] flex flex-wrap">
+    <div class="section-layout flex flex-wrap">
         <div class="services-gallery-data">
             <a href="#" target="_blank">
                 <div class="relative">

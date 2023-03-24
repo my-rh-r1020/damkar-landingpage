@@ -1,4 +1,4 @@
-<section class="py-[90px] bg-bgGreyColor">
+<section class="section-layout bg-bgGreyColor">
     <div class="main-layout">
         <div class="title-main text-center">
             <h6 class="text-subtitle">{{ $subTestimonials }}</h6>

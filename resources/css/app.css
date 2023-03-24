@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+    .section-layout {
+        @apply py-[54px] sm:py-[60px] md:py-[80px] lg:py-[90px] xl:py-[115px] 2xl:py-[140px];
+    }
     .main-layout {
         @apply px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px];
     }
@@ -40,6 +43,12 @@
     }
     .sidebar-menu {
         @apply fixed inset-0 z-50 bg-blackColor opacity-95 transition-opacity;
+    }
+    .sidebar-menu-list {
+        @apply list-none mb-2;
+    }
+    .sidebar-menu-text {
+        @apply text-2xl text-whiteColorAlt hover:text-white font-bebasNeue;
     }
     .contact-column {
         @apply w-full px-[15px] md:w-1/2;
@@ -123,7 +132,7 @@
         @apply text-[15px] text-[#797C7F];
     }
     .footer-link {
-        @apply font-bebasNeue py-[9px] px-[14px] text-[#d2d3d5] text-[17px] hover:text-white;
+        @apply font-bebasNeue py-[9px] px-[14px] text-whiteColorAlt text-[17px] hover:text-white;
     }
     .footer-social-icons {
         @apply text-2xl text-white border border-[#3f3d47] p-2;

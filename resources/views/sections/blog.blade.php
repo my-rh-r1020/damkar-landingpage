@@ -1,4 +1,4 @@
-<section class="py-[90px]">
+<section class="section-layout">
     <div class="main-layout">
         <div class="title-main text-center">
             <h6 class="text-subtitle">{{ $subBlog }}</h6>

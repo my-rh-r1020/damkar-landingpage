@@ -84,14 +84,23 @@
                 </button>
             </div>
         </div>
-        <div class="mt-14"></div>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Beranda</span></a>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Berita</span></a>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Profil</span></a>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Informasi Data</span></a>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Galery</span></a>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Edu Damkar</span></a>
-        <a href="#"><span class="text-2xl text-white font-bebasNeue">Pojok Damkar</span></a>
+        {{-- Sidebar Menu --}}
+        <ul class="mt-14">
+            <li class="sidebar-menu-list"><a href="#"><span class="sidebar-menu-text">Beranda</span></a></li>
+            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
+            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
+            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
+            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
+            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
+            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Pojok Damkar</span></a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="mt-4 mb-8 mr-4">
+            <input type="text" placeholder="Search" class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal">
+        </div>
+
+        <hr class="border-slate-700 mr-4">        
     </nav>
 </div>
 
