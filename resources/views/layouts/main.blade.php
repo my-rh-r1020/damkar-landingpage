@@ -26,6 +26,9 @@
     {{-- Swiper JS --}}
     <script src="js/swiper-bundle.min.js"></script>
 
+    {{-- My Script --}}
+    <script src="js/myscript.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
         let swiperHeroBanner = new Swiper(".hero-banner", {

@@ -21,6 +21,26 @@
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
     }
+    .nav-hamburger-line {
+        @apply w-[30px] h-[2px] my-2 block bg-blackColor;
+    }
+    .nav-close-line {
+        @apply w-[30px] h-[2px] my-2 block bg-white;
+    }
+    .hamburger-active {
+    }
+    .hamburger-active > span:nth-child(1) {
+        @apply origin-top-left rotate-45;
+    }
+    .hamburger-active > span:nth-child(2) {
+        @apply scale-0;
+    }
+    .hamburger-active > span:nth-child(3) {
+        @apply origin-bottom-left -rotate-45;
+    }
+    .sidebar-menu {
+        @apply fixed inset-0 z-50 bg-blackColor opacity-95 transition-opacity;
+    }
     .contact-column {
         @apply w-full px-[15px] md:w-1/2;
     }

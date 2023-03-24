@@ -1,7 +1,6 @@
-<header class="bg-white">
+{{-- <header class="bg-white">
     <div class="main-layout pt-[2px] pb-[5px]">
         <div class="flex flex-wrap justify-between">
-            {{-- Logo --}}
             <div class="py-[9px] pl-[15px]">
                 <a href="/">
                     <div class="flex flex-wrap items-center text-[18px]">
@@ -11,7 +10,6 @@
                 </a>
             </div>
 
-            {{-- Nav Menu --}}
             <nav class="nav-menu">
                 <a href="#"><span class="nav-span">Beranda</span></a>
                 <a href="#"><span class="nav-span">Berita</span></a>
@@ -22,11 +20,102 @@
                 <a href="#"><span class="nav-span">Pojok Damkar</span></a>
             </nav>
 
-            {{-- Icons --}}
             <div class="flex flex-wrap items-center text-blackColor font-bebasNeue">
                 <button><i class='bx bx-search text-2xl'></i></button>
-                {{-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g id="Right_Bar" data-name="Right Bar" transform="translate(-2124 -2665)"><g id="Ellipse_362" data-name="Ellipse 362" transform="translate(2124 2665)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_363" data-name="Ellipse 363" transform="translate(2132 2665)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_364" data-name="Ellipse 364" transform="translate(2140 2665)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_365" data-name="Ellipse 365" transform="translate(2124 2673)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_366" data-name="Ellipse 366" transform="translate(2132 2673)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_367" data-name="Ellipse 367" transform="translate(2140 2673)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_368" data-name="Ellipse 368" transform="translate(2124 2681)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_369" data-name="Ellipse 369" transform="translate(2132 2681)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g><g id="Ellipse_370" data-name="Ellipse 370" transform="translate(2140 2681)" fill="none" stroke-width="1.5"><circle cx="2.5" cy="2.5" r="2.5" stroke="none"></circle><circle cx="2.5" cy="2.5" r="1.75" fill="none"></circle></g></g></svg> --}}
+            </div>
+        </div>
+    </div>
+</header> --}}
+
+<header class="bg-white">
+    <div class="main-layout pt-[2px] pb-[5px]">
+        <div class="flex items-center justify-between relative">
+            {{-- Logo --}}
+            <div class="py-[9px] pl-[15px]">
+                <a href="/">
+                    <div class="flex flex-wrap items-center text-[18px]">
+                        <img src="images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
+                        <span class="uppercase font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
+                    </div>
+                </a>
+            </div>
+            <button id="hamburger" name="hamburger" type="button" class="block scale-75 lg:hidden ml-auto pr-[15px]">
+                <span class="nav-hamburger-line"></span>
+                <span class="nav-hamburger-line"></span>
+                <span class="nav-hamburger-line"></span>
+            </button>
+
+            {{-- Nav Menu --}}
+            <nav class="nav-menu hidden lg:block">
+                <a href="#"><span class="nav-span">Beranda</span></a>
+                <a href="#"><span class="nav-span">Berita</span></a>
+                <a href="#"><span class="nav-span">Profil</span></a>
+                <a href="#"><span class="nav-span">Informasi Data</span></a>
+                <a href="#"><span class="nav-span">Galery</span></a>
+                <a href="#"><span class="nav-span">Edu Damkar</span></a>
+                <a href="#"><span class="nav-span">Pojok Damkar</span></a>
+            </nav>
+
+            {{-- Icons --}}
+            <div class="nav-menu hidden lg:block">
+                <button><i class='bx bx-search text-2xl'></i></button>
             </div>
         </div>
     </div>
 </header>
+
+<!-- Sidebar -->
+<div class="sidebar-menu hidden lg:hidden" id="sidebar">
+    <nav class="fixed top-10 left-4 right-0 bottom-0 flex flex-col transform ease-in-out duration-500 sm:duration-700">
+        <div class="flex items-center justify-between">
+            <div class="py-[9px] pl-[9px]">
+                <a href="/">
+                    <div class="flex flex-wrap items-center text-[18px]">
+                        <img src="images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
+                        <span class="uppercase text-white font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
+                    </div>
+                </a>
+            </div>
+            <div class="absolute top-0 right-4 p-4">
+                <button type="button" class="focus:outline-none scale-75" id="close-btn" name="close-btn">
+                    <span class="nav-close-line origin-top-left rotate-45"></span>
+                    <span class="nav-close-line scale-0"></span>
+                    <span class="nav-close-line origin-bottom-left -rotate-45"></span>
+                </button>
+            </div>
+        </div>
+        <div class="mt-14"></div>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Beranda</span></a>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Berita</span></a>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Profil</span></a>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Informasi Data</span></a>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Galery</span></a>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Edu Damkar</span></a>
+        <a href="#"><span class="text-2xl text-white font-bebasNeue">Pojok Damkar</span></a>
+    </nav>
+</div>
+
+{{-- <div class="sidebar-menu hidden lg:hidden" id="sidebar">
+    <nav class="fixed top-0 left-4 right-0 bottom-0 flex flex-col items-start justify-center transform ease-in-out duration-500 sm:duration-700">
+        <div class="flex items-center justify-between">
+            <div class="py-[9px] pl-[15px]">
+                <a href="/">
+                    <div class="flex flex-wrap items-center text-[18px]">
+                        <img src="images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
+                        <span class="uppercase font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="close-button absolute top-0 right-0 p-4">
+            <button type="button" class="focus:outline-none" id="close-btn" name="close-btn">
+                <span class="nav-close-line origin-top-left rotate-45"></span>
+                <span class="nav-close-line scale-0"></span>
+                <span class="nav-close-line origin-bottom-left -rotate-45"></span>
+            </button>
+        </div>
+        <a href="#" class="text-gray-800 text-2xl font-medium py-2 hover:bg-gray-300 transition ease-in-out duration-500 sm:duration-700">Menu 1</a>
+        <a href="#" class="text-gray-800 text-2xl font-medium py-2 hover:bg-gray-300 transition ease-in-out duration-500 sm:duration-700">Menu 2</a>
+        <a href="#" class="text-gray-800 text-2xl font-medium py-2 hover:bg-gray-300 transition ease-in-out duration-500 sm:duration-700">Menu 3</a>
+    </nav>
+</div> --}}
