@@ -59,6 +59,25 @@
                     slidesPerView: 3
                 }
             }
+        });
+        let swiperBlogs = new Swiper(".blogs-list", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 4
+                }
+            }
         })
     </script>
 </body>

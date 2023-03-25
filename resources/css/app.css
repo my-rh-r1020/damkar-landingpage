@@ -10,7 +10,7 @@
         @apply px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px];
     }
     .title-main {
-        @apply mb-[27px];
+        @apply pb-[20px] sm:pb-[25px] md:pb-[30px] lg:pb-[35px] 2xl:pb-[40px];
     }
     .text-subtitle {
         @apply font-bebasNeue text-redColor text-[16px] mb-[14px];
@@ -130,6 +130,18 @@
     }
     .testimonials-user-job {
         @apply text-[15px] text-[#797C7F];
+    }
+    .blogs-card {
+        @apply bg-white;
+    }
+    .blogs-categories {
+        @apply text-[13px] text-blackColor font-bebasNeue hover:text-redColor transition duration-300;
+    }
+    .blogs-title {
+        @apply text-[18px] sm:text-[20px] font-bebasNeue hover:text-greyColorAlt transition duration-300 leading-none;
+    }
+    .blogs-subtitle {
+        @apply text-[13px] text-greyColorAlt font-bebasNeue hover:text-redColor transition duration-300;
     }
     .footer-link {
         @apply font-bebasNeue py-[9px] px-[14px] text-whiteColorAlt text-[17px] hover:text-white;

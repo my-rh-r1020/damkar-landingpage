@@ -6,7 +6,7 @@
         </div>
         
         <div class="swiper testimonials-list">
-            <div class="swiper-wrapper mb-[90px] hover:cursor-pointer">
+            <div class="swiper-wrapper mb-[90px] hover:cursor-grab">
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card bg-white">
                         <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
