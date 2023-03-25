@@ -155,7 +155,7 @@
 
     {{-- Services Instructions --}}
     <div class="main-layout flex flex-wrap w-full">
-        <div class="w-full px-[15px] md:w-1/2 lg:w-1/3">
+        <div class="w-full px-[15px] md:w-1/2 lg:w-5/12">
             <a href="#" class="flex flex-wrap items-center">
                 <span class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300">
                     <i class='bx bx-play text-[16px] lg:text-3xl'></i>
@@ -193,6 +193,6 @@
               </div>
               
         </div>
-        <div class="w-full px-[15px] md:w-1/2 lg:w-2/3"></div>
+        <div class="w-full px-[15px] md:w-1/2 lg:w-7/12"></div>
     </div>
 </section>
