@@ -193,6 +193,8 @@
               </div>
               
         </div>
-        <div class="w-full px-[15px] md:w-1/2 lg:w-7/12"></div>
+        <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
+            <img src="images/prevention-img.jpg" alt="prevention-img" class="mx-auto">
+        </div>
     </div>
 </section>

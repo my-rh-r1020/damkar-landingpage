@@ -46,6 +46,7 @@
         });
         let swiperTestimonials = new Swiper('.testimonials-list', {
             slidesPerView: 1,
+            grabCursor: true,
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
@@ -58,10 +59,22 @@
                 1024: {
                     slidesPerView: 3
                 }
+            },
+            on:{
+                slideChange:function(){
+                    // remove active class from all slides
+                    $('.swiper-slide').removeClass('swiper-slide-active');
+
+                    // add active class to current slide
+                    $('.swiper-slide').eq(swiperTestimonials.activeIndex).addClass('swiper-slide-active');
+                }
             }
         });
         let swiperBlogs = new Swiper(".blogs-list", {
             slidesPerView: 1,
+            centeredSlides: true,
+            grabCursor: true,
+            spaceBetween: 15,
             loop: true,
             autoplay: {
                 delay: 10000,

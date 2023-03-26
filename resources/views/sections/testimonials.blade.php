@@ -6,7 +6,7 @@
         </div>
         
         <div class="swiper testimonials-list">
-            <div class="swiper-wrapper mb-[90px] hover:cursor-grab">
+            <div class="swiper-wrapper mb-[90px]">
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card bg-white">
                         <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
@@ -20,10 +20,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide testimonials-column">
-                    <div class="testimonials-card bg-white active:bg-redColorAlt">
-                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt active:text-white'></i>
-                        <p class="testimonials-card-title text-blackColor active:text-white">{{ $descTestimonials }}</p>
+                <div class="swiper-slide testimonials-column swiper-slide-active">
+                    <div class="testimonials-card">
+                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
+                        <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
                     <div class="testimonials-user-card">
                         <img src="images/bg-user.png" alt="user-profile" class="testimonials-user-img">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials-column">
-                    <div class="testimonials-card bg-white">
+                    <div class="testimonials-card">
                         <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials-column">
-                    <div class="testimonials-card bg-white">
+                    <div class="testimonials-card">
                         <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials-column">
-                    <div class="testimonials-card bg-white">
+                    <div class="testimonials-card">
                         <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide testimonials-column">
-                    <div class="testimonials-card bg-white">
+                    <div class="testimonials-card">
                         <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>

@@ -110,8 +110,11 @@
     .testimonials-column {
         @apply px-[15px];
     }
+    .swiper-slide-active > .testimonials-card {
+        @apply bg-redColorAlt;
+    }
     .testimonials-card {
-        @apply px-[30px] py-[35px] text-center;
+        @apply px-[30px] py-[35px] text-center bg-white;
     }
     .testimonials-card-title {
         @apply text-[17px] mt-4;
@@ -131,14 +134,26 @@
     .testimonials-user-job {
         @apply text-[15px] text-[#797C7F];
     }
+    .blogs-list {
+        @apply flex flex-wrap;
+    }
+    .blogs-column {
+        @apply px-[15px];
+    }
     .blogs-card {
         @apply bg-white;
+    }
+    .blogs-img-container {
+        @apply relative overflow-hidden;
+    }
+    .blogs-img-view {
+        @apply transition duration-500 ease-in-out transform hover:scale-105;
     }
     .blogs-categories {
         @apply text-[13px] text-blackColor font-bebasNeue hover:text-redColor transition duration-300;
     }
     .blogs-title {
-        @apply text-[18px] sm:text-[20px] font-bebasNeue hover:text-greyColorAlt transition duration-300 leading-none;
+        @apply text-[18px] sm:text-[20px] font-bebasNeue text-justify hover:text-greyColorAlt transition duration-300 leading-none;
     }
     .blogs-subtitle {
         @apply text-[13px] text-greyColorAlt font-bebasNeue hover:text-redColor transition duration-300;
