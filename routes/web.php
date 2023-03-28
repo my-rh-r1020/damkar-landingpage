@@ -22,13 +22,10 @@ Route::get('/', fn () => view('landing', [
     "subContact" => "Hubungi Kami",
     "titleContact" => "Pantang Pulang Sebelum Padam",
     "spanContact" => "Waspada Penyebab Kebakaran",
-    "subServices" => "What We Do",
-    "subPrevention" => "Prevention Services",
-    "titlePrevention" => "Promoting Safety At Your Home & Office",
+    "subServices" => "Pelayanan Kami",
+    "subPrevention" => "Survei Kepuasan Masyarakat",
     "descPrevention" => "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia eiusmod consequuntur do tempor incididunt ut labore.",
-    "subTestimonials" => "Testimonials",
-    "titleTestimonials" => "What They Say",
+    "subTestimonials" => "Testimoni",
     "descTestimonials" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "subBlog" => "Our Blog",
-    "titleBlog" => "Latest News"
 ]));

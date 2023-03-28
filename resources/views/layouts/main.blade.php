@@ -23,11 +23,11 @@
 <body>
     @yield('bodyMain')
 
-    {{-- Swiper JS --}}
-    <script src="js/swiper-bundle.min.js"></script>
-
     {{-- My Script --}}
     <script src="js/myscript.js"></script>
+
+    {{-- Swiper JS --}}
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

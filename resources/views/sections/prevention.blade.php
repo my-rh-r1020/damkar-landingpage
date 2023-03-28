@@ -6,7 +6,7 @@
         <div class="prevention-column lg:w-7/12 lg:px-[30px]">
             <div class="title-main mt-[75px]">
                 <h6 class="text-subtitle">{{ $subPrevention }}</h6>
-                <h3 class="text-title">{{ $titlePrevention }}</h3>
+                <h3 class="text-title">Persentasi Pelayanan <span class="text-redColorAlt">Publik</span></h3>
             </div>
             <div class="">
                 <p class="text-greyColor">{{ $descPrevention }}</p>

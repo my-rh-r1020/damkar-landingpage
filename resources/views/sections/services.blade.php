@@ -162,7 +162,7 @@
                 </span>
             </a>
             <div class="title-main mt-[45px]">
-                <h3 class="text-title leading-none">We Help Our Citizens Avoid Fire Accidents</h3>
+                <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
             </div>
             {{-- Accordion --}}
             <div class="accordion">

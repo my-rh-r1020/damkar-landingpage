@@ -73,8 +73,9 @@
 
             {{-- Icons --}}
             <div class="nav-menu hidden lg:block">
-                <button id="search-btn" name="search-btn" type="button"><i class='bx bx-search text-2xl'></i></button>
+                <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search text-2xl'></i></button>
             </div>
+            {{-- <button id="search-btn" name="search-btn" type="button" class="nav-menu hidden lg:block"><i class='bx bx-search text-2xl'></i></button> --}}
         </div>
     </div>
 </header>
@@ -92,7 +93,7 @@
                 </a>
             </div>
             <div class="absolute top-0 right-4 p-4">
-                <button type="button" class="focus:outline-none scale-75" id="close-btn" name="close-btn">
+                <button id="close-btn" name="close-btn" type="button" class="focus:outline-none scale-75">
                     <span class="nav-close-line origin-top-left rotate-45"></span>
                     <span class="nav-close-line scale-0"></span>
                     <span class="nav-close-line origin-bottom-left -rotate-45"></span>
@@ -119,16 +120,14 @@
     </nav>
 </div>
 
-{{-- Search Bar --}}
-<div class="search-bar" id="search-bar">
-    <div class="fixed top-10 left-60 right-60 bottom-0 flex flex-col items-center justify-center">
-        <div class="">
-        <button type="button" class="focus:outline-none scale-75" id="close-btn" name="close-btn">
+{{-- Search Form --}}
+<div class="search-bar hidden" id="search-form">
+    <div class="fixed top-0 left-60 right-60 bottom-0 flex flex-col items-end justify-center">
+        <button id="search-close-btn" name="search-close-btn" type="button" class="focus:outline-none scale-75">
             <span class="search-btn-close origin-top-left rotate-45"></span>
             <span class="search-btn-close scale-0"></span>
             <span class="search-btn-close origin-bottom-left -rotate-45"></span>
         </button>
-    </div>
         <input type="text" placeholder="Search ..." class="text-3xl bg-white focus:outline-none focus:shadow-outline border border-white border-b-slate-600 py-4 block w-full appearance-none leading-normal">
     </div>
 </div>
