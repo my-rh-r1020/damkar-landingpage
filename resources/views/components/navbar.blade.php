@@ -58,7 +58,7 @@
             <nav class="nav-menu hidden lg:block">
                 <a href="#" class="relative mx-[12px]">
                     <span>Beranda</span>
-                    <div class="nav-line"></div>
+                    <div class="nav-line nav-line-active"></div>
                 </a>
                 <a href="#" class="relative mx-[12px]">
                     <span>Berita</span>
@@ -75,7 +75,6 @@
             <div class="nav-menu hidden lg:block">
                 <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search text-2xl'></i></button>
             </div>
-            {{-- <button id="search-btn" name="search-btn" type="button" class="nav-menu hidden lg:block"><i class='bx bx-search text-2xl'></i></button> --}}
         </div>
     </div>
 </header>

@@ -16,7 +16,13 @@
                         <div class="mb-[8px]">
                             <a href="#" target="_blank"><span class="blogs-categories">Information</span></a>
                         </div>
-                        <a href="#" target="_blank"><span class="blogs-title">Tingkatkan Kewaspadaan, Rahma Buka Lahan Jangan di Bakar</span></a>
+                        {{-- Looping Blog Data --}}
+                        @foreach($posts as $post)
+                        <a href="/berita/{{ $post["slug"] }}" target="_blank">
+                            <span class="blogs-title">{{ $post['title'] }}</span>
+                        </a>
+                        @endforeach
+                        
                         <div class="mt-[8px]">
                             <a href="#"><span class="blogs-subtitle">Articles Release Time</span></a>
                             <a href="#" class="mx-[10px]"><span class="text-[#a5a3a3]">-</span></a>

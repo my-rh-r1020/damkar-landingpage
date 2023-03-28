@@ -16,7 +16,7 @@ closeBtn.addEventListener("click", () => {
     sidebar.classList.add("hidden");
 });
 
-// Search Bar & Button
+// Search Form & Button
 searchBtn.addEventListener("click", () => {
     searchForm.classList.remove("hidden");
 });

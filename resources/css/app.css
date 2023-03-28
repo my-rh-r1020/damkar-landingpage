@@ -28,7 +28,7 @@
         @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;
     }
     .nav-line-active {
-        @apply hover:transition-all ease-in-out duration-500 origin-bottom-left w-full;
+        @apply w-full;
     }
     .nav-hamburger-line {
         @apply w-[30px] h-[2px] my-2 block bg-blackColor;
