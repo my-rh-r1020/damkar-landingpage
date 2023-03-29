@@ -170,6 +170,15 @@
     .blogs-subtitle {
         @apply text-[13px] text-greyColorAlt font-bebasNeue hover:text-redColor transition duration-300;
     }
+    .blogs-categories {
+        @apply py-[6px] px-[18px] border mr-2;
+    }
+    .blogs-categories-text {
+        @apply font-bebasNeue text-[13px] text-greyColor hover:text-[#1DA1F2];
+    }
+    .blogs-social-media {
+        @apply px-3 py-[11px] rounded-full;
+    }
     .footer-link {
         @apply font-bebasNeue py-[9px] px-[14px] text-whiteColorAlt text-[17px] hover:text-white;
     }
