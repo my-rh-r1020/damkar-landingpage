@@ -5,6 +5,8 @@
 
 @include('components.navbar')
 
+@include('sections.detail_berita')
+
 @include('components.footer')
 
 @endsection

@@ -24,7 +24,7 @@
     @yield('bodyMain')
 
     {{-- My Script --}}
-    <script src="js/myscript.js"></script>
+    <script src="/js/myscript.js"></script>
 
     {{-- Swiper JS --}}
     <script src="js/swiper-bundle.min.js"></script>

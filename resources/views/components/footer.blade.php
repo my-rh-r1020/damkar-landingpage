@@ -2,7 +2,7 @@
     <div class="px-[50px]">
         <div class="px-[15px]">
             <div class="flex flex-wrap items-center justify-center text-[18px]">
-                <img src="images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
+                <img src="/images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
                 <span class="uppercase font-bebasNeue ml-[6px] leading-none text-white">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
             </div>
         </div>
