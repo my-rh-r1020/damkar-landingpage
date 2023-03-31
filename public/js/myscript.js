@@ -25,3 +25,17 @@ searchBtn.addEventListener("click", () => {
 searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");
 });
+
+// Slider Testimonials
+const sliderTestimonial = document.querySelector("#testimonial-slider"),
+    testimonialSwiper = sliderTestimonial.querySelectorAll(".swiper-slide");
+
+testimonialSwiper.forEach((slide) => {
+    slide.addEventListener("click", () => {
+        // hapus kelas "active" dari semua slide
+        testimonialSwiper.forEach((s) => s.classList.remove("active"));
+
+        // tambahkan kelas "active" pada slide yang di-klik
+        slide.classList.add("active");
+    });
+});

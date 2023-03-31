@@ -5,7 +5,7 @@
             <h3 class="text-title">Apa Yang Dikatakan <span class="text-redColorAlt">Publik</span></h3>
         </div>
         
-        <div class="swiper testimonials-list">
+        <div class="swiper testimonials-list" id="testimonial-slider">
             <div class="swiper-wrapper mb-[90px]">
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card bg-white">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="swiper-slide testimonials-column swiper-slide-active">
                     <div class="testimonials-card">
-                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
+                        <i class='bx bxs-quote-alt-right testimonials-quote'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
                     <div class="testimonials-user-card">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card">
-                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
+                        <i class='bx bxs-quote-alt-right testimonials-quote'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
                     <div class="testimonials-user-card">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card">
-                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
+                        <i class='bx bxs-quote-alt-right testimonials-quote'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
                     <div class="testimonials-user-card">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card">
-                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
+                        <i class='bx bxs-quote-alt-right testimonials-quote'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
                     <div class="testimonials-user-card">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="swiper-slide testimonials-column">
                     <div class="testimonials-card">
-                        <i class='bx bxs-quote-alt-right rotate-180 text-3xl text-redColorAlt'></i>
+                        <i class='bx bxs-quote-alt-right testimonials-quote'></i>
                         <p class="testimonials-card-title text-blackColor">{{ $descTestimonials }}</p>
                     </div>
                     <div class="testimonials-user-card">

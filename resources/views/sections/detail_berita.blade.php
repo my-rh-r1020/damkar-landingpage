@@ -13,13 +13,13 @@
             @endforeach
         </div>
         <div class="mt-12 mb-16 mx-[15px] w-full lg:mx-[83px] xl:mx-[127px]">
-            <a href="#" class="blogs-categories">
+            <a href="#" class="blogs-category-news">
                 <span class="blogs-categories-text">Kategori 1</span>
             </a>
-            <a href="#" class="blogs-categories">
+            <a href="#" class="blogs-category-news">
                 <span class="blogs-categories-text">Kategori 2</span>
             </a>
-            <a href="#" class="blogs-categories">
+            <a href="#" class="blogs-category-news">
                 <span class="blogs-categories-text">Kategori 3</span>
             </a>
         </div>

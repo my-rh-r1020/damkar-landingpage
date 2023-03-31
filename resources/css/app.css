@@ -125,6 +125,12 @@
     .swiper-slide-active > .testimonials-card {
         @apply bg-redColorAlt;
     }
+    .swiper-slide-active > .testimonials-card > .testimonials-card-title {
+        @apply text-white;
+    }
+    .swiper-slide-active > .testimonials-card > i {
+        @apply text-white;
+    }
     .testimonials-card {
         @apply px-[30px] py-[35px] text-center bg-white;
     }
@@ -135,10 +141,13 @@
         @apply mt-[40px];
     }
     .testimonials-user-img {
-        @apply w-[75px] mx-auto;
+        @apply w-[75px] mx-auto rounded-full;
     }
     .testimonials-user-profile {
         @apply text-center mt-5;
+    }
+    .testimonials-quote {
+        @apply rotate-180 text-3xl text-redColorAlt;
     }
     .testimonials-user-name {
         @apply font-bebasNeue text-[19px];
@@ -170,7 +179,7 @@
     .blogs-subtitle {
         @apply text-[13px] text-greyColorAlt font-bebasNeue hover:text-redColor transition duration-300;
     }
-    .blogs-categories {
+    .blogs-category-news {
         @apply py-[6px] px-[18px] border mr-2;
     }
     .blogs-categories-text {

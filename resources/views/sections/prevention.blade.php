@@ -11,6 +11,11 @@
             <div class="">
                 <p class="text-greyColor">{{ $descPrevention }}</p>
             </div>
+            <div class="mt-[32px]">
+                <div class="pt-8">
+                    <span class="text-2xl font-bebasNeue text-blackColor p-10 rounded-full bg-slate-100">75%</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
