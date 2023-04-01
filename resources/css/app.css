@@ -194,4 +194,12 @@
     .footer-social-icons {
         @apply text-2xl text-white border border-[#3f3d47] p-2;
     }
+
+    /* E-LAPOR PAGE */
+    .request-text-form {
+        @apply w-full px-4 py-2 text-base lg:text-lg rounded-xl bg-white focus:outline-none border-2 border-whiteColorAlt;
+    }
+    .request-btn {
+        @apply px-6 py-[2px] rounded-full text-white text-sm lg:text-base;
+    }
 }

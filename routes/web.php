@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ELaporController;
 use App\Http\Controllers\HomeController;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
@@ -20,5 +21,5 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', fn () => view());
 
 Route::get('/', [HomeController::class, "index"]);
-
 Route::get('berita/{slug}', [BlogController::class, 'index']);
+Route::get('elapor', [ELaporController::class, "requestData"]);
