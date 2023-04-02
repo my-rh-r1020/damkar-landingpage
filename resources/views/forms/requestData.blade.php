@@ -42,90 +42,97 @@
                     <h4 class="uppercase font-bold text-lg">Kritik dan Saran</h4>
                     <span class="w-8 h-1 my-2 block bg-blackColor mx-auto"></span>
                 </div>
-                <div class="flex flex-wrap">
-                    <div class="w-full md:w-1/2 px-2">
-                        <div class="mb-4">
-                            <input type="text" placeholder="Judul Keluhan" name="keluhantitle" id="keluhantitle" class="elapor-text-form focus:shadow-outline">
-                        </div>
-                        <div class="mb-4">
-                            <textarea placeholder="Keluhan Anda" name="desckeluhan" id="desckeluhan" class="elapor-text-form focus:shadow-outline h-24 resize-y"></textarea>
-                        </div>
-                        <div class="mb-4">
-                            <select name="listwilayah" id="listwilayah" class="elapor-text-form focus:shadow-outline">
-                                <option value="">Pilih Wilayah</option>
-                                <option value="">Opsi 1</option>
-                                <option value="">Opsi 2</option>
-                            </select>
-                        </div>
-                        <div class="flex flex-wrap justify-between">
-                            <div class="w-full md:w-6/12 md:mr-4 lg:w-7/12 mb-4">
-                                <select name="listkategori" id="listkategori" class="elapor-text-form focus:shadow-outline">
-                                    <option value="">Pilih Kategori</option>
+                <form action="" method="POST">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/2 px-4">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Judul Keluhan" name="keluhantitle" id="keluhantitle" class="elapor-text-form focus:shadow-outline">
+                            </div>
+                            <div class="mb-4">
+                                <textarea placeholder="Keluhan Anda" name="desckeluhan" id="desckeluhan" class="elapor-text-form focus:shadow-outline h-24 resize-y"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <select name="listwilayah" id="listwilayah" class="elapor-text-form focus:shadow-outline">
+                                    <option value="">Pilih Wilayah</option>
                                     <option value="">Opsi 1</option>
                                     <option value="">Opsi 2</option>
                                 </select>
                             </div>
-                            <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
-                                <button class="w-full px-6 py-1 bg-[#008036] rounded-md hover:bg-greenColor transition duration-300">
-                                    {{-- Icon --}}
-                                    <span class="text-white">File</span>
+                            <div class="flex flex-wrap justify-between">
+                                <div class="w-full md:w-6/12 md:mr-4 lg:w-7/12 mb-4">
+                                    <select name="listkategori" id="listkategori" class="elapor-text-form focus:shadow-outline">
+                                        <option value="">Pilih Kategori</option>
+                                        <option value="">Opsi 1</option>
+                                        <option value="">Opsi 2</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
+                                    <button class="w-full px-6 py-1 bg-[#008036] rounded-md hover:bg-greenColor transition duration-300">
+                                        {{-- Icon --}}
+                                        <span class="text-white">File</span>
+                                    </button>
+                                </div>
+                                <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
+                                    <button class="w-full px-6 py-1 bg-[#008036] rounded-md hover:bg-greenColor transition duration-300">
+                                        {{-- Icon --}}
+                                        <span class="text-white">Lokasi</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <input type="checkbox">
+                                <span class="text-sm">Rahasia</span>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-4">
+                            <div class="mb-4">
+                                <input type="checkbox">
+                                <span class="text-sm">Anonim</span>
+                            </div>
+                            <div class="flex flex-wrap items-center mb-4">
+                                <div class="w-3/12">
+                                    <label for="nama" class="font-semibold">Nama</label>
+                                </div>
+                                <div class="w-9/12">
+                                    <input type="text" placeholder="Nama Lengkap" name="namalengkap" id="namalengkap" class="elapor-text-form focus:shadow-outline">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-center mb-4">
+                                <div class="w-3/12">
+                                    <label for="email" class="font-semibold">Email</label>
+                                </div>
+                                <div class="w-9/12">
+                                    <input type="text" placeholder="Email Anda" name="email" id="email" class="elapor-text-form focus:shadow-outline">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-center mb-4">
+                                <div class="w-3/12">
+                                    <label for="email" class="font-semibold">Telpon/HP</label>
+                                </div>
+                                <div class="w-9/12">
+                                    <input type="text" placeholder="Nomor Telpon/HP" name="nohp" id="nohp" class="elapor-text-form focus:shadow-outline">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap items-center mb-10">
+                                <div class="w-3/12">
+                                    <label for="email" class="font-semibold">NIK</label>
+                                </div>
+                                <div class="w-9/12">
+                                    <input type="text" placeholder="NIK Anda" name="nik" id="nik" class="elapor-text-form focus:shadow-outline">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <input type="checkbox">
+                                <span class="text-sm">Dengan mengisi form ini dan mengirimkan kritik serta saran, Anda telah menyetujui <a href="#" target="_blank" class="text-blue-400">Ketentuan Layanan dan Kebijakan Privasi</a> kami</span>
+                            </div>
+                            <div class="flex justify-start mb-4">
+                                <button type="submit" class="px-4 py-1 bg-[#008036] text-white rounded-md hover:bg-greenColor transition duration-300">
+                                    <span class="font-semibold">Kirim Now</span>
                                 </button>
                             </div>
-                            <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
-                                <button class="w-full px-6 py-1 bg-[#008036] rounded-md hover:bg-greenColor transition duration-300">
-                                    {{-- Icon --}}
-                                    <span class="text-white">Lokasi</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <input type="checkbox">
-                            <span class="text-sm">Rahasia</span>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 px-2">
-                        <div class="mb-4">
-                            <input type="checkbox">
-                            <span class="text-sm">Anonim</span>
-                        </div>
-                        <div class="flex flex-wrap items-center mb-4">
-                            <div class="w-3/12">
-                                <label for="nama" class="font-semibold">Nama</label>
-                            </div>
-                            <div class="w-9/12">
-                                <input type="text" placeholder="Nama Lengkap" name="namalengkap" id="namalengkap" class="elapor-text-form focus:shadow-outline">
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap items-center mb-4">
-                            <div class="w-3/12">
-                                <label for="email" class="font-semibold">Email</label>
-                            </div>
-                            <div class="w-9/12">
-                                <input type="text" placeholder="Email Anda" name="email" id="email" class="elapor-text-form focus:shadow-outline">
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap items-center mb-4">
-                            <div class="w-3/12">
-                                <label for="email" class="font-semibold">Telpon/HP</label>
-                            </div>
-                            <div class="w-9/12">
-                                <input type="text" placeholder="Nomor Telpon/HP" name="nohp" id="nohp" class="elapor-text-form focus:shadow-outline">
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap items-center mb-4">
-                            <div class="w-3/12">
-                                <label for="email" class="font-semibold">NIK</label>
-                            </div>
-                            <div class="w-9/12">
-                                <input type="text" placeholder="NIK Anda" name="nik" id="nik" class="elapor-text-form focus:shadow-outline">
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <input type="checkbox">
-                            <span class="text-sm">Dengan mengisi form ini dan mengirimkan kritik serta saran, Anda telah menyetujui Ketentuan Layanan dan Kebijakan Privasi kami</span>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -255,6 +262,69 @@
                 <button class="px-6 py-2 bg-[#64B08C] rounded-full hover:bg-greenColor transition duration-300">
                     <span class="text-white">Next</span>
                 </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- Damkar Activity --}}
+<section class="bg-[#FAF8F9] py-20">
+    <div class="py-4 px-4">
+        <div class="mx-4 mb-8 border-2 border-slate-200 bg-white rounded-lg">
+            <div class="px-2 py-4">
+                <div class="mb-6 px-4 pt-4 flex flex-wrap justify-between">
+                    <div>
+                        {{-- Icon --}}
+                        <h4 class="font-bold text-lg lg:text-xl text-blackColor">Pelatihan Penggunaan APAR Tingkat RT se-Kota Tanjungpinang</h4>
+                        <p class="text-xs text-redColor">13/03/2023 sampai dengan 17/03/2023</p>
+                    </div>
+                    <div class="flex">
+                        <img src="/images/logo-tpi.png" alt="pemkot-logo" class="w-[60px]">
+                        <img src="/images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
+                    </div>
+                </div>
+                <form action="" method="POST">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-4/12 lg:w-5/12 px-4">
+                            <div class="mb-3">
+                                <span class="uppercase text-xs font-bold text-greyColorAlt">Identitas Peserta</span>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Nama Lengkap Peserta" name="namapeserta" id="namapeserta" class="pelatihan-text-form focus:shadow-outline">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Email Peserta" name="emailpeserta" id="emailpeserta" class="pelatihan-text-form focus:shadow-outline">
+                            </div>
+                            <div class="mb-4">
+                                <textarea placeholder="Alamat Lengkap" name="alamatpeserta" id="alamatpeserta" class="pelatihan-text-form focus:shadow-outline h-24 resize-y"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <button type="submit" class="px-8 py-1 bg-green-500 text-white rounded-md hover:bg-greenColor transition duration-300">
+                                    <span class="font-semibold uppercase text-sm">Daftar</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-8/12 lg:w-7/12 px-4">
+                            <div class="mb-3">
+                                <span class="uppercase text-xs font-bold text-greyColorAlt">Identitas Persyaratan Peserta</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div>
+                                    <div class="p-2 bg-[#008036] rounded-full mr-4"></div>
+                                </div>
+                                <div>
+                                    <h6 class="font-semibold">KTP</h6>
+                                    <p class="italic text-sm">PDF/JPG/PNG</p>
+                                </div>
+                                <div>
+                                    <button class="bg-[#EEF5FA] px-4 py-1 border-2 border-slate-300 border-dashed rounded-lg" type="file">
+                                        <span class="text-sm">Upload Berkas</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

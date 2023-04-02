@@ -197,7 +197,7 @@
 
     /* E-LAPOR PAGE */
     .elapor-text-form {
-        @apply w-full px-4 py-1 text-base lg:text-lg rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
+        @apply w-full px-4 py-1 text-base rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
     }
     .request-text-form {
         @apply w-full px-4 py-2 text-base lg:text-lg rounded-xl bg-white focus:outline-none border-2 border-whiteColorAlt;
@@ -207,5 +207,8 @@
     }
     .insendentil-text-form {
         @apply w-full px-4 py-1 text-base lg:text-lg rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
+    }
+    .pelatihan-text-form {
+        @apply w-full px-4 py-1 text-base rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
     }
 }
