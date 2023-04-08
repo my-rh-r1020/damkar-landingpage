@@ -5,152 +5,55 @@
             <h3 class="text-title leading-none">Layanan Utama <br> Dinas Pemadam Kebakaran dan Penyelamatan</h3>
         </div>
         <div class="services-data">
+            @foreach($serviceItems as $sItem)
             <div class="services-column">
-                <a href="#" target="_blank">
+                <a href="{{ $sItem['url'] }}" target="_blank">
                     <div class="services-card">
-                        <img src="icons/1-pemadam.png" alt="emergency-help" class="mx-auto h-[90px]">
+                        <img src="icons/{{ $sItem['icon-services'] }}" alt="emergency-help" class="mx-auto h-[90px]">
                         <div class="services-text-main">
-                            <h4 class="services-title">Pemadam <br> Kebakaran</h4>
-                            <span class="services-subtitle">Sed do elusm ad tempor</span>
+                            <h4 class="services-title">{{ $sItem['services-title'] }}</h4>
+                            <span class="services-subtitle">{{ $sItem['services-subtitle'] }}</span>
                         </div>
-                        <div class="services-point">
-                            {{-- <div class="services-point-icon"></div>
-                            <div class="services-point-icon"></div>
-                            <div class="services-point-icon"></div> --}}
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
+                        <div class="services-point gap-1 text-[8px] text-[#D8D8D8] hover:text-redColor">
+                            <i class='bx bxs-square'></i>
+                            <i class='bx bxs-square'></i>
+                            <i class='bx bxs-square'></i>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="services-column">
-                <a href="#" target="_blank">
-                    <div class="services-card">
-                        <img src="icons/2-pencegahan.png" alt="smoke-alarms" class="mx-auto h-[90px]">
-                        <div class="services-text-main">
-                            <h4 class="services-title">Pencegahan & <br> Pengendalian</h4>
-                            <span class="services-subtitle">Sed do elusm ad tempor</span>
-                        </div>
-                        <div class="services-point">
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="services-column">
-                <a href="#" target="_blank">
-                    <div class="services-card">
-                        <img src="icons/3-penyelamatan.png" alt="fire-extinguisher" class="mx-auto h-[90px]">
-                        <div class="services-text-main">
-                            <h4 class="services-title">Penyelamatan <br> Masyarakat</h4>
-                            <span class="services-subtitle">Sed do elusm ad tempor</span>
-                        </div>
-                        <div class="services-point">
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="services-column">
-                <a href="#" target="_blank">
-                    <div class="services-card">
-                        <img src="icons/4-penanganan.png" alt="fire-stations" class="mx-auto h-[90px]">
-                        <div class="services-text-main">
-                            <h4 class="services-title">Penanganan <br> Bahan Beracun</h4>
-                            <span class="services-subtitle">Sed do elusm ad tempor</span>
-                        </div>
-                        <div class="services-point">
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                            <span class="services-point-icon"></span>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            @endforeach
         </div>
     </div>
 
     {{-- Services Images --}}
     <div class="section-layout flex flex-wrap">
+        @foreach($gallerys as $gallery)
         <div class="services-gallery-data">
-            <a href="#" target="_blank">
+            <a href="{{ $gallery['url'] }}" target="_blank">
                 <div class="relative">
-                    <img src="images/response-time.jpg" alt="response-time" class="services-gallery-images">
+                    <img src="images/{{ $gallery['image-banner'] }}" alt="response-time" class="services-gallery-images">
                     {{-- <div class="absolute inset-0 bg-black opacity-30 transition duration-500 ease-in-out hover:opacity-40 hover:bg-red-600"></div>
                     <div class="absolute inset-0 flex items-center justify-center text-white transition duration-500 ease-in-out transform hover:-translate-y-2">
                         <p class="text-3xl font-bold">Teks di atas gambar</p>
                     </div> --}}
-
                     {{-- <div class="absolute inset-0 bg-black bg-opacity-30 hover:opacity-[0.85] hover:bg-redColor transition duration-300 ease-in-out">
                         <div class="absolute inset-0 flex items-end justify-center text-white transition duration-500 ease-in-out transform hover:-translate-y-2">
                             <p class="text-2xl font-bebasNeue">Teks di atas gambar</p>
                         </div>
                     </div> --}}
-
                     <div class="services-gallery-bg">
                         <div class="services-gallery-text">
                             <div class="text-center">
-                                <span class="services-gallery-title">Response Time</span>
-                                <p class="services-gallery-subtitle">Natus error sit voluptatem</p>
+                                <span class="services-gallery-title">{{ $gallery['gallery-title'] }}</span>
+                                <p class="services-gallery-subtitle">{{ $gallery['gallery-subtitle'] }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="services-gallery-data">
-            <a href="#" target="_blank">
-                <div class="relative">
-                    <img src="images/safety-education.jpg" alt="safety-education" class="services-gallery-images">
-
-                    <div class="services-gallery-bg">
-                        <div class="services-gallery-text">
-                            <div class="text-center">
-                                <span class="services-gallery-title">Safety Education</span>
-                                <p class="services-gallery-subtitle">Natus error sit voluptatem</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="services-gallery-data">
-            <a href="#" target="_blank">
-                <div class="relative">
-                    <img src="images/alarm-inspection.jpg" alt="alarm-inspection" class="services-gallery-images">
-
-                    <div class="services-gallery-bg">
-                        <div class="services-gallery-text">
-                            <div class="text-center">
-                                <span class="services-gallery-title">Alarm Inspection</span>
-                                <p class="services-gallery-subtitle">Natus error sit voluptatem</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="services-gallery-data">
-            <a href="#" target="_blank">
-                <div class="relative">
-                    <img src="images/effective-methods.jpg" alt="effective-methods" class="services-gallery-images">
-
-                    <div class="services-gallery-bg">
-                        <div class="services-gallery-text">
-                            <div class="text-center">
-                                <span class="services-gallery-title">Effective Methods</span>
-                                <p class="services-gallery-subtitle">Natus error sit voluptatem</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        @endforeach
     </div>
 
     {{-- Services Instructions --}}

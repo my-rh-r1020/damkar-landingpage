@@ -39,7 +39,7 @@
                     </div>
                 </a>
             </div>
-            <button id="hamburger" name="hamburger" type="button" class="block scale-75 lg:hidden ml-auto pr-[15px]">
+            <button id="hamburger" name="hamburger" type="button" class="block py-2 px-3 rounded-xl bg-slate-200 scale-75 lg:hidden ml-auto mr-1">
                 <span class="nav-hamburger-line"></span>
                 <span class="nav-hamburger-line"></span>
                 <span class="nav-hamburger-line"></span>
