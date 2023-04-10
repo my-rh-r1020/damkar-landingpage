@@ -18,6 +18,9 @@
     .text-title {
         @apply font-bebasNeue text-blackColor text-[30px] md:text-[38px] lg:text-[46px];
     }
+    .red-button {
+        @apply pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
+    }
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
     }
@@ -62,11 +65,11 @@
     .sidebar-menu-text {
         @apply text-2xl text-whiteColorAlt hover:text-white font-bebasNeue transition ease-in-out duration-300;
     }
+    .herobanner-slider {
+        @apply scale-75 p-8 bg-blackColor hover:bg-slate-700 transition-all duration-300 rounded-sm;
+    }
     .contact-column {
         @apply w-full px-[15px] md:w-1/2;
-    }
-    .contact-button {
-        @apply pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
     .contact-icon {
         @apply p-[14px] mr-[14px] bg-[#FAF8F8] rounded-full;

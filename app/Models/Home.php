@@ -13,6 +13,25 @@ use Illuminate\Database\Eloquent\Model;
 class Home
 {
     // Private Function
+    private static $herobanner_items = [
+        [
+            "banner-damkar" => "herobanner-1.jpg",
+            "banner-subtitle" => "Dinas Damkar Tanjungpinang",
+            "banner-title" => "Lorem, ipsum."
+        ],
+        [
+            "banner-damkar" => "herobanner-2.jpg",
+            "banner-subtitle" => "Dinas Damkar Tanjungpinang",
+            "banner-title" => "Lorem, ipsum dolor."
+        ],
+        [
+            "banner-damkar" => "herobanner-3.jpg",
+            "banner-subtitle" => "Dinas Damkar Tanjungpinang",
+            "banner-title" => "Lorem ipsum dolor sit."
+        ],
+
+    ];
+
     private static $service_items = [
         [
             "url" => "#",
@@ -68,9 +87,14 @@ class Home
     ];
 
     // Public Function
-    public static function servicesdata()
+    public static function herobannerdata()
     {
         // Ambil semua data blog via collection
+        return collect(self::$herobanner_items);
+    }
+
+    public static function servicesdata()
+    {
         return collect(self::$service_items);
     }
 

@@ -14,6 +14,7 @@ class HomeController extends Controller
             'landing',
             [
                 "title" => "Damkar Kota Tanjungpinang",
+                "herobanners" => Home::herobannerdata(),
                 "subContact" => "Hubungi Kami",
                 "titleContact" => "Pantang Pulang Sebelum Padam",
                 "spanContact" => "Waspada Penyebab Kebakaran",

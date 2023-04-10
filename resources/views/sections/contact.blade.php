@@ -1,4 +1,4 @@
-<section class="section-layout bg-white">
+<section class="section-layout bg-white" id="contact">
     <div class="main-layout flex w-full flex-wrap">
         <div class="contact-column lg:py-[20px] xl:py-24 2xl:py-28 lg:w-5/12">
             <div class="title-main">
@@ -12,7 +12,7 @@
                 </p>
             </div>
             <div class="flex flex-wrap w-full items-center">
-                <a href="#" class="contact-button mr-10">Get In Touch</a>
+                <a href="#" class="red-button mr-10">Get In Touch</a>
                 <a href="tel:077124949" class="flex flex-wrap items-center">
                     <span class="contact-icon">
                         <i class='bx bx-phone-call text-2xl'></i>

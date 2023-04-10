@@ -35,6 +35,7 @@
             spaceBetween: 30,
             effect: "fade",
             centeredSlides: true,
+            loop: true,
             autoplay: {
                 delay: 10000,
                 disableOnInteraction: false,
@@ -43,6 +44,10 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            navigation:{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
         });
         let swiperTestimonials = new Swiper('.testimonials-list', {
             slidesPerView: 1,
