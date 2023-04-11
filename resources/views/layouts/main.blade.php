@@ -68,10 +68,10 @@
             on:{
                 slideChange:function(){
                     // remove active class from all slides
-                    $('.swiper-slide').removeClass('swiper-slide-active');
+                    ('.swiper-slide').removeClass('swiper-slide-active');
 
                     // add active class to current slide
-                    $('.swiper-slide').eq(swiperTestimonials.activeIndex).addClass('swiper-slide-active');
+                    ('.swiper-slide').eq(swiperTestimonials.activeIndex).addClass('swiper-slide-active');
                 }
             }
         });

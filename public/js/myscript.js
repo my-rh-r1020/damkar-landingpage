@@ -26,16 +26,31 @@ searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");
 });
 
-// Slider Testimonials
-const sliderTestimonial = document.querySelector("#testimonial-slider"),
-    testimonialSwiper = sliderTestimonial.querySelectorAll(".swiper-slide");
+// Accordion
+const accordionButton = document.getElementById("accordion-btn"),
+    accordionIcon = accordionButton.querySelector(".bx-plus"),
+    accordionCollapse = accordionMenu.querySelectorAll(".accordion-collapse");
 
-testimonialSwiper.forEach((slide) => {
-    slide.addEventListener("click", () => {
-        // hapus kelas "active" dari semua slide
-        testimonialSwiper.forEach((s) => s.classList.remove("active"));
+// accordionButton.addEventListener("click", () => {
+//     accordionCollapse.classList.toggle("collapse");
+// });
 
-        // tambahkan kelas "active" pada slide yang di-klik
-        slide.classList.add("active");
-    });
+accordionButton.addEventListener("click", () => {
+    accordionIcon.classList.remove("bx-plus");
+    accordionIcon.classList.add("bx-minus");
+    accordionCollapse.classList.toggle("hidden");
 });
+
+// Slider Testimonials
+// const sliderTestimonial = document.querySelector("#testimonial-slider"),
+//     testimonialSwiper = sliderTestimonial.querySelectorAll(".swiper-slide");
+
+// testimonialSwiper.forEach((slide) => {
+//     slide.addEventListener("click", () => {
+//         // hapus kelas "active" dari semua slide
+//         testimonialSwiper.forEach((s) => s.classList.remove("active"));
+
+//         // tambahkan kelas "active" pada slide yang di-klik
+//         slide.classList.add("active");
+//     });
+// });

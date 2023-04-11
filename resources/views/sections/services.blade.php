@@ -68,36 +68,97 @@
                 <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
             </div>
             {{-- Accordion --}}
-            <div class="accordion">
+            <div class="accordion mb-10" id="accordionFlush">
                 <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
-                      Item 1
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse">
-                    <div class="accordion-body bg-white py-2 px-4">
-                      Content for Item 1 goes here.
+                    <h2 class="accordion-header">
+                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div>
+                                <i class='bx bx-plus text-lg scale-125'></i>
+                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse hidden">
+                        <div class="accordion-body bg-white py-2 text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
-                      Item 2
-                    </button>
-                  </h2>
-                  <div class="accordion-collapse">
-                    <div class="accordion-body bg-white py-2 px-4">
-                      Content for Item 2 goes here.
+                    <h2 class="accordion-header">
+                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div>
+                                <i class='bx bx-plus text-lg scale-125'></i>
+                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse hidden">
+                        <div class="accordion-body bg-white py-2 text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div>
+                                <i class='bx bx-plus text-lg scale-125'></i>
+                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse hidden">
+                        <div class="accordion-body bg-white py-2 text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
+                            Item 2
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse">
+                        <div class="accordion-body bg-white py-2 px-4">
+                            Content for Item 2 goes here.
+                        </div>
+                    </div>
+                </div> --}}
+            </div>
+            {{-- <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
+                            Item 1
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse">
+                        <div class="accordion-body bg-white py-2 px-4">
+                            Content for Item 1 goes here.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
+                            Item 2
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse">
+                        <div class="accordion-body bg-white py-2 px-4">
+                            Content for Item 2 goes here.
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
         </div>
         <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
-            <img src="images/prevention-img.jpg" alt="prevention-img" class="mx-auto">
+            <div class="relative">
+                <img src="images/prevention-img.jpg" alt="prevention-img">
+                <div class="bg-redColorAlt px-10 py-4"></div>
+            </div>
         </div>
     </div>
 </section>
