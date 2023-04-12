@@ -13,7 +13,7 @@
         @apply pb-[20px] sm:pb-[25px] md:pb-[30px] lg:pb-[35px] 2xl:pb-[40px];
     }
     .text-subtitle {
-        @apply font-bebasNeue text-redColor text-[16px] mb-[14px];
+        @apply font-bebasNeue text-redColor text-base mb-[14px];
     }
     .text-title {
         @apply font-bebasNeue text-blackColor text-[30px] md:text-[38px] lg:text-[46px];
@@ -23,6 +23,9 @@
     }
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
+    }
+    .nav-btn {
+        @apply flex items-center justify-end;
     }
     .nav-span {
         @apply p-[12px];
@@ -57,7 +60,7 @@
         @apply origin-bottom-left -rotate-45;
     }
     .sidebar-menu {
-        @apply fixed inset-0 z-50 bg-blackColor opacity-95 transition-opacity;
+        @apply fixed inset-0 z-50 bg-blackColor opacity-100 transition-opacity;
     }
     .sidebar-menu-list {
         @apply list-none mb-2;

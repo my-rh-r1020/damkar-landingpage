@@ -71,9 +71,15 @@
                 <a href="#"><span class="nav-span">Pojok Damkar</span></a>
             </nav>
 
-            {{-- Icons --}}
-            <div class="nav-menu hidden lg:block">
-                <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search text-2xl'></i></button>
+            <div class="nav-btn">
+                <div class="hidden lg:block mr-6">
+                    <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search text-2xl'></i></button>
+                </div>
+                <div>
+                    <a href="/elapor" target="_blank">
+                        <span class="px-4 py-2 bg-redColor font-bebasNeue text-white hover:bg-redColorAlt rounded-md">E-Lapor</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

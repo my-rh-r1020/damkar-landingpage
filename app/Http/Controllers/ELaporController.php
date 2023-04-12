@@ -8,11 +8,14 @@ class ELaporController extends Controller
 {
     public function index()
     {
+        return view("elapor", [
+            "title" => "E-LAPOR | Damkar Kota Tanjungpinang"
+        ]);
     }
 
     public function requestData()
     {
-        return view("elapor", [
+        return view('requestData', [
             "title" => "Permohonan Data | Damkar Kota Tanjungpinang"
         ]);
     }

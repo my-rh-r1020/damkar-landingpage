@@ -26,31 +26,40 @@ searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");
 });
 
-// Accordion
-const accordionButton = document.getElementById("accordion-btn"),
-    accordionIcon = accordionButton.querySelector(".bx-plus"),
-    accordionCollapse = accordionMenu.querySelectorAll(".accordion-collapse");
+// Accordion v1
+// const accordionButton = document.getElementById("#accordion-btn"),
+//     accordionIcon = document.querySelector(".bx-plus"),
+//     accordionCollapse = accordionMenu.querySelectorAll(".accordion-collapse");
 
 // accordionButton.addEventListener("click", () => {
-//     accordionCollapse.classList.toggle("collapse");
+//     accordionIcon.classList.remove("bx-plus");
+//     accordionIcon.classList.add("bx-minus");
+//     accordionCollapse.classList.toggle("hidden");
 // });
 
-accordionButton.addEventListener("click", () => {
-    accordionIcon.classList.remove("bx-plus");
-    accordionIcon.classList.add("bx-minus");
-    accordionCollapse.classList.toggle("hidden");
+// Accordion v2
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        const accordionSVG = item.querySelector(".lineHidden"),
+            toggleAccordion = item.querySelector(".toggleAccordion");
+
+        toggleAccordion.classList.toggle("hidden");
+        accordionSVG.classList.toggle("hidden");
+    });
 });
 
 // Slider Testimonials
-// const sliderTestimonial = document.querySelector("#testimonial-slider"),
-//     testimonialSwiper = sliderTestimonial.querySelectorAll(".swiper-slide");
+const sliderTestimonial = document.querySelector("#testimonial-slider"),
+    testimonialSwiper = sliderTestimonial.querySelectorAll(".swiper-slide");
 
-// testimonialSwiper.forEach((slide) => {
-//     slide.addEventListener("click", () => {
-//         // hapus kelas "active" dari semua slide
-//         testimonialSwiper.forEach((s) => s.classList.remove("active"));
+testimonialSwiper.forEach((slide) => {
+    slide.addEventListener("click", () => {
+        // hapus kelas "active" dari semua slide
+        testimonialSwiper.forEach((s) => s.classList.remove("active"));
 
-//         // tambahkan kelas "active" pada slide yang di-klik
-//         slide.classList.add("active");
-//     });
-// });
+        // tambahkan kelas "active" pada slide yang di-klik
+        slide.classList.add("active");
+    });
+});

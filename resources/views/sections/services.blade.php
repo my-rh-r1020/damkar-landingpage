@@ -68,96 +68,93 @@
                 <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
             </div>
             {{-- Accordion --}}
-            <div class="accordion mb-10" id="accordionFlush">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <div>
-                                <i class='bx bx-plus text-lg scale-125'></i>
-                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse hidden">
-                        <div class="accordion-body bg-white py-2 text-justify">
+            <div class="accordion mb-10 divide-y-2" id="accordionFlush">
+                <div class="accordion-item cursor-pointer">
+                    <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
+                        {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path class="lineHidden" d="M12 5l0 14"></path>
+                            <path d="M5 12l14 0"></path>
+                         </svg>
+                        <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                    </div>
+                    <div class="hidden toggleAccordion">
+                        <div class="pb-2 text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <div>
-                                <i class='bx bx-plus text-lg scale-125'></i>
-                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse hidden">
-                        <div class="accordion-body bg-white py-2 text-justify">
+                <div class="accordion-item cursor-pointer">
+                    <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
+                        {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path class="lineHidden" d="M12 5l0 14"></path>
+                            <path d="M5 12l14 0"></path>
+                         </svg>
+                        <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                    </div>
+                    <div class="hidden toggleAccordion">
+                        <div class="pb-2 text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <div>
-                                <i class='bx bx-plus text-lg scale-125'></i>
-                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse hidden">
-                        <div class="accordion-body bg-white py-2 text-justify">
+                <div class="accordion-item cursor-pointer">
+                    <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
+                        {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path class="lineHidden" d="M12 5l0 14"></path>
+                            <path d="M5 12l14 0"></path>
+                         </svg>
+                        <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                    </div>
+                    <div class="hidden toggleAccordion">
+                        <div class="pb-2 text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
                         </div>
                     </div>
                 </div>
                 {{-- <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
-                            Item 2
+                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div>
+                                <i class='bx bx-plus text-lg scale-125'></i>
+                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                            </div>
                         </button>
                     </h2>
-                    <div class="accordion-collapse">
-                        <div class="accordion-body bg-white py-2 px-4">
-                            Content for Item 2 goes here.
+                    <div id="collapse1" class="accordion-collapse hidden">
+                        <div class="accordion-body bg-white py-2 text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
                         </div>
                     </div>
                 </div> --}}
             </div>
-            {{-- <div class="accordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
-                            Item 1
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse">
-                        <div class="accordion-body bg-white py-2 px-4">
-                            Content for Item 1 goes here.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button bg-gray-200 hover:bg-gray-300 focus:outline-none py-2 px-4 w-full text-left" type="button">
-                            Item 2
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse">
-                        <div class="accordion-body bg-white py-2 px-4">
-                            Content for Item 2 goes here.
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
         </div>
         <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
             <div class="relative">
-                <img src="images/prevention-img.jpg" alt="prevention-img">
-                <div class="bg-redColorAlt px-10 py-4"></div>
+                <div class="flex justify-end">
+                    <img src="images/prevention-img.jpg" alt="prevention-img">
+                </div>
+                <div class="flex absolute bottom-6 left-6">
+                    <div class="bg-redColorAlt mr-6">
+                        <div class="px-8 py-7">
+                            <h6 class="lg:text-xl font-bebasNeue text-white">Fire Fighters</h6>
+                            <h3 class="lg:text-6xl font-bebasNeue text-white my-5">400+</h3>
+                            <h6 class="lg:text-xl text-greyColorAlt">Lorem, ipsum dolor.</h6>
+                        </div>
+                    </div>
+                    <div class="bg-blackColor">
+                        <div class="px-8 py-7">
+                            <h6 class="lg:text-xl font-bebasNeue text-white">Fire Stations</h6>
+                            <h3 class="lg:text-6xl font-bebasNeue text-white my-5">13</h3>
+                            <h6 class="lg:text-xl text-greyColorAlt">Lorem, ipsum dolor.</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
