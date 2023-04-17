@@ -39,11 +39,6 @@
                     </div>
                 </a>
             </div>
-            <button id="hamburger" name="hamburger" type="button" class="block py-2 px-3 rounded-xl bg-slate-200 scale-75 lg:hidden ml-auto mr-1">
-                <span class="nav-hamburger-line"></span>
-                <span class="nav-hamburger-line"></span>
-                <span class="nav-hamburger-line"></span>
-            </button>
 
             {{-- Nav Menu --}}
             {{-- <nav class="nav-menu hidden lg:block">
@@ -73,13 +68,18 @@
 
             <div class="nav-btn">
                 <div class="hidden lg:block mr-6">
-                    <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search text-2xl'></i></button>
+                    <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
                 </div>
-                <div>
+                <div class="mr-1 lg:mr-0">
                     <a href="/elapor" target="_blank">
                         <span class="px-4 py-2 bg-redColor font-bebasNeue text-white hover:bg-redColorAlt rounded-md">E-Lapor</span>
                     </a>
                 </div>
+                <button id="hamburger" name="hamburger" type="button" class="block py-2 px-3 rounded-xl bg-slate-200 scale-75 lg:hidden ml-auto mr-1">
+                    <span class="nav-hamburger-line"></span>
+                    <span class="nav-hamburger-line"></span>
+                    <span class="nav-hamburger-line"></span>
+                </button>
             </div>
         </div>
     </div>

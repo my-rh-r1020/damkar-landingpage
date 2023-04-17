@@ -8,9 +8,11 @@
             <img src="/images/{{ $post['image'] }}" alt="berita-image" class="w-full lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
         </div>
         <div class="px-[15px] text-justify lg:mx-[83px] xl:mx-[127px]">
-            @foreach($post['mainText'] as $textPost)
-            <p class="mb-4">{{ $textPost }}</p>
-            @endforeach
+            <article>
+                @foreach($post['mainText'] as $textPost)
+                <p class="mb-4">{{ $textPost }}</p>
+                @endforeach
+            </article>
         </div>
         <div class="mt-12 mb-16 mx-[15px] w-full lg:mx-[83px] xl:mx-[127px]">
             <a href="#" class="blogs-category-news">
@@ -30,13 +32,14 @@
                 </a>
             </div>
             <div>
+                <span class="mr-4">Share Article :</span>
                 <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">
                     <span class="blogs-social-media bg-[#1877F2]"><i class='bx bxl-facebook text-xl text-white'></i></span>
                 </a>
-                <a href="https://www.instagram.com/tanjungpinang.fire/" target="_blank">
-                    <span class="blogs-social-media bg-[#E4405F]"><i class='bx bxl-instagram text-xl text-white'></i></span>
+                <a href="https://wa.me/62812345678" target="_blank">
+                    <span class="blogs-social-media bg-[#25D366]"><i class='bx bxl-whatsapp text-xl text-white'></i></span>
                 </a>
-                <a href="#">
+                <a href="mailto:damkar.penyelamatan.tpi@gmail.com">
                     <span class="blogs-social-media bg-[#7A7E83]"><i class='bx bx-envelope text-xl text-white'></i></span>
                 </a>
                 <a href="#">

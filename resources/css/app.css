@@ -189,7 +189,7 @@
         @apply font-bebasNeue text-[13px] text-greyColor hover:text-[#1DA1F2];
     }
     .blogs-social-media {
-        @apply px-3 py-[11px] rounded-full;
+        @apply px-3 py-[11px] rounded-full hover:opacity-90;
     }
     .footer-link {
         @apply font-bebasNeue py-[9px] px-[14px] text-whiteColorAlt text-[17px] hover:text-white;
@@ -199,8 +199,17 @@
     }
 
     /* E-LAPOR PAGE */
+    .elapor-panduan-card {
+        @apply w-full md:w-4/12 mb-3 border-2 border-white rounded-lg bg-darkRedColor cursor-pointer hover:bg-darkRedColorAlt transition-all duration-200;
+    }
+    .elapor-panduan-column {
+        @apply px-4 py-4 text-center text-white;
+    }
     .elapor-text-form {
         @apply w-full px-4 py-1 text-base rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
+    }
+    .elapor-btn {
+        @apply w-full px-6 py-1 bg-redColor rounded-md hover:bg-redColorAlt transition duration-300;
     }
     .request-text-form {
         @apply w-full px-4 py-2 text-base lg:text-lg rounded-xl bg-white focus:outline-none border-2 border-whiteColorAlt;

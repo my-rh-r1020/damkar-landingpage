@@ -19,6 +19,9 @@
             <a href="https://www.instagram.com/tanjungpinang.fire/" target="_blank">
                 <i class='bx bxl-instagram footer-social-icons hover:text-[#E4405F]'></i>
             </a>
+            <a href="https://www.youtube.com/@tanjungpinangfire" target="_blank">
+                <i class='bx bxl-youtube footer-social-icons hover:text-[#FF0000]'></i>
+            </a>
         </div>
     </div>
 </footer>

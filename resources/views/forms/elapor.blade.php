@@ -1,4 +1,4 @@
-<section class="bg-gradient-to-r from-greenColor from-45% via-[#6CCC53] via-10% to-greenColor to-45%">
+<section class="bg-gradient-to-r from-redColor from-45% via-red-400 via-10% to-redColorAlt to-45%">
     <div class="py-6 px-4 sm:px-6 md:px-8">
         <div class="text-center mb-8">
             <h3 class="text-white text-xl lg:text-2xl font-bold mb-2">E-Lapor Dinas Damkar Kota Tanjungpinang</h3>
@@ -10,8 +10,8 @@
                 <h3 class="text-2xl lg:text-3xl font-bold mb-2">E-Lapor Dinas Damkar Kota Tanjungpinang</h3>
             </div>
             <div class="mx-2 mb-2 flex flex-wrap justify-between">
-                <div class="w-full md:w-4/12 mb-3 border-2 border-white rounded-lg bg-[#688F00]">
-                    <div class="px-4 py-3 text-center text-white">
+                <div class="elapor-panduan-card">
+                    <div class="elapor-panduan-column">
                         {{-- Icon --}}
                         <span class="text-sm">Aduan Pelayanan</span>
                         <p class="text-xs">Aduan umum mengenai layanan publik Dinas Damkar Tanjungpinang</p>
@@ -20,8 +20,8 @@
                 <div class="w-full md:w-3/12 mb-3">
                     <img src="" alt="banner-img" class="mx-auto">
                 </div>
-                <div class="w-full md:w-4/12 mb-3 border-2 border-white rounded-lg bg-[#688F00]">
-                    <div class="px-4 py-3 text-center text-white">
+                <div class="elapor-panduan-card">
+                    <div class="elapor-panduan-column">
                         {{-- Icon --}}
                         <span class="text-sm">Aduan Pelayanan</span>
                         <p class="text-xs">Aduan umum mengenai layanan publik Dinas Damkar Tanjungpinang</p>
@@ -66,13 +66,13 @@
                                     </select>
                                 </div>
                                 <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
-                                    <button class="w-full px-6 py-1 bg-[#008036] rounded-md hover:bg-greenColor transition duration-300">
+                                    <button class="elapor-btn">
                                         {{-- Icon --}}
                                         <span class="text-white">File</span>
                                     </button>
                                 </div>
                                 <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
-                                    <button class="w-full px-6 py-1 bg-[#008036] rounded-md hover:bg-greenColor transition duration-300">
+                                    <button class="elapor-btn">
                                         {{-- Icon --}}
                                         <span class="text-white">Lokasi</span>
                                     </button>
@@ -125,7 +125,7 @@
                                 <span class="text-sm">Dengan mengisi form ini dan mengirimkan kritik serta saran, Anda telah menyetujui <a href="#" target="_blank" class="text-blue-400">Ketentuan Layanan dan Kebijakan Privasi</a> kami</span>
                             </div>
                             <div class="flex justify-start mb-4">
-                                <button type="submit" class="px-4 py-1 bg-[#008036] text-white rounded-md hover:bg-greenColor transition duration-300">
+                                <button type="submit" class="px-4 py-1 bg-redColor text-white rounded-md hover:bg-redColorAlt transition duration-300">
                                     <span class="font-semibold">Kirim Now</span>
                                 </button>
                             </div>

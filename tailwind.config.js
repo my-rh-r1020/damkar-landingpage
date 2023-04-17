@@ -10,6 +10,8 @@ module.exports = {
                 blackColor: "#020202",
                 redColor: "#CB1330",
                 redColorAlt: "#E60F32",
+                darkRedColor: "#850000",
+                darkRedColorAlt: "#C21010",
                 greenColor: "#41a34c",
                 bgGreyColor: "#faf8f8",
             },

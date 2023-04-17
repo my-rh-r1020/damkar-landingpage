@@ -1,6 +1,6 @@
 {{-- Request Form --}}
 <section class="bg-[#eeeff1]">
-    <div class="bg-gradient-to-t from-greenColor to-greenColor via-[#71CF54] text-center px-4 sm:px-6 md:px-8 pt-10 pb-12">
+    <div class="bg-gradient-to-t from-redColor from-45% via-red-400 via-10% to-redColorAlt to-45% text-center px-4 sm:px-6 md:px-8 pt-10 pb-12">
         <h3 class="text-white text-2xl lg:text-3xl font-bold mb-2">Form Permohonan Data OPD</h3>
         <p class="text-xs lg:text-sm text-white">Kami memiliki komponen untuk memberikan layanan terbaik kepada Anda dan selalu berusaha untuk menyediakan produk dan layanan terbaik yang Anda butuhkan</p>
     </div>
@@ -48,14 +48,14 @@
                     <p class="text-xs"><span class="text-redColor">*</span>Jelaskan tentang kebutuhan data/informasi apa dan mengapa ini dibutuhkan</p>
                 </div>
                 <div class="flex mb-10">
-                    <button class="request-btn bg-gradient-to-tr from-[#71CF54] to-greenColor mr-4">Ajukan</button>
+                    <button class="request-btn bg-gradient-to-tr from-[#FF4A4A] to-redColor mr-4">Ajukan</button>
                     <button class="request-btn bg-greyColor">Reset</button>
                 </div>
             </form>
         </div>
         <div class="w-full px-2 md:pl-6 lg:mx-auto xl:pl-10 md:w-6/12 lg:w-4/12">
             <div class="text-center mb-4">
-                <span class="bg-gradient-to-tr from-[#71CF54] to-greenColor text-white font-semibold text-lg lg:text-xl px-4 py-[2px] rounded-full">Permintaan Data OPD</span>
+                <span class="bg-gradient-to-tr from-[#FF4A4A] to-redColor text-white font-semibold text-lg lg:text-xl px-4 py-[2px] rounded-full">Permintaan Data OPD</span>
             </div>
             <div class="text-justify text-black indent-8">
                 <p class="leading-none mb-3">Pemohon mengisi form disamping dengan sebenar-benarnya</p>
