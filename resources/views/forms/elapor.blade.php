@@ -135,12 +135,4 @@
             </div>
         </div>
     </div>
-    <div class="text-center mb-10">
-        <h5 class="text-white text-2xl">Request Data Form</h5>
-        <div class="mt-4">
-            <a href="/elapor/requestdata">
-                <span class="px-4 py-2 bg-redColor text-white hover:bg-redColorAlt">Click Here</span>
-            </a>
-        </div>
-    </div>
 </section>

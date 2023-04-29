@@ -53,28 +53,28 @@
             <nav class="nav-menu hidden lg:block">
                 <a href="#" class="relative mx-[12px]">
                     <span>Beranda</span>
-                    <div class="nav-line nav-line-active"></div>
+                    <div class="nav-active"></div>
                 </a>
-                <a href="#" class="relative mx-[12px]">
+                <a href="#berita" class="relative mx-[12px]">
                     <span>Berita</span>
-                    <div class="nav-line"></div>
                 </a>
                 <a href="#"><span class="nav-span">Profil</span></a>
                 <a href="#"><span class="nav-span">Informasi Data</span></a>
                 <a href="#"><span class="nav-span">Galery</span></a>
                 <a href="#"><span class="nav-span">Edu Damkar</span></a>
                 <a href="#"><span class="nav-span">Pojok Damkar</span></a>
+                <a href="/elapor/requestdata"><span class="nav-span">Permohonan</span></a>
             </nav>
 
             <div class="nav-btn">
                 <div class="hidden lg:block mr-6">
-                    <button id="search-btn" class="block" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
+                    <button id="search-btn" class="block transition duration-300 hover:bg-redColor hover:text-white px-[9px] py-[6px] rounded-full" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
                 </div>
-                <div class="mr-1 lg:mr-0">
+                {{-- <div class="mr-1 lg:mr-0">
                     <a href="/elapor" target="_blank">
                         <span class="px-4 py-2 bg-redColor font-bebasNeue text-white hover:bg-redColorAlt rounded-md">E-Lapor</span>
                     </a>
-                </div>
+                </div> --}}
                 <button id="hamburger" name="hamburger" type="button" class="block py-2 px-3 rounded-xl bg-slate-200 scale-75 lg:hidden ml-auto mr-1">
                     <span class="nav-hamburger-line"></span>
                     <span class="nav-hamburger-line"></span>

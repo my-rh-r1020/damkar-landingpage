@@ -62,25 +62,25 @@ class Home
     private static $services_gallery = [
         [
             "url" => "#",
-            "image-banner" => "response-time.jpg",
+            "image-banner" => "services-01.jpg",
             "gallery-title" => "Response Time",
             "gallery-subtitle" => "Natus error sit voluptatem"
         ],
         [
             "url" => "#",
-            "image-banner" => "safety-education.jpg",
+            "image-banner" => "services-02.jpg",
             "gallery-title" => "Safety Education",
             "gallery-subtitle" => "Natus error sit voluptatem"
         ],
         [
             "url" => "#",
-            "image-banner" => "alarm-inspection.jpg",
+            "image-banner" => "services-03.jpg",
             "gallery-title" => "Alarm Inspection",
             "gallery-subtitle" => "Natus error sit voluptatem"
         ],
         [
             "url" => "#",
-            "image-banner" => "effective-methods.jpg",
+            "image-banner" => "services-04.jpg",
             "gallery-title" => "Effective Methods",
             "gallery-subtitle" => "Natus error sit voluptatem"
         ]

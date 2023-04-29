@@ -8,16 +8,19 @@
             <div class="mb-[40px]">
                 <span class="text-blackColor text-base lg:text-[22px]">{{ $spanContact }}</span>
                 <p class="text-sm lg:text-[17px] text-greyColor mt-[30px] text-justify">
-                    Pencegahan dan Pengendalian Kebakaran <br> Pemadaman Kebakaran <br> Penyelamatan <br> Pemberdayaan Masyarakat <br> Penanganan Bahan Berbahaya dan Beracun
+                    Sampaikan Pengaduan Anda Melalui Fitur <span class="font-bold">E-Lapor Damkar</span> <br> Atau Dapat Menghubungi Kami Melalui <span class="font-bold">Call Center Damkar</span>
                 </p>
             </div>
-            <div class="flex flex-wrap w-full items-center">
-                <a href="#" class="red-button mr-10">Get In Touch</a>
+            <div class="flex flex-wrap w-full">
+                <a href="/elapor" class="red-button mr-10 mb-2">E-Lapor</a>
                 <a href="tel:077124949" class="flex flex-wrap items-center">
                     <span class="contact-icon">
                         <i class='bx bx-phone-call text-2xl'></i>
                     </span>
-                    <span class="text-[17px] font-bebasNeue">0771 24949</span>
+                    <div>
+                        <h5 class="text-base lg:text-lg text-redColorAlt font-semibold">Panggilan Darurat</h5>
+                        <span class="text-sm lg:text-base font-bebasNeue">0771 - 24949</span>
+                    </div>
                 </a>
             </div>
         </div>

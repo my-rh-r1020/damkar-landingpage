@@ -19,7 +19,7 @@
         @apply font-bebasNeue text-blackColor text-[30px] md:text-[38px] lg:text-[46px];
     }
     .red-button {
-        @apply pt-[15px] pb-[14px] px-[55px] bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
+        @apply pt-[12px] sm:pt-[13px] lg:pt-[14px] xl:pt-[15px] pb-[11px] sm:pb-[12px] lg:pb-[13px] xl:pb-[14px] px-[40px] sm:px-[45px] md:px-[49px] lg:px-[52px] xl:px-[55px] rounded-md bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
@@ -30,11 +30,11 @@
     .nav-span {
         @apply p-[12px];
     }
-    .nav-line {
-        @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;
+    .nav-active {
+        @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-blackColor;
     }
-    .nav-line-active {
-        @apply w-full;
+    .nav-line-hover {
+        @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;
     }
     .nav-hamburger-line {
         @apply w-[30px] h-[2px] my-2 block bg-blackColor;

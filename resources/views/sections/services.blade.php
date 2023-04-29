@@ -117,21 +117,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button id="accordion-btn" name="accordion-btn" type="button" class="accordion-button hover:bg-gray-300 border border-white border-b-slate-300 focus:outline-none py-4 w-full text-left" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <div>
-                                <i class='bx bx-plus text-lg scale-125'></i>
-                                <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse hidden">
-                        <div class="accordion-body bg-white py-2 text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
         <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">

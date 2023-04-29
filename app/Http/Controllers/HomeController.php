@@ -17,7 +17,7 @@ class HomeController extends Controller
                 "herobanners" => Home::herobannerdata(),
                 "subContact" => "Hubungi Kami",
                 "titleContact" => "Pantang Pulang Sebelum Padam",
-                "spanContact" => "Waspada Penyebab Kebakaran",
+                "spanContact" => "Waspada Penyebab Kebakaran di Lingkungan Anda",
                 "subServices" => "Pelayanan Kami",
                 "serviceItems" => Home::servicesdata(),
                 "gallerys" => Home::gallerydata(),

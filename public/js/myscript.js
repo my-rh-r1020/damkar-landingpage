@@ -3,7 +3,8 @@ const hamburger = document.querySelector("#hamburger"),
     closeBtn = document.querySelector("#close-btn"),
     searchBtn = document.querySelector("#search-btn"),
     searchForm = document.querySelector("#search-form"),
-    searchCloseBtn = document.querySelector("#search-close-btn");
+    searchCloseBtn = document.querySelector("#search-close-btn"),
+    accordionItems = document.querySelectorAll(".accordion-item");
 
 // Hamburger & Sidebar
 hamburger.addEventListener("click", () => {
@@ -26,20 +27,16 @@ searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");
 });
 
-// Accordion v1
-// const accordionButton = document.getElementById("#accordion-btn"),
-//     accordionIcon = document.querySelector(".bx-plus"),
-//     accordionCollapse = accordionMenu.querySelectorAll(".accordion-collapse");
+// Nav Menu
+const navMenu = document.querySelectorAll(".nav-line-hover");
 
-// accordionButton.addEventListener("click", () => {
-//     accordionIcon.classList.remove("bx-plus");
-//     accordionIcon.classList.add("bx-minus");
-//     accordionCollapse.classList.toggle("hidden");
-// });
+navMenu.forEach((menu) => {
+    menu.addEventListener("mouseover", () => {
+        menu.classList.toggle("w-full");
+    });
+});
 
-// Accordion v2
-const accordionItems = document.querySelectorAll(".accordion-item");
-
+// Accordion
 accordionItems.forEach((item) => {
     item.addEventListener("click", () => {
         const accordionSVG = item.querySelector(".lineHidden"),

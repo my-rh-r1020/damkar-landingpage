@@ -1,4 +1,4 @@
-<section class="section-layout">
+<section class="section-layout" id="berita">
     <div class="title-main text-center">
         <h6 class="text-subtitle">{{ $subBlog }}</h6>
         <h3 class="text-title">Artikel <span class="text-redColorAlt">Berita</span></h3>
