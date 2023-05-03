@@ -23,4 +23,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, "index"]);
 Route::get('berita/{slug}', [BlogController::class, 'index']);
 Route::get('elapor', [ELaporController::class, "index"]);
-Route::get('elapor/requestdata', [ELaporController::class, 'requestData']);
+Route::get('permohonan', [ELaporController::class, 'requestData']);

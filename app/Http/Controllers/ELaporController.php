@@ -15,7 +15,7 @@ class ELaporController extends Controller
 
     public function requestData()
     {
-        return view('requestData', [
+        return view('permohonan', [
             "title" => "Permohonan Data | Damkar Kota Tanjungpinang"
         ]);
     }

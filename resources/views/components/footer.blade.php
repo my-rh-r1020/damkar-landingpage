@@ -7,10 +7,10 @@
             </div>
         </div>
         <ul class="text-center px-[15px] pt-8 pb-[20px]">
-            <a href="#" class="footer-link">Home</a>
+            <a href="/" class="footer-link">Home</a>
             <a href="#" class="footer-link">About Us</a>
             <a href="#" class="footer-link">FAQ</a>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#contact" class="footer-link">Contact Us</a>
         </ul>
         <div class="pb-[50px] text-center">
             <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">

@@ -17,6 +17,8 @@
 
 @include('sections.blog')
 
-@include('components.footer')
+{{-- @include('components.footer') --}}
+
+@include('components.footermain')
     
 @endsection

@@ -63,7 +63,7 @@
                 <a href="#"><span class="nav-span">Galery</span></a>
                 <a href="#"><span class="nav-span">Edu Damkar</span></a>
                 <a href="#"><span class="nav-span">Pojok Damkar</span></a>
-                <a href="/elapor/requestdata"><span class="nav-span">Permohonan</span></a>
+                <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
             </nav>
 
             <div class="nav-btn">
