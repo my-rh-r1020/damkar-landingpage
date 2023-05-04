@@ -59,11 +59,14 @@
     {{-- Services Instructions --}}
     <div class="main-layout flex flex-wrap w-full">
         <div class="w-full px-[15px] md:w-1/2 lg:w-5/12">
-            <a href="#" class="flex flex-wrap items-center">
+            <button id="video-btn" name="video-btn" type="button" class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300 focus:outline-none">
+                <i class='bx bx-play text-[16px] lg:text-3xl'></i>
+            </button>
+            {{-- <a href="#damkarplay" class="flex items-center" id="videobtn">
                 <span class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300">
                     <i class='bx bx-play text-[16px] lg:text-3xl'></i>
                 </span>
-            </a>
+            </a> --}}
             <div class="title-main mt-[45px]">
                 <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
             </div>
@@ -144,3 +147,19 @@
         </div>
     </div>
 </section>
+
+{{-- Youtube Popup --}}
+<div class="services-video-popup hidden" id="damkarplay">
+    <div class="fixed top-0 left-60 right-60 bottom-0 flex flex-col items-end justify-center">
+        <button id="video-close-btn" name="video-close-btn" type="button" class="focus:outline-none scale-75">
+            <span class="search-btn-close origin-top-left rotate-45"></span>
+            <span class="search-btn-close scale-0"></span>
+            <span class="search-btn-close origin-bottom-left -rotate-45"></span>
+        </button>
+        <div class="w-full rounded-xl">
+            <div class="bg-slate-200 p-4">
+                <iframe width="985" height="560" src="https://www.youtube.com/embed/w15dmqbGmNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

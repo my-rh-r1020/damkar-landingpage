@@ -4,7 +4,10 @@ const hamburger = document.querySelector("#hamburger"),
     searchBtn = document.querySelector("#search-btn"),
     searchForm = document.querySelector("#search-form"),
     searchCloseBtn = document.querySelector("#search-close-btn"),
-    accordionItems = document.querySelectorAll(".accordion-item");
+    accordionItems = document.querySelectorAll(".accordion-item"),
+    videoBtn = document.querySelector("#video-btn"),
+    videoPopUp = document.querySelector("#damkarplay"),
+    videoCloseBtn = document.querySelector("#video-close-btn");
 
 // Hamburger & Sidebar
 hamburger.addEventListener("click", () => {
@@ -17,12 +20,11 @@ closeBtn.addEventListener("click", () => {
     sidebar.classList.add("hidden");
 });
 
-// Search Form & Button
+// Search Form
 searchBtn.addEventListener("click", () => {
     searchForm.classList.remove("hidden");
 });
 
-// Close Button Search
 searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");
 });
@@ -34,6 +36,15 @@ navMenu.forEach((menu) => {
     menu.addEventListener("mouseover", () => {
         menu.classList.toggle("w-full");
     });
+});
+
+// Youtube Video
+videoBtn.addEventListener("click", () => {
+    videoPopUp.classList.remove("hidden");
+});
+
+videoCloseBtn.addEventListener("click", () => {
+    videoPopUp.classList.add("hidden");
 });
 
 // Accordion
