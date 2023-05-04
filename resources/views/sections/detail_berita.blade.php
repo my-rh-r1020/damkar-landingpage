@@ -1,10 +1,14 @@
 <section class="section-layout">
-    <div class="main-layout flex w-full flex-wrap">
+    <div class="main-layout w-full flex flex-wrap">
+        <div class="font-semibold pb-[40px] px-[15px] lg:mx-[83px] xl:mx-[127px]">
+            <a href="/" class="text-redColor">Home</a>
+            <span class="text-slate-400">> {{ $post['title'] }}</span>
+        </div>
         <div class="title-main px-[15px] lg:mx-[83px] xl:mx-[127px]">
             <h3 class="font-bebasNeue text-4xl">{{ $post['title'] }}</h3>
             <span class="text-[#a5a3a3]">{{ $post['timerelease'] }}</span>
         </div>
-        <div class="px-[15px] mx-auto pb-[20px]">
+        <div class="px-[15px] mx-auto pb-8">
             <img src="/images/{{ $post['image'] }}" alt="berita-image" class="w-full lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
         </div>
         <div class="px-[15px] text-justify lg:mx-[83px] xl:mx-[127px]">
@@ -32,7 +36,7 @@
                 </a>
             </div>
             <div>
-                <span class="mr-4">Share Article :</span>
+                <span class="mr-4">Bagikan Artikel ini :</span>
                 <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">
                     <span class="blogs-social-media bg-[#1877F2]"><i class='bx bxl-facebook text-xl text-white'></i></span>
                 </a>
