@@ -24,3 +24,5 @@ Route::get('/', [HomeController::class, "index"]);
 Route::get('berita/{slug}', [BlogController::class, 'index']);
 Route::get('elapor', [ELaporController::class, "index"]);
 Route::get('permohonan', [ELaporController::class, 'requestData']);
+Route::get('insendentil', [ELaporController::class, 'insendentil']);
+Route::get('pelatihan', [ELaporController::class, 'kegiatan']);

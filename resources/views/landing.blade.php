@@ -4,21 +4,12 @@
 @section('bodyMain')
 
 @include('components.navbar')
-
 @include('sections.herobanner')
-
 @include('sections.contact')
-
 @include('sections.services')
-
 @include('sections.prevention')
-
 @include('sections.testimonials')
-
 @include('sections.blog')
-
-{{-- @include('components.footer') --}}
-
 @include('components.footermain')
     
 @endsection

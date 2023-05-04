@@ -1,4 +1,4 @@
-<section>
+<section id="about">
     <div class="swiper hero-banner">
         <div class="swiper-wrapper">
             @foreach($herobanners as $hbanner)

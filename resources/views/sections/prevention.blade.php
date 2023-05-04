@@ -1,4 +1,4 @@
-<section class="section-layout bg-white">
+<section class="section-layout bg-white" id="survey">
     <div class="main-layout flex w-full flex-wrap">
         <div class="prevention-column lg:w-5/12">
             <img src="images/prevention-service.jpg" alt="prevention-thumbnail" class="mx-auto">

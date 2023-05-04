@@ -4,5 +4,6 @@
 @section('bodyMain')
 
 @include('forms.elapor')
+@include('components.footer')
 
 @endsection

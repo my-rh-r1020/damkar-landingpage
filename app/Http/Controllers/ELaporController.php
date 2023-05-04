@@ -19,4 +19,18 @@ class ELaporController extends Controller
             "title" => "Permohonan Data | Damkar Kota Tanjungpinang"
         ]);
     }
+
+    public function insendentil()
+    {
+        return view('insendentil', [
+            "title" => "Insendentil Form | Damkar Kota Tanjungpinang"
+        ]);
+    }
+
+    public function kegiatan()
+    {
+        return view('pelatihan', [
+            "title" => "Kegiatan Pelatihan | Damkar Kota Tanjungpinang"
+        ]);
+    }
 }

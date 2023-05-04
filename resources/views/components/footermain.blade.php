@@ -22,20 +22,21 @@
                 </div>
             </div>
             <div class="w-full lg:w-3/12">
-                <h4 class="text-white font-semibold text-lg mt-2">Government</h4>
+                <h4 class="text-white font-semibold text-lg mt-2">Dinas Damkar</h4>
                 <div class="pt-3 text-whiteColorAlt font-bebasNeue text-lg">
                     <ul>
-                        <li><a href="/" class="hover:text-white transition-all duration-300">Home</a></li>
-                        <li><a href="#about" class="hover:text-white transition-all duration-300">About Us</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-all duration-300">Contact</a></li>
-                        <li><a href="#service" class="hover:text-white transition-all duration-300">Our Services</a></li>
-                        <li><a href="/" class="hover:text-white transition-all duration-300">FAQ</a></li>
+                        <li><a href="/" class="footer-menu">Home</a></li>
+                        <li><a href="#about" class="footer-menu">About Us</a></li>
+                        <li><a href="#contact" class="footer-menu">Contact</a></li>
+                        <li><a href="#service" class="footer-menu">Our Services</a></li>
+                        <li><a href="#survey" class="footer-menu">Survei Kepuasan</a></li>
+                        <li><a href="#berita" class="footer-menu">Berita</a></li>
                     </ul>
                 </div>
             </div>
             <div class="w-full lg:w-3/12">
                 <div class="mb-4">
-                    <h4 class="text-white font-semibold text-lg mt-2">Social Media</h4>
+                    <h4 class="text-white font-semibold text-lg mt-2">Media Sosial</h4>
                     <div class="pt-3">
                         <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">
                             <i class='bx bxl-facebook footer-social-icons hover:text-[#1877F2]'></i>
@@ -52,7 +53,7 @@
                     <h4 class="text-white font-semibold text-lg mt-2">Links</h4>
                     <div class="flex pt-3 gap-2 items-center">
                         <i class='bx bx-world text-redColorAlt text-xl'></i>
-                        <a href="https://www.tanjungpinangkota.go.id/" class="text-whiteColorAlt">tanjungpinangkota.go.id</a>
+                        <a href="https://www.tanjungpinangkota.go.id/" class="text-whiteColorAlt hover:text-white">tanjungpinangkota.go.id</a>
                     </div>
                 </div>
             </div>

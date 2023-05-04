@@ -4,9 +4,7 @@
 @section('bodyMain')
 
 @include('components.navbar')
-
 @include('sections.detail_berita')
-
-@include('components.footer')
+@include('components.footermain')
 
 @endsection

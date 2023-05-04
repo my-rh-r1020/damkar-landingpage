@@ -1,4 +1,4 @@
-<section class="section-layout bg-bgGreyColor">
+<section class="section-layout bg-bgGreyColor" id="service">
     <div class="main-layout">
         <div class="title-main text-center">
             <h6 class="text-subtitle">{{ $subServices }}</h6>

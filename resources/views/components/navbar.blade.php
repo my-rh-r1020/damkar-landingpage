@@ -61,8 +61,8 @@
                 <a href="#"><span class="nav-span">Profil</span></a>
                 <a href="#"><span class="nav-span">Informasi Data</span></a>
                 <a href="#"><span class="nav-span">Galery</span></a>
-                <a href="#"><span class="nav-span">Edu Damkar</span></a>
-                <a href="#"><span class="nav-span">Pojok Damkar</span></a>
+                <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>
+                <a href="/insendentil"><span class="nav-span">Pojok Damkar</span></a>
                 <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
             </nav>
 
@@ -107,13 +107,14 @@
         </div>
         {{-- Sidebar Menu --}}
         <ul class="mt-14">
-            <li class="sidebar-menu-list"><a href="#"><span class="sidebar-menu-text">Beranda</span></a></li>
+            <li class="sidebar-menu-list"><a href="/"><span class="sidebar-menu-text">Beranda</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
-            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
-            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Pojok Damkar</span></a></li>
+            <li class="sidebar-menu-list"><a href="/pelatihan" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
+            <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Pojok Damkar</span></a></li>
+            <li class="sidebar-menu-list"><a href="/permohonan" class="mb-2"><span class="sidebar-menu-text">Permohonan</span></a></li>
         </ul>
 
         <!-- Search Bar -->
@@ -136,28 +137,3 @@
         <input type="text" placeholder="Search ..." class="text-3xl bg-white focus:outline-none focus:shadow-outline border border-white border-b-slate-600 py-4 block w-full appearance-none leading-normal">
     </div>
 </div>
-
-{{-- <div class="sidebar-menu hidden lg:hidden" id="sidebar">
-    <nav class="fixed top-0 left-4 right-0 bottom-0 flex flex-col items-start justify-center transform ease-in-out duration-500 sm:duration-700">
-        <div class="flex items-center justify-between">
-            <div class="py-[9px] pl-[15px]">
-                <a href="/">
-                    <div class="flex flex-wrap items-center text-[18px]">
-                        <img src="images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
-                        <span class="uppercase font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="close-button absolute top-0 right-0 p-4">
-            <button type="button" class="focus:outline-none" id="close-btn" name="close-btn">
-                <span class="nav-close-line origin-top-left rotate-45"></span>
-                <span class="nav-close-line scale-0"></span>
-                <span class="nav-close-line origin-bottom-left -rotate-45"></span>
-            </button>
-        </div>
-        <a href="#" class="text-gray-800 text-2xl font-medium py-2 hover:bg-gray-300 transition ease-in-out duration-500 sm:duration-700">Menu 1</a>
-        <a href="#" class="text-gray-800 text-2xl font-medium py-2 hover:bg-gray-300 transition ease-in-out duration-500 sm:duration-700">Menu 2</a>
-        <a href="#" class="text-gray-800 text-2xl font-medium py-2 hover:bg-gray-300 transition ease-in-out duration-500 sm:duration-700">Menu 3</a>
-    </nav>
-</div> --}}
