@@ -4,7 +4,7 @@
 @section('bodyMain')
 
 @include('components.navbar')
-@include('links.detail_berita')
+@include('links.profile')
 @include('components.footer')
 
 @endsection

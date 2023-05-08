@@ -117,7 +117,7 @@
         @apply text-[#A5A3A3] text-lg mt-3 mb-10;
     }
     .services-video-popup {
-        @apply fixed inset-0 z-50 bg-white opacity-95;
+        @apply fixed inset-0 z-50 bg-white opacity-95 transition-all duration-700;
     }
     .prevention-column {
         @apply px-[15px] w-full md:w-1/2;

@@ -9,7 +9,7 @@
             @foreach($posts as $post)
             <div class="swiper-slide blogs-column">
                 <div class="blogs-card">
-                    <a href="#" target="_blank">
+                    <a href="/berita/{{ $post["slug"] }}">
                         <div class="blogs-img-container">
                             <img src="images/{{ $post['image'] }}" alt="article-blog" class="blogs-img-view">
                         </div>
@@ -19,7 +19,7 @@
                             <a href="#" target="_blank"><span class="blogs-categories">{{ $post['category'] }}</span></a>
                         </div>
                         
-                        <a href="/berita/{{ $post["slug"] }}" target="_blank">
+                        <a href="/berita/{{ $post["slug"] }}">
                             <span class="blogs-title">{{ $post['title'] }}</span>
                         </a>
                         <div class="mt-[8px]">

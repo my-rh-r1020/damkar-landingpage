@@ -156,8 +156,8 @@
             <span class="search-btn-close scale-0"></span>
             <span class="search-btn-close origin-bottom-left -rotate-45"></span>
         </button>
-        <div class="w-full rounded-xl">
-            <div class="bg-slate-200 p-4">
+        <div class="pt-1">
+            <div class="bg-slate-200 p-2 rounded-xl">
                 <iframe width="985" height="560" src="https://www.youtube.com/embed/w15dmqbGmNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
