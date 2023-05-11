@@ -64,6 +64,7 @@
                 <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>
                 <a href="/insendentil"><span class="nav-span">Pojok Damkar</span></a>
                 <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
+                <a href="#"><span class="nav-span">Red Kar</span></a>
             </nav>
 
             <div class="nav-btn">
