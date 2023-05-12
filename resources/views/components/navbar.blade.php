@@ -110,12 +110,13 @@
         <ul class="mt-14">
             <li class="sidebar-menu-list"><a href="/"><span class="sidebar-menu-text">Beranda</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
-            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
+            <li class="sidebar-menu-list"><a href="/profile" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
             <li class="sidebar-menu-list"><a href="/pelatihan" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
             <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Pojok Damkar</span></a></li>
             <li class="sidebar-menu-list"><a href="/permohonan" class="mb-2"><span class="sidebar-menu-text">Permohonan</span></a></li>
+            <a href="#"><span class="nav-span">Red Kar</span></a>
         </ul>
 
         <!-- Search Bar -->

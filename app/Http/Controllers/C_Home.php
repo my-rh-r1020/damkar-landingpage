@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Blog;
 use App\Models\Home;
+use App\Models\News;
 
-class HomeController extends Controller
+class C_Home extends Controller
 {
     public function index()
     {
@@ -26,7 +26,7 @@ class HomeController extends Controller
                 "subTestimonials" => "Testimoni",
                 "descTestimonials" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 "subBlog" => "Our Blog",
-                "posts" => Blog::all()
+                "posts" => News::all()
             ]
         );
     }

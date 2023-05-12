@@ -11,7 +11,7 @@ namespace App\Models;
 // }
 
 // Static Method
-class Blog
+class News
 {
     private static $news_post = [
         [

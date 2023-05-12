@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ELaporController extends Controller
+class C_ELapor extends Controller
 {
     public function index()
     {

@@ -1,10 +1,9 @@
 <?php
 
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\ELaporController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\C_Home;
+use App\Http\Controllers\C_News;
+use App\Http\Controllers\C_ELapor;
 use App\Http\Controllers\ProfileController;
-use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,10 +20,10 @@ use Illuminate\Support\Facades\Route;
 // Routing with Arrow Function
 // Route::get('/', fn () => view());
 
-Route::get('/', [HomeController::class, "index"]);
-Route::get('berita/{slug}', [BlogController::class, 'index']);
-Route::get('elapor', [ELaporController::class, "index"]);
-Route::get('permohonan', [ELaporController::class, 'requestData']);
-Route::get('insendentil', [ELaporController::class, 'insendentil']);
-Route::get('pelatihan', [ELaporController::class, 'kegiatan']);
+Route::get('/', [C_Home::class, "index"]);
+Route::get('berita/{slug}', [C_News::class, 'index']);
+Route::get('elapor', [C_ELapor::class, "index"]);
+Route::get('permohonan', [C_ELapor::class, 'requestData']);
+Route::get('insendentil', [C_ELapor::class, 'insendentil']);
+Route::get('pelatihan', [C_ELapor::class, 'kegiatan']);
 Route::get('profile', [ProfileController::class, 'index']);

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Blog;
+use App\Models\News;
 
-class BlogController extends Controller
+class C_News extends Controller
 {
     public function index($slug)
     {
@@ -13,7 +13,7 @@ class BlogController extends Controller
             'berita',
             [
                 "title" => "Berita | Damkar Kota Tanjungpinang",
-                "post" => Blog::find($slug)
+                "post" => News::find($slug)
             ]
         );
     }

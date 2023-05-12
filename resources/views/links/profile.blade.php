@@ -1,4 +1,4 @@
-<section class="section-layout">
+<section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
         <div class="lg:mx-[83px] xl:mx-[127px] px-[15px]">
             <div class="font-semibold pb-[40px]">
