@@ -55,10 +55,10 @@
                     <span>Beranda</span>
                     <div class="nav-active"></div>
                 </a>
-                <a href="#berita" class="relative mx-[12px]">
+                <a href="/profile"><span class="nav-span">Profil</span></a>
+                <a href="/berita" class="relative mx-[12px]">
                     <span>Berita</span>
                 </a>
-                <a href="/profile"><span class="nav-span">Profil</span></a>
                 <a href="#"><span class="nav-span">Informasi Data</span></a>
                 <a href="#"><span class="nav-span">Galery</span></a>
                 <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>

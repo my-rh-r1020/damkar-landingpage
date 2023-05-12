@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProfileController extends Controller
+class C_Menus extends Controller
 {
-    public function index()
+    public function profilePage()
     {
         return view('profile', [
             "title" => "Profil | Damkar Kota Tanjungpinang"

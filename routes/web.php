@@ -3,7 +3,7 @@
 use App\Http\Controllers\C_Home;
 use App\Http\Controllers\C_News;
 use App\Http\Controllers\C_ELapor;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\C_Menus;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +21,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', fn () => view());
 
 Route::get('/', [C_Home::class, "index"]);
+Route::get('profile', [C_Menus::class, 'profilePage']);
 Route::get('berita/{slug}', [C_News::class, 'index']);
+Route::get('berita', [C_News::class, 'list_berita']);
 Route::get('elapor', [C_ELapor::class, "index"]);
 Route::get('permohonan', [C_ELapor::class, 'requestData']);
 Route::get('insendentil', [C_ELapor::class, 'insendentil']);
 Route::get('pelatihan', [C_ELapor::class, 'kegiatan']);
-Route::get('profile', [ProfileController::class, 'index']);

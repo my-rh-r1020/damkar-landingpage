@@ -10,11 +10,19 @@ class C_News extends Controller
     public function index($slug)
     {
         return view(
-            'berita',
+            'detailBerita',
             [
-                "title" => "Berita | Damkar Kota Tanjungpinang",
+                "title" => $slug,
                 "post" => News::find($slug)
             ]
+        );
+    }
+
+    public function list_berita()
+    {
+        return view(
+            'berita',
+            ["title" => "Berita | Damkar Kota Tanjungpinang"]
         );
     }
 }
