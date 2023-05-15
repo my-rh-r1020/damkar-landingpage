@@ -15,7 +15,7 @@ class C_Menus extends Controller
 
     public function galleryDamkar()
     {
-        return view('', ["title" => "Gallery Kegiatan"]);
+        return view('gallery', ["title" => "Gallery Kegiatan"]);
     }
 
     public function redKar()

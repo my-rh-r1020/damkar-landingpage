@@ -60,7 +60,7 @@
                     <span>Berita</span>
                 </a>
                 <a href="#"><span class="nav-span">Informasi Data</span></a>
-                <a href="#"><span class="nav-span">Galery</span></a>
+                <a href="/gallery"><span class="nav-span">Galery</span></a>
                 <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>
                 <a href="/insendentil"><span class="nav-span">Insendentil</span></a>
                 <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
@@ -104,10 +104,10 @@
         {{-- Sidebar Menu --}}
         <ul class="mt-14">
             <li class="sidebar-menu-list"><a href="/"><span class="sidebar-menu-text">Beranda</span></a></li>
-            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
             <li class="sidebar-menu-list"><a href="/profile" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
+            <li class="sidebar-menu-list"><a href="/berita" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
-            <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
+            <li class="sidebar-menu-list"><a href="/gallery" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
             <li class="sidebar-menu-list"><a href="/pelatihan" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
             <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Insendentil</span></a></li>
             <li class="sidebar-menu-list"><a href="/permohonan" class="mb-2"><span class="sidebar-menu-text">Permohonan</span></a></li>

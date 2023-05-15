@@ -126,7 +126,7 @@
         @apply fixed inset-0 z-50 bg-white opacity-95 transition-all duration-700;
     }
     .prevention-column {
-        @apply px-[15px] w-full md:w-1/2;
+        @apply w-full px-[15px] md:w-1/2;
     }
     .testimonials-list {
         @apply mt-[50px] flex flex-wrap;
@@ -208,6 +208,14 @@
     }
     .footer-social-icons {
         @apply text-2xl text-white border border-[#3f3d47] p-2;
+    }
+
+    /*News Page*/
+    .news-subtitle-date {
+        @apply text-sm lg:text-base;
+    }
+    .news-subtitle-category {
+        @apply text-sm lg:text-base text-greyColorAlt hover:text-redColor transition duration-300;
     }
 
     /* E-LAPOR PAGE */

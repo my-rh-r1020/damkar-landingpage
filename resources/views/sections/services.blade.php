@@ -57,89 +57,91 @@
     </div>
 
     {{-- Services Instructions --}}
-    <div class="main-layout flex flex-wrap w-full">
-        <div class="w-full px-[15px] md:w-1/2 lg:w-5/12">
-            <button id="video-btn" name="video-btn" type="button" class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300 focus:outline-none">
-                <i class='bx bx-play text-[16px] lg:text-3xl'></i>
-            </button>
-            {{-- <a href="#damkarplay" class="flex items-center" id="videobtn">
-                <span class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300">
+    <div class="main-layout">
+        <div class="flex flex-wrap">
+            <div class="w-full px-[15px] md:w-1/2 lg:w-5/12">
+                <button id="video-btn" name="video-btn" type="button" class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300 focus:outline-none">
                     <i class='bx bx-play text-[16px] lg:text-3xl'></i>
-                </span>
-            </a> --}}
-            <div class="title-main mt-[45px]">
-                <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
+                </button>
+                {{-- <a href="#damkarplay" class="flex items-center" id="videobtn">
+                    <span class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300">
+                        <i class='bx bx-play text-[16px] lg:text-3xl'></i>
+                    </span>
+                </a> --}}
+                <div class="title-main mt-[45px]">
+                    <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
+                </div>
+                {{-- Accordion --}}
+                <div class="accordion mb-10 divide-y-2" id="accordionFlush">
+                    <div class="accordion-item cursor-pointer">
+                        <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
+                            {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path class="lineHidden" d="M12 5l0 14"></path>
+                                <path d="M5 12l14 0"></path>
+                             </svg>
+                            <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                        </div>
+                        <div class="hidden toggleAccordion">
+                            <div class="pb-2 text-justify">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item cursor-pointer">
+                        <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
+                            {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path class="lineHidden" d="M12 5l0 14"></path>
+                                <path d="M5 12l14 0"></path>
+                             </svg>
+                            <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                        </div>
+                        <div class="hidden toggleAccordion">
+                            <div class="pb-2 text-justify">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item cursor-pointer">
+                        <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
+                            {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path class="lineHidden" d="M12 5l0 14"></path>
+                                <path d="M5 12l14 0"></path>
+                             </svg>
+                            <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+                        </div>
+                        <div class="hidden toggleAccordion">
+                            <div class="pb-2 text-justify">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            {{-- Accordion --}}
-            <div class="accordion mb-10 divide-y-2" id="accordionFlush">
-                <div class="accordion-item cursor-pointer">
-                    <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
-                        {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path class="lineHidden" d="M12 5l0 14"></path>
-                            <path d="M5 12l14 0"></path>
-                         </svg>
-                        <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
+            <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
+                <div class="relative">
+                    <div class="flex justify-end">
+                        <img src="images/prevention-img.jpg" alt="prevention-img">
                     </div>
-                    <div class="hidden toggleAccordion">
-                        <div class="pb-2 text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
+                    <div class="flex absolute bottom-6 left-6">
+                        <div class="bg-redColorAlt mr-6">
+                            <div class="px-8 py-7">
+                                <h6 class="lg:text-xl font-bebasNeue text-white">Fire Fighters</h6>
+                                <h3 class="lg:text-6xl font-bebasNeue text-white my-5">400+</h3>
+                                <h6 class="lg:text-xl text-greyColorAlt">Lorem, ipsum dolor.</h6>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item cursor-pointer">
-                    <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
-                        {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path class="lineHidden" d="M12 5l0 14"></path>
-                            <path d="M5 12l14 0"></path>
-                         </svg>
-                        <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
-                    </div>
-                    <div class="hidden toggleAccordion">
-                        <div class="pb-2 text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item cursor-pointer">
-                    <div class="flex hover:bg-gray-300 focus:outline-none py-4 w-full text-left">
-                        {{-- <i class='bx bx-plus text-lg scale-125 accIcon'></i> --}}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path class="lineHidden" d="M12 5l0 14"></path>
-                            <path d="M5 12l14 0"></path>
-                         </svg>
-                        <span class="text-lg ml-4 font-bebasNeue">Cara Mencegah Kebakaran Pada Rumah</span>
-                    </div>
-                    <div class="hidden toggleAccordion">
-                        <div class="pb-2 text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem corporis sed, non cupiditate possimus nobis expedita mollitia dolorum est.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
-            <div class="relative">
-                <div class="flex justify-end">
-                    <img src="images/prevention-img.jpg" alt="prevention-img">
-                </div>
-                <div class="flex absolute bottom-6 left-6">
-                    <div class="bg-redColorAlt mr-6">
-                        <div class="px-8 py-7">
-                            <h6 class="lg:text-xl font-bebasNeue text-white">Fire Fighters</h6>
-                            <h3 class="lg:text-6xl font-bebasNeue text-white my-5">400+</h3>
-                            <h6 class="lg:text-xl text-greyColorAlt">Lorem, ipsum dolor.</h6>
-                        </div>
-                    </div>
-                    <div class="bg-blackColor">
-                        <div class="px-8 py-7">
-                            <h6 class="lg:text-xl font-bebasNeue text-white">Fire Stations</h6>
-                            <h3 class="lg:text-6xl font-bebasNeue text-white my-5">13</h3>
-                            <h6 class="lg:text-xl text-greyColorAlt">Lorem, ipsum dolor.</h6>
+                        <div class="bg-blackColor">
+                            <div class="px-8 py-7">
+                                <h6 class="lg:text-xl font-bebasNeue text-white">Fire Stations</h6>
+                                <h3 class="lg:text-6xl font-bebasNeue text-white my-5">13</h3>
+                                <h6 class="lg:text-xl text-greyColorAlt">Lorem, ipsum dolor.</h6>
+                            </div>
                         </div>
                     </div>
                 </div>

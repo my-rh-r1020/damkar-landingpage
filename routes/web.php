@@ -24,6 +24,7 @@ Route::get('/', [C_Home::class, "index"]);
 Route::get('profile', [C_Menus::class, 'profilePage']);
 Route::get('berita/{slug}', [C_News::class, 'index']);
 Route::get('berita', [C_News::class, 'list_berita']);
+Route::get('gallery', [C_Menus::class, 'galleryDamkar']);
 Route::get('elapor', [C_ELapor::class, "index"]);
 Route::get('pelatihan', [C_ELapor::class, 'kegiatan']);
 Route::get('insendentil', [C_ELapor::class, 'insendentil']);
