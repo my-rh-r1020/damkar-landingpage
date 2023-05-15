@@ -21,6 +21,12 @@
     .red-button {
         @apply pt-[12px] sm:pt-[13px] lg:pt-[14px] xl:pt-[15px] pb-[11px] sm:pb-[12px] lg:pb-[13px] xl:pb-[14px] px-[40px] sm:px-[45px] md:px-[49px] lg:px-[52px] xl:px-[55px] rounded-md bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
+    .breadcrumbs-link {
+        @apply text-redColor text-xs md:text-sm xl:text-base;
+    }
+    .breadcrumbs-link-active {
+        @apply text-slate-500 text-xs md:text-sm xl:text-base;
+    }
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
     }

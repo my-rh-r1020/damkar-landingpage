@@ -5,7 +5,7 @@
                 <h6 class="text-subtitle">{{ $subContact }}</h6>
                 <h3 class="text-title leading-none">{{ $titleContact }}</h3>
             </div>
-            <div class="mb-[40px]">
+            <div class="mb-10">
                 <span class="text-blackColor text-base lg:text-[22px]">{{ $spanContact }}</span>
                 <p class="text-sm lg:text-[17px] text-greyColor mt-[30px] text-justify">
                     Sampaikan Pengaduan Anda Melalui Fitur <span class="font-bold">E-Lapor Damkar</span> <br> Atau Dapat Menghubungi Kami Melalui <span class="font-bold">Call Center Damkar</span>

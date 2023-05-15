@@ -64,18 +64,13 @@
                 <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>
                 <a href="/insendentil"><span class="nav-span">Pojok Damkar</span></a>
                 <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
-                <a href="#"><span class="nav-span">Red Kar</span></a>
+                <a href="/redkar"><span class="nav-span">Red Kar</span></a>
             </nav>
 
             <div class="nav-btn">
                 <div class="hidden lg:block mr-6">
                     <button id="search-btn" class="block transition duration-300 hover:bg-redColor hover:text-white px-[9px] py-[6px] rounded-full" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
                 </div>
-                {{-- <div class="mr-1 lg:mr-0">
-                    <a href="/elapor" target="_blank">
-                        <span class="px-4 py-2 bg-redColor font-bebasNeue text-white hover:bg-redColorAlt rounded-md">E-Lapor</span>
-                    </a>
-                </div> --}}
                 <button id="hamburger" name="hamburger" type="button" class="block py-2 px-3 rounded-xl bg-slate-200 scale-75 lg:hidden ml-auto mr-1">
                     <span class="nav-hamburger-line"></span>
                     <span class="nav-hamburger-line"></span>
@@ -116,7 +111,7 @@
             <li class="sidebar-menu-list"><a href="/pelatihan" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
             <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Pojok Damkar</span></a></li>
             <li class="sidebar-menu-list"><a href="/permohonan" class="mb-2"><span class="sidebar-menu-text">Permohonan</span></a></li>
-            <a href="#"><span class="nav-span">Red Kar</span></a>
+            <li class="sidebar-menu-list"><a href="/redkar" class="mb-2"><span class="sidebar-menu-text">Red Kar</span></a></li>
         </ul>
 
         <!-- Search Bar -->

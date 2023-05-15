@@ -2,8 +2,8 @@
     <div class="main-layout w-full">
         <div class="lg:mx-[83px] xl:mx-[127px] px-[15px]">
             <div class="font-semibold pb-[40px]">
-                <a href="/" class="text-redColor text-xs md:text-sm xl:text-base">Home</a>
-                <span class="text-slate-400 text-xs md:text-sm xl:text-base">> {{ $post['title'] }}</span>
+                <a href="/" class="breadcrumbs-link">Home</a>
+                <span class="breadcrumbs-link-active">> {{ $post['title'] }}</span>
             </div>
             <div class="title-main">
                 <h3 class="font-bebasNeue text-xl md:text-2xl lg:text-3xl xl:text-4xl">{{ $post['title'] }}</h3>

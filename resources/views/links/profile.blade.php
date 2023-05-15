@@ -2,8 +2,8 @@
     <div class="main-layout">
         <div class="lg:mx-[83px] xl:mx-[127px] px-[15px]">
             <div class="font-semibold pb-[40px]">
-                <a href="/" class="text-redColor text-xs md:text-sm xl:text-base">Home</a>
-                <span class="text-slate-400 text-xs md:text-sm xl:text-base">> Sejarah Dinas Pemadam Kebakaran dan Penyelamatan</span>
+                <a href="/" class="breadcrumbs-link">Home</a>
+                <span class="breadcrumbs-link-active">> Sejarah Dinas Pemadam Kebakaran dan Penyelamatan</span>
             </div>
             <div class="flex flex-wrap gap-8">
                 <div class="w-full md:w-3/12">
