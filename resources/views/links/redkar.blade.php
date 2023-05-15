@@ -1,21 +1,94 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
         <div class="flex flex-wrap">
-            <div class="w-full px-[15px] md:w-1/2 lg:w-5/12">
+            <div class="redkar-column lg:w-5/12">
                 <div>
-                    <img src="images/redkar-logo.jpg" alt="redkar-logo" class="mb-[20px]">
+                    <img src="images/redkar-logo.jpg" alt="redkar-logo" class="mb-5 w-[75%] mx-auto cursor-pointer rounded-md">
                 </div>
             </div>
-            <div class="w-full px-[15px] md:w-1/2 lg:w-6/12">
+            <div class="redkar-column lg:w-6/12">
                 <div class="title-main">
                     <h3 class="text-title">Tujuan REDKAR</h3>
                 </div>
-                <ul class="list-inside list-decimal text-justify">
+                <ul class="list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
                     <li class="mb-2">Mencegah terjadinya bahaya kebakaran di lingkungan RT DAN RW.</li>
                     <li class="mb-2">Menumbuhkan kesadaran warga masyarakat mengenai pentingnya upaya pencegahan kebakaran.</li>
                     <li class="mb-2">Mengenal dan mengetahui upaya pencegahan bahaya kebakaran.</li>
                     <li class="mb-2">Mampu menanggulangi kebakaran secara dini dan bersinergi dengan petugas Pemadam Kebakaran.</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-layout bg-white">
+    <div class="main-layout">
+        <div class="flex flex-wrap">
+            <div class="redkar-column lg:w-6/12">
+                <div class="title-main">
+                    <h3 class="text-title">Peran REDKAR</h3>
+                </div>
+                <ul class="mb-5 list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
+                    <li class="mb-2">Melakukan pencegahan secara berkala terhadap instalasi listrik dan kompor gas disetiap rumah warga dan dilingkungan RW.</li>
+                    <li class="mb-2">Melakukan pencatatan dan pendataan atas temuan pada saat pemeriksaan.</li>
+                    <li class="mb-2">Meminta warga untuk memasang atau menginstalasi listrik dengan benar agar tidak terjadi konsleting listrik dan menimbulkan api.</li>
+                    <li class="mb-2">Melaporkan hasil pemeriksaan dan pendataan kepada ketua RT/RW.</li>
+                    <li class="mb-2">Mengedukasi warga mengenai pentingnya upaya warga untuk pencegahan kebakaran.</li>
+                    <li class="mb-2">Memberikan pemahaman kepada warga untuk terlibat aktif dalam pencegahan kebakaran.</li>
+                    <li class="mb-2">Mengajak warga untuk mengetahui dan mengenal penyebab kebakaran.</li>
+                </ul>
+            </div>
+            <div class="redkar-column lg:w-6/12">
+                <div>
+                    <img src="images/redkar-3.jpg" alt="peran-redkar" class="cursor-pointer rounded-md">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-layout bg-[#FAF8F9]">
+    <div class="main-layout">
+        <div class="flex flex-wrap">
+            <div class="redkar-column lg:w-5/12 flex items-center">
+                <div class="title-main">
+                    <h3 class="text-title leading-none">Apa yang dilakukan ketika terjadi kebakaran ?</h3>
+                </div>
+            </div>
+            <div class="redkar-column lg:w-7/12">
+                <ul class="list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
+                    <li class="mb-2">Melakukan upaya pertama pemadaman dengan menggunakan APAR atau Alat pemadam tradisional.</li>
+                    <li class="mb-2">Melokalisasi Api.</li>
+                    <li class="mb-2">Berkoordinasi dengan DAMKAR dan pengurus RT/RW.</li>
+                    <li class="mb-2">Bersama pengurus RT/RW memandu warga menyelamatkan diri ketempat yang lebih aman.</li>
+                    <li class="mb-2">Membantu petugas DAMKAR dalam bentuk :
+                        <ul class="indent-6 mt-2 list-inside list-disc">
+                            <li class="mb-2">Bantuan Informasi</li>
+                            <li class="mb-2">Bantuan Kelancaran Jalan</li>
+                            <li class="mb-2">Bantuan Koordinasi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-layout bg-[#FAF8F9]">
+    <div class="main-layout">
+        <div class="title-main">
+            <h3 class="text-title text-center">Saran</h3>
+        </div>
+        <div class="gap-8 flex flex-wrap justify-center">
+            <div class="w-full md:w-4/12 cursor-pointer">
+                <div class="bg-white p-5 rounded-md text-justify">
+                    <span class="text-blackColor text-base md:text-lg lg:text-xl">Membuat program latihan di setiap lingkungan RW agar warga setempat dapat melakukan pemadaman secara dini sebelum petugas pemadam datang.</span>
+                </div>
+            </div>
+            <div class="w-full md:w-4/12 cursor-pointer">
+                <div class="bg-white p-5 rounded-md text-justify">
+                    <span class="text-blackColor text-base md:text-lg lg:text-xl">Meningkatkan keamanan kepada warga setempat dari seseorang yang mempunyai niat buruk atau oknum yang tidak bertanggung jawab pada saat terjadi kebakaran.</span>
+                </div>
             </div>
         </div>
     </div>

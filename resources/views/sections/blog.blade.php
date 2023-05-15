@@ -11,12 +11,12 @@
                 <div class="blogs-card">
                     <a href="/berita/{{ $post["slug"] }}">
                         <div class="blogs-img-container">
-                            <img src="images/{{ $post['image'] }}" alt="article-blog" class="blogs-img-view">
+                            <img src="images/{{ $post['image'] }}" alt="berita-damkar" class="blogs-img-view">
                         </div>
                     </a>
                     <div class="mt-[21px]">
                         <div class="mb-[8px]">
-                            <a href="#" target="_blank"><span class="blogs-categories">{{ $post['category'] }}</span></a>
+                            <a href="#"><span class="blogs-categories">{{ $post['category'] }}</span></a>
                         </div>
                         
                         <a href="/berita/{{ $post["slug"] }}">

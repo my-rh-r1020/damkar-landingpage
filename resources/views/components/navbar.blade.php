@@ -51,7 +51,7 @@
                 <a href="#"><span class="nav-span">Pojok Damkar</span></a>
             </nav> --}}
             <nav class="nav-menu hidden lg:block">
-                <a href="/" class="relative mx-[12px]">
+                <a href="/" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
                     <span>Beranda</span>
                     <div class="nav-active"></div>
                 </a>
@@ -62,7 +62,7 @@
                 <a href="#"><span class="nav-span">Informasi Data</span></a>
                 <a href="#"><span class="nav-span">Galery</span></a>
                 <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>
-                <a href="/insendentil"><span class="nav-span">Pojok Damkar</span></a>
+                <a href="/insendentil"><span class="nav-span">Insendentil</span></a>
                 <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
                 <a href="/redkar"><span class="nav-span">Red Kar</span></a>
             </nav>
@@ -109,7 +109,7 @@
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
             <li class="sidebar-menu-list"><a href="#" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
             <li class="sidebar-menu-list"><a href="/pelatihan" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
-            <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Pojok Damkar</span></a></li>
+            <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Insendentil</span></a></li>
             <li class="sidebar-menu-list"><a href="/permohonan" class="mb-2"><span class="sidebar-menu-text">Permohonan</span></a></li>
             <li class="sidebar-menu-list"><a href="/redkar" class="mb-2"><span class="sidebar-menu-text">Red Kar</span></a></li>
         </ul>

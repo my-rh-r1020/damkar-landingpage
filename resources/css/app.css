@@ -235,4 +235,9 @@
     .pelatihan-text-form {
         @apply w-full px-4 py-1 text-base rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
     }
+
+    /*RED KAR*/
+    .redkar-column {
+        @apply w-full px-[15px] md:w-1/2;
+    }
 }
