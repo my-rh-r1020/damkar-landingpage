@@ -152,13 +152,15 @@
 
 {{-- Youtube Popup --}}
 <div class="services-video-popup hidden" id="damkarplay">
-    <div class="fixed top-0 left-60 right-60 bottom-0 flex flex-col items-end justify-center">
-        <button id="video-close-btn" name="video-close-btn" type="button" class="close-btn-hover hover:text-white focus:outline-none scale-75">
-            <i class='bx bx-x text-5xl'></i>
-        </button>
-        <div class="pt-1">
-            <div class="bg-slate-200 p-2 rounded-xl">
-                <iframe width="985" height="560" src="https://www.youtube.com/embed/w15dmqbGmNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="fixed top-20 sm:top-5 lg:top-10 2xl:top-20 bottom-0 left-0 right-0">
+        <div class="flex justify-end xl:px-44">
+            <button id="video-close-btn" name="video-close-btn" type="button" class="close-btn-hover hover:text-white focus:outline-none scale-75">
+                <i class='bx bx-x text-5xl'></i>
+            </button>
+        </div>
+        <div class="flex justify-center px-4">
+            <div class="w-full md:w-11/12 lg:w-10/12 xl:w-9/12 h-[315px] sm:h-[395px] md:h-[435px] lg:h-[475px] xl:h-[560px] 2xl:h-[700px] bg-slate-200 p-2 rounded-xl">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/w15dmqbGmNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </div>
