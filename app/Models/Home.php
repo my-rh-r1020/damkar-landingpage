@@ -17,17 +17,17 @@ class Home
         [
             "banner-damkar" => "herobanner-1.jpg",
             "banner-subtitle" => "Dinas Damkar Tanjungpinang",
-            "banner-title" => "Lorem, ipsum."
+            "banner-title" => "Pantang Pulang Sebelum Padam"
         ],
         [
             "banner-damkar" => "herobanner-2.jpg",
             "banner-subtitle" => "Dinas Damkar Tanjungpinang",
-            "banner-title" => "Lorem, ipsum dolor."
+            "banner-title" => "Waspada Penyebab Kebakaran"
         ],
         [
             "banner-damkar" => "herobanner-3.jpg",
             "banner-subtitle" => "Dinas Damkar Tanjungpinang",
-            "banner-title" => "Lorem ipsum dolor sit."
+            "banner-title" => "STOP Membakar Lahan"
         ],
 
     ];

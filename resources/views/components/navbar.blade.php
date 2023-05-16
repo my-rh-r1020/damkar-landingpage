@@ -40,41 +40,48 @@
                 </a>
             </div>
 
-            {{-- Nav Menu --}}
-            {{-- <nav class="nav-menu hidden lg:block">
-                <a href="#"><span class="nav-span">Beranda</span></a>
-                <a href="#"><span class="nav-span">Berita</span></a>
-                <a href="#"><span class="nav-span">Profil</span></a>
-                <a href="#"><span class="nav-span">Informasi Data</span></a>
-                <a href="#"><span class="nav-span">Galery</span></a>
-                <a href="#"><span class="nav-span">Edu Damkar</span></a>
-                <a href="#"><span class="nav-span">Pojok Damkar</span></a>
-            </nav> --}}
             <nav class="nav-menu hidden lg:block">
                 <a href="/" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
                     <span>Beranda</span>
-                    <div class="nav-active"></div>
+                    <div class="{{ $title === "Damkar Kota Tanjungpinang" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
-                <a href="/profile"><span class="nav-span">Profil</span></a>
-                <a href="/berita" class="relative mx-[12px]">
+                <a href="/profile" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Profil</span>
+                    <div class="{{ $title === "Profil Damkar Kota Tanjungpinang" ? 'nav-active' : 'hidden' }}"></div>
+                </a>
+                <a href="/berita" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
                     <span>Berita</span>
+                    <div class="{{ $title === "Berita Damkar Kota Tanjungpinang" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
-                <a href="#"><span class="nav-span">Informasi Data</span></a>
-                <a href="/gallery"><span class="nav-span">Galery</span></a>
-                <a href="/pelatihan"><span class="nav-span">Edu Damkar</span></a>
-                <a href="/insendentil"><span class="nav-span">Insendentil</span></a>
-                <a href="/permohonan"><span class="nav-span">Permohonan</span></a>
-                <a href="/redkar"><span class="nav-span">Red Kar</span></a>
+                <a href="/informasi" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Informasi Data</span>
+                    <div class="{{ $title === "Grafik Kebakaran" ? 'nav-active' : 'hidden' }}"></div>
+                </a>
+                <a href="/gallery" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Galery</span>
+                    <div class="{{ $title === "Gallery Kegiatan" ? 'nav-active' : 'hidden' }}"></div>
+                </a>
+                <a href="/pelatihan" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Edu Damkar</span>
+                </a>
+                <a href="/insendentil" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Insendentil</span>
+                </a>
+                <a href="/permohonan" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Permohonan</span>
+                </a>
+                <a href="/redkar" class="relative mx-[12px] hover:text-greyColorAlt transition duration-300">
+                    <span>Red Kar</span>
+                    <div class="{{ $title === "Redkar Damkar" ? 'nav-active' : 'hidden' }}"></div>
+                </a>
             </nav>
 
             <div class="nav-btn">
                 <div class="hidden lg:block mr-6">
-                    <button id="search-btn" class="block transition duration-300 hover:bg-redColor hover:text-white px-[9px] py-[6px] rounded-full" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
+                    <button id="search-btn" class="block close-btn-hover hover:text-white" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
                 </div>
-                <button id="hamburger" name="hamburger" type="button" class="block py-2 px-3 rounded-xl bg-slate-200 scale-75 lg:hidden ml-auto mr-1">
-                    <span class="nav-hamburger-line"></span>
-                    <span class="nav-hamburger-line"></span>
-                    <span class="nav-hamburger-line"></span>
+                <button id="hamburger" name="hamburger" type="button" class="block transition duration-300 hover:bg-redColor hover:text-white py-1 px-2 rounded-xl scale-75 lg:hidden ml-auto mr-1">
+                    <i class='bx bx-menu text-5xl'></i>
                 </button>
             </div>
         </div>
@@ -93,11 +100,9 @@
                     </div>
                 </a>
             </div>
-            <div class="absolute top-0 right-4 p-4">
-                <button id="close-btn" name="close-btn" type="button" class="focus:outline-none scale-75">
-                    <span class="nav-close-line origin-top-left rotate-45"></span>
-                    <span class="nav-close-line scale-0"></span>
-                    <span class="nav-close-line origin-bottom-left -rotate-45"></span>
+            <div class="top-0 right-4 p-4">
+                <button id="close-btn" name="close-btn" type="button" class="close-btn-hover focus:outline-none scale-75">
+                    <i class='bx bx-x text-5xl text-white'></i>
                 </button>
             </div>
         </div>
@@ -126,10 +131,8 @@
 {{-- Search Form --}}
 <div class="search-bar hidden" id="search-form">
     <div class="fixed top-0 left-60 right-60 bottom-0 flex flex-col items-end justify-center">
-        <button id="search-close-btn" name="search-close-btn" type="button" class="focus:outline-none scale-75">
-            <span class="search-btn-close origin-top-left rotate-45"></span>
-            <span class="search-btn-close scale-0"></span>
-            <span class="search-btn-close origin-bottom-left -rotate-45"></span>
+        <button id="search-close-btn" name="search-close-btn" type="button" class="close-btn-hover hover:text-white focus:outline-none scale-75">
+            <i class='bx bx-x text-5xl'></i>
         </button>
         <input type="text" placeholder="Search ..." class="text-3xl bg-white focus:outline-none focus:shadow-outline border border-white border-b-slate-600 py-4 block w-full appearance-none leading-normal">
     </div>

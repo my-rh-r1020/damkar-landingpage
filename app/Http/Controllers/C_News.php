@@ -23,7 +23,7 @@ class C_News extends Controller
         return view(
             'berita',
             [
-                "title" => "Berita | Damkar Kota Tanjungpinang",
+                "title" => "Berita Damkar Kota Tanjungpinang",
                 "posts" => News::all()
             ]
         );

@@ -13,6 +13,11 @@ class C_Menus extends Controller
         ]);
     }
 
+    public function grafikKebakaran()
+    {
+        return view('informasi', ["title" => "Grafik Kebakaran"]);
+    }
+
     public function galleryDamkar()
     {
         return view('gallery', ["title" => "Gallery Kegiatan"]);

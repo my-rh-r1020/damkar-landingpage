@@ -153,10 +153,8 @@
 {{-- Youtube Popup --}}
 <div class="services-video-popup hidden" id="damkarplay">
     <div class="fixed top-0 left-60 right-60 bottom-0 flex flex-col items-end justify-center">
-        <button id="video-close-btn" name="video-close-btn" type="button" class="focus:outline-none scale-75">
-            <span class="search-btn-close origin-top-left rotate-45"></span>
-            <span class="search-btn-close scale-0"></span>
-            <span class="search-btn-close origin-bottom-left -rotate-45"></span>
+        <button id="video-close-btn" name="video-close-btn" type="button" class="close-btn-hover hover:text-white focus:outline-none scale-75">
+            <i class='bx bx-x text-5xl'></i>
         </button>
         <div class="pt-1">
             <div class="bg-slate-200 p-2 rounded-xl">

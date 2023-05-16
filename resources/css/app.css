@@ -42,17 +42,11 @@
     .nav-line-hover {
         @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;
     }
-    .nav-hamburger-line {
-        @apply w-[30px] h-[2px] my-2 block bg-blackColor;
-    }
-    .nav-close-line {
-        @apply w-[30px] h-[2px] my-2 block bg-white;
+    .close-btn-hover {
+        @apply transition duration-300 hover:bg-redColor px-[9px] py-[6px] rounded-full;
     }
     .search-bar {
         @apply fixed inset-0 z-50 bg-white opacity-100;
-    }
-    .search-btn-close {
-        @apply w-[30px] h-[2px] my-2 block bg-blackColor;
     }
     .hamburger-active {
     }
