@@ -13,7 +13,7 @@ class C_Home extends Controller
         return view(
             'landing',
             [
-                "title" => "Damkar Kota Tanjungpinang",
+                "title" => "Disdamkarmat TPI",
                 "herobanners" => Home::herobannerdata(),
                 "subContact" => "Hubungi Kami",
                 "titleContact" => "Pantang Pulang Sebelum Padam",

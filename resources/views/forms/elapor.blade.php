@@ -57,14 +57,14 @@
                                     <option value="">Opsi 2</option>
                                 </select>
                             </div>
-                            <div class="flex flex-wrap justify-between">
-                                <div class="w-full md:w-6/12 md:mr-4 lg:w-7/12 mb-4">
+                            <div class="flex flex-wrap justify-start gap-2">
+                                {{-- <div class="w-full md:w-6/12 md:mr-4 lg:w-7/12 mb-4">
                                     <select name="listkategori" id="listkategori" class="elapor-text-form focus:shadow-outline">
                                         <option value="">Pilih Kategori</option>
                                         <option value="">Opsi 1</option>
                                         <option value="">Opsi 2</option>
                                     </select>
-                                </div>
+                                </div> --}}
                                 <div class="w-full md:w-3/12 lg:w-2/12 mb-2">
                                     <button class="elapor-btn">
                                         {{-- Icon --}}
@@ -96,14 +96,14 @@
                                     <input type="text" placeholder="Nama Lengkap" name="namalengkap" id="namalengkap" class="elapor-text-form focus:shadow-outline">
                                 </div>
                             </div>
-                            <div class="flex flex-wrap items-center mb-4">
+                            {{-- <div class="flex flex-wrap items-center mb-4">
                                 <div class="w-3/12">
                                     <label for="email" class="font-semibold">Email</label>
                                 </div>
                                 <div class="w-9/12">
                                     <input type="text" placeholder="Email Anda" name="email" id="email" class="elapor-text-form focus:shadow-outline">
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="flex flex-wrap items-center mb-4">
                                 <div class="w-3/12">
                                     <label for="email" class="font-semibold">Telpon/HP</label>

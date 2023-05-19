@@ -16,17 +16,17 @@ class Home
     private static $herobanner_items = [
         [
             "banner-damkar" => "herobanner-1.jpg",
-            "banner-subtitle" => "Dinas Damkar Tanjungpinang",
+            "banner-subtitle" => "Dinas Pemadam Kebakaran dan Penyelamatan Kota Tanjungpinang",
             "banner-title" => "Pantang Pulang Sebelum Padam"
         ],
         [
             "banner-damkar" => "herobanner-2.jpg",
-            "banner-subtitle" => "Dinas Damkar Tanjungpinang",
+            "banner-subtitle" => "Dinas Pemadam Kebakaran dan Penyelamatan Kota Tanjungpinang",
             "banner-title" => "Waspada Penyebab Kebakaran"
         ],
         [
             "banner-damkar" => "herobanner-3.jpg",
-            "banner-subtitle" => "Dinas Damkar Tanjungpinang",
+            "banner-subtitle" => "Dinas Pemadam Kebakaran dan Penyelamatan Kota Tanjungpinang",
             "banner-title" => "STOP Membakar Lahan"
         ],
 

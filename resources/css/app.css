@@ -36,6 +36,9 @@
     .nav-span {
         @apply p-[12px];
     }
+    .nav-link {
+        @apply hover:text-greyColorAlt transition duration-300;
+    }
     .nav-active {
         @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-blackColor;
     }
