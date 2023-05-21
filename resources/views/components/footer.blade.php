@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="pt-14 pb-2 text-center">
-            <span class="text-whiteColorAlt text-[13px]">Copyrights &#169; 2023 <a href="/" class="hover:text-redColor font-semibold">Dinas Pemadam Kebakaran dan Penyelamatan</a>. All Rights Reserved</span>
+            <span class="text-whiteColorAlt text-xs lg:text-[13px] font-bold">&#169; 2023 <span class="hover:text-redColor">Dinas Pemadam Kebakaran dan Penyelamatan</span></span>
         </div>
     </div>
 </footer>
