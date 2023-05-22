@@ -3,10 +3,11 @@
         <div class="flex items-center justify-between relative">
             <div class="py-[9px] pl-[15px]">
                 <a href="/">
-                    <div class="flex flex-wrap items-center text-[18px]">
+                    {{-- <div class="flex flex-wrap items-center text-[18px]">
                         <img src="/images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
                         <span class="uppercase font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
-                    </div>
+                    </div> --}}
+                    <img src="/images/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
                 </a>
             </div>
 
@@ -16,7 +17,7 @@
                     <div class="{{ $title === "Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <a href="/profile" class="relative mx-[12px]">
-                    <span class="nav-link">Profil</span>
+                    <span class="nav-link">Profile</span>
                     <div class="{{ $title === "Profil Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <a href="/berita" class="relative mx-[12px]">
@@ -58,14 +59,11 @@
 
 <!-- Sidebar -->
 <div class="sidebar-menu hidden lg:hidden" id="sidebar">
-    <nav class="fixed top-10 left-4 right-0 bottom-0 flex flex-col transform ease-in-out duration-500 sm:duration-700">
+    <nav class="fixed top-10 left-0 right-0 bottom-0 flex flex-col transform ease-in-out duration-500 sm:duration-700">
         <div class="flex items-center justify-between">
             <div class="py-[9px] pl-[9px]">
                 <a href="/">
-                    <div class="flex flex-wrap items-center text-[18px]">
-                        <img src="/images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
-                        <span class="uppercase text-white font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
-                    </div>
+                    <img src="/images/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
                 </a>
             </div>
             <div class="top-0 right-4 p-4">
@@ -75,7 +73,7 @@
             </div>
         </div>
         {{-- Sidebar Menu --}}
-        <ul class="mt-14">
+        <ul class="mt-14 mx-7">
             <li class="sidebar-menu-list"><a href="/"><span class="sidebar-menu-text">Beranda</span></a></li>
             <li class="sidebar-menu-list"><a href="/profile" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
             <li class="sidebar-menu-list"><a href="/berita" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
@@ -87,11 +85,11 @@
         </ul>
 
         <!-- Search Bar -->
-        <div class="mt-4 mb-8 mr-4">
-            <input type="text" placeholder="Search" class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal">
+        <div class="mt-4 mb-8 mx-7">
+            <input type="text" placeholder="Search" class="bg-white focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal">
         </div>
 
-        <hr class="border-slate-700 mr-4">        
+        <hr class="border-slate-700 mx-7">        
     </nav>
 </div>
 

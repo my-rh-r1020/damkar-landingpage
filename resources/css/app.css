@@ -215,7 +215,13 @@
         @apply text-sm lg:text-base text-greyColorAlt hover:text-redColor transition duration-300;
     }
 
-    /* E-LAPOR PAGE */
+    /* FORM PAGE */
+    .form-label {
+        @apply text-sm lg:text-base font-semibold;
+    }
+    .form-input {
+        @apply w-full px-4 py-1 text-sm lg:text-base rounded-md focus:outline-double bg-white border-2 border-whiteColorAlt;
+    }
     .elapor-panduan-card {
         @apply w-full md:w-4/12 mb-3 border-2 border-white rounded-lg bg-darkRedColor cursor-pointer hover:bg-darkRedColorAlt transition-all duration-200;
     }
@@ -225,20 +231,17 @@
     .elapor-column {
         @apply flex flex-wrap items-center mb-4;
     }
-    .elapor-label {
-        @apply text-sm lg:text-base font-semibold;
-    }
-    .elapor-form {
-        @apply w-full px-4 py-1 text-base rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
-    }
     .elapor-btn {
         @apply w-full px-6 py-1 bg-redColor rounded-md hover:bg-redColorAlt transition duration-300;
     }
     .elapor-btn-text {
         @apply text-white text-sm lg:text-base;
     }
-    .insendentil-form {
-        @apply w-full px-4 py-1 text-base lg:text-lg rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
+    .insendentil-back-btn {
+        @apply flex items-center gap-1 px-4 md:px-5 lg:px-6 py-2 border border-slate-400 rounded-full bg-white hover:bg-greyColorAlt text-greenColor hover:text-white transition duration-300;
+    }
+    .insendentil-next-btn {
+        @apply flex items-center gap-1 px-4 md:px-5 lg:px-6 py-2 rounded-full bg-[#64B08C] hover:bg-greenColor text-white transition duration-300;
     }
     /*.request-text-form {
         @apply w-full px-4 py-2 text-base lg:text-lg rounded-xl bg-white focus:outline-none border-2 border-whiteColorAlt;

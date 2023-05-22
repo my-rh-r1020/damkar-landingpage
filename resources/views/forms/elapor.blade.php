@@ -48,26 +48,26 @@
                             </div>
                             <div class="elapor-column">
                                 <div class="w-3/12">
-                                    <label for="nama" class="elapor-label">Nama</label>
+                                    <label for="nama" class="form-label">Nama</label>
                                 </div>
                                 <div class="w-9/12">
-                                    <input type="text" placeholder="Nama Lengkap" name="namalengkap" id="namalengkap" class="elapor-form focus:shadow-outline">
+                                    <input type="text" placeholder="Nama Lengkap" name="namapelapor" id="namapelapor" class="form-input">
                                 </div>
                             </div>
                             <div class="elapor-column">
                                 <div class="w-3/12">
-                                    <label for="email" class="elapor-label">Telpon/HP</label>
+                                    <label for="email" class="form-label">Telpon/HP</label>
                                 </div>
                                 <div class="w-9/12">
-                                    <input type="text" placeholder="Nomor Telpon/HP" name="nohp" id="nohp" class="elapor-form focus:shadow-outline">
+                                    <input type="text" placeholder="Nomor Telpon/HP" name="nohppelapor" id="nohppelapor" class="form-input">
                                 </div>
                             </div>
                             <div class="elapor-column">
                                 <div class="w-3/12">
-                                    <label for="email" class="elapor-label">NIK</label>
+                                    <label for="email" class="form-label">NIK</label>
                                 </div>
                                 <div class="w-9/12">
-                                    <input type="text" placeholder="NIK Anda" name="nik" id="nik" class="elapor-form focus:shadow-outline">
+                                    <input type="text" placeholder="NIK Anda" name="nikpelapor" id="nikpelapor" class="form-input">
                                 </div>
                             </div>
                             <div class="mb-4">
@@ -80,13 +80,13 @@
                                 <h5 class="text-base xl:text-lg font-bold">Pelaporan</h5>
                             </div>
                             <div class="mb-4">
-                                <input type="text" placeholder="Judul Keluhan" name="keluhantitle" id="keluhantitle" class="elapor-form focus:shadow-outline">
+                                <input type="text" placeholder="Judul Keluhan" name="judulkeluhan" id="judulkeluhan" class="form-input">
                             </div>
                             <div class="mb-3">
-                                <textarea placeholder="Keluhan Anda" name="desckeluhan" id="desckeluhan" class="elapor-form focus:shadow-outline h-24 resize-y"></textarea>
+                                <textarea placeholder="Keluhan Anda" name="deskripsikeluhan" id="deskripsikeluhan" class="form-input h-24 resize-y"></textarea>
                             </div>
                             <div class="mb-4">
-                                <select name="listwilayah" id="listwilayah" class="elapor-form focus:shadow-outline">
+                                <select name="listwilayah" id="listwilayah" class="form-input">
                                     <option value="">Pilih Wilayah</option>
                                     <option value="">Opsi 1</option>
                                     <option value="">Opsi 2</option>

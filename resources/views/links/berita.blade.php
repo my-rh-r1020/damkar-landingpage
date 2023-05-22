@@ -1,6 +1,6 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
-        <div class="w-full lg:w-8/12 px-8">
+        <div class="w-full lg:w-8/12 px-4 md:px-6 lg:px-7 xl:px-8">
             <div class="font-semibold pb-[40px]">
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span class="breadcrumbs-link-active">> Berita</span>

@@ -1,7 +1,7 @@
 <section class="section-layout bg-white" id="contact">
     <div class="main-layout">
         <div class="flex flex-wrap">
-            <div class="contact-column lg:py-[20px] xl:py-24 2xl:py-28 lg:w-5/12">
+            <div class="contact-column lg:py-5 xl:py-24 2xl:py-28 lg:w-5/12">
                 <div class="title-main">
                     <h6 class="text-subtitle">{{ $subContact }}</h6>
                     <h3 class="text-title leading-none">{{ $titleContact }}</h3>
