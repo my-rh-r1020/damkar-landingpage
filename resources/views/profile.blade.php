@@ -4,7 +4,7 @@
 @section('bodyMain')
 
 @include('components.navbar')
-@include('links.profile')
+@include('links.profile.sejarah')
 @include('components.footer')
 
 @endsection

@@ -7,7 +7,7 @@
         @apply py-[54px] sm:py-[60px] md:py-[80px] lg:py-[90px] xl:py-[115px] 2xl:py-[140px];
     }
     .main-layout {
-        @apply px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px];
+        @apply px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px] 2xl:px-[100px];
     }
     .title-main {
         @apply pb-[20px] sm:pb-[25px] md:pb-[30px] lg:pb-[35px] 2xl:pb-[40px];
@@ -22,10 +22,10 @@
         @apply pt-[12px] sm:pt-[13px] lg:pt-[14px] xl:pt-[15px] pb-[11px] sm:pb-[12px] lg:pb-[13px] xl:pb-[14px] px-[40px] sm:px-[45px] md:px-[49px] lg:px-[52px] xl:px-[55px] rounded-md bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
     .breadcrumbs-link {
-        @apply text-redColor text-xs md:text-sm xl:text-base;
+        @apply text-redColor text-xs md:text-sm xl:text-base 2xl:text-lg;
     }
     .breadcrumbs-link-active {
-        @apply text-slate-500 text-xs md:text-sm xl:text-base;
+        @apply text-slate-500 text-xs md:text-sm xl:text-base 2xl:text-lg;
     }
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
@@ -50,17 +50,6 @@
     }
     .search-bar {
         @apply fixed inset-0 z-50 bg-white opacity-100;
-    }
-    .hamburger-active {
-    }
-    .hamburger-active > span:nth-child(1) {
-        @apply origin-top-left rotate-45;
-    }
-    .hamburger-active > span:nth-child(2) {
-        @apply scale-0;
-    }
-    .hamburger-active > span:nth-child(3) {
-        @apply origin-bottom-left -rotate-45;
     }
     .sidebar-menu {
         @apply fixed inset-0 z-50 bg-blackColor opacity-100 transition-opacity;

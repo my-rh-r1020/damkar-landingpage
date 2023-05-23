@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="w-full lg:w-3/12">
-                <h4 class="text-white font-semibold text-lg mt-2">Dinas Damkar</h4>
+                <h4 class="text-white font-semibold text-lg mt-2">Tautan</h4>
                 <div class="pt-3 text-whiteColorAlt font-bebasNeue text-lg">
                     <ul>
                         <li><a href="/" class="footer-menu">Home</a></li>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="mt-8">
-                    <h4 class="text-white font-semibold text-lg mt-2">Links</h4>
+                    <h4 class="text-white font-semibold text-lg mt-2">Link</h4>
                     <div class="flex pt-3 gap-2 items-center">
                         <i class='bx bx-world text-redColorAlt text-xl'></i>
                         <a href="https://www.tanjungpinangkota.go.id/" class="text-whiteColorAlt hover:text-white">tanjungpinangkota.go.id</a>
@@ -63,3 +63,26 @@
         </div>
     </div>
 </footer>
+
+{{-- Emergency Call --}}
+<div class="fixed z-10 bottom-6 left-0 right-0">
+    <div class="bg-redColorAlt mb-1 w-44 p-2 mx-auto text-center rounded-md hidden transition" id="emergency-card">
+        <span class="uppercase text-white xl:text-lg font-semibold">Emergency Call</span>
+    </div>
+    <a href="tel:077124949" class="bg-[#000BED] w-16 h-16 rounded-full mx-auto flex items-center justify-center transition duration-300 hover:scale-110" id="emergency-btn">
+        <i class='bx bxs-phone-call text-redColorAlt text-3xl'></i>
+    </a>
+</div>
+{{-- <a href="tel:077124949" class="fixed z-10 bottom-4 left-0 right-0">
+    <div class="bg-redColor mb-1 px-4 py-2 mx-auto text-center">
+        <span class="uppercase text-white text-lg font-semibold">Emergency Call</span>
+    </div>
+    <div class="bg-blue-700 w-16 h-16 rounded-full mx-auto flex items-center justify-center">
+        <i class='bx bxs-phone-incoming text-white text-3xl'></i>
+    </div>
+</a> --}}
+
+{{-- Back To Top --}}
+<a href="#" class="fixed z-10 bottom-4 right-4 w-12 h-12 rounded-full bg-redColor flex items-center justify-center">
+    <i class='bx bx-arrow-back text-white text-xl rotate-90 transition hover:-translate-y-1'></i>
+</a>

@@ -11,11 +11,9 @@ const hamburger = document.querySelector("#hamburger"),
 
 // Hamburger & Sidebar
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("hamburger-active");
     sidebar.classList.remove("hidden");
 });
 
-// Close Button
 closeBtn.addEventListener("click", () => {
     sidebar.classList.add("hidden");
 });
@@ -70,4 +68,16 @@ testimonialSwiper.forEach((slide) => {
         // tambahkan kelas "active" pada slide yang di-klik
         slide.classList.add("active");
     });
+});
+
+// Emergency Call Button
+const emergencyCard = document.querySelector("#emergency-card"),
+    emergencyBtn = document.querySelector("#emergency-btn");
+
+emergencyBtn.addEventListener("mouseenter", () => {
+    emergencyCard.classList.remove("hidden");
+});
+
+emergencyBtn.addEventListener("mouseleave", () => {
+    emergencyCard.classList.add("hidden");
 });
