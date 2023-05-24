@@ -38,10 +38,10 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
         <div class="w-full px-4 md:px-6 lg:px-7 xl:px-8">
-            <div class="font-semibold pb-12">
+            <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>
                 {{-- <span class="text-base lg:text-xl text-slate-500">&#187;</span> --}}
-                <span class="breadcrumbs-link-active">> Selayang Pandang</span>
+                <span class="breadcrumbs-link-active">> Profil</span>
             </div>
             <div class="title-main">
                 <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Sejarah</h6>
@@ -75,10 +75,10 @@
     <div class="main-layout">
         <div class="px-4 md:px-6 lg:px-7 xl:px-8">
             <div class="title-main">
-                <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Sejarah</h6>
-                <h3 class="font-bebasNeue text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Dinas Pemadam Kebakaran dan Penyelamatan</h3>
+                <h3 class="font-bebasNeue text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2">Dinas Pemadam Kebakaran <br>dan Penyelamatan Kota Tanjungpinang</h3>
+                <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Tentang Kami</h6>
             </div>
-            <div class="flex flex-wrap mt-4 gap-y-4">
+            {{-- <div class="flex flex-wrap mt-4 gap-y-4 mb-10">
                 <div class="w-full md:w-6/12 md:pr-2 lg:w-1/3">
                     <a href="#">
                         <div class="bg-red-50 border border-red-300 rounded-lg text-center py-6">
@@ -111,6 +111,32 @@
                         </div>
                     </a>
                 </div>
+            </div> --}}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <a href="#">
+                    <div class="profile-card">
+                        <i class='bx bxs-user-voice profile-icon'></i><br>
+                        <span class="profile-text">Kata Sambutan</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile-card">
+                        <i class='bx bxs-briefcase-alt-2 profile-icon'></i><br>
+                        <span class="profile-text">Tugas Pokok</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="profile-card">
+                        <i class='bx bx-sitemap profile-icon'></i><br>
+                        <span class="profile-text">Struktur Organisasi</span>
+                    </div>
+                </a>
+                <a href="/danru">
+                    <div class="profile-card">
+                        <i class='bx bxs-group profile-icon'></i><br>
+                        <span class="profile-text">Danru Damkar</span>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

@@ -6,11 +6,6 @@ use Illuminate\Http\Request;
 
 class C_Menus extends Controller
 {
-    public function profilePage()
-    {
-        return view('profile', ["title" => "Profil Disdamkarmat TPI"]);
-    }
-
     public function grafikKebakaran()
     {
         return view('informasi', ["title" => "Grafik Disdamkarmat TPI"]);

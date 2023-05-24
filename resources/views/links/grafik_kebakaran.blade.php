@@ -1,7 +1,7 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
         <div class="px-8">
-            <div class="font-semibold pb-[40px]">
+            <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span class="breadcrumbs-link-active">> Informasi Kebakaran</span>
             </div>

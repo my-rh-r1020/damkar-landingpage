@@ -1,7 +1,7 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout w-full">
         <div class="lg:mx-[83px] xl:mx-[127px] px-[15px]">
-            <div class="font-semibold pb-[40px]">
+            <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span>> <a href="/berita" class="breadcrumbs-link">Berita</a></span>
                 <span class="breadcrumbs-link-active">> {{ $post['title'] }}</span>

@@ -21,6 +21,9 @@
     .red-button {
         @apply pt-[12px] sm:pt-[13px] lg:pt-[14px] xl:pt-[15px] pb-[11px] sm:pb-[12px] lg:pb-[13px] xl:pb-[14px] px-[40px] sm:px-[45px] md:px-[49px] lg:px-[52px] xl:px-[55px] rounded-md bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }
+    .breadcrumbs-container {
+        @apply font-semibold pb-10;
+    }
     .breadcrumbs-link {
         @apply text-redColor text-xs md:text-sm xl:text-base 2xl:text-lg;
     }
@@ -196,7 +199,18 @@
         @apply text-2xl text-white border border-[#3f3d47] p-2;
     }
 
-    /*News Page*/
+    /* PROFILE PAGE8 */
+    .profile-card {
+        @apply bg-red-50 hover:bg-redColorAlt text-slate-600 hover:text-white transition border border-red-300 rounded-lg text-center py-6;
+    }
+    .profile-icon {
+        @apply text-5xl md:text-6xl xl:text-7xl mb-3 lg:mb-6;
+    }
+    .profile-text {
+        @apply font-semibold text-lg lg:text-xl 2xl:text-2xl;
+    }
+
+    /* NEWS PAGE */
     .news-subtitle-date {
         @apply text-sm lg:text-base;
     }
@@ -242,7 +256,7 @@
         @apply w-full px-4 py-1 text-base rounded-md bg-white focus:outline-none border-2 border-whiteColorAlt;
     }*/
 
-    /*RED KAR*/
+    /* RED KAR */
     .redkar-column {
         @apply w-full px-[15px] md:w-1/2;
     }

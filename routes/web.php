@@ -4,6 +4,7 @@ use App\Http\Controllers\C_Home;
 use App\Http\Controllers\C_News;
 use App\Http\Controllers\C_ELapor;
 use App\Http\Controllers\C_Menus;
+use App\Http\Controllers\C_Profile;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +22,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', fn () => view());
 
 Route::get('/', [C_Home::class, "index"]);
-Route::get('profile', [C_Menus::class, 'profilePage']);
+Route::get('profile', [C_Profile::class, 'profileIndex']);
+Route::get('danru', [C_Profile::class, 'danruDamkar']);
 Route::get('berita/{slug}', [C_News::class, 'index']);
 Route::get('berita', [C_News::class, 'list_berita']);
 Route::get('informasi', [C_Menus::class, 'grafikKebakaran']);
