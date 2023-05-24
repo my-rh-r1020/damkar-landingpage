@@ -70,3 +70,48 @@
         </div>
     </div>
 </section>
+
+<section class="section-layout bg-white">
+    <div class="main-layout">
+        <div class="px-4 md:px-6 lg:px-7 xl:px-8">
+            <div class="title-main">
+                <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Sejarah</h6>
+                <h3 class="font-bebasNeue text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Dinas Pemadam Kebakaran dan Penyelamatan</h3>
+            </div>
+            <div class="flex flex-wrap mt-4 gap-y-4">
+                <div class="w-full md:w-6/12 md:pr-2 lg:w-1/3">
+                    <a href="#">
+                        <div class="bg-red-50 border border-red-300 rounded-lg text-center py-6">
+                            <i class='bx bxs-user-voice text-5xl md:text-6xl xl:text-7xl mb-3 lg:mb-6'></i><br>
+                            <span class="font-semibold text-lg lg:text-xl 2xl:text-2xl">Kata Sambutan</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="w-full md:w-6/12 md:px-2 lg:w-1/3">
+                    <a href="#">
+                        <div class="bg-red-50 border border-red-300 rounded-lg text-center py-6">
+                            <i class='bx bxs-briefcase-alt-2 text-5xl md:text-6xl xl:text-7xl mb-3 lg:mb-6'></i><br>
+                            <span class="font-semibold text-lg lg:text-xl 2xl:text-2xl">Tugas Pokok</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="w-full md:w-6/12 md:pr-2 lg:w-1/3 lg:pl-2">
+                    <a href="#">
+                        <div class="bg-red-50 border border-red-300 rounded-lg text-center py-6">
+                            <i class='bx bx-sitemap text-5xl md:text-6xl xl:text-7xl mb-3 lg:mb-6'></i><br>
+                            <span class="font-semibold text-lg lg:text-xl 2xl:text-2xl">Struktur Organisasi</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="w-full md:w-6/12 md:px-2 lg:w-1/3 lg:pl-0">
+                    <a href="#">
+                        <div class="bg-red-50 border border-red-300 rounded-lg text-center py-6">
+                            <i class='bx bxs-user-detail text-5xl md:text-6xl xl:text-7xl mb-3 lg:mb-6'></i><br>
+                            <span class="font-semibold text-lg lg:text-xl 2xl:text-2xl">Dandrum</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

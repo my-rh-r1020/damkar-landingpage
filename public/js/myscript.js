@@ -81,3 +81,19 @@ emergencyBtn.addEventListener("mouseenter", () => {
 emergencyBtn.addEventListener("mouseleave", () => {
     emergencyCard.classList.add("hidden");
 });
+
+// Back to Top Button
+window.onscroll = function () {
+    const scrollY = window.pageYOffset,
+        header = document.querySelector("header"),
+        fixedNav = header.offsetTop,
+        toTopBtn = document.querySelector("#to-top");
+
+    if (scrollY > fixedNav) {
+        toTopBtn.classList.remove("hidden");
+        toTopBtn.classList.add("flex");
+    } else {
+        toTopBtn.classList.add("hidden");
+        toTopBtn.classList.remove("flex");
+    }
+};

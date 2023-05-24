@@ -73,16 +73,8 @@
         <i class='bx bxs-phone-call text-redColorAlt text-3xl'></i>
     </a>
 </div>
-{{-- <a href="tel:077124949" class="fixed z-10 bottom-4 left-0 right-0">
-    <div class="bg-redColor mb-1 px-4 py-2 mx-auto text-center">
-        <span class="uppercase text-white text-lg font-semibold">Emergency Call</span>
-    </div>
-    <div class="bg-blue-700 w-16 h-16 rounded-full mx-auto flex items-center justify-center">
-        <i class='bx bxs-phone-incoming text-white text-3xl'></i>
-    </div>
-</a> --}}
 
 {{-- Back To Top --}}
-<a href="#" class="fixed z-10 bottom-4 right-4 w-12 h-12 rounded-full bg-redColor flex items-center justify-center">
+<a href="#" class="fixed z-10 bottom-4 right-4 w-12 h-12 rounded-full bg-redColor items-center justify-center hidden" id="to-top">
     <i class='bx bx-arrow-back text-white text-xl rotate-90 transition hover:-translate-y-1'></i>
 </a>
