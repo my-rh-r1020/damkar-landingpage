@@ -1,6 +1,6 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
-        <div class="px-4 md:px-6 lg:px-7 xl:px-8">
+        <div class="container-layout">
             <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span>> <a href="/profile" class="breadcrumbs-link">Profil</a></span>

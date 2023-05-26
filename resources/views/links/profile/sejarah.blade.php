@@ -73,7 +73,7 @@
 
 <section class="section-layout bg-white">
     <div class="main-layout">
-        <div class="px-4 md:px-6 lg:px-7 xl:px-8">
+        <div class="container-layout">
             <div class="title-main">
                 <h3 class="font-bebasNeue text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2">Dinas Pemadam Kebakaran <br>dan Penyelamatan Kota Tanjungpinang</h3>
                 <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Tentang Kami</h6>

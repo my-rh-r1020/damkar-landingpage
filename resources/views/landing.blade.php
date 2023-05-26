@@ -10,6 +10,6 @@
 @include('sections.prevention')
 @include('sections.testimonials')
 @include('sections.blog')
-@include('components.footermain')
+@include('components.footer')
     
 @endsection

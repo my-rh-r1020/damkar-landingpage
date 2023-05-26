@@ -1,7 +1,6 @@
 <section class="section-layout" id="berita">
     <div class="title-main text-center">
-        <h6 class="text-subtitle">{{ $subBlog }}</h6>
-        <h3 class="text-title">Artikel <span class="text-redColorAlt">Berita</span></h3>
+        <h3 class="text-title">Berita <span class="text-redColorAlt">Terkini</span></h3>
     </div>
     <div class="swiper blogs-list">
         <div class="swiper-wrapper">

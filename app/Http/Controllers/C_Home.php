@@ -25,7 +25,6 @@ class C_Home extends Controller
                 "descPrevention" => "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia eiusmod consequuntur do tempor incididunt ut labore.",
                 "subTestimonials" => "Testimoni",
                 "descTestimonials" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "subBlog" => "Our Blog",
                 "posts" => News::all()
             ]
         );
