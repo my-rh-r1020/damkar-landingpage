@@ -1,14 +1,77 @@
 <section class="section-layout bg-[#FAF8F9]">
     <div class="main-layout">
-        <div class="w-full lg:w-8/12 px-4 md:px-6 lg:px-7 xl:px-8">
-            <div class="breadcrumbs-container">
-                <a href="/" class="breadcrumbs-link">Home</a>
-                <span class="breadcrumbs-link-active">> Berita</span>
-            </div>
+        <div class="container-layout">
             <div class="title-main">
-                <h3 class="text-title">Berita Terkini Damkar</h3>
+                <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:pb-10">Berita Terbaru</h3>
             </div>
-            @foreach($posts as $post)
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-8/12 bg-red-100">
+                    {{-- <div class="flex flex-wrap md:gap-y-8">
+                        @foreach($posts as $post)
+                        <div class="w-full md:w-6/12">
+                            <a href="/berita/{{ $post['slug'] }}" class="bg-white">
+                                <div class="blogs-img-container">
+                                    <img src="images/article-1.jpg" alt="" class="blogs-img-view rounded-md">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-full md:w-6/12 bg-white">
+                            <a href="/berita/{{ $post['slug'] }}">
+                                <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl hover:text-greyColorAlt transition duration-300 leading-none">{{ $post['title'] }}</span>
+                            </a>
+                            <div class="mt-1">
+                                @foreach($post['mainText'] as $deskripsi)
+                                <p class="text-justify text-[13px] lg:text-base">{{ $deskripsi }}</p>
+                                @break
+                                @endforeach
+                            </div>
+                            <div class="flex flex-wrap mt-3">
+                                <div class="font-bebasNeue mr-6">
+                                    <span class="news-subtitle-date">Tanggal Terbit :</span>
+                                    <span class="news-subtitle-category cursor-pointer">{{ $post['timerelease'] }}</span>
+                                </div>
+                                <div class="font-bebasNeue">
+                                    <span class="news-subtitle-date">Kategori :</span>
+                                    <a href="#"><span class="news-subtitle-category">{{ $post['category'] }}</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div> --}}
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-y-8">
+                        @foreach($posts as $post)
+                        <a href="/berita/{{ $post['slug'] }}" class="bg-white mt-8 md:mt-0">
+                            <div class="blogs-img-container">
+                                <img src="images/article-1.jpg" alt="" class="blogs-img-view rounded-md">
+                            </div>
+                        </a>
+                        <div class="bg-white px-4 py-3 md:py-4 xl:py-6">
+                            <div class="mb-2 xl:mb-4">
+                                <a href="#" class="px-2 bg-red-300 rounded-sm"><span class="news-subtitle">{{ $post['category'] }}</span></a>
+                            </div>
+                            <a href="/berita/{{ $post['slug'] }}">
+                                <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl hover:text-greyColorAlt transition duration-300 leading-none">{{ $post['title'] }}</span>
+                            </a>
+                            <div class="mt-2">
+                                <p class="text-justify text-[13px] lg:text-base">{{ $post['intro'] }}</p>
+                            </div>
+                            <div class="cursor-pointer mt-3">
+                                <span class="news-subtitle">{{ $post['timerelease'] }}</span>
+                            </div>
+                            <div class="flex flex-wrap gap-x-6">
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="w-full lg:w-4/12 bg-slate-100 px-8 py-4">
+                    <div class="bg-white px-4 py-6">
+                        <h4>Kategori Berita</h4>
+                    </div>
+                </div>
+            </div>
+
+            {{-- @foreach($posts as $post)
             <div class="mb-12">
                 <a href="/berita/{{ $post['slug'] }}">
                     <div class="blogs-img-container">
@@ -37,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            @endforeach
+            @endforeach --}}
         </div>
     </div>
 </section>

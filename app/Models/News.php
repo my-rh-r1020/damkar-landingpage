@@ -18,10 +18,11 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Tingkatkan Kewaspadaan, Rahma Buka Lahan Jangan di Bakar",
+            "intro" => "Tanjungpinang, - Kepolisian Resor Tanjungpinang menggelar Apel Kesiapsiagaan Penanggulangan Kebakaran Hutan dan Lahan (Karhutla) ...",
             "timerelease" => "2 Januari 2023",
             "slug" => "tingkatkan-kewaspadaan-rahma-buka-lahan-jangan-dibakar",
             "mainText" => [
-                "text1" => "Tanjungpinang- Kepolisian Resor Tanjungpinang menggelar Apel Kesiapsiagaan Penanggulangan Kebakaran Hutan dan Lahan (Karhutla) di Wilayah Hukum Polres Tanjungpinang Tahun 2021, dihadiri Walikota Tanjungpinang, Hj. Rahma, S.IP yang berlangsung di Lapangan Apel Polres Tanjungpinang, Rabu (24/2) Pagi.",
+                "text1" => "Tanjungpinang - Kepolisian Resor Tanjungpinang menggelar Apel Kesiapsiagaan Penanggulangan Kebakaran Hutan dan Lahan (Karhutla) di Wilayah Hukum Polres Tanjungpinang Tahun 2021, dihadiri Walikota Tanjungpinang, Hj. Rahma, S.IP yang berlangsung di Lapangan Apel Polres Tanjungpinang, Rabu (24/2) Pagi.",
                 "text2" => "Walikota Tanjungpinang, Hj. Rahma, S.IP saat memimpin apel mengatakan bahwa ancaman kebakaran merupakan suatu bahaya yang dapat membawa bencana yang besar dengan akibat yang luas baik terhadap keselamatan jiwa, harta  benda dan dapat menimbulkan kerugian material maupun ancaman terhadap keselamatan jiwa.",
                 "text3" => '"Berdasarkan data terakhir yang dimiliki oleh Pemerintah Kota Tanjungpinang melalui Dinas Pemadam Kebakaran dan Penyelamatan periode Januari - Februari 2021, kejadian kebakaran yang terjadi di wilayah Kota Tanjungpinang adalah sebanyak 48 kali kejadian yaitu 40 kejadian kebakaran hutan dan lahan yang lebih kurang 337,7 Hektar, ditambah 6 kejadian kebakaran bangunan/ rumah serta kebakaran lainnya sebanyak 2 kejadian," ucap Rahma.',
                 "text4" => "Lebih lanjut Rahma menyampaikan bila dibandingkan data kebakaran Tahun 2020 periode Januari - Februari tercatat hanya 30 kejadian kebakaran hutan dan lahan. Dari data tersebut Tahun 2021 mengalami peningkatan persentase yang terjadi di wilayah Kota Tanjungpinang.",
@@ -35,6 +36,7 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Tindak Lanjut Aduan Warga, Endang Lakukan Koordinasi Bersama Pihak Terkait",
+            "intro" => "Tanjungpinang, - Wakil Wali Kota Tanjungpinang, Endang Abdullah, S.Kp, M.Si, melaksanakan rapat koordinasi bersama Perangkat Daerah terkait ...",
             "timerelease" => "5 Januari 2023",
             "slug" => "tindak-lanjut-aduan-warga-endang-lakukan-koordinasi-bersama-pihak-terkait",
             "mainText" => [
@@ -50,10 +52,11 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Pimpin Apel HUT DAMKAR, Endang Imbau Sosialisasikan Upaya Pencegahan Kebakaran",
+            "intro" => "Tanjungpinang, - Sempena peringatan Hari Ulang Tahun (HUT) Pemadam Kebakaran dan Penyelamatan yang ke-103 tahun, Dinas Damkar dan Penyelamatan ...",
             "timerelease" => "10 Januari 2023",
             "slug" => "pimpin-apel-hut-damkar-endang-imbau-sosialisasikan-upaya-pencegahan-kebakaran",
             "mainText" => [
-                "text1" => "Tanjungpinang — Sempena peringatan Hari Ulang Tahun (HUT) Pemadam Kebakaran dan Penyelamatan yang ke-103 tahun, Dinas Damkar dan Penyelamatan Kota Tanjungpinang menggelar apel yang disejalankan dengan kegiatan Pencegahan, Penanggulangan, Penyelamatan Kebakaran dan Penyelamatan Non Kebakaran. Bertindak sebagai pemimpin apel, Wakil Walikota Tanjungpinang, Endang Abdullah, S.Kp, M.Si, dihalaman kantor Damkar Kota Tanjungpinang, Selasa (1/3).",
+                "text1" => "Tanjungpinang - Sempena peringatan Hari Ulang Tahun (HUT) Pemadam Kebakaran dan Penyelamatan yang ke-103 tahun, Dinas Damkar dan Penyelamatan Kota Tanjungpinang menggelar apel yang disejalankan dengan kegiatan Pencegahan, Penanggulangan, Penyelamatan Kebakaran dan Penyelamatan Non Kebakaran. Bertindak sebagai pemimpin apel, Wakil Walikota Tanjungpinang, Endang Abdullah, S.Kp, M.Si, dihalaman kantor Damkar Kota Tanjungpinang, Selasa (1/3).",
                 "text2" => 'Endang dalam kesempatan itu menyampaikan, untuk menjadi seorang petugas pemadam kebakaran yang handal dan cakap harus mempunyai kemampuan dan disiplin yang tinggi. “Walaupun masih dengan kekurangan dan keterbatasan, melalui kegiatan pelatihan ini diharapkan dapat meningkatkan kinerja dalam rangka memberikan yang terbaik untuk masyarakat Kota Tanjungpinang,” harap Endang.',
                 "text3" => "Lanjut dikatakannya, bahwa diperlukan persiapan personil pemadam kebakaran yang tanggap, cakap dan mampu menghadapi segala ancaman bahaya demi kenyamanan dan keselamatan masyarakat.",
                 "text4" => '“Salah satu upaya dalam mewujudkan itu semua adalah dengan terus mengikuti pelatihan dan pengetahuan agar terbiasa dengan rintangan dan hambatan, karena petugas pemadam kebakaran bukanlah orang yang hebat melainkan terlatih untuk menghadapi situasi dan kondisi berbahaya dan berisiko tinggi,” ucapnya.',
@@ -67,6 +70,7 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Berita 4 - DAMKAR Kota Tanjungpinang",
+            "intro" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Quidem, voluptates nesciunt? Minima inventore itaque architecto! Natus, unde accusamus ...",
             "timerelease" => "20 Januari 2023",
             "slug" => "judul-berita-4",
             "mainText" => [
@@ -77,6 +81,7 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Berita 5 - DAMKAR Kota Tanjungpinang",
+            "intro" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Quidem, voluptates nesciunt? Minima inventore itaque architecto! Natus, unde accusamus ...",
             "timerelease" => "29 Januari 2023",
             "slug" => "judul-berita-5",
             "mainText" => [
@@ -87,6 +92,7 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Berita 6 - DAMKAR Kota Tanjungpinang",
+            "intro" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Quidem, voluptates nesciunt? Minima inventore itaque architecto! Natus, unde accusamus ...",
             "timerelease" => "10 Februari 2023",
             "slug" => "judul-berita-6",
             "mainText" => [
@@ -97,6 +103,7 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Berita 7 - DAMKAR Kota Tanjungpinang",
+            "intro" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Quidem, voluptates nesciunt? Minima inventore itaque architecto! Natus, unde accusamus ...",
             "timerelease" => "15 Februari 2023",
             "slug" => "judul-berita-7",
             "mainText" => [
@@ -107,6 +114,7 @@ class News
             "image" => "article-1.jpg",
             "category" => "Informasi",
             "title" => "Berita 8 - DAMKAR Kota Tanjungpinang",
+            "intro" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, eveniet. Quidem, voluptates nesciunt? Minima inventore itaque architecto! Natus, unde accusamus ...",
             "timerelease" => "27 Februrari 2023",
             "slug" => "judul-berita-8",
             "mainText" => [

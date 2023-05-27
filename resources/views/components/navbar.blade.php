@@ -46,7 +46,8 @@
             </nav>
 
             <div class="nav-btn">
-                <div class="hidden lg:block mr-6">
+                <a href="/elapor" class="bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221] py-1 px-5 xl:px-6 rounded-md">E-Lapor</a>
+                <div class="hidden lg:block ml-2">
                     <button id="search-btn" class="block close-btn-hover hover:text-white" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
                 </div>
                 <button id="hamburger" name="hamburger" type="button" class="block transition duration-300 hover:bg-redColor hover:text-white py-1 px-2 rounded-xl scale-75 lg:hidden ml-auto mr-1">
