@@ -3,7 +3,7 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('forms.f_insendentil')
-@include('components.footer')
+@include('components.forms.insendentil')
+@include('components.footer.index')
 
 @endsection

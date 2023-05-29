@@ -3,6 +3,8 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('components.navbar')
-@include('links.profile.listdanru')
-@include('components.footer')
+@include('components.navbar.index')
+@include('pages.profile.danru')
+@include('components.footer.index')
+
+@endsection

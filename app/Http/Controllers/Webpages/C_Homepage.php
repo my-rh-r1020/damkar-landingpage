@@ -1,17 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Webpages;
 
+// Deklarasi Controller
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
+// Deklarasi Model
 use App\Models\Home;
 use App\Models\News;
 
-class C_Home extends Controller
+class C_Homepage extends Controller
 {
     public function index()
     {
         return view(
-            'landing',
+            'homepage',
             [
                 "title" => "Disdamkarmat TPI",
                 "herobanners" => Home::herobannerdata(),

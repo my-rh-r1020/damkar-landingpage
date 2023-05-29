@@ -2,7 +2,7 @@
     <div class="main-layout">
         <div class="container-layout">
             <div class="title-main">
-                <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:pb-10">Berita Terbaru</h3>
+                <h3 class="header-text">Berita Terbaru</h3>
             </div>
             <div class="flex flex-wrap">
                 <div class="w-full lg:w-8/12 bg-red-100">

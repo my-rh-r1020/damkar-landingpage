@@ -9,7 +9,7 @@
                     <h6 class="text-subtitle">{{ $subPrevention }}</h6>
                     <h3 class="text-title">Persentasi Pelayanan <span class="text-redColorAlt">Publik</span></h3>
                 </div>
-                <div class="">
+                <div>
                     <p class="text-greyColor">{{ $descPrevention }}</p>
                 </div>
                 <div class="mt-[32px] flex justify-start">

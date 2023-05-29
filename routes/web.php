@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\C_Home;
-use App\Http\Controllers\C_News;
-use App\Http\Controllers\C_ELapor;
-use App\Http\Controllers\C_Menus;
-use App\Http\Controllers\C_Profile;
+use App\Http\Controllers\Webpages\C_Homepage;
+use App\Http\Controllers\Webpages\C_Links;
+use App\Http\Controllers\Webpages\C_News;
+use App\Http\Controllers\Webpages\C_Profile;
+use App\Http\Controllers\ELapor\C_ELapor;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,15 +21,15 @@ use Illuminate\Support\Facades\Route;
 // Routing with Arrow Function
 // Route::get('/', fn () => view());
 
-Route::get('/', [C_Home::class, "index"]);
+Route::get('/', [C_Homepage::class, "index"]);
 Route::get('profile', [C_Profile::class, 'profileIndex']);
 Route::get('danru', [C_Profile::class, 'danruDamkar']);
 Route::get('berita/{slug}', [C_News::class, 'index']);
 Route::get('berita', [C_News::class, 'list_berita']);
-Route::get('informasi', [C_Menus::class, 'grafikKebakaran']);
-Route::get('gallery', [C_Menus::class, 'galleryDamkar']);
-Route::get('edukasi', [C_Menus::class, 'eduDamkar']);
+Route::get('informasi', [C_Links::class, 'grafikKebakaran']);
+Route::get('gallery', [C_Links::class, 'galleryDamkar']);
+Route::get('edukasi', [C_Links::class, 'eduDamkar']);
 Route::get('elapor', [C_ELapor::class, "index"]);
 Route::get('insendentil', [C_ELapor::class, 'insendentil']);
 // Route::get('permohonan', [C_ELapor::class, 'requestData']);
-Route::get('redkar', [C_Menus::class, 'redKar']);
+Route::get('redkar', [C_Links::class, 'redKar']);

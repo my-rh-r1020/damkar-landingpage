@@ -3,8 +3,8 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('components.navbar')
-@include('links.berita.listberita')
-@include('components.footer')
+@include('components.navbar.index')
+@include('pages.berita.index')
+@include('components.footer.index')
 
 @endsection

@@ -1,7 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Webpages;
 
+// Deklarasi Controller
+use App\Http\Controllers\Controller;
+
+// Deklarasi Model
 use App\Models\Profile;
 use Illuminate\Http\Request;
 

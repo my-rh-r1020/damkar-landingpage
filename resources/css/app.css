@@ -21,6 +21,9 @@
     .text-title {
         @apply font-bebasNeue text-blackColor text-3xl md:text-[38px] lg:text-[46px];
     }
+    .header-text {
+        @apply font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:pb-12;
+    }
     .red-button {
         @apply py-3 px-10 sm:py-[13px] sm:px-[45px] lg:py-[14px] md:px-[49px] xl:py-[15px] lg:px-[52px] xl:px-[55px] rounded-md bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221];
     }

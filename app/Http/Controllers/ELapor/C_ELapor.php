@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\ELapor;
 
+// Deklarasi Controller
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class C_ELapor extends Controller

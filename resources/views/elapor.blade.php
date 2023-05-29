@@ -3,7 +3,8 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('forms.elapor')
-@include('components.footer')
+{{-- @include('forms.elapor') --}}
+@include('components.forms.elapor')
+@include('components.footer.index')
 
 @endsection

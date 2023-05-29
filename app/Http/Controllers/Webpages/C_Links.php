@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Webpages;
 
+// Deklarasi Controller
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class C_Menus extends Controller
+class C_Links extends Controller
 {
     public function grafikKebakaran()
     {
