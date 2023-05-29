@@ -1,4 +1,4 @@
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12">
@@ -47,7 +47,7 @@
     </div>
 </section>
 
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12 flex items-center">
@@ -74,7 +74,7 @@
     </div>
 </section>
 
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="title-main">
             <h3 class="text-title text-center">Saran</h3>

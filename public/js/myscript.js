@@ -7,7 +7,9 @@ const hamburger = document.querySelector("#hamburger"),
     accordionItems = document.querySelectorAll(".accordion-item"),
     videoBtn = document.querySelector("#video-btn"),
     videoPopUp = document.querySelector("#damkarplay"),
-    videoCloseBtn = document.querySelector("#video-close-btn");
+    videoCloseBtn = document.querySelector("#video-close-btn"),
+    emergencyCard = document.querySelector("#emergency-card"),
+    emergencyBtn = document.querySelector("#emergency-btn");
 
 // Hamburger & Sidebar
 hamburger.addEventListener("click", () => {
@@ -25,15 +27,6 @@ searchBtn.addEventListener("click", () => {
 
 searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");
-});
-
-// Nav Menu
-const navMenu = document.querySelectorAll(".nav-line-hover");
-
-navMenu.forEach((menu) => {
-    menu.addEventListener("mouseover", () => {
-        menu.classList.toggle("w-full");
-    });
 });
 
 // Youtube Video
@@ -71,9 +64,6 @@ testimonialSwiper.forEach((slide) => {
 });
 
 // Emergency Call Button
-const emergencyCard = document.querySelector("#emergency-card"),
-    emergencyBtn = document.querySelector("#emergency-btn");
-
 emergencyBtn.addEventListener("mouseenter", () => {
     emergencyCard.classList.remove("hidden");
 });
@@ -97,3 +87,11 @@ window.onscroll = function () {
         toTopBtn.classList.remove("flex");
     }
 };
+
+// Nav Menu
+const dropdownLink = document.querySelector("#dropdown-link"),
+    dropdownMenu = document.querySelector("#dropdown-menu");
+
+dropdownLink.addEventListener("mouseenter", () => {
+    dropdownMenu.classList.remove("hidden");
+});

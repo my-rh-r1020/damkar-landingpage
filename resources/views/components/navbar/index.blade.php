@@ -16,10 +16,20 @@
                     <span class="nav-link">Beranda</span>
                     <div class="{{ $title === "Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
-                <a href="/profile" class="relative mx-[12px]">
+
+                <a class="relative mx-[12px] cursor-pointer" id="dropdown-link">
                     <span class="nav-link">Profile</span>
                     <div class="{{ $title === "Profil Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
+                <nav id="dropdown-menu" class="hidden absolute z-10 py-2 px-4 bg-black opacity-95 rounded-md w-[200px] left-[455px] top-full">
+                    <ul class="block">
+                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah">Sejarah</a></li>
+                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Tupoksi</a></li>
+                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Struktur Organisasi</a></li>
+                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/danru">Danru</a></li>
+                    </ul>
+                </nav>
+
                 <a href="/berita" class="relative mx-[12px]">
                     <span class="nav-link">Berita</span>
                     <div class="{{ $title === "Berita Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>

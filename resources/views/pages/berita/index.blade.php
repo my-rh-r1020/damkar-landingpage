@@ -1,4 +1,4 @@
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
             <div class="title-main">
@@ -55,7 +55,7 @@
                             <div class="mt-2">
                                 <p class="text-justify text-[13px] lg:text-base">{{ $post['intro'] }}</p>
                             </div>
-                            <div class="cursor-pointer mt-3">
+                            <div class="cursor-default mt-3">
                                 <span class="news-subtitle">{{ $post['timerelease'] }}</span>
                             </div>
                             <div class="flex flex-wrap gap-x-6">

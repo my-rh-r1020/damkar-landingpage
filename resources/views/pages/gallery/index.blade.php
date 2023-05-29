@@ -1,12 +1,12 @@
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
-            <div class="breadcrumbs-container">
+            {{-- <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span class="breadcrumbs-link-active">> Gallery Kegiatan</span>
-            </div>
+            </div> --}}
             <div class="title-main">
-                <h3 class="text-title">Album Kegiatan Damkar</h3>
+                <h3 class="header-text">Album Kegiatan Damkar</h3>
             </div>
             <div class="mb-10">
                 <div class="font-bebasNeue mb-2">

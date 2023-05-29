@@ -1,4 +1,4 @@
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
             {{-- <div class="breadcrumbs-container">

@@ -1,5 +1,5 @@
-<section class="section-layout bg-[#FAF8F9]">
-    <div class="main-layout w-full">
+{{-- <section class="section-layout bg-lightGrey">
+    <div class="main-layout">
         <div class="lg:mx-[83px] xl:mx-[127px] px-[15px]">
             <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>
@@ -7,7 +7,7 @@
                 <span class="breadcrumbs-link-active">> {{ $post['title'] }}</span>
             </div>
             <div class="title-main">
-                <h3 class="font-bebasNeue text-xl md:text-2xl lg:text-3xl xl:text-4xl">{{ $post['title'] }}</h3>
+                <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2">{{ $post['title'] }}</h3>
                 <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">{{ $post['timerelease'] }}</span>
             </div>
             <div class="pb-8">
@@ -35,6 +35,42 @@
                 <button name="fav-btn" type="button">
                     <span class="blogs-social-media border border-1 border-slate-300 hover:text-redColorAlt"><i class='bx bx-heart text-xl'></i></span>
                 </button>
+                <div>
+                    <span class="mr-3 text-sm xl:text-base">Bagikan Artikel ini :</span>
+                    <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">
+                        <span class="blogs-social-media bg-[#1877F2]"><i class='bx bxl-facebook text-xl text-white'></i></span>
+                    </a>
+                    <a href="https://wa.me/62812345678" target="_blank">
+                        <span class="blogs-social-media bg-[#25D366]"><i class='bx bxl-whatsapp text-xl text-white'></i></span>
+                    </a>
+                    <a href="mailto:damkar.penyelamatan.tpi@gmail.com">
+                        <span class="blogs-social-media bg-[#7A7E83]"><i class='bx bx-envelope text-xl text-white'></i></span>
+                    </a>
+                    <a href="#">
+                        <span class="blogs-social-media bg-white border border-1 border-slate-150"><i class='bx bx-link text-xl text-blackColor'></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> --}}
+
+<section class="section-layout bg-lightGrey">
+    <div class="main-layout flex justify-center">
+        <div class="container-layout md:w-10/12 lg:w-9/12 xl:w-8/12">
+            <div class="title-main">
+                <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:mb-2">{{ $post['title'] }}</h3>
+                <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">{{ $post['timerelease'] }}</span>
+            </div>
+            <div class="pt-1 pb-6">
+                <img src="/images/{{ $post['image'] }}" alt="berita-image" class="w-full">
+            </div>
+            <article class="text-justify text-sm lg:text-base text-blackColor mb-16">
+                @foreach($post['mainText'] as $textPost)
+                    <p class="mb-4">{{ $textPost }}</p>
+                @endforeach
+            </article>
+            <div class="py-7 flex justify-end border border-white border-t-slate-300 border-b-slate-300">
                 <div>
                     <span class="mr-3 text-sm xl:text-base">Bagikan Artikel ini :</span>
                     <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">

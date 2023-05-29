@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', fn () => view());
 
 Route::get('/', [C_Homepage::class, "index"]);
-Route::get('profile', [C_Profile::class, 'profileIndex']);
+Route::get('sejarah', [C_Profile::class, 'profileIndex']);
 Route::get('danru', [C_Profile::class, 'danruDamkar']);
 Route::get('berita/{slug}', [C_News::class, 'index']);
 Route::get('berita', [C_News::class, 'list_berita']);

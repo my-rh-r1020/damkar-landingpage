@@ -1,4 +1,4 @@
-<section class="section-layout bg-[#FAF8F9]">
+<section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="w-full px-4 md:px-6 lg:px-7 xl:px-8">
             {{-- <div class="breadcrumbs-container">
@@ -33,7 +33,7 @@
     </div>
 </section>
 
-<section class="section-layout bg-white">
+{{-- <section class="section-layout bg-white">
     <div class="main-layout">
         <div class="container-layout">
             <div class="title-main">
@@ -68,4 +68,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}

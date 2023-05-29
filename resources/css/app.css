@@ -49,7 +49,7 @@
         @apply hover:text-greyColorAlt transition duration-300;
     }
     .nav-active {
-        @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-blackColor;
+        @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-[#000BED];
     }
     .nav-line-hover {
         @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;
@@ -187,10 +187,10 @@
         @apply text-[13px] text-greyColorAlt font-bebasNeue hover:text-redColor transition duration-300;
     }
     .blogs-category-news {
-        @apply py-[6px] px-[18px] border mr-2;
+        @apply py-[6px] px-[18px] border mr-2 text-greyColor hover:text-[#1DA1F2];
     }
     .blogs-categories-text {
-        @apply font-bebasNeue text-[13px] text-greyColor hover:text-[#1DA1F2];
+        @apply font-bebasNeue text-[13px];
     }
     .blogs-social-media {
         @apply px-3 py-[11px] rounded-full hover:opacity-90;
