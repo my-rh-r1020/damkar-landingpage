@@ -70,8 +70,8 @@
                     <p class="mb-4">{{ $textPost }}</p>
                 @endforeach
             </article>
-            <div class="py-7 flex justify-end border border-white border-t-slate-300 border-b-slate-300">
-                <div>
+            <div class="py-7 flex justify-end border border-lightGrey border-t-slate-300 border-b-slate-300">
+                <div class="mr-4">
                     <span class="mr-3 text-sm xl:text-base">Bagikan Artikel ini :</span>
                     <a href="https://www.facebook.com/profile.php?id=100064204235419" target="_blank">
                         <span class="blogs-social-media bg-[#1877F2]"><i class='bx bxl-facebook text-xl text-white'></i></span>

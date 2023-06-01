@@ -46,10 +46,10 @@
         @apply p-[12px];
     }
     .nav-link {
-        @apply hover:text-greyColorAlt transition duration-300;
+        @apply hover:text-redColor transition duration-300;
     }
     .nav-active {
-        @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-[#000BED];
+        @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-redColorAlt;
     }
     .nav-line-hover {
         @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;

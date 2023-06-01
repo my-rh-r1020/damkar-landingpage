@@ -1,3 +1,7 @@
+@php
+$currentUrl = request()->url();
+@endphp
+
 <header class="bg-white">
     <div class="main-layout pt-[2px] pb-[5px]">
         <div class="flex items-center justify-between relative">
@@ -23,10 +27,10 @@
                 </a>
                 <nav id="dropdown-menu" class="hidden absolute z-10 py-2 px-4 bg-black opacity-95 rounded-md w-[200px] left-[455px] top-full">
                     <ul class="block">
-                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah">Sejarah</a></li>
-                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Tupoksi</a></li>
-                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Struktur Organisasi</a></li>
-                        <li class="group text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/danru">Danru</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah">Sejarah</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Tupoksi</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Struktur Organisasi</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/danru">Danru</a></li>
                     </ul>
                 </nav>
 

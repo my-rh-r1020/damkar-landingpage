@@ -5,7 +5,7 @@
                 <h3 class="header-text">Berita Terbaru</h3>
             </div>
             <div class="flex flex-wrap">
-                <div class="w-full lg:w-8/12 bg-red-100">
+                <div class="w-full lg:w-8/12">
                     {{-- <div class="flex flex-wrap md:gap-y-8">
                         @foreach($posts as $post)
                         <div class="w-full md:w-6/12">
@@ -57,8 +57,6 @@
                             </div>
                             <div class="cursor-default mt-3">
                                 <span class="news-subtitle">{{ $post['timerelease'] }}</span>
-                            </div>
-                            <div class="flex flex-wrap gap-x-6">
                             </div>
                         </div>
                         @endforeach
