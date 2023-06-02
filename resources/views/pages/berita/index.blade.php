@@ -40,23 +40,23 @@
                     </div> --}}
                     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-y-8">
                         @foreach($posts as $post)
-                        <a href="/berita/{{ $post['slug'] }}" class="bg-white mt-8 md:mt-0">
+                        <a href="/berita/{{ $post->slug }}" class="bg-white mt-8 md:mt-0">
                             <div class="blogs-img-container">
-                                <img src="images/article-1.jpg" alt="" class="blogs-img-view rounded-md">
+                                <img src="images/{{ $post->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
                             </div>
                         </a>
                         <div class="bg-white px-4 py-3 md:py-4 xl:py-6">
                             <div class="mb-2 xl:mb-4">
-                                <a href="#" class="px-2 bg-red-300 rounded-sm"><span class="news-subtitle">{{ $post['category'] }}</span></a>
+                                <a href="#" class="px-2 bg-red-300 rounded-sm"><span class="news-subtitle">{{ $post->category }}</span></a>
                             </div>
-                            <a href="/berita/{{ $post['slug'] }}">
-                                <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl hover:text-greyColorAlt transition duration-300 leading-none">{{ $post['title'] }}</span>
+                            <a href="/berita/{{ $post->slug }}">
+                                <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl hover:text-greyColorAlt transition duration-300 leading-none">{{ $post->title }}</span>
                             </a>
                             <div class="mt-2">
-                                <p class="text-justify text-[13px] lg:text-base">{{ $post['intro'] }}</p>
+                                <p class="text-justify text-[13px] lg:text-base">{{ $post->excerpt }}</p>
                             </div>
                             <div class="cursor-default mt-3">
-                                <span class="news-subtitle">{{ $post['timerelease'] }}</span>
+                                <span class="news-subtitle">{{ $post->published_at }}</span>
                             </div>
                         </div>
                         @endforeach

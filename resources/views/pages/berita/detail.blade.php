@@ -59,16 +59,17 @@
     <div class="main-layout flex justify-center">
         <div class="container-layout md:w-10/12 lg:w-9/12 xl:w-8/12">
             <div class="title-main">
-                <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:mb-2">{{ $post['title'] }}</h3>
-                <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">{{ $post['timerelease'] }}</span>
+                <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:mb-2">{{ $post->title }}</h3>
+                <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">{{ $post->published_at }}</span>
             </div>
             <div class="pt-1 pb-6">
-                <img src="/images/{{ $post['image'] }}" alt="berita-image" class="w-full">
+                <img src="/images/{{ $post->cover }}" alt="gambar-berita" class="w-full">
             </div>
             <article class="text-justify text-sm lg:text-base text-blackColor mb-16">
-                @foreach($post['mainText'] as $textPost)
+                {!! $post->bodyText !!}
+                {{-- @foreach($post['mainText'] as $textPost)
                     <p class="mb-4">{{ $textPost }}</p>
-                @endforeach
+                @endforeach --}}
             </article>
             <div class="py-7 flex justify-end border border-lightGrey border-t-slate-300 border-b-slate-300">
                 <div class="mr-4">

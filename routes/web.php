@@ -5,6 +5,7 @@ use App\Http\Controllers\Webpages\C_Links;
 use App\Http\Controllers\Webpages\C_News;
 use App\Http\Controllers\Webpages\C_Profile;
 use App\Http\Controllers\ELapor\C_ELapor;
+use App\Http\Controllers\Webpages\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,8 +25,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [C_Homepage::class, "index"]);
 Route::get('sejarah', [C_Profile::class, 'profileIndex']);
 Route::get('danru', [C_Profile::class, 'danruDamkar']);
-Route::get('berita/{slug}', [C_News::class, 'index']);
-Route::get('berita', [C_News::class, 'list_berita']);
+Route::get('berita/{slug}', [ArticleController::class, 'detail']);
+Route::get('berita', [ArticleController::class, 'index']);
 Route::get('informasi', [C_Links::class, 'grafikKebakaran']);
 Route::get('gallery', [C_Links::class, 'galleryDamkar']);
 Route::get('edukasi', [C_Links::class, 'eduDamkar']);

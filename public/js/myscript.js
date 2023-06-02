@@ -96,18 +96,14 @@ dropdownLink.addEventListener("mouseenter", () => {
     dropdownMenu.classList.remove("hidden");
 });
 
-dropdownLink.addEventListener("mouseleave", (e) => {
-    if (e.target != dropdownLink && e.target != dropdownMenu) {
-        dropdownMenu.classList.add("hidden");
-    }
-});
-
-// window.addEventListener("mouseleave", (e) => {
+// dropdownLink.addEventListener("mouseleave", (e) => {
 //     if (e.target != dropdownLink && e.target != dropdownMenu) {
 //         dropdownMenu.classList.add("hidden");
 //     }
 // });
 
-// dropdownLink.addEventListener("mouseleave", () => {
-//     dropdownMenu.classList.add("hidden");
-// });
+window.addEventListener("mouseleave", (e) => {
+    if (e.target != dropdownLink && e.target != dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+    }
+});

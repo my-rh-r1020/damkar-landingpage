@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 // Deklarasi Model
 use App\Models\Home;
-use App\Models\News;
+use App\Models\Article;
 
 class C_Homepage extends Controller
 {
@@ -29,7 +29,7 @@ class C_Homepage extends Controller
                 "descPrevention" => "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia eiusmod consequuntur do tempor incididunt ut labore.",
                 "subTestimonials" => "Testimoni",
                 "descTestimonials" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "posts" => News::all()
+                "posts" => Article::all()
             ]
         );
     }
