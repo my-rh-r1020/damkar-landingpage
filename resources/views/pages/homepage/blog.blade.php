@@ -14,7 +14,7 @@
                     </a>
                     <div class="mt-[21px]">
                         <div class="mb-[8px]">
-                            <a href="#"><span class="blogs-categories">{{ $post->category }}</span></a>
+                            <a href="/category/{{ $post->category->slug }}"><span class="blogs-categories">{{ $post->category->name }}</span></a>
                         </div>
                         <a href="/berita/{{ $post->slug }}">
                             <span class="blogs-title">{{ $post->title }}</span>

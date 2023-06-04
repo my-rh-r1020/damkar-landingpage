@@ -6,6 +6,7 @@ use App\Http\Controllers\Webpages\C_News;
 use App\Http\Controllers\Webpages\C_Profile;
 use App\Http\Controllers\ELapor\C_ELapor;
 use App\Http\Controllers\Webpages\ArticleController;
+use App\Http\Controllers\Webpages\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,14 +20,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Routing with Arrow Function
-// Route::get('/', fn () => view());
-
 Route::get('/', [C_Homepage::class, "index"]);
+
 Route::get('sejarah', [C_Profile::class, 'profileIndex']);
 Route::get('danru', [C_Profile::class, 'danruDamkar']);
-Route::get('berita/{slug}', [ArticleController::class, 'detail']);
+
 Route::get('berita', [ArticleController::class, 'index']);
+Route::get('category/{category:slug}', [CategoryController::class, 'show']);
+Route::get('berita/{article:slug}', [ArticleController::class, 'show']);
+
 Route::get('informasi', [C_Links::class, 'grafikKebakaran']);
 Route::get('gallery', [C_Links::class, 'galleryDamkar']);
 Route::get('edukasi', [C_Links::class, 'eduDamkar']);

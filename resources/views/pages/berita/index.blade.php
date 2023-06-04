@@ -45,9 +45,9 @@
                                 <img src="images/{{ $post->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
                             </div>
                         </a>
-                        <div class="bg-white px-4 py-3 md:py-4 xl:py-6">
+                        <div class="bg-white px-4 xl:px-6 py-3 md:py-4 xl:py-8">
                             <div class="mb-2 xl:mb-4">
-                                <a href="#" class="px-2 bg-red-300 rounded-sm"><span class="news-subtitle">{{ $post->category }}</span></a>
+                                <a href="/category/{{ $post->category->slug }}" class="px-2 bg-red-300 rounded-sm"><span class="news-subtitle">{{ $post->category->name }}</span></a>
                             </div>
                             <a href="/berita/{{ $post->slug }}">
                                 <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl hover:text-greyColorAlt transition duration-300 leading-none">{{ $post->title }}</span>

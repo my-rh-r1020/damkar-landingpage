@@ -6,24 +6,18 @@ namespace App\Http\Controllers\Webpages;
 use App\Http\Controllers\Controller;
 
 // Deklarasi Model
-use App\Models\Article;
-use App\Http\Requests\StoreArticleRequest;
-use App\Http\Requests\UpdateArticleRequest;
+use App\Models\Category;
+use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
 
-class ArticleController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view(
-            'berita',
-            [
-                "title" => "Berita Disdamkarmat TPI",
-                "posts" => Article::all()
-            ]
-        );
+        //
     }
 
     /**
@@ -37,7 +31,7 @@ class ArticleController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreArticleRequest $request)
+    public function store(StoreCategoryRequest $request)
     {
         //
     }
@@ -45,21 +39,19 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Category $category)
     {
-        return view(
-            'detailBerita',
-            [
-                "title" => "Detail Berita",
-                "post" => $article,
-            ]
-        );
+        return view('category', [
+            'title' => $category->name,
+            'posts' => $category->articles,
+            'category' => $category->name
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit(Category $category)
     {
         //
     }
@@ -67,7 +59,7 @@ class ArticleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateArticleRequest $request, Article $article)
+    public function update(UpdateCategoryRequest $request, Category $category)
     {
         //
     }
@@ -75,7 +67,7 @@ class ArticleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
+    public function destroy(Category $category)
     {
         //
     }
