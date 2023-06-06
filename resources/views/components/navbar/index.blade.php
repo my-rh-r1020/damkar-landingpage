@@ -18,12 +18,12 @@ $currentUrl = request()->url();
             <nav class="nav-menu hidden lg:block">
                 <a href="/" class="relative mx-[12px]">
                     <span class="nav-link">Beranda</span>
-                    <div class="{{ $title === "Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
 
                 <a class="relative mx-[12px] cursor-pointer" id="dropdown-link">
                     <span class="nav-link">Profile</span>
-                    <div class="{{ $title === "Profil Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <nav id="dropdown-menu" class="hidden absolute z-10 py-2 px-4 bg-black opacity-95 rounded-md w-[200px] left-[455px] top-full">
                     <ul class="block">
@@ -36,7 +36,7 @@ $currentUrl = request()->url();
 
                 <a href="/berita" class="relative mx-[12px]">
                     <span class="nav-link">Berita</span>
-                    <div class="{{ $title === "Berita Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <a href="/informasi" class="relative mx-[12px]">
                     <span class="nav-link">Informasi Data</span>

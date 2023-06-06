@@ -43,7 +43,8 @@ class CategoryController extends Controller
     {
         return view('category', [
             'title' => $category->name,
-            'posts' => $category->articles,
+            // N+1 Problem Resolved
+            'posts' => $category->articles->load('category'),
             'category' => $category->name
         ]);
     }

@@ -18,6 +18,7 @@ class C_Homepage extends Controller
             'homepage',
             [
                 "title" => "Disdamkarmat TPI",
+                "url" => "/",
                 "herobanners" => Home::herobannerdata(),
                 "subContact" => "Hubungi Kami",
                 "titleContact" => "Pantang Pulang Sebelum Padam",

@@ -55,42 +55,16 @@
     </div>
 </section> --}}
 
-{{-- $article::create([
-    'category_id' => 1,
-    'cover' => 'article-1.jpg',
-    'title' => 'Tingkatkan Kewaspadaan, Rahma Buka Lahan Jangan di Bakar',
-    'excerpt' => 'Tanjungpinang, - Kepolisian Resor Tanjungpinang menggelar Apel Kesiapsiagaan Penanggulangan Kebakaran Hutan dan Lahan (Karhutla)',
-    'content_text' => '<p class="mb-4">Tanjungpinang - Kepolisian Resor Tanjungpinang menggelar Apel Kesiapsiagaan Penanggulangan Kebakaran Hutan dan Lahan (Karhutla) di Wilayah Hukum Polres Tanjungpinang Tahun 2021, dihadiri Walikota Tanjungpinang, Hj. Rahma, S.IP yang berlangsung di Lapangan Apel Polres Tanjungpinang, Rabu (24/2) Pagi.</p><p class="mb-4">Walikota Tanjungpinang, Hj. Rahma, S.IP saat memimpin apel mengatakan bahwa ancaman kebakaran merupakan suatu bahaya yang dapat membawa bencana yang besar dengan akibat yang luas baik terhadap keselamatan jiwa, harta  benda dan dapat menimbulkan kerugian material maupun ancaman terhadap keselamatan jiwa.</p><p class="mb-4">"Berdasarkan data terakhir yang dimiliki oleh Pemerintah Kota Tanjungpinang melalui Dinas Pemadam Kebakaran dan Penyelamatan periode Januari - Februari 2021, kejadian kebakaran yang terjadi di wilayah Kota Tanjungpinang adalah sebanyak 48 kali kejadian yaitu 40 kejadian kebakaran hutan dan lahan yang lebih kurang 337,7 Hektar, ditambah 6 kejadian kebakaran bangunan/ rumah serta kebakaran lainnya sebanyak 2 kejadian," ucap Rahma.</p><p class="mb-4">Lebih lanjut Rahma menyampaikan bila dibandingkan data kebakaran Tahun 2020 periode Januari - Februari tercatat hanya 30 kejadian kebakaran hutan dan lahan. Dari data tersebut Tahun 2021 mengalami peningkatan persentase yang terjadi di wilayah Kota Tanjungpinang.</p>'
-    'slug' => 'tingkatkan-kewaspadaan-rahma-buka-lahan-jangan-dibakar',
-    'published_at' => '2023-01-03 13:05:00'
-])
-
-$article::create([
-    'category_id' => 1,
-    'cover' => 'article-1.jpg',
-    'title' => 'Tindak Lanjut Aduan Warga, Endang Lakukan Koordinasi Bersama Pihak Terkait',
-    'excerpt' => 'Tanjungpinang, - Wakil Wali Kota Tanjungpinang, Endang Abdullah, S.Kp, M.Si, melaksanakan rapat koordinasi bersama Perangkat Daerah terkait',
-    'content_text' => '<p class="mb-4">Tanjungpinang – Wakil Wali Kota Tanjungpinang, Endang Abdullah, S.Kp, M.Si, melaksanakan rapat koordinasi bersama Perangkat Daerah terkait, sebagai tindak lanjut dari peninjauan atas keluhan warga di perumahan Elang Regency pekan lalu. Rapat dilaksanakan di ruang Wakil Wali Kota, Kamis (8/12).</p><p class="mb-4">Pemerintah Kota Tanjungpinang mengundang pihak Developer bersama Lurah, Camat, dan RT/RW setempat untuk membahas penanganan terhadap laporan warga sekitar atas kekhawatiran naiknya buaya ke daratan di perumahan tersebut.</p><p class="mb-4">Endang menyampaikan agar segera dilakukan penanganan agar masyarakat merasa aman. “Diharapkan developer dapat membuat pemagaran disekitar pinggiran rawa sehingga buaya tidak bisa naik ke pemukiman warga untuk keamanan warga. Karena tanggul yang ada tidak memadai untuk meminimalisir naiknya buaya ke pemukiman,” ucapnya.</p><p class="mb-4">Endang juga berharap kepada RT, RW juga Lurah untuk melakukan pengawasan demi keamanan dan kenyamanan warga. “Bekerjasama dengan warga untuk lebih memperhatikan lingkungan tersebut, lakukan imbauan kepada warga agar selalu waspada dan berhati-hati dan segera laporkan jika melihat hal serupa,” harapnya.</p>',
-    'slug' => 'tindak-lanjut-aduan-warga-endang-lakukan-koordinasi-bersama-pihak-terkait',
-    'published_at' => '2023-01-05 13:05:00'
-])
-
-$article::create([
-    'category_id' => 2,
-    'cover' => 'article-1.jpg',
-    'title' => 'Istilah Penting Pada Pemadam Kebakaran',
-    'excerpt' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. At sed eum similique sint delectus earum, minus ipsa nulla debitis esse.',
-    'content_text' => '<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquid, ab quis similique officiis eius. Suscipit ab quaerat, nostrum dicta fugit libero. Esse inventore odit quibusdam, accusantium, debitis provident nihil laboriosam vero ex totam odio illum nostrum reprehenderit sit facere minus quam molestiae nesciunt. Est beatae quidem doloremque saepe asperiores odit qui aut obcaecati. Laborum, sequi sunt perferendis sapiente placeat culpa excepturi quam earum eius. Impedit, voluptatum cupiditate eius molestias molestiae esse officia dolorem quos autem rem deserunt veniam aliquam fugit maxime blanditiis incidunt nobis explicabo architecto ad nemo corrupti magnam sequi eum quidem? Minima adipisci hic laboriosam molestias quia.</p>',
-    'slug' => 'istilah-penting-pada-pemadam-kebakaran',
-    'published_at' => '2023-01-12 13:05:00'
-]) --}}
-
 <section class="section-layout bg-lightGrey">
     <div class="main-layout flex justify-center">
         <div class="container-layout md:w-10/12 lg:w-9/12 xl:w-8/12">
             <div class="title-main">
                 <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:mb-2">{{ $post->title }}</h3>
-                <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">{{ $post->published_at }}</span>
+                <div class="flex items-center gap-2">
+                    <a href="#" class="text-[#a5a3a3] hover:text-blackColor text-xs md:text-sm xl:text-base">{{ $post->user->name }}</a>
+                    <span class="text-[#a5a3a3] text-xs xl:text-base">|</span>
+                    <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">{{ $post->published_at }}</span>
+                </div>
             </div>
             <div class="pt-1 pb-6">
                 <img src="/images/{{ $post->cover }}" alt="gambar-berita" class="w-full">

@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
+use App\Models\Category;
 
 class ArticleController extends Controller
 {
@@ -21,7 +22,11 @@ class ArticleController extends Controller
             'berita',
             [
                 "title" => "Berita Disdamkarmat TPI",
-                "posts" => Article::all()
+                "url" => "/berita",
+                // N+1 Problem Resolved
+                "posts" => Article::latest()->get()
+
+                // "posts" => Article::all()
             ]
         );
     }

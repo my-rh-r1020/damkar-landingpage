@@ -38,11 +38,12 @@
                         </div>
                         @endforeach
                     </div> --}}
+                    @if ($posts->count())
                     <div class="grid grid-cols-1 md:grid-cols-2 md:gap-y-8">
                         @foreach($posts as $post)
                         <a href="/berita/{{ $post->slug }}" class="bg-white mt-8 md:mt-0">
                             <div class="blogs-img-container">
-                                <img src="images/{{ $post->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
+                                <img src="/images/{{ $post->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
                             </div>
                         </a>
                         <div class="bg-white px-4 xl:px-6 py-3 md:py-4 xl:py-8">
@@ -61,44 +62,18 @@
                         </div>
                         @endforeach
                     </div>
+                    @else
+                    <div class="bg-redColorAlt text-white text-center p-4">
+                        <span class="font-bebasNeue text-lg xl:text-2xl">Tidak Ada Data Berita</span>
+                    </div>    
+                    @endif
                 </div>
-                <div class="w-full lg:w-4/12 bg-slate-100 px-8 py-4">
+                <div class="w-full lg:w-4/12 px-8 pb-4">
                     <div class="bg-white px-4 py-6">
                         <h4>Kategori Berita</h4>
                     </div>
                 </div>
             </div>
-
-            {{-- @foreach($posts as $post)
-            <div class="mb-12">
-                <a href="/berita/{{ $post['slug'] }}">
-                    <div class="blogs-img-container">
-                        <img src="images/{{ $post['image'] }}" alt="berita-damkar" class="blogs-img-view rounded-md">
-                    </div>
-                </a>
-                <div class="mt-3">
-                    <a href="/berita/{{ $post['slug'] }}">
-                        <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl hover:text-greyColorAlt transition duration-300 leading-none">{{ $post['title'] }}</span>
-                    </a>
-                    <div class="mt-1">
-                        @foreach($post['mainText'] as $deskripsi)
-                        <p class="text-justify text-[13px] lg:text-base">{{ $deskripsi }}</p>
-                        @break
-                        @endforeach
-                    </div>
-                    <div class="flex flex-wrap mt-3">
-                        <div class="font-bebasNeue mr-6">
-                            <span class="news-subtitle-date">Tanggal Terbit :</span>
-                            <span class="news-subtitle-category cursor-pointer">{{ $post['timerelease'] }}</span>
-                        </div>
-                        <div class="font-bebasNeue">
-                            <span class="news-subtitle-date">Kategori :</span>
-                            <a href="#"><span class="news-subtitle-category">{{ $post['category'] }}</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach --}}
         </div>
     </div>
 </section>

@@ -26,8 +26,8 @@ Route::get('sejarah', [C_Profile::class, 'profileIndex']);
 Route::get('danru', [C_Profile::class, 'danruDamkar']);
 
 Route::get('berita', [ArticleController::class, 'index']);
-Route::get('category/{category:slug}', [CategoryController::class, 'show']);
 Route::get('berita/{article:slug}', [ArticleController::class, 'show']);
+Route::get('category/{category:slug}', [CategoryController::class, 'show']);
 
 Route::get('informasi', [C_Links::class, 'grafikKebakaran']);
 Route::get('gallery', [C_Links::class, 'galleryDamkar']);

@@ -13,7 +13,7 @@ class C_Profile extends Controller
 {
     public function profileIndex()
     {
-        return view('profile', ["title" => "Profil Disdamkarmat TPI"]);
+        return view('profile', ["title" => "Profil Disdamkarmat TPI", "url" => "/profile"]);
     }
 
     public function danruDamkar()
