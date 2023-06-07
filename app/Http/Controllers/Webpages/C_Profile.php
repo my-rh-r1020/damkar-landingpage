@@ -18,6 +18,6 @@ class C_Profile extends Controller
 
     public function danruDamkar()
     {
-        return view('profile_danru', ["title" => "Danru Disdamkarmat TPI", "lists" => Profile::all()]);
+        return view('profile_danru', ["title" => "Danru Disdamkarmat TPI", "url" => "/danru", "lists" => Profile::all()]);
     }
 }

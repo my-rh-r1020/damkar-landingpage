@@ -25,12 +25,16 @@ $currentUrl = request()->url();
                     <span class="nav-link">Profile</span>
                     <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
-                <nav id="dropdown-menu" class="hidden absolute z-10 py-2 px-4 bg-black opacity-95 rounded-md w-[200px] left-[455px] top-full">
+                <nav id="dropdown-menu" class="hidden absolute z-10 py-2 bg-black opacity-95 rounded-md w-[200px] left-[455px] top-full">
                     <ul class="block">
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah">Sejarah</a></li>
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Tupoksi</a></li>
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#">Struktur Organisasi</a></li>
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/danru">Danru</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah" class="px-4">Sejarah</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Tupoksi</a></li>
+                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Struktur Organisasi</a></li>
+                        <li class="bg-redColorAlt text-whiteColorAlt hover:text-white py-2">
+                            <div class="transition hover:translate-x-2">
+                                <a href="/danru" class="px-4">Danru</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
 
@@ -38,24 +42,24 @@ $currentUrl = request()->url();
                     <span class="nav-link">Berita</span>
                     <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
-                <a href="/informasi" class="relative mx-[12px]">
+                <a href="/grafik" class="relative mx-[12px]">
                     <span class="nav-link">Informasi Data</span>
-                    <div class="{{ $title === "Grafik Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/grafik" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <a href="/gallery" class="relative mx-[12px]">
                     <span class="nav-link">Galery</span>
-                    <div class="{{ $title === "Gallery Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <a href="/edukasi" class="relative mx-[12px]">
                     <span class="nav-link">Edu Damkar</span>
-                    <div class="{{ $title === "Edukasi Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/edukasi" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
                 <a href="/insendentil" class="relative mx-[12px]">
                     <span class="nav-link">Insendentil</span>
                 </a>
                 <a href="/redkar" class="relative mx-[12px]">
                     <span class="nav-link">Red Kar</span>
-                    <div class="{{ $title === "Redkar Disdamkarmat TPI" ? 'nav-active' : 'hidden' }}"></div>
+                    <div class="{{ $url === "/redkar" ? 'nav-active' : 'hidden' }}"></div>
                 </a>
             </nav>
 

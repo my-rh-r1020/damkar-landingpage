@@ -5,7 +5,7 @@
                 <h3 class="header-text">Berita Terbaru</h3>
             </div>
             <div class="flex flex-wrap">
-                <div class="w-full lg:w-8/12">
+                <div class="w-full lg:w-8/12 mb-8 lg:mb-0">
                     {{-- <div class="flex flex-wrap md:gap-y-8">
                         @foreach($posts as $post)
                         <div class="w-full md:w-6/12">
@@ -56,21 +56,41 @@
                             <div class="mt-2">
                                 <p class="text-justify text-[13px] lg:text-base">{{ $post->excerpt }}</p>
                             </div>
-                            <div class="cursor-default mt-3">
-                                <span class="news-subtitle">{{ $post->published_at }}</span>
+                            <div class="cursor-default mt-5">
+                                <span class="news-subtitle">{{ $post->created_at->diffForHumans() }}</span>
                             </div>
                         </div>
                         @endforeach
+                        <div>
+                            {{ $pages->links() }}
+                        </div>
                     </div>
                     @else
                     <div class="bg-redColorAlt text-white text-center p-4">
-                        <span class="font-bebasNeue text-lg xl:text-2xl">Tidak Ada Data Berita</span>
+                        <span class="font-bebasNeue text-lg xl:text-2xl">Tidak Ada Berita "{{ request('search') }}"</span>
                     </div>    
                     @endif
                 </div>
-                <div class="w-full lg:w-4/12 px-8 pb-4">
-                    <div class="bg-white px-4 py-6">
-                        <h4>Kategori Berita</h4>
+                <div class="w-full lg:w-4/12 lg:pl-8">
+                    <div class="bg-white px-10 py-12">
+                        <div class="mb-10">
+                            <div class="mb-2">
+                                <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl">Pencarian</span>
+                            </div>
+                            <form action="/berita" method="get">
+                                @if(request('category'))
+                                    <input type="hidden" name="category" value="{{ request('category') }}">
+                                @endif
+                                <div>
+                                    <input type="text" name="search" id="search" value="{{ request('search') }}" placeholder="Cari Berita ..." class="w-full px-4 py-3 text-sm lg:text-base rounded-md focus:outline-double bg-white border-2 border-whiteColorAlt">
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <div class="mb-2">
+                                <span class="font-bebasNeue text-blackColor text-lg lg:text-2xl">Recent News</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

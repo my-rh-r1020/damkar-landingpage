@@ -10,21 +10,21 @@ class C_Links extends Controller
 {
     public function grafikKebakaran()
     {
-        return view('informasi', ["title" => "Grafik Disdamkarmat TPI"]);
+        return view('grafik_kebakaran', ["title" => "Grafik Disdamkarmat TPI", "url" => "/grafik"]);
     }
 
     public function galleryDamkar()
     {
-        return view('gallery', ["title" => "Gallery Disdamkarmat TPI"]);
+        return view('gallery', ["title" => "Gallery Disdamkarmat TPI", "url" => "/gallery"]);
     }
 
     public function eduDamkar()
     {
-        return view('edukasi', ["title" => "Edukasi Disdamkarmat TPI"]);
+        return view('edukasi', ["title" => "Edukasi Disdamkarmat TPI", "url" => "/edukasi"]);
     }
 
     public function redKar()
     {
-        return view('redkar', ["title" => "Redkar Disdamkarmat TPI"]);
+        return view('redkar', ["title" => "Redkar Disdamkarmat TPI", "url" => "/redkar"]);
     }
 }
