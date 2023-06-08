@@ -1,3 +1,10 @@
+@extends('layouts.main')
+
+{{-- Import bodyMain From layouts/main.blade.php --}}
+@section('bodyMain')
+
+@include('components.navbar.index')
+
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
@@ -27,3 +34,7 @@
         </div>
     </div>
 </section>
+
+@include('components.footer.index')
+
+@endsection

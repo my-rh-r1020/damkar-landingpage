@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use App\Models\Home;
 use App\Models\Article;
 
-class C_Homepage extends Controller
+class HomepageController extends Controller
 {
     public function index()
     {

@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Profile;
 use Illuminate\Http\Request;
 
-class C_Profile extends Controller
+class ProfileController extends Controller
 {
     public function profileIndex()
     {
@@ -18,6 +18,6 @@ class C_Profile extends Controller
 
     public function danruDamkar()
     {
-        return view('profile_danru', ["title" => "Danru Disdamkarmat TPI", "url" => "/danru", "lists" => Profile::all()]);
+        return view('pages.profile.danru', ["title" => "Danru Disdamkarmat TPI", "url" => "/danru", "lists" => Profile::all()]);
     }
 }

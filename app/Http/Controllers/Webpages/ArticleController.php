@@ -18,16 +18,13 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $pages = Article::paginate(4);
-
         return view(
             'berita',
             [
                 "title" => "Berita Disdamkarmat TPI",
                 "url" => "/berita",
                 // N+1 Problem Resolved
-                "posts" => Article::latest()->filter(request(['search', 'category']))->get(),
-                "pages" => $pages
+                "posts" => Article::latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
             ]
         );
     }
@@ -54,7 +51,7 @@ class ArticleController extends Controller
     public function show(Article $article)
     {
         return view(
-            'detailBerita',
+            'pages.berita.detail',
             [
                 "title" => "Detail Berita",
                 "url" => "/detail",

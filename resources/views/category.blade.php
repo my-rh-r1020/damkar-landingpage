@@ -3,7 +3,7 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('components.navbar.index')
+@include('components.parts.navbar.index')
 
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
@@ -31,10 +31,13 @@
                 </div>
                 @endforeach
             </div>
+            {{-- <div class="mt-6 lg:mt-8">
+                {{ $posts->links() }}
+            </div> --}}
         </div>
     </div>
 </section>
 
-@include('components.footer.index')
+@include('components.parts.footer.index')
 
 @endsection

@@ -4,7 +4,7 @@
 @section('bodyMain')
 
 @include('components.parts.navbar.index')
-@include('pages.berita.index')
+@include('components.pages.grafik.index')
 @include('components.parts.footer.index')
 
 @endsection

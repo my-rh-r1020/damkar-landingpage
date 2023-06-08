@@ -61,9 +61,9 @@
                             </div>
                         </div>
                         @endforeach
-                        <div>
-                            {{ $pages->links() }}
-                        </div>
+                    </div>
+                    <div class="mt-6 lg:mt-8">
+                        {{ $posts->links() }}
                     </div>
                     @else
                     <div class="bg-redColorAlt text-white text-center p-4">
