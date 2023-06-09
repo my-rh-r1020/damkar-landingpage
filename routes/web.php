@@ -7,7 +7,7 @@ use App\Http\Controllers\Webpages\ArticleController;
 use App\Http\Controllers\Webpages\CategoryController;
 use App\Http\Controllers\ELapor\ELaporController;
 use App\Http\Controllers\User\DashboardController;
-use App\Http\Controllers\User\SigninController;
+use App\Http\Controllers\User\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,9 +41,10 @@ Route::get('/insendentil', [ELaporController::class, 'insendentil']);
 // Route::get('permohonan', [C_ELapor::class, 'requestData']);
 Route::get('/redkar', [LinksController::class, 'redKar']);
 
-// Sign In
-Route::get('/signin', [SigninController::class, 'index'])->middleware('guest');
-Route::post('/signin', [SigninController::class, 'authenticate']);
+// Sign In & Sign Out
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 // Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');

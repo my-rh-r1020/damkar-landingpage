@@ -12,7 +12,7 @@
                     <h3 class="text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2 lg:mb-4">Sign In</h3>
                     <span class="text-greyColorAlt">Enter your email and password to sign in</span>
                 </div>
-                <form action="/signin" method="post">
+                <form action="/login" method="post">
                     @csrf
                     <div class="mb-4">
                         <input type="text" name="email" id="email" value="{{ old('email') }}" placeholder="Enter Your Email Address" class="w-full px-4 py-3 text-sm lg:text-base rounded-md focus:outline-double focus:outline-[#000BED] bg-white border-2 border-whiteColorAlt @error('email') is-invalid @enderror">
@@ -25,12 +25,12 @@
                     <div class="mb-10">
                         <input type="password" name="password" id="password" placeholder="Enter Your Password" class="w-full px-4 py-3 text-sm lg:text-base rounded-md focus:outline-double focus:outline-[#000BED] bg-white border-2 border-whiteColorAlt">
                     </div>
-                    <button class="w-full py-2 bg-blue-500 rounded-md text-white" type="submit">Sign In</button>
+                    <button class="w-full py-2 bg-blue-500 hover:bg-blue-600 rounded-md text-white" type="submit">Sign In</button>
                 </form>
             </div>
         </div>
         <div class="w-full md:w-6/12 lg:w-7/12">
-            <img src="/images/damkar-tpi.jpg" alt="">
+            <img src="/images/damkar-tpi.jpg" alt="" class="h-full">
         </div>
     </div>
 </section>

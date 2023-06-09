@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('components.layouts.main')
 
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
