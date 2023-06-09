@@ -3,7 +3,7 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('components.navbar.index')
+@include('components.parts.navbar.index')
 
 <section class="section-layout bg-lightGrey">
     <div class="main-layout flex justify-center">
@@ -46,6 +46,6 @@
     </div>
 </section>
 
-@include('components.footer.index')
+@include('components.parts.footer.index')
 
 @endsection

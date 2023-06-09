@@ -41,7 +41,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return view('category', [
+        return view('pages.category', [
             'title' => $category->name,
             'url' => '/category',
             // N+1 Problem Resolved

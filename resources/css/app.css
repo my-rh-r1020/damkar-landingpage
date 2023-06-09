@@ -39,12 +39,6 @@
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
     }
-    .nav-btn {
-        @apply flex items-center justify-end;
-    }
-    .nav-span {
-        @apply p-[12px];
-    }
     .nav-link {
         @apply hover:text-redColor transition duration-300;
     }

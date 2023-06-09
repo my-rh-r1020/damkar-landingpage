@@ -19,7 +19,7 @@ class ArticleController extends Controller
     public function index()
     {
         return view(
-            'berita',
+            'pages.berita',
             [
                 "title" => "Berita Disdamkarmat TPI",
                 "url" => "/berita",
@@ -51,7 +51,7 @@ class ArticleController extends Controller
     public function show(Article $article)
     {
         return view(
-            'pages.berita.detail',
+            'components.pages.berita.detail',
             [
                 "title" => "Detail Berita",
                 "url" => "/detail",

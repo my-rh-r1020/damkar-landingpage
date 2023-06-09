@@ -15,7 +15,7 @@ class HomepageController extends Controller
     public function index()
     {
         return view(
-            'homepage',
+            'pages.homepage',
             [
                 "title" => "Disdamkarmat TPI",
                 "url" => "/",

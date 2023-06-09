@@ -6,18 +6,18 @@ namespace App\Http\Controllers\ELapor;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class C_ELapor extends Controller
+class ELaporController extends Controller
 {
     public function index()
     {
-        return view("elapor", [
+        return view("pages.elapor", [
             "title" => "E-LAPOR Disdamkarmat TPI"
         ]);
     }
 
     public function insendentil()
     {
-        return view('insendentil', [
+        return view('pages.insendentil', [
             "title" => "Insendentil Disdamkarmat TPI"
         ]);
     }

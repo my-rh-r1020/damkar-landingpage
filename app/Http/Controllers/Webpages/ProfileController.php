@@ -13,11 +13,11 @@ class ProfileController extends Controller
 {
     public function profileIndex()
     {
-        return view('profile', ["title" => "Profil Disdamkarmat TPI", "url" => "/profile"]);
+        return view('pages.profile', ["title" => "Profil Disdamkarmat TPI", "url" => "/profile"]);
     }
 
     public function danruDamkar()
     {
-        return view('pages.profile.danru', ["title" => "Danru Disdamkarmat TPI", "url" => "/danru", "lists" => Profile::all()]);
+        return view('components.pages.profile.danru', ["title" => "Danru Disdamkarmat TPI", "url" => "/danru", "lists" => Profile::all()]);
     }
 }

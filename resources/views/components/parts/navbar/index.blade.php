@@ -4,75 +4,87 @@ $currentUrl = request()->url();
 
 <header class="bg-white">
     <div class="main-layout pt-[2px] pb-[5px]">
-        <div class="flex items-center justify-between relative">
+        <nav class="flex items-center justify-between relative">
             <div class="py-[9px] pl-[15px]">
                 <a href="/">
-                    {{-- <div class="flex flex-wrap items-center text-[18px]">
-                        <img src="/images/logo-damkar.png" alt="damkar-logo" class="w-[70px]">
-                        <span class="uppercase font-bebasNeue ml-[6px] leading-none">Dinas Pemadam Kebakaran<br> dan Penyelamatan</span>
-                    </div> --}}
                     <img src="/images/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
                 </a>
             </div>
-
-            <nav class="nav-menu hidden lg:block">
-                <a href="/" class="relative mx-[12px]">
-                    <span class="nav-link">Beranda</span>
-                    <div class="{{ $url === "/" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-
-                <a class="relative mx-[12px] cursor-pointer" id="dropdown-link">
-                    <span class="nav-link">Profile</span>
-                    <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-                <nav id="dropdown-menu" class="hidden absolute z-10 py-2 bg-black opacity-95 rounded-md w-[200px] left-[455px] top-full">
-                    <ul class="block">
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah" class="px-4">Sejarah</a></li>
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Tupoksi</a></li>
-                        <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Struktur Organisasi</a></li>
-                        <li class="bg-redColorAlt text-whiteColorAlt hover:text-white py-2">
-                            <div class="transition hover:translate-x-2">
-                                <a href="/danru" class="px-4">Danru</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-
-                <a href="/berita" class="relative mx-[12px]">
-                    <span class="nav-link">Berita</span>
-                    <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-                <a href="/grafik" class="relative mx-[12px]">
-                    <span class="nav-link">Informasi Data</span>
-                    <div class="{{ $url === "/grafik" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-                <a href="/gallery" class="relative mx-[12px]">
-                    <span class="nav-link">Galery</span>
-                    <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-                <a href="/edukasi" class="relative mx-[12px]">
-                    <span class="nav-link">Edu Damkar</span>
-                    <div class="{{ $url === "/edukasi" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-                <a href="/insendentil" class="relative mx-[12px]">
-                    <span class="nav-link">Insendentil</span>
-                </a>
-                <a href="/redkar" class="relative mx-[12px]">
-                    <span class="nav-link">Red Kar</span>
-                    <div class="{{ $url === "/redkar" ? 'nav-active' : 'hidden' }}"></div>
-                </a>
-            </nav>
-
-            <div class="nav-btn">
-                <a href="/elapor" class="bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221] py-1 px-5 xl:px-6 rounded-md">E-Lapor</a>
-                <div class="hidden lg:block ml-2">
-                    <button id="search-btn" class="block close-btn-hover hover:text-white" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
+            <div class="hidden lg:block">
+                <ul class="nav-menu gap-x-7">
+                    <li class="relative">
+                        <a href="/">
+                            <span class="nav-link">Beranda</span>
+                            <div class="{{ $url === "/" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                    </li>
+                    <li class="relative" id="dropdown-link">
+                        <a class="cursor-pointer">
+                            <span class="nav-link">Profil</span>
+                            <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                        <nav id="dropdown-menu" class="hidden absolute z-10 py-2 bg-black opacity-95 rounded-md w-[200px] top-full">
+                            <ul class="block">
+                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah" class="px-4">Sejarah</a></li>
+                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Tupoksi</a></li>
+                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Struktur Organisasi</a></li>
+                                <li class="bg-redColorAlt text-whiteColorAlt hover:text-white py-2">
+                                    <div class="transition hover:translate-x-2">
+                                        <a href="/danru" class="px-4">Danru</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="relative">
+                        <a href="/berita">
+                            <span class="nav-link">Berita</span>
+                            <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="/grafik">
+                            <span class="nav-link">Informasi Data</span>
+                            <div class="{{ $url === "/grafik" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="/gallery">
+                            <span class="nav-link">Galery</span>
+                            <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="/edukasi">
+                            <span class="nav-link">Edu Damkar</span>
+                            <div class="{{ $url === "/edukasi" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="/insendentil">
+                            <span class="nav-link">Insendentil</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a href="/redkar">
+                            <span class="nav-link">Red Kar</span>
+                            <div class="{{ $url === "/redkar" ? 'nav-active' : 'hidden' }}"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-end">
+                <div>
+                    <a href="/elapor" class="bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221] py-1 px-5 xl:px-6 rounded-md">E-Lapor</a>
                 </div>
+                {{-- <div class="hidden lg:block ml-2">
+                    <button id="search-btn" class="block close-btn-hover hover:text-white" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
+                </div> --}}
                 <button id="hamburger" name="hamburger" type="button" class="block transition duration-300 hover:bg-redColor hover:text-white py-1 px-2 rounded-xl scale-75 lg:hidden ml-auto mr-1">
                     <i class='bx bx-menu text-5xl'></i>
                 </button>
             </div>
-        </div>
+        </nav>
     </div>
 </header>
 
@@ -104,11 +116,11 @@ $currentUrl = request()->url();
         </ul>
 
         <!-- Search Bar -->
-        <div class="mt-4 mb-8 mx-7">
+        {{-- <div class="mt-4 mb-8 mx-7">
             <input type="text" placeholder="Search" class="bg-white focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal">
-        </div>
+        </div> --}}
 
-        <hr class="border-slate-700 mx-7">        
+        <hr class="border-slate-700 mt-6 mx-7">        
     </nav>
 </div>
 
