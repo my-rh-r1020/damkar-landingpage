@@ -8,7 +8,7 @@
     <title>{{ $title }}</title>
 
     {{-- Tailwind --}}
-    @vite('resources/css/app.css')
+    @vite('resources/css/app.css','resources/js/app.js')
 
     {{-- Swiper CSS --}}
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -25,8 +25,6 @@
 
     {{-- My Script --}}
     <script src="/js/myscript.js"></script>
-
-    {{-- Swiper JS --}}
     <script src="/js/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -39,10 +37,6 @@
             autoplay: {
                 delay: 10000,
                 disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
             },
             navigation:{
                 nextEl: ".swiper-button-next",

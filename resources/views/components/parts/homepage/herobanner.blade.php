@@ -18,6 +18,5 @@
         </div>
         <div class="swiper-button-next herobanner-slider"></div>
         <div class="swiper-button-prev herobanner-slider"></div>
-        <div class="swiper-pagination"></div>
     </div>
 </section>

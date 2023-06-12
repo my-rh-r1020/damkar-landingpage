@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="py-2 text-center bg-[#181823]">
-        <span class="text-whiteColorAlt text-xs lg:text-[13px] font-bold">&#169; 2023 Dinas Pemadam Kebakaran dan Penyelamatan</span>
+        <span class="text-whiteColorAlt text-xs lg:text-[13px] font-bold">&#169; <?php echo date('Y')?> Dinas Pemadam Kebakaran dan Penyelamatan</span>
     </div>
 </footer>
 
