@@ -194,20 +194,17 @@
                 <div>
                     <button class="p-2 text-gray-500">
                         <i class='bx bx-menu text-3xl'></i>
-                        {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
-                            <path d="M3 12h18M3 6h18M3 18h18"></path>
-                        </svg> --}}
                     </button>
                 </div>
                 <div class="flex items-center mr-2">
                     <span class="text-gray-500">Admin Disdamkarmat</span>
-                    <img src="/images/logo-damkar.png" alt="Avatar" class="w-8 h-8 ml-2 rounded-full">
+                    <img src="/images/logo-damkar.png" alt="Avatar" class="w-10 h-10 ml-2 rounded-full">
                 </div>
             </header>
             <main class="p-4">
                 <!-- Konten dashboard -->
                 <div class="bg-white rounded shadow p-6">
-                    <h1 class="text-2xl font-semibold mb-6">Dashboard</h1>
+                    <h1 class="text-3xl font-semibold mb-8">Dashboard</h1>
                     <h2 class="text-lg font-semibold mb-4">Welcome Back, Admin Disdamkarmat</h2>
                     <p>This is your dashboard content.</p>
                 </div>

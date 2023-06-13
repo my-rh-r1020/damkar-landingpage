@@ -1,15 +1,15 @@
 <section class="section-layout" id="berita">
-    <div class="title-main text-center">
-        <h3 class="text-title">Berita <span class="text-redColorAlt">Terkini</span></h3>
+    <div class="main-title text-center">
+        <h3 class="title-text">Berita <span class="text-redColorAlt">Terkini</span></h3>
     </div>
     <div class="swiper blogs-list">
         <div class="swiper-wrapper">
             @foreach($posts as $post)
-            <div class="swiper-slide blogs-column">
-                <div class="blogs-card">
+            <div class="swiper-slide">
+                <div class="bg-white px-[15px]">
                     <a href="/berita/{{ $post->slug }}">
                         <div class="blogs-img-container">
-                            <img src="images/{{ $post->cover }}" alt="berita-damkar" class="blogs-img-view">
+                            <img src="/images/{{ $post->cover }}" alt="berita-damkar" class="blogs-img-view">
                         </div>
                     </a>
                     <div class="mt-[21px]">

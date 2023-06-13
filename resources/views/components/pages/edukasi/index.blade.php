@@ -1,7 +1,7 @@
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="header-text">Edukasi</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

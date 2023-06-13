@@ -1,20 +1,20 @@
 <section class="section-layout bg-bgGreyColor" id="service">
     <div class="main-layout">
         <div class="container-layout">
-            <div class="title-main text-center">
-                <h6 class="text-subtitle">{{ $subServices }}</h6>
-                <h3 class="text-title leading-none">Layanan Utama <br> Dinas Pemadam Kebakaran dan Penyelamatan</h3>
+            <div class="main-title text-center">
+                <h6 class="sub-text">{{ $subServices }}</h6>
+                <h3 class="title-text leading-none">Layanan Utama <br> Dinas Pemadam Kebakaran dan Penyelamatan</h3>
             </div>
             <div class="pt-[35px] gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @foreach($serviceItems as $sItem)
                 <a href="{{ $sItem['url'] }}">
                     <div class="services-card">
-                        <img src="icons/{{ $sItem['icon-services'] }}" alt="emergency-help" class="mx-auto h-[90px]">
-                        <div class="services-text-main">
-                            <h4 class="services-title">{{ $sItem['services-title'] }}</h4>
-                            <span class="services-subtitle">{{ $sItem['services-subtitle'] }}</span>
+                        <img src="/icons/{{ $sItem['icon-services'] }}" alt="emergency-help" class="mx-auto h-[90px]">
+                        <div class="text-center mb-8 mt-2">
+                            <h4 class="font-bebasNeue text-2xl mb-2 leading-none">{{ $sItem['services-title'] }}</h4>
+                            <span class="text-base text-greyColor">{{ $sItem['services-subtitle'] }}</span>
                         </div>
-                        <div class="services-point gap-1 text-[8px] text-[#D8D8D8]">
+                        <div class="flex flex-wrap justify-center mb-2 gap-1 text-[8px] text-[#D8D8D8]">
                             <i class='bx bxs-square'></i>
                             <i class='bx bxs-square'></i>
                             <i class='bx bxs-square'></i>
@@ -32,7 +32,7 @@
         <div class="services-gallery-data">
             <a href="{{ $gallery['url'] }}" target="_blank">
                 <div class="relative">
-                    <img src="images/{{ $gallery['image-banner'] }}" alt="response-time" class="services-gallery-images">
+                    <img src="/images/{{ $gallery['image-banner'] }}" alt="response-time" class="services-gallery-images">
                     {{-- <div class="absolute inset-0 bg-black opacity-30 transition duration-500 ease-in-out hover:opacity-40 hover:bg-red-600"></div>
                     <div class="absolute inset-0 flex items-center justify-center text-white transition duration-500 ease-in-out transform hover:-translate-y-2">
                         <p class="text-3xl font-bold">Teks di atas gambar</p>
@@ -64,13 +64,8 @@
                     <button id="video-btn" name="video-btn" type="button" class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300 focus:outline-none">
                         <i class='bx bx-play text-[16px] lg:text-3xl'></i>
                     </button>
-                    {{-- <a href="#damkarplay" class="flex items-center" id="videobtn">
-                        <span class="px-4 py-[13px] rounded-full shadow-md shadow-slate-300">
-                            <i class='bx bx-play text-[16px] lg:text-3xl'></i>
-                        </span>
-                    </a> --}}
-                    <div class="title-main mt-[45px]">
-                        <h3 class="text-title leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
+                    <div class="main-title mt-[45px]">
+                        <h3 class="title-text leading-none">Mencegah Lebih Baik Dari <span class="text-redColorAlt">Memadamkan</span></h3>
                     </div>
                     {{-- Accordion --}}
                     <div class="accordion mb-10 divide-y-2" id="accordionFlush">
@@ -127,7 +122,7 @@
                 <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
                     <div class="relative">
                         <div class="flex justify-end">
-                            <img src="images/prevention-img.jpg" alt="prevention-img">
+                            <img src="/images/prevention-img.jpg" alt="prevention-img">
                         </div>
                         <div class="flex absolute bottom-6 left-6">
                             <div class="bg-redColorAlt mr-6">

@@ -7,8 +7,8 @@
                 </div>
             </div>
             <div class="redkar-column lg:w-6/12">
-                <div class="title-main">
-                    <h3 class="text-title">Tujuan REDKAR</h3>
+                <div class="main-title">
+                    <h3 class="title-text">Tujuan REDKAR</h3>
                 </div>
                 <ul class="list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
                     <li class="mb-2">Mencegah terjadinya bahaya kebakaran di lingkungan RT DAN RW.</li>
@@ -25,8 +25,8 @@
     <div class="main-layout">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-6/12">
-                <div class="title-main">
-                    <h3 class="text-title">Peran REDKAR</h3>
+                <div class="main-title">
+                    <h3 class="title-text">Peran REDKAR</h3>
                 </div>
                 <ul class="mb-5 list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
                     <li class="mb-2">Melakukan pencegahan secara berkala terhadap instalasi listrik dan kompor gas disetiap rumah warga dan dilingkungan RW.</li>
@@ -51,8 +51,8 @@
     <div class="main-layout">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12 flex items-center">
-                <div class="title-main">
-                    <h3 class="text-title leading-none">Apa yang dilakukan ketika terjadi kebakaran ?</h3>
+                <div class="main-title">
+                    <h3 class="title-text leading-none">Apa yang dilakukan ketika terjadi kebakaran ?</h3>
                 </div>
             </div>
             <div class="redkar-column lg:w-7/12">
@@ -76,8 +76,8 @@
 
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
-        <div class="title-main">
-            <h3 class="text-title text-center">Saran</h3>
+        <div class="main-title">
+            <h3 class="title-text text-center">Saran</h3>
         </div>
         <div class="gap-8 flex flex-wrap justify-center">
             <div class="w-full md:w-4/12 cursor-pointer">

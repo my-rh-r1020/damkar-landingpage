@@ -5,7 +5,7 @@
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span class="breadcrumbs-link-active">> Informasi Kebakaran</span>
             </div> --}}
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="header-text">Grafik Kebakaran dan Non Kebakaran</h3>
             </div>
             <div class="mb-10">

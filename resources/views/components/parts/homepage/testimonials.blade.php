@@ -1,8 +1,8 @@
 <section class="section-layout bg-bgGreyColor">
     <div class="main-layout">
-        <div class="title-main text-center">
-            <h6 class="text-subtitle">{{ $subTestimonials }}</h6>
-            <h3 class="text-title">Apa Yang Dikatakan <span class="text-redColorAlt">Publik</span></h3>
+        <div class="main-title text-center">
+            <h6 class="sub-text">{{ $subTestimonials }}</h6>
+            <h3 class="title-text">Apa Yang Dikatakan <span class="text-redColorAlt">Publik</span></h3>
         </div>
         
         <div class="swiper testimonials-list" id="testimonial-slider">

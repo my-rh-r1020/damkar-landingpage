@@ -1,4 +1,4 @@
-@extends('components.layouts.main')
+@extends('layouts.main')
 
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
@@ -8,7 +8,7 @@
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="header-text text-center">{{ $category }}</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6 xl:gap-x-8 gap-y-8 xl:gap-y-10">

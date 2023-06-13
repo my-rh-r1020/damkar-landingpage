@@ -1,13 +1,13 @@
 <section class="section-layout bg-white" id="survey">
     <div class="main-layout">
         <div class="flex flex-wrap">
-            <div class="prevention-column lg:w-5/12">
-                <img src="images/prevention-service.jpg" alt="prevention-thumbnail" class="mx-auto">
+            <div class="w-full px-[15px] md:w-1/2 lg:w-5/12">
+                <img src="/images/prevention-service.jpg" alt="prevention-thumbnail" class="mx-auto">
             </div>
-            <div class="prevention-column lg:w-7/12 lg:px-[30px]">
-                <div class="title-main mt-[75px]">
-                    <h6 class="text-subtitle">{{ $subPrevention }}</h6>
-                    <h3 class="text-title">Persentasi Pelayanan <span class="text-redColorAlt">Publik</span></h3>
+            <div class="w-full px-[15px] md:w-1/2 lg:w-7/12 lg:px-[30px]">
+                <div class="main-title mt-[75px]">
+                    <h6 class="sub-text">{{ $subPrevention }}</h6>
+                    <h3 class="title-text">Persentasi Pelayanan <span class="text-redColorAlt">Publik</span></h3>
                 </div>
                 <div>
                     <p class="text-greyColor">{{ $descPrevention }}</p>

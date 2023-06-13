@@ -3,7 +3,7 @@
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
 
-@include('components.navbar.index')
+@include('components.parts.navbar.index')
 
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
@@ -13,7 +13,7 @@
                 <span>> <a href="/profile" class="breadcrumbs-link">Profil</a></span>
                 <span class="breadcrumbs-link-active">> Danru</span>
             </div> --}}
-            <div class="title-main text-center">
+            <div class="main-title text-center">
                 <h3 class="header-text">Daftar Anggota <br>Pemadam Kebakaran dan Penyelamatan</h3>
             </div>
             <div class="mt-10">
@@ -35,6 +35,6 @@
     </div>
 </section>
 
-@include('components.footer.index')
+@include('components.parts.footer.index')
 
 @endsection

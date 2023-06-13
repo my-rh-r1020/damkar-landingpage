@@ -1,4 +1,4 @@
-@extends('components.layouts.main')
+@extends('layouts.main')
 
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
@@ -8,7 +8,7 @@
 <section class="section-layout bg-lightGrey">
     <div class="main-layout flex justify-center">
         <div class="container-layout md:w-10/12 lg:w-9/12 xl:w-8/12">
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:mb-2">{{ $post->title }}</h3>
                 <div class="flex items-center gap-2">
                     <a href="#" class="text-[#a5a3a3] hover:text-blackColor text-xs md:text-sm xl:text-base">{{ $post->user->name }}</a>

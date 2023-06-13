@@ -21,9 +21,9 @@ closeBtn.addEventListener("click", () => {
 });
 
 // Search Form
-searchBtn.addEventListener("click", () => {
-    searchForm.classList.remove("hidden");
-});
+// searchBtn.addEventListener("click", () => {
+//     searchForm.classList.remove("hidden");
+// });
 
 searchCloseBtn.addEventListener("click", () => {
     searchForm.classList.add("hidden");

@@ -12,13 +12,13 @@
     .container-layout {
         @apply px-4 md:px-6 lg:px-7 xl:px-8;
     }
-    .title-main {
+    .main-title {
         @apply pb-[20px] sm:pb-[25px] md:pb-[30px] lg:pb-[35px] 2xl:pb-10;
     }
-    .text-subtitle {
+    .sub-text {
         @apply font-bebasNeue text-redColor text-base mb-[14px];
     }
-    .text-title {
+    .title-text {
         @apply font-bebasNeue text-blackColor text-3xl md:text-[38px] lg:text-[46px];
     }
     .header-text {
@@ -33,20 +33,20 @@
     .alert-success {
         @apply mb-8 bg-green-600 py-2 text-center text-white;
     }
-    .breadcrumbs-container {
-        @apply font-semibold pb-10;
-    }
-    .breadcrumbs-link {
-        @apply text-redColor text-xs md:text-sm xl:text-base 2xl:text-lg;
-    }
-    .breadcrumbs-link-active {
-        @apply text-slate-500 text-xs md:text-sm xl:text-base 2xl:text-lg;
-    }
     .nav-menu {
         @apply flex flex-wrap items-center text-[17px] text-blackColor font-bebasNeue;
     }
     .nav-link {
         @apply hover:text-redColor transition duration-300;
+    }
+    .dropdown-items {
+        @apply relative cursor-pointer;
+    }
+    .dropdown-items:hover .dropdown-menu {
+        @apply opacity-100 pointer-events-auto;
+    }
+    .dropdown-menu {
+        @apply absolute z-20 w-max bg-blackColor opacity-0 top-full overflow-clip pointer-events-none transition-opacity ease-out duration-300;
     }
     .nav-active {
         @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-redColorAlt;
@@ -72,32 +72,11 @@
     .herobanner-slider {
         @apply scale-75 p-8 bg-blackColor hover:bg-slate-700 transition-all duration-300 rounded-sm;
     }
-    .contact-column {
-        @apply w-full px-[15px] md:w-1/2;
-    }
     .contact-icon {
         @apply p-[14px] mr-[14px] bg-[#FAF8F8] rounded-full;
     }
-    .services-data {
-        @apply pt-[35px] flex flex-wrap lg:px-4;
-    }
-    .services-column {
-        @apply w-full px-[15px] pb-4 md:w-1/2 lg:w-1/3 xl:w-1/4;
-    }
     .services-card {
         @apply bg-white hover:shadow-xl transition-all duration-500 py-8 px-4;
-    }
-    .services-text-main {
-        @apply text-center mb-8 mt-2;
-    }
-    .services-title {
-        @apply font-bebasNeue text-2xl mb-2 leading-none;
-    }
-    .services-subtitle {
-        @apply text-base text-greyColor;
-    }
-    .services-point {
-        @apply flex flex-wrap justify-center mb-2;
     }
     .services-gallery-data {
         @apply w-full md:w-1/2 xl:w-1/4;
@@ -119,9 +98,6 @@
     }
     .services-video-popup {
         @apply fixed inset-0 z-50 bg-white opacity-95 transition duration-700;
-    }
-    .prevention-column {
-        @apply w-full px-[15px] md:w-1/2;
     }
     .testimonials-list {
         @apply mt-[50px] flex flex-wrap;
@@ -165,12 +141,6 @@
     .blogs-list {
         @apply flex flex-wrap;
     }
-    .blogs-column {
-        @apply px-[15px];
-    }
-    .blogs-card {
-        @apply bg-white;
-    }
     .blogs-img-container {
         @apply relative overflow-hidden;
     }
@@ -178,19 +148,13 @@
         @apply transition duration-500 ease-in-out transform hover:scale-105;
     }
     .blogs-categories {
-        @apply text-[13px] text-blackColor font-bebasNeue hover:text-redColor transition duration-300;
+        @apply text-[13px] lg:text-base text-blackColor font-bebasNeue hover:text-redColor transition duration-300;
     }
     .blogs-title {
         @apply text-[18px] sm:text-[20px] font-bebasNeue text-justify hover:text-greyColorAlt transition duration-300 leading-none;
     }
     .blogs-subtitle {
         @apply text-[13px] text-greyColorAlt font-bebasNeue hover:text-redColor transition duration-300;
-    }
-    .blogs-category-news {
-        @apply py-[6px] px-[18px] border mr-2 text-greyColor hover:text-[#1DA1F2];
-    }
-    .blogs-categories-text {
-        @apply font-bebasNeue text-[13px];
     }
     .blogs-social-media {
         @apply px-3 py-[11px] rounded-full hover:opacity-90;
@@ -264,7 +228,7 @@
         @apply w-full px-[15px] md:w-1/2;
     }
 
-    /*Dashboard */
+    /* DASHBOARD */
     .fixed-sidebar {
         @apply top-0 left-0 overflow-y-auto;
     }

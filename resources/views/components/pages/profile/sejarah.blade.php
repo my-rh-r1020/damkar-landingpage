@@ -5,7 +5,7 @@
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span class="breadcrumbs-link-active">> Profil</span>
             </div> --}}
-            <div class="title-main">
+            <div class="main-title">
                 <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Sejarah</h6>
                 <h3 class="header-text">Dinas Pemadam Kebakaran dan Penyelamatan</h3>
             </div>

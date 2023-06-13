@@ -4,14 +4,14 @@
             <div class="py-20 lg:py-0 w-7/12">
                 {{-- Alert Signin --}}
                 @if(session()->has('signinError'))
-                {{-- <div class="mb-8 bg-red-500 py-2 text-center text-white">
+                <div class="mb-8 bg-red-500 py-2 text-center text-white">
                     {{ session('signinError') }}
-                </div> --}}
+                </div>
 
                 {{-- Alert v2 with Component --}}
-                <x-alert type="error" :message="session('signinError')"/>
+                {{-- <x-alert type="error" :message="session('signinError')"/> --}}
                 @endif
-                <div class="title-main">
+                <div class="main-title">
                     <h3 class="text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2 lg:mb-4">Sign In</h3>
                     <span class="text-greyColorAlt">Enter your email and password to login</span>
                 </div>

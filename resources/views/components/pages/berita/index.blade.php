@@ -1,7 +1,7 @@
 <section class="section-layout bg-lightGrey">
     <div class="main-layout">
         <div class="container-layout">
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="header-text">Berita Terbaru</h3>
             </div>
             <div class="flex flex-wrap">

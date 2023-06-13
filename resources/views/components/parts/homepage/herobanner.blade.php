@@ -4,7 +4,7 @@
             @foreach($herobanners as $hbanner)
             <div class="swiper-slide">
                 <div class="w-full max-h-[700px] relative">
-                    <img src="images/{{ $hbanner['banner-damkar'] }}" alt="hero-banner-damkar" class="w-full h-full object-cover">
+                    <img src="/images/{{ $hbanner['banner-damkar'] }}" alt="hero-banner-damkar" class="w-full h-full object-cover">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="font-bebasNeue text-white text-center">
                             <h4 class="mb-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">{{ $hbanner['banner-subtitle'] }}</h4>

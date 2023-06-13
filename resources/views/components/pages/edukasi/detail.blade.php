@@ -1,7 +1,7 @@
 <section class="section-layout bg-lightGrey">
     <div class="main-layout flex flex-wrap">
         <div class="container-layout md:w-10/12 lg:w-9/12 xl:w-8/12">
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="font-bebasNeue text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl lg:mb-2">Judul Edukasi</h3>
                 <span class="text-[#a5a3a3] text-xs md:text-sm xl:text-base">Waktu Diterbitkan Artikel</span>
             </div>

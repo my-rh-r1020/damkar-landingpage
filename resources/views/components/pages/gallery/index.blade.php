@@ -5,7 +5,7 @@
                 <a href="/" class="breadcrumbs-link">Home</a>
                 <span class="breadcrumbs-link-active">> Gallery Kegiatan</span>
             </div> --}}
-            <div class="title-main">
+            <div class="main-title">
                 <h3 class="header-text">Album Kegiatan Damkar</h3>
             </div>
             <div class="mb-10">
