@@ -4,88 +4,6 @@ $currentUrl = request()->url();
 
 <header class="bg-white">
     <div class="main-layout pt-[2px] pb-[5px]">
-        {{-- <nav class="flex items-center justify-between relative">
-            <div class="py-[9px] pl-[15px]">
-                <a href="/">
-                    <img src="/images/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
-                </a>
-            </div>
-            <div class="hidden lg:block">
-                <ul class="nav-menu gap-x-7">
-                    <li class="relative">
-                        <a href="/">
-                            <span class="nav-link">Beranda</span>
-                            <div class="{{ $url === "/" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                    </li>
-                    <li class="relative" id="dropdown-link">
-                        <a class="cursor-pointer">
-                            <span class="nav-link">Profil</span>
-                            <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                        <nav id="dropdown-menu" class="hidden absolute z-10 py-2 bg-black opacity-95 rounded-md w-[200px] top-full">
-                            <ul class="block">
-                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah" class="px-4">Sejarah</a></li>
-                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Tupoksi</a></li>
-                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Struktur Organisasi</a></li>
-                                <li class="bg-redColorAlt text-whiteColorAlt hover:text-white py-2">
-                                    <div class="transition hover:translate-x-2">
-                                        <a href="/danru" class="px-4">Danru</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li class="relative">
-                        <a href="/berita">
-                            <span class="nav-link">Berita</span>
-                            <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a href="/grafik">
-                            <span class="nav-link">Informasi Data</span>
-                            <div class="{{ $url === "/grafik" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a href="/gallery">
-                            <span class="nav-link">Galery</span>
-                            <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a href="/edukasi">
-                            <span class="nav-link">Edu Damkar</span>
-                            <div class="{{ $url === "/edukasi" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a href="/insendentil">
-                            <span class="nav-link">Insendentil</span>
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a href="/redkar">
-                            <span class="nav-link">Red Kar</span>
-                            <div class="{{ $url === "/redkar" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center justify-end">
-                <div>
-                    <a href="/elapor" class="bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221] py-1 px-5 xl:px-6 rounded-md">E-Lapor</a>
-                </div>
-                <div class="hidden lg:block ml-2">
-                    <button id="search-btn" class="block close-btn-hover hover:text-white" name="search-btn" type="button"><i class='bx bx-search-alt-2 text-2xl'></i></button>
-                </div>
-                <button id="hamburger" name="hamburger" type="button" class="block transition duration-300 hover:bg-redColor hover:text-white py-1 px-2 rounded-xl scale-75 lg:hidden ml-auto mr-1">
-                    <i class='bx bx-menu text-5xl'></i>
-                </button>
-            </div>
-        </nav> --}}
-
         <nav class="flex items-center justify-between relative">
             <div class="py-[9px] pl-[15px]">
                 <a href="/">
@@ -105,31 +23,27 @@ $currentUrl = request()->url();
                             <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
                         </div>
                         <ul class="dropdown-menu">
-                            <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2">
-                                <a href="/sejarah" class="px-4">Sejarah</a>
+                            <li class="dropdown-list">
+                                <div class="dropdown-list-href">
+                                    <a href="/sejarah">Sejarah</a>
+                                </div>
                             </li>
-                            <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2">
-                                <a href="#" class="px-4">Tupoksi</a>
+                            <li class="dropdown-list">
+                                <div class="dropdown-list-href">
+                                    <a href="#">Tupoksi</a>
+                                </div>
                             </li>
-                            <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2">
-                                <a href="#" class="px-4">Struktur Organisasi</a>
+                            <li class="dropdown-list">
+                                <div class="dropdown-list-href">
+                                    <a href="#">Struktur Organisasi</a>
+                                </div>
                             </li>
-                            <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2">
-                                <a href="/danru" class="px-4">Danru</a>
+                            <li class="dropdown-list">
+                                <div class="dropdown-list-href">
+                                    <a href="/danru">Danru</a>
+                                </div>
                             </li>
                         </ul>
-                        {{-- <nav id="dropdown-menu" class="hidden absolute z-10 py-2 bg-black opacity-95 rounded-md w-[200px] top-full">
-                            <ul class="block">
-                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="/sejarah" class="px-4">Sejarah</a></li>
-                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Tupoksi</a></li>
-                                <li class="text-whiteColorAlt hover:text-white py-2 transition hover:translate-x-2"><a href="#" class="px-4">Struktur Organisasi</a></li>
-                                <li class="bg-redColorAlt text-whiteColorAlt hover:text-white py-2">
-                                    <div class="transition hover:translate-x-2">
-                                        <a href="/danru" class="px-4">Danru</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav> --}}
                     </li>
                     <li class="relative">
                         <a href="/berita">
@@ -149,11 +63,22 @@ $currentUrl = request()->url();
                             <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
-                    <li class="relative">
-                        <a href="/edukasi">
-                            <span class="nav-link">Edu Damkar</span>
+                    <li class="dropdown-items">
+                        <div class="nav-link">Edu Damkar
                             <div class="{{ $url === "/edukasi" ? 'nav-active' : 'hidden' }}"></div>
-                        </a>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-list">
+                                <div class="dropdown-list-href">
+                                    <a href="/edukasi">Pengetahuan</a>
+                                </div>
+                            </li>
+                            <li class="dropdown-list">
+                                <div class="dropdown-list-href">
+                                    <a href="#">Himbauan</a>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                     <li class="relative">
                         <a href="/insendentil">

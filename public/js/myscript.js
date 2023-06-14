@@ -1,4 +1,4 @@
-const hamburger = document.querySelector("#hamburger"),
+const navToggle = document.getElementById("nav-toggle"),
     sidebar = document.querySelector("#sidebar"),
     closeBtn = document.querySelector("#close-btn"),
     searchBtn = document.querySelector("#search-btn"),
@@ -12,7 +12,7 @@ const hamburger = document.querySelector("#hamburger"),
     emergencyBtn = document.querySelector("#emergency-btn");
 
 // Hamburger & Sidebar
-hamburger.addEventListener("click", () => {
+navToggle.addEventListener("click", () => {
     sidebar.classList.remove("hidden");
 });
 
@@ -87,23 +87,3 @@ window.onscroll = function () {
         toTopBtn.classList.remove("flex");
     }
 };
-
-// Nav Menu
-const dropdownLink = document.querySelector("#dropdown-link"),
-    dropdownMenu = document.querySelector("#dropdown-menu");
-
-dropdownLink.addEventListener("mouseenter", () => {
-    dropdownMenu.classList.remove("hidden");
-});
-
-dropdownLink.addEventListener("mouseleave", (e) => {
-    if (e.target != dropdownLink && e.target != dropdownMenu) {
-        dropdownMenu.classList.add("hidden");
-    }
-});
-
-// window.addEventListener("mouseenter", (e) => {
-//     if (e.target != dropdownLink && e.target != dropdownMenu) {
-//         dropdownMenu.classList.add("hidden");
-//     }
-// });

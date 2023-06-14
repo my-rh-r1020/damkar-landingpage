@@ -46,13 +46,16 @@
         @apply opacity-100 pointer-events-auto;
     }
     .dropdown-menu {
-        @apply absolute z-20 w-max bg-blackColor opacity-0 top-full overflow-clip pointer-events-none transition-opacity ease-out duration-300;
+        @apply absolute z-20 w-max bg-blackColor opacity-0 top-7 overflow-clip pointer-events-none transition-opacity ease-out duration-300;
+    }
+    .dropdown-list {
+        @apply text-whiteColorAlt hover:text-white py-2 px-4;
+    }
+    .dropdown-list-href {
+        @apply transition hover:translate-x-2;
     }
     .nav-active {
         @apply absolute -bottom-[6px] left-0 w-full h-[2px] bg-redColorAlt;
-    }
-    .nav-line-hover {
-        @apply absolute -bottom-[6px] left-0 w-0 h-[2px] bg-blackColor transition-all ease-in-out duration-500 origin-bottom-left;
     }
     .close-btn-hover {
         @apply transition duration-300 hover:bg-redColor px-[9px] py-[6px] rounded-full;
@@ -167,6 +170,15 @@
     }
     .footer-social-icons {
         @apply text-2xl text-white border border-[#3f3d47] p-2;
+    }
+    .emergency-btn {
+        @apply bg-[#000BED] w-16 h-16 rounded-full mx-auto flex items-center justify-center transition duration-300 hover:scale-110;
+    }
+    .emergency-btn:hover .emergency-sign {
+        @apply opacity-100 pointer-events-auto;
+    }
+    .emergency-sign {
+        @apply bg-redColorAlt opacity-0 mb-1 w-max p-2 mx-auto text-center rounded-md pointer-events-none transition-opacity ease-out duration-300;
     }
 
     /* PROFILE PAGE8 */

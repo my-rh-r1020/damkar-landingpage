@@ -62,13 +62,18 @@
 </footer>
 
 {{-- Emergency Call --}}
-<div class="fixed z-10 bottom-6 left-0 right-0">
-    <div class="bg-redColorAlt mb-1 w-44 p-2 mx-auto text-center rounded-md hidden" id="emergency-card">
+<div class="fixed z-20 bottom-6 left-0 right-0">
+    <div class="emergency-sign" id="emergency-card">
         <span class="uppercase text-white xl:text-lg font-semibold">Emergency Call</span>
     </div>
-    <a href="tel:077124949" class="bg-[#000BED] w-16 h-16 rounded-full mx-auto flex items-center justify-center transition duration-300 hover:scale-110" id="emergency-btn">
+    <a href="tel:077124949" class="emergency-btn">
         <i class='bx bxs-phone-call text-redColorAlt text-3xl'></i>
     </a>
+    {{-- <div class="emergency-btn" id="emergency-btn">
+        <a href="tel:077124949">
+            <i class='bx bxs-phone-call text-redColorAlt text-3xl'></i>
+        </a>
+    </div> --}}
 </div>
 
 {{-- Back To Top --}}
