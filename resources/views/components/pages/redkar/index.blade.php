@@ -1,5 +1,5 @@
-<section class="section-layout bg-lightGrey">
-    <div class="main-layout">
+<section class="main-section bg-lightGrey">
+    <div class="main-px">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12">
                 <div>
@@ -21,8 +21,8 @@
     </div>
 </section>
 
-<section class="section-layout bg-white">
-    <div class="main-layout">
+<section class="main-section bg-white">
+    <div class="main-px">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-6/12">
                 <div class="main-title">
@@ -47,8 +47,8 @@
     </div>
 </section>
 
-<section class="section-layout bg-lightGrey">
-    <div class="main-layout">
+<section class="main-section bg-lightGrey">
+    <div class="main-px">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12 flex items-center">
                 <div class="main-title">
@@ -74,8 +74,8 @@
     </div>
 </section>
 
-<section class="section-layout bg-lightGrey">
-    <div class="main-layout">
+<section class="main-section bg-lightGrey">
+    <div class="main-px">
         <div class="main-title">
             <h3 class="title-text text-center">Saran</h3>
         </div>

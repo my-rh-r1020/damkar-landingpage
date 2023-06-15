@@ -1,5 +1,5 @@
-<section class="section-layout bg-lightGrey">
-    <div class="main-layout">
+<section class="main-section bg-lightGrey">
+    <div class="main-px">
         <div class="container-layout">
             {{-- <div class="breadcrumbs-container">
                 <a href="/" class="breadcrumbs-link">Home</a>

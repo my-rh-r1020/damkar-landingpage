@@ -5,8 +5,8 @@
 
 @include('components.parts.navbar.index')
 
-<section class="section-layout bg-lightGrey">
-    <div class="main-layout">
+<section class="main-section bg-lightGrey">
+    <div class="main-px">
         <div class="container-layout">
             <div class="main-title">
                 <h3 class="header-text text-center">{{ $category }}</h3>

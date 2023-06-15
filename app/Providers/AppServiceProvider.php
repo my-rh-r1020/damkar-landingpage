@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\View\Components\Alert;
+use App\View\Components\AppLayout;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -21,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Blade::component('package-alert', Alert::class);
+        Blade::component('layout', AppLayout::class);
     }
 }

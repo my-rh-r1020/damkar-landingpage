@@ -1,4 +1,4 @@
-<section class="section-layout" id="berita">
+{{-- <section class="main-section" id="berita">
     <div class="main-title text-center">
         <h3 class="title-text">Berita <span class="text-redColorAlt">Terkini</span></h3>
     </div>
@@ -31,4 +31,39 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
-</section>
+</section> --}}
+
+<x-layout class="bg-white">
+    <div class="main-title text-center">
+        <h3 class="title-text">Berita <span class="text-redColorAlt">Terkini</span></h3>
+    </div>
+    <div class="swiper blogs-list">
+        <div class="swiper-wrapper">
+            @foreach($posts as $post)
+            <div class="swiper-slide bg-white px-[15px]">
+                <a href="/berita/{{ $post->slug }}">
+                    <div class="blogs-img-container">
+                        <img src="/images/{{ $post->cover }}" alt="berita-damkar" class="blogs-img-view">
+                    </div>
+                </a>
+                <div class="mt-5">
+                    <div class="mb-2">
+                        <a href="/category/{{ $post->category->slug }}">
+                            <span class="blogs-categories">{{ $post->category->name }}</span>
+                        </a>
+                    </div>
+                    <a href="/berita/{{ $post->slug }}">
+                        <span class="blogs-title">{{ $post->title }}</span>
+                    </a>
+                    <div class="mt-2">
+                        <a href="#"><span class="blogs-subtitle">{{ $post->created_at->diffForHumans() }}</span></a>
+                        <a href="#"><span class="text-[#a5a3a3]">|</span></a>
+                        <a href="#"><span class="blogs-subtitle">0 Comments</span></a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</x-layout>
