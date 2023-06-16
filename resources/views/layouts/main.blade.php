@@ -8,7 +8,7 @@
     <title>{{ $title }}</title>
 
     {{-- Tailwind --}}
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     {{-- Swiper CSS --}}
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -27,77 +27,10 @@
     <script src="/js/myscript.js"></script>
 
     {{-- Swiper JS --}}
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        let swiperHeroBanner = new Swiper(".hero-banner", {
-            spaceBetween: 30,
-            effect: "fade",
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 10000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation:{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        });
-        let swiperTestimonials = new Swiper('.testimonials-list', {
-            slidesPerView: 1,
-            grabCursor: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2
-                },
-                1024: {
-                    slidesPerView: 3
-                }
-            },
-            on:{
-                slideChange:function(){
-                    // remove active class from all slides
-                    ('.swiper-slide').removeClass('swiper-slide-active');
-
-                    // add active class to current slide
-                    ('.swiper-slide').eq(swiperTestimonials.activeIndex).addClass('swiper-slide-active');
-                }
-            }
-        });
-        let swiperBlogs = new Swiper(".blogs-list", {
-            slidesPerView: 1,
-            centeredSlides: true,
-            grabCursor: true,
-            spaceBetween: 15,
-            loop: true,
-            autoplay: {
-                delay: 10000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2
-                },
-                768: {
-                    slidesPerView: 3
-                },
-                1024: {
-                    slidesPerView: 4
-                }
-            }
-        })
-    </script>
+    <!-- Initialize Scripts -->
+    @stack('scripts');
 </body>
 
 </html>

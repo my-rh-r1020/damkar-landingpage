@@ -2,7 +2,6 @@
 
 {{-- Import bodyMain From layouts/main.blade.php --}}
 @section('bodyMain')
-
 @include('components.parts.navbar.index')
 
 {{-- <section class="main-section bg-lightGrey">
@@ -85,5 +84,4 @@
 </x-layout>
 
 @include('components.parts.footer.index')
-
 @endsection

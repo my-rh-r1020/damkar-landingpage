@@ -20,3 +20,27 @@
         <div class="swiper-button-prev herobanner-slider"></div>
     </div>
 </section>
+
+{{-- JS Script --}}
+@push('scripts')
+<script>
+    const swiperHeroBanner = new Swiper(".hero-banner", {
+        spaceBetween: 30,
+        effect: "fade",
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation:{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    });
+</script>
+@endpush

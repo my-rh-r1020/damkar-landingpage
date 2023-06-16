@@ -3,7 +3,7 @@ $currentUrl = request()->url();
 @endphp
 
 <header class="bg-white">
-    <div class="main-px pt-[2px] pb-[5px]">
+    <div class="px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px] 2xl:px-[100px] pt-[2px] pb-[5px]">
         <nav class="flex items-center justify-between relative">
             <div class="py-[9px] pl-[15px]">
                 <a href="/">

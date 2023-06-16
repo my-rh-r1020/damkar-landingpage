@@ -181,3 +181,35 @@
         </div>
     </div>
 </x-layout>
+
+{{-- JS Scripts --}}
+@push('scripts')
+<script>
+    const swiperTestimonials = new Swiper('.testimonials-list', {
+        slidesPerView: 1,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        },
+        on:{
+            slideChange:function(){
+                // remove active class from all slides
+                ('.swiper-slide').removeClass('swiper-slide-active');
+
+                // add active class to current slide
+                ('.swiper-slide').eq(swiperTestimonials.activeIndex).addClass('swiper-slide-active');
+            }
+        }
+    });
+</script>
+@endpush

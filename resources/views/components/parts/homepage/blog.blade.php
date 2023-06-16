@@ -67,3 +67,31 @@
         <div class="swiper-pagination"></div>
     </div>
 </x-layout>
+
+{{-- JS Scripts --}}
+@push('scripts')
+<script>
+    const swiperBlogs = new Swiper(".blogs-list", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        grabCursor: true,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 3
+            },
+            1024: {
+                slidesPerView: 4
+            }
+        }
+    })
+</script>
+@endpush

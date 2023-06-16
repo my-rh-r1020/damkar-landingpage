@@ -1,30 +1,30 @@
-<section class="main-section bg-lightGrey">
-    <div class="main-px">
+<x-layout class="bg-lightGrey">
+    <div class="main-container">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12">
-                <div>
-                    <img src="images/redkar-logo.jpg" alt="redkar-logo" class="mb-5 w-[75%] mx-auto cursor-pointer rounded-md">
-                </div>
+                <img src="images/redkar-logo.jpg" alt="redkar-logo" class="mb-5 w-[75%] mx-auto cursor-pointer rounded-md">
             </div>
-            <div class="redkar-column lg:w-6/12">
-                <div class="main-title">
-                    <h3 class="title-text">Tujuan REDKAR</h3>
+            <div class="redkar-column flex items-center lg:w-6/12">
+                <div>
+                    <div class="main-title">
+                        <h3 class="title-text">Tujuan REDKAR</h3>
+                    </div>
+                    <ul class="list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
+                        <li class="mb-2">Mencegah terjadinya bahaya kebakaran di lingkungan RT DAN RW.</li>
+                        <li class="mb-2">Menumbuhkan kesadaran warga masyarakat mengenai pentingnya upaya pencegahan kebakaran.</li>
+                        <li class="mb-2">Mengenal dan mengetahui upaya pencegahan bahaya kebakaran.</li>
+                        <li class="mb-2">Mampu menanggulangi kebakaran secara dini dan bersinergi dengan petugas Pemadam Kebakaran.</li>
+                    </ul>
                 </div>
-                <ul class="list-inside list-decimal text-base md:text-lg lg:text-xl text-blackColor">
-                    <li class="mb-2">Mencegah terjadinya bahaya kebakaran di lingkungan RT DAN RW.</li>
-                    <li class="mb-2">Menumbuhkan kesadaran warga masyarakat mengenai pentingnya upaya pencegahan kebakaran.</li>
-                    <li class="mb-2">Mengenal dan mengetahui upaya pencegahan bahaya kebakaran.</li>
-                    <li class="mb-2">Mampu menanggulangi kebakaran secara dini dan bersinergi dengan petugas Pemadam Kebakaran.</li>
-                </ul>
             </div>
         </div>
     </div>
-</section>
+</x-layout>
 
-<section class="main-section bg-white">
-    <div class="main-px">
-        <div class="flex flex-wrap">
-            <div class="redkar-column lg:w-6/12">
+<x-layout class="bg-white">
+    <div class="main-container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+            <div>
                 <div class="main-title">
                     <h3 class="title-text">Peran REDKAR</h3>
                 </div>
@@ -38,17 +38,15 @@
                     <li class="mb-2">Mengajak warga untuk mengetahui dan mengenal penyebab kebakaran.</li>
                 </ul>
             </div>
-            <div class="redkar-column lg:w-6/12">
-                <div>
-                    <img src="images/redkar-3.jpg" alt="peran-redkar" class="cursor-pointer rounded-md">
-                </div>
+            <div>
+                <img src="images/redkar-3.jpg" alt="peran-redkar" class="cursor-pointer rounded-md">
             </div>
         </div>
     </div>
-</section>
+</x-layout>
 
-<section class="main-section bg-lightGrey">
-    <div class="main-px">
+<x-layout class="bg-lightGrey">
+    <div class="main-container">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12 flex items-center">
                 <div class="main-title">
@@ -72,24 +70,20 @@
             </div>
         </div>
     </div>
-</section>
+</x-layout>
 
-<section class="main-section bg-lightGrey">
-    <div class="main-px">
+<x-layout class="bg-lightGrey">
+    <div class="main-container">
         <div class="main-title">
             <h3 class="title-text text-center">Saran</h3>
         </div>
-        <div class="gap-8 flex flex-wrap justify-center">
-            <div class="w-full md:w-4/12 cursor-pointer">
-                <div class="bg-white p-5 rounded-md text-justify">
-                    <span class="text-blackColor text-base md:text-lg lg:text-xl">Membuat program latihan di setiap lingkungan RW agar warga setempat dapat melakukan pemadaman secara dini sebelum petugas pemadam datang.</span>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-5 rounded-md text-justify cursor-pointer">
+                <span class="text-blackColor text-base md:text-lg lg:text-xl">Membuat program latihan di setiap lingkungan RW agar warga setempat dapat melakukan pemadaman secara dini sebelum petugas pemadam datang.</span>
             </div>
-            <div class="w-full md:w-4/12 cursor-pointer">
-                <div class="bg-white p-5 rounded-md text-justify">
-                    <span class="text-blackColor text-base md:text-lg lg:text-xl">Meningkatkan keamanan kepada warga setempat dari seseorang yang mempunyai niat buruk atau oknum yang tidak bertanggung jawab pada saat terjadi kebakaran.</span>
-                </div>
+            <div class="bg-white p-5 rounded-md text-justify cursor-pointer">
+                <span class="text-blackColor text-base md:text-lg lg:text-xl">Meningkatkan keamanan kepada warga setempat dari seseorang yang mempunyai niat buruk atau oknum yang tidak bertanggung jawab pada saat terjadi kebakaran.</span>
             </div>
         </div>
     </div>
-</section>
+</x-layout>
