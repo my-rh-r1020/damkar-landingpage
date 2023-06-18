@@ -24,7 +24,7 @@ class ArticleController extends Controller
                 "title" => "Berita Disdamkarmat TPI",
                 "url" => "/berita",
                 // N+1 Problem Resolved
-                "posts" => Article::latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
+                "posts" => Article::where('category_id', '1')->latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
             ]
         );
     }

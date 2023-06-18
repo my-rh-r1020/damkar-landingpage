@@ -3,6 +3,7 @@
 use App\Http\Controllers\Webpages\HomepageController;
 use App\Http\Controllers\Webpages\LinksController;
 use App\Http\Controllers\Webpages\ProfileController;
+use App\Http\Controllers\Webpages\DanruController;
 use App\Http\Controllers\Webpages\ArticleController;
 use App\Http\Controllers\Webpages\CategoryController;
 use App\Http\Controllers\ELapor\ELaporController;
@@ -26,7 +27,7 @@ Route::get('/', [HomepageController::class, "index"]);
 
 // Profile
 Route::get('/sejarah', [ProfileController::class, 'profileIndex']);
-Route::get('/danru', [ProfileController::class, 'danruDamkar']);
+Route::get('/danru', [DanruController::class, 'index']);
 
 // Berita
 Route::get('berita', [ArticleController::class, 'index']);
