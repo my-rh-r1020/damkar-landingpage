@@ -54,7 +54,7 @@
 
 <x-layout class="bg-lightGrey">
     <div class="main-container">
-        <div class="main-title">
+        <div class="main-title text-center">
             <h3 class="header-text">Album Kegiatan Damkar</h3>
         </div>
         <div class="mb-10">

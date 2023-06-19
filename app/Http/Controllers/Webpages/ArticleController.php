@@ -24,7 +24,18 @@ class ArticleController extends Controller
                 "title" => "Berita Disdamkarmat TPI",
                 "url" => "/berita",
                 // N+1 Problem Resolved
-                "posts" => Article::where('category_id', '1')->latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
+                "posts" => Article::where('category_id', 1)->latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
+            ]
+        );
+    }
+    public function indexEdukasi()
+    {
+        return view(
+            'pages.edukasi',
+            [
+                "title" => "Edukasi Disdamkarmat TPI",
+                "url" => "/edukasi",
+                "articles" => Article::where('category_id', 2)->latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
             ]
         );
     }
@@ -54,6 +65,17 @@ class ArticleController extends Controller
             'components.pages.berita.detail',
             [
                 "title" => "Detail Berita",
+                "url" => "/detail",
+                "post" => $article,
+            ]
+        );
+    }
+    public function showEdukasi(Article $article)
+    {
+        return view(
+            'components.pages.edukasi.detail',
+            [
+                "title" => "Detail Edukasi",
                 "url" => "/detail",
                 "post" => $article,
             ]

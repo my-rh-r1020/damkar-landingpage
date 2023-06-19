@@ -1,5 +1,5 @@
 <section class="bg-white">
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap h-screen">
         <div class="w-full md:w-6/12 lg:w-5/12 flex items-center justify-center">
             <div class="py-20 lg:py-0 w-7/12">
                 {{-- Alert Signin --}}

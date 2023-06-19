@@ -23,7 +23,7 @@
                     </a>
                     <div class="flex justify-between items-center mt-3">
                         <a href="/category/{{ $post->category->slug }}" class="px-2 bg-red-300 rounded-sm"><span class="news-subtitle">{{ $post->category->name }}</span></a>
-                        <span class="news-subtitle cursor-default">{{ $post->published_at }}</span>
+                        <span class="news-subtitle cursor-default">{{ $post->created_at->diffForHumans() }}</span>
                     </div>
                 </div>
             </div>

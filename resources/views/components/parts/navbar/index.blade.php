@@ -30,12 +30,12 @@ $currentUrl = request()->url();
                             </li>
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="#">Tupoksi</a>
+                                    <a href="/tupoksi">Tupoksi</a>
                                 </div>
                             </li>
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="#">Struktur Organisasi</a>
+                                    <a href="/struktur-organisasi">Struktur Organisasi</a>
                                 </div>
                             </li>
                             <li class="dropdown-list">

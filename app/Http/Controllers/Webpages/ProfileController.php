@@ -16,8 +16,13 @@ class ProfileController extends Controller
         return view('pages.profile', ["title" => "Profil Disdamkarmat TPI", "url" => "/profile"]);
     }
 
-    public function danruDamkar()
+    public function tupoksi()
     {
-        return view('components.pages.profile.danru', ["title" => "Danru Disdamkarmat TPI", "url" => "/danru", "lists" => Profile::all()]);
+        return view('components.pages.profile.tupoksi', ['title' => 'Tupoksi Disdamkarmat TPI', 'url' => '/tupoksi']);
+    }
+
+    public function strukturOrganisasi()
+    {
+        return view('components.pages.profile.organisasi', ['title' => 'Struktur Organisasi Disdamkarmat TPI', 'url' => '/struktur-organisasi']);
     }
 }

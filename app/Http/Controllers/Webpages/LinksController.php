@@ -18,11 +18,6 @@ class LinksController extends Controller
         return view('pages.gallery', ["title" => "Gallery Disdamkarmat TPI", "url" => "/gallery"]);
     }
 
-    public function eduDamkar()
-    {
-        return view('pages.edukasi', ["title" => "Edukasi Disdamkarmat TPI", "url" => "/edukasi"]);
-    }
-
     public function redKar()
     {
         return view('pages.redkar', ["title" => "Redkar Disdamkarmat TPI", "url" => "/redkar"]);

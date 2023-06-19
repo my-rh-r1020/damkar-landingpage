@@ -32,7 +32,7 @@
 <x-layout class="bg-lightGrey">
     <div class="main-container">
         <div class="w-full px-4 md:px-6 lg:px-7 xl:px-8">
-            <div class="main-title">
+            <div class="main-title text-center">
                 <h6 class="font-bebasNeue text-sm md:text-lg xl:text-xl 2xl:text-2xl text-greyColorAlt mb-2 tracking-widest">Sejarah</h6>
                 <h3 class="header-text">Dinas Pemadam Kebakaran dan Penyelamatan</h3>
             </div>

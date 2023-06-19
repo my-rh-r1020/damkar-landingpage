@@ -102,7 +102,7 @@
 
 <x-layout class="bg-lightGrey">
     <div class="main-container">
-        <div class="main-title">
+        <div class="main-title text-center">
             <h3 class="header-text">Berita Terbaru</h3>
         </div>
         <div class="flex flex-wrap">

@@ -23,24 +23,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Homepage
-Route::get('/', [HomepageController::class, "index"]);
+Route::get('/', [HomepageController::class, "index"])->name('/');
 
 // Profile
-Route::get('/sejarah', [ProfileController::class, 'profileIndex']);
-Route::get('/danru', [DanruController::class, 'index']);
+Route::get('/sejarah', [ProfileController::class, 'profileIndex'])->name('sejarah');
+Route::get('/tupoksi', [ProfileController::class, 'tupoksi'])->name('tupoksi');
+Route::get('/struktur-organisasi', [ProfileController::class, 'strukturOrganisasi'])->name('organisasi');
+Route::get('/danru', [DanruController::class, 'index'])->name('danru');
 
 // Berita
-Route::get('berita', [ArticleController::class, 'index']);
-Route::get('berita/{article:slug}', [ArticleController::class, 'show']);
-Route::get('category/{category:slug}', [CategoryController::class, 'show']);
+Route::get('/berita', [ArticleController::class, 'index'])->name('berita');
+Route::get('/berita/{article:slug}', [ArticleController::class, 'show'])->name('detail');
+Route::get('/category/{category:slug}', [CategoryController::class, 'show'])->name('catgegory');
 
-Route::get('/grafik', [LinksController::class, 'grafikKebakaran']);
-Route::get('/gallery', [LinksController::class, 'galleryDamkar']);
-Route::get('/edukasi', [LinksController::class, 'eduDamkar']);
-Route::get('/elapor', [ELaporController::class, "index"]);
-Route::get('/insendentil', [ELaporController::class, 'insendentil']);
-// Route::get('permohonan', [C_ELapor::class, 'requestData']);
-Route::get('/redkar', [LinksController::class, 'redKar']);
+Route::get('/grafik', [LinksController::class, 'grafikKebakaran'])->name('grafik');
+Route::get('/gallery', [LinksController::class, 'galleryDamkar'])->name('gallery');
+
+// Edukasi
+Route::get('/edukasi', [ArticleController::class, 'indexEdukasi'])->name('edukasi');
+Route::get('/edukasi/{article:slug}', [ArticleController::class, 'showEdukasi']);
+
+Route::get('/elapor', [ELaporController::class, "index"])->name('elapor');
+Route::get('/insendentil', [ELaporController::class, 'insendentil'])->name('insendentil');
+Route::get('/redkar', [LinksController::class, 'redKar'])->name('redkar');
 
 // Sign In & Sign Out
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

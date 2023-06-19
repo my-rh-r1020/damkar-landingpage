@@ -17,8 +17,8 @@
                         <h4 class="font-bebasNeue text-center text-2xl md:text-3xl xl:text-4xl">{{ $list->nama_regu }} - {{ $list->lokasi }}</h4>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 mt-6">
                             @foreach($list->danrus as $danru)
-                            <div class="rounded-md hover:bg-blue-100 text-center cursor-pointer">
-                                <img src="images/{{ $danru->avatar }}" alt="profil-danru" class="w-[25%] md:w-[50%] rounded-full mx-auto mb-4">
+                            <div class="rounded-md py-6 hover:bg-blue-200 text-center cursor-pointer">
+                                <img src="images/{{ $danru->avatar }}" alt="profil-danru" class="w-[20%] md:w-[40%] rounded-full mx-auto mb-4">
                                 <span class="font-bebasNeue tracking-widest uppercase text-xl">{{ $danru->nama_lengkap }}</span>
                             </div>
                             @endforeach
