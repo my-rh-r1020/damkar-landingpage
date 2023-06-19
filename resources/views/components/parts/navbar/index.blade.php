@@ -6,14 +6,14 @@ $currentUrl = request()->url();
     <div class="px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px] 2xl:px-[100px] pt-[2px] pb-[5px]">
         <nav class="flex items-center justify-between relative">
             <div class="py-[9px] pl-[15px]">
-                <a href="/">
+                <a href="{{ url('/') }}">
                     <img src="/images/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
                 </a>
             </div>
             <div class="hidden lg:block">
                 <ul class="nav-menu gap-x-7">
                     <li class="relative">
-                        <a href="/">
+                        <a href="{{ url('/') }}">
                             <span class="nav-link">Beranda</span>
                             <div class="{{ $url === "/" ? 'nav-active' : 'hidden' }}"></div>
                         </a>
@@ -25,40 +25,40 @@ $currentUrl = request()->url();
                         <ul class="dropdown-menu">
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="/sejarah">Sejarah</a>
+                                    <a href="{{ route('sejarah') }}">Sejarah</a>
                                 </div>
                             </li>
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="/tupoksi">Tupoksi</a>
+                                    <a href="{{ route('tupoksi') }}">Tupoksi</a>
                                 </div>
                             </li>
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="/struktur-organisasi">Struktur Organisasi</a>
+                                    <a href="{{ route('organisasi') }}">Struktur Organisasi</a>
                                 </div>
                             </li>
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="/danru">Danru</a>
+                                    <a href="{{ route('danru') }}">Danru</a>
                                 </div>
                             </li>
                         </ul>
                     </li>
                     <li class="relative">
-                        <a href="/berita">
+                        <a href="{{ route('berita') }}">
                             <span class="nav-link">Berita</span>
                             <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="/grafik">
+                        <a href="{{ route('grafik') }}">
                             <span class="nav-link">Informasi Data</span>
                             <div class="{{ $url === "/grafik" ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="/gallery">
+                        <a href="{{ route('gallery') }}">
                             <span class="nav-link">Galery</span>
                             <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
                         </a>
@@ -70,7 +70,7 @@ $currentUrl = request()->url();
                         <ul class="dropdown-menu">
                             <li class="dropdown-list">
                                 <div class="dropdown-list-href">
-                                    <a href="/edukasi">Pengetahuan</a>
+                                    <a href="{{ route('edukasi') }}">Pengetahuan</a>
                                 </div>
                             </li>
                             <li class="dropdown-list">
@@ -81,12 +81,12 @@ $currentUrl = request()->url();
                         </ul>
                     </li>
                     <li class="relative">
-                        <a href="/insendentil">
+                        <a href="{{ route('insendentil') }}">
                             <span class="nav-link">Insendentil</span>
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="/redkar">
+                        <a href="{{ route('redkar') }}">
                             <span class="nav-link">Red Kar</span>
                             <div class="{{ $url === "/redkar" ? 'nav-active' : 'hidden' }}"></div>
                         </a>
@@ -126,14 +126,14 @@ $currentUrl = request()->url();
         </div>
         {{-- Sidebar Menu --}}
         <ul class="mt-14 mx-7">
-            <li class="sidebar-menu-list"><a href="/"><span class="sidebar-menu-text">Beranda</span></a></li>
-            <li class="sidebar-menu-list"><a href="/profile" class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
-            <li class="sidebar-menu-list"><a href="/berita" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
-            <li class="sidebar-menu-list"><a href="/informasi" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
-            <li class="sidebar-menu-list"><a href="/gallery" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
-            <li class="sidebar-menu-list"><a href="/edukasi" class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
-            <li class="sidebar-menu-list"><a href="/insendentil" class="mb-2"><span class="sidebar-menu-text">Insendentil</span></a></li>
-            <li class="sidebar-menu-list"><a href="/redkar" class="mb-2"><span class="sidebar-menu-text">Red Kar</span></a></li>
+            <li class="sidebar-menu-list"><a href="{{ url('/') }}"><span class="sidebar-menu-text">Beranda</span></a></li>
+            <li class="sidebar-menu-list"><a class="mb-2"><span class="sidebar-menu-text">Profil</span></a></li>
+            <li class="sidebar-menu-list"><a href="{{ route('berita') }}" class="mb-2"><span class="sidebar-menu-text">Berita</span></a></li>
+            <li class="sidebar-menu-list"><a href="{{ route('grafik') }}" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
+            <li class="sidebar-menu-list"><a href="{{ route('gallery') }}" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
+            <li class="sidebar-menu-list"><a class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
+            <li class="sidebar-menu-list"><a href="{{ route('insendentil') }}" class="mb-2"><span class="sidebar-menu-text">Insendentil</span></a></li>
+            <li class="sidebar-menu-list"><a href="{{ route('redkar') }}" class="mb-2"><span class="sidebar-menu-text">Red Kar</span></a></li>
         </ul>
 
         <!-- Search Bar -->

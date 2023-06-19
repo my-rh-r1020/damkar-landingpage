@@ -7,8 +7,9 @@ use App\Http\Controllers\Webpages\DanruController;
 use App\Http\Controllers\Webpages\ArticleController;
 use App\Http\Controllers\Webpages\CategoryController;
 use App\Http\Controllers\ELapor\ELaporController;
-use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\LoginController;
+use App\Http\Controllers\User\DashboardController;
+use App\Http\Controllers\User\ArticleDataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Homepage
-Route::get('/', [HomepageController::class, "index"])->name('/');
+Route::get('/', [HomepageController::class, "index"])->name('beranda');
 
 // Profile
 Route::get('/sejarah', [ProfileController::class, 'profileIndex'])->name('sejarah');
@@ -33,8 +34,8 @@ Route::get('/danru', [DanruController::class, 'index'])->name('danru');
 
 // Berita
 Route::get('/berita', [ArticleController::class, 'index'])->name('berita');
-Route::get('/berita/{article:slug}', [ArticleController::class, 'show'])->name('detail');
-Route::get('/category/{category:slug}', [CategoryController::class, 'show'])->name('catgegory');
+Route::get('/berita/{article:slug}', [ArticleController::class, 'show'])->name('berita.detail');
+Route::get('/category/{category:slug}', [CategoryController::class, 'show'])->name('catgegory.index');
 
 Route::get('/grafik', [LinksController::class, 'grafikKebakaran'])->name('grafik');
 Route::get('/gallery', [LinksController::class, 'galleryDamkar'])->name('gallery');
@@ -49,8 +50,11 @@ Route::get('/redkar', [LinksController::class, 'redKar'])->name('redkar');
 
 // Sign In & Sign Out
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/login', [LoginController::class, 'authenticate'])->name('login');
 Route::post('/logout', [LoginController::class, 'logout']);
 
 // Dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::resource('/dashboard/articles', ArticleDataController::class)->names([
+    'index' => 'articles.index'
+])->middleware('auth');
