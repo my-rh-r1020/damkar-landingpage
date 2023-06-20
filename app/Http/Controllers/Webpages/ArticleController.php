@@ -9,7 +9,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
-use App\Models\Category;
 
 class ArticleController extends Controller
 {
@@ -22,7 +21,6 @@ class ArticleController extends Controller
             'pages.berita',
             [
                 "title" => "Berita Disdamkarmat TPI",
-                "url" => "/berita",
                 // N+1 Problem Resolved
                 "posts" => Article::where('category_id', 1)->latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
             ]
@@ -34,7 +32,6 @@ class ArticleController extends Controller
             'pages.edukasi',
             [
                 "title" => "Edukasi Disdamkarmat TPI",
-                "url" => "/edukasi",
                 "articles" => Article::where('category_id', 2)->latest()->filter(request(['search', 'category']))->paginate(4)->withQueryString(),
             ]
         );
@@ -65,7 +62,6 @@ class ArticleController extends Controller
             'components.pages.berita.detail',
             [
                 "title" => "Detail Berita",
-                "url" => "/detail",
                 "post" => $article,
             ]
         );
@@ -76,7 +72,6 @@ class ArticleController extends Controller
             'components.pages.edukasi.detail',
             [
                 "title" => "Detail Edukasi",
-                "url" => "/detail",
                 "post" => $article,
             ]
         );

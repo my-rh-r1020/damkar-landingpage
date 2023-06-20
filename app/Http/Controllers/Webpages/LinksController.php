@@ -10,16 +10,16 @@ class LinksController extends Controller
 {
     public function grafikKebakaran()
     {
-        return view('pages.grafik', ["title" => "Grafik Disdamkarmat TPI", "url" => "/grafik"]);
+        return view('pages.grafik', ["title" => "Grafik Disdamkarmat TPI"]);
     }
 
     public function galleryDamkar()
     {
-        return view('pages.gallery', ["title" => "Gallery Disdamkarmat TPI", "url" => "/gallery"]);
+        return view('pages.gallery', ["title" => "Gallery Disdamkarmat TPI"]);
     }
 
     public function redKar()
     {
-        return view('pages.redkar', ["title" => "Redkar Disdamkarmat TPI", "url" => "/redkar"]);
+        return view('pages.redkar', ["title" => "Redkar Disdamkarmat TPI"]);
     }
 }

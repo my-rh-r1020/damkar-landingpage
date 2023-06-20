@@ -2,19 +2,21 @@
 
 namespace App\Http\Controllers\User;
 
-// Deklarasi Controller
+// Controller
 use App\Http\Controllers\Controller;
 
+// Model
+use App\Models\Article;
 use Illuminate\Http\Request;
 
-class ArticleDataController extends Controller
+class PostDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.user.articles.index', ['title' => 'Data Artikel']);
+        return view('pages.user.posts.index', ['title' => 'Data Posting', 'posts' => Article::all()]);
     }
 
     /**
@@ -36,15 +38,15 @@ class ArticleDataController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Article $article)
     {
-        //
+        return view('pages.user.posts.show', ['title' => 'Detail Posting', 'post' => $article]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Article $article)
     {
         //
     }
@@ -52,7 +54,7 @@ class ArticleDataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Article $article)
     {
         //
     }
@@ -60,7 +62,7 @@ class ArticleDataController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Article $article)
     {
         //
     }

@@ -7,7 +7,7 @@
     <title>{{ $title }}</title>
 
     {{-- Tailwind --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css','resources/js/app.js'])
 
     {{-- Swiper CSS --}}
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />

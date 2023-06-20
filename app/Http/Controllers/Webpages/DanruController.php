@@ -21,7 +21,6 @@ class DanruController extends Controller
             'components.pages.profile.danru',
             [
                 "title" => "Danru Disdamkarmat TPI",
-                "url" => "/danru",
                 "lists" => Regu::with('danrus')->get()
             ]
         );

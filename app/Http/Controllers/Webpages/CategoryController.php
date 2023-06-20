@@ -43,7 +43,6 @@ class CategoryController extends Controller
     {
         return view('components.pages.kategori.index', [
             'title' => $category->name,
-            'url' => '/category',
             // N+1 Problem Resolved
             'posts' => $category->articles->load('category'),
             'category' => $category->name

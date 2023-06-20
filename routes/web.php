@@ -9,7 +9,7 @@ use App\Http\Controllers\Webpages\CategoryController;
 use App\Http\Controllers\ELapor\ELaporController;
 use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\DashboardController;
-use App\Http\Controllers\User\ArticleDataController;
+use App\Http\Controllers\User\PostDataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,6 +55,6 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 // Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
-Route::resource('/dashboard/articles', ArticleDataController::class)->names([
-    'index' => 'articles.index'
+Route::resource('/dashboard/articles', PostDataController::class)->names([
+    'index' => 'posts.index'
 ])->middleware('auth');

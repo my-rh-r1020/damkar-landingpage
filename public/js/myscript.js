@@ -7,9 +7,7 @@ const navToggle = document.getElementById("nav-toggle"),
     accordionItems = document.querySelectorAll(".accordion-item"),
     videoBtn = document.querySelector("#video-btn"),
     videoPopUp = document.querySelector("#damkarplay"),
-    videoCloseBtn = document.querySelector("#video-close-btn"),
-    emergencyCard = document.querySelector("#emergency-card"),
-    emergencyBtn = document.querySelector("#emergency-btn");
+    videoCloseBtn = document.querySelector("#video-close-btn");
 
 // Hamburger & Sidebar
 navToggle.addEventListener("click", () => {
@@ -61,15 +59,6 @@ testimonialSwiper.forEach((slide) => {
         // tambahkan kelas "active" pada slide yang di-klik
         slide.classList.add("active");
     });
-});
-
-// Emergency Call Button
-emergencyBtn.addEventListener("mouseenter", () => {
-    emergencyCard.classList.remove("hidden");
-});
-
-emergencyBtn.addEventListener("mouseleave", () => {
-    emergencyCard.classList.add("hidden");
 });
 
 // Back to Top Button

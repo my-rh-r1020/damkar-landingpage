@@ -50,6 +50,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,21 +66,21 @@
     {{-- Boxicons --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div class="flex h-screen bg-gray-100">
-        <!-- Sidebar -->
+    <section>
         @include('components.pages.user.dashboard.sidebar')
+
+        @include('components.pages.user.dashboard.header')
     
-        <!-- Main Content -->
-        <div class="flex flex-col flex-grow">
-            @include('components.pages.user.dashboard.header')
-            
-            <!-- Konten dashboard -->
-            <main class="p-4">
-                @yield('dashboardBody')
-            </main>
+        <div class="p-4 sm:ml-64 bg-gray-100">
+            <div class="px-3 py-6 rounded-lg">
+                @yield('dashboardBody')            
+            </div>
         </div>
-    </div>
+    </section>
+
+
 
     {{-- JS Scripts --}}
     <script src="/js/myscript.js"></script>
@@ -87,4 +88,5 @@
     <!-- Initialize Scripts -->
     @stack('scripts')
 </body>
+
 </html>

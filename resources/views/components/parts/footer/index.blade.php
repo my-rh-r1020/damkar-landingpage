@@ -63,17 +63,13 @@
 
 {{-- Emergency Call --}}
 <div class="fixed z-20 bottom-6 left-0 right-0">
-    <div class="emergency-sign" id="emergency-card">
-        <span class="uppercase text-white xl:text-lg font-semibold">Emergency Call</span>
-    </div>
-    <a href="tel:077124949" class="emergency-btn">
+    <a href="tel:077124949" class="emergency-btn" data-tooltip-target="tooltip-default">
         <i class='bx bxs-phone-call text-redColorAlt text-3xl'></i>
     </a>
-    {{-- <div class="emergency-btn" id="emergency-btn">
-        <a href="tel:077124949">
-            <i class='bx bxs-phone-call text-redColorAlt text-3xl'></i>
-        </a>
-    </div> --}}
+    <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-redColorAlt rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        Emergency Call
+        <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
 </div>
 
 {{-- Back To Top --}}

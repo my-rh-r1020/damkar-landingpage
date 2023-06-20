@@ -15,30 +15,30 @@ $currentUrl = request()->url();
                     <li class="relative">
                         <a href="{{ url('/') }}">
                             <span class="nav-link">Beranda</span>
-                            <div class="{{ $url === "/" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('/') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="dropdown-items">
                         <div class="nav-link">Profil
-                            <div class="{{ $url === "/profile" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('sejarah') || Request::is('tupoksi') || Request::is('struktur-organisasi') || Request::is('danru') ? 'nav-active' : 'hidden' }}"></div>
                         </div>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-list">
+                            <li class="dropdown-list {{ Request::is('sejarah') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
                                     <a href="{{ route('sejarah') }}">Sejarah</a>
                                 </div>
                             </li>
-                            <li class="dropdown-list">
+                            <li class="dropdown-list {{ Request::is('tupoksi') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
                                     <a href="{{ route('tupoksi') }}">Tupoksi</a>
                                 </div>
                             </li>
-                            <li class="dropdown-list">
+                            <li class="dropdown-list {{ Request::is('struktur-organisasi') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
                                     <a href="{{ route('organisasi') }}">Struktur Organisasi</a>
                                 </div>
                             </li>
-                            <li class="dropdown-list">
+                            <li class="dropdown-list {{ Request::is('danru') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
                                     <a href="{{ route('danru') }}">Danru</a>
                                 </div>
@@ -48,32 +48,32 @@ $currentUrl = request()->url();
                     <li class="relative">
                         <a href="{{ route('berita') }}">
                             <span class="nav-link">Berita</span>
-                            <div class="{{ $url === "/berita" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('berita') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="relative">
                         <a href="{{ route('grafik') }}">
                             <span class="nav-link">Informasi Data</span>
-                            <div class="{{ $url === "/grafik" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('grafik') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="relative">
                         <a href="{{ route('gallery') }}">
                             <span class="nav-link">Galery</span>
-                            <div class="{{ $url === "/gallery" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('gallery') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="dropdown-items">
                         <div class="nav-link">Edu Damkar
-                            <div class="{{ $url === "/edukasi" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('edukasi') || Request::is('himbauan') ? 'nav-active' : 'hidden' }}"></div>
                         </div>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-list">
+                            <li class="dropdown-list {{ Request::is('edukasi') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
                                     <a href="{{ route('edukasi') }}">Pengetahuan</a>
                                 </div>
                             </li>
-                            <li class="dropdown-list">
+                            <li class="dropdown-list {{ Request::is('himbauan') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
                                     <a href="#">Himbauan</a>
                                 </div>
@@ -88,7 +88,7 @@ $currentUrl = request()->url();
                     <li class="relative">
                         <a href="{{ route('redkar') }}">
                             <span class="nav-link">Red Kar</span>
-                            <div class="{{ $url === "/redkar" ? 'nav-active' : 'hidden' }}"></div>
+                            <div class="{{ Request::is('redkar') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                 </ul>

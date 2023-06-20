@@ -13,16 +13,16 @@ class ProfileController extends Controller
 {
     public function profileIndex()
     {
-        return view('pages.profile', ["title" => "Profil Disdamkarmat TPI", "url" => "/profile"]);
+        return view('pages.profile', ["title" => "Profil Disdamkarmat TPI"]);
     }
 
     public function tupoksi()
     {
-        return view('components.pages.profile.tupoksi', ['title' => 'Tupoksi Disdamkarmat TPI', 'url' => '/tupoksi']);
+        return view('components.pages.profile.tupoksi', ['title' => 'Tupoksi Disdamkarmat TPI']);
     }
 
     public function strukturOrganisasi()
     {
-        return view('components.pages.profile.organisasi', ['title' => 'Struktur Organisasi Disdamkarmat TPI', 'url' => '/struktur-organisasi']);
+        return view('components.pages.profile.organisasi', ['title' => 'Struktur Organisasi Disdamkarmat TPI']);
     }
 }

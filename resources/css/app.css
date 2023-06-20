@@ -49,6 +49,9 @@
     .dropdown-list {
         @apply text-whiteColorAlt hover:text-white py-2 px-4;
     }
+    .dropdown-list-active {
+        @apply bg-redColorAlt text-white;
+    }
     .dropdown-list-href {
         @apply transition hover:translate-x-2;
     }
@@ -172,12 +175,6 @@
     .emergency-btn {
         @apply bg-[#000BED] w-16 h-16 rounded-full mx-auto flex items-center justify-center transition duration-300 hover:scale-110;
     }
-    .emergency-btn:hover .emergency-sign {
-        @apply opacity-100 pointer-events-auto;
-    }
-    .emergency-sign {
-        @apply bg-redColorAlt opacity-0 mb-1 w-max p-2 mx-auto text-center rounded-md pointer-events-none transition-opacity ease-out duration-300;
-    }
 
     /* PROFILE PAGE8 */
     .profile-card {
@@ -255,7 +252,13 @@
     .fixed-sidebar::-webkit-scrollbar-thumb:hover {
         @apply bg-slate-300;
     }
+    .sidebar-title {
+        @apply text-[#ABB3C4] text-sm mb-2;
+    }
     .sidebar-listmenu {
-        @apply px-3 py-2 hover:bg-gray-200 rounded-md;
+        @apply flex items-center p-2 gap-x-3 text-gray-800 rounded-lg hover:bg-gray-200;
+    }
+    .sidebar-listmenu-active {
+        @apply bg-blue-400 hover:bg-blue-500 text-white;
     }
 }
