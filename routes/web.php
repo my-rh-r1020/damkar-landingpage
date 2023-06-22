@@ -10,6 +10,7 @@ use App\Http\Controllers\ELapor\ELaporController;
 use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\PostDataController;
+use App\Http\Controllers\User\DanruDataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,6 +56,15 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 // Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+
+// Dashboard => Articles
 Route::resource('/dashboard/articles', PostDataController::class)->names([
-    'index' => 'posts.index'
+    'index' => 'posts.index',
+    'create' => 'posts.create'
+])->middleware('auth');
+
+// Dashboard => Danru
+Route::resource('/dashboard/danru', DanruDataController::class)->names([
+    'index' => 'danru.index',
+    'create' => 'danru.create'
 ])->middleware('auth');

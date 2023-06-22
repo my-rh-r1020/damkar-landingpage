@@ -1,5 +1,5 @@
 <aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-lightGrey">
         <header class="mt-3 mb-8">
             <a href="{{ route('dashboard') }}">
                 <div class="flex items-center justify-center gap-2">
@@ -25,13 +25,13 @@
 
             <h5 class="sidebar-title pt-4">Data</h5>
             <li>
-                <a href="#" class="sidebar-listmenu">
+                <a href="{{ route('danru.index') }}" class="sidebar-listmenu {{ Request::is('dashboard/danru*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-gray-500 text-xl'></i>
                     <span class="text-base">Danru</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('posts.index') }}" class="sidebar-listmenu {{ Request::is('dashboard/articles') ? 'sidebar-listmenu-active' : '' }}">
+                <a href="{{ route('posts.index') }}" class="sidebar-listmenu {{ Request::is('dashboard/articles*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-xl'></i>
                     <span class="text-base">Post</span>
                 </a>

@@ -6,17 +6,17 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 
 // Model
-use App\Models\Article;
+use App\Models\Danru;
 use Illuminate\Http\Request;
 
-class PostDataController extends Controller
+class DanruDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.user.posts.index', ['title' => 'Data Posting', 'posts' => Article::all()]);
+        return view('pages.user.danru.index', ['title' => 'Data Danru', 'danrus' => Danru::all()]);
     }
 
     /**
@@ -24,7 +24,7 @@ class PostDataController extends Controller
      */
     public function create()
     {
-        return view('pages.user.posts.create', ['title' => 'Buat Posting']);
+        //
     }
 
     /**
@@ -38,15 +38,15 @@ class PostDataController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Danru $danru)
     {
-        return view('pages.user.posts.show', ['title' => 'Detail Posting', 'post' => $article]);
+        return view('pages.user.danru.show', ['title' => 'Detail Danru', 'danru' => $danru]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit(Danru $danru)
     {
         //
     }
@@ -54,7 +54,7 @@ class PostDataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Article $article)
+    public function update(Request $request, Danru $danru)
     {
         //
     }
@@ -62,7 +62,7 @@ class PostDataController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
+    public function destroy(Danru $danru)
     {
         //
     }
