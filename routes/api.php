@@ -1,9 +1,12 @@
 <?php
 
-use App\Http\Controllers\Api\LoginController;
-use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\DanruDataController;
+use App\Http\Controllers\API\KategoriDataController;
+use App\Http\Controllers\API\ReguDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +23,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Route::post('/login', [AuthController::class, 'authenticate']);
+Route::controller(AuthController::class)->group(function () {
+    Route::post('login', 'login');
+});
 
-// Route::middleware('auth:sanctum')->group(function () {
-//     Route::post('/logout', [AuthController::class, 'logout']);
-// });
+Route::middleware('auth:sanctum')->group(function () {
+    Route::resource('danru', DanruDataController::class);
+    Route::resource('category', KategoriDataController::class);
+    Route::resource('regu', ReguDataController::class);
+    Route::post('logout', [AuthController::class, 'logout']);
+});

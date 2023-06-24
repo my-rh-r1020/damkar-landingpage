@@ -3,8 +3,7 @@
 
 @section('dashboardBody')
 
-<div class="bg-white rounded shadow p-6">
-
+<div>
 </div>
 
 @endsection

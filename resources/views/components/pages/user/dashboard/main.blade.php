@@ -73,14 +73,14 @@
 
         @include('components.pages.user.dashboard.header')
     
-        <div class="p-4 sm:ml-64 bg-gray-100">
+        <main class="p-4 sm:ml-64 bg-gray-100">
             <div class="px-3 py-6 rounded-lg">
-                @yield('dashboardBody')            
+                <div class="bg-white shadow p-6 rounded">
+                    @yield('dashboardBody')            
+                </div>
             </div>
-        </div>
+        </main>
     </section>
-
-
 
     {{-- JS Scripts --}}
     <script src="/js/myscript.js"></script>
