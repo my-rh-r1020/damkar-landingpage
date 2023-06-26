@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers\Webpages;
 
-// Deklarasi Controller
 use App\Http\Controllers\Controller;
-
 use App\Models\Regu;
 use App\Http\Requests\StoreReguRequest;
 use App\Http\Requests\UpdateReguRequest;

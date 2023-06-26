@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers\Webpages;
 
-// Deklarasi Controller
 use App\Http\Controllers\Controller;
-
-// Deklarasi Model
 use App\Models\Article;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;

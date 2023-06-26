@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
-// Controller
 use App\Http\Controllers\Controller;
-
-// Model
 use App\Models\Danru;
 use Illuminate\Http\Request;
 

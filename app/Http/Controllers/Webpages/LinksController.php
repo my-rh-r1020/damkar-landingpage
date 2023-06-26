@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Webpages;
 
-// Deklarasi Controller
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 

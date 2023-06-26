@@ -1,20 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Webpages;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
-use App\Http\Requests\StoreCategoryRequest;
-use App\Http\Requests\UpdateCategoryRequest;
+use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class KategoriDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('pages.user.kategori.index', ['title' => 'Data Kategori', 'categories' => Category::all()]);
     }
 
     /**
@@ -28,7 +27,7 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCategoryRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -38,12 +37,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return view('components.pages.kategori.index', [
-            'title' => $category->name,
-            // N+1 Problem Resolved
-            'posts' => $category->articles->load('category'),
-            'category' => $category->name
-        ]);
+        //
     }
 
     /**
@@ -57,7 +51,7 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCategoryRequest $request, Category $category)
+    public function update(Request $request, Category $category)
     {
         //
     }

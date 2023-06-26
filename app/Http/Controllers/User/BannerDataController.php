@@ -3,17 +3,18 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Models\Article;
-use Illuminate\Http\Request;
+use App\Models\Banner;
+use App\Http\Requests\StoreBannerRequest;
+use App\Http\Requests\UpdateBannerRequest;
 
-class PostDataController extends Controller
+class BannerDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.user.posts.index', ['title' => 'Data Posting', 'posts' => Article::all()]);
+        return view('pages.user.banner.index', ['title' => 'Data Banner', 'banners' => Banner::all()]);
     }
 
     /**
@@ -21,13 +22,13 @@ class PostDataController extends Controller
      */
     public function create()
     {
-        return view('pages.user.posts.create', ['title' => 'Buat Posting']);
+        //
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreBannerRequest $request)
     {
         //
     }
@@ -35,15 +36,15 @@ class PostDataController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Banner $banner)
     {
-        return view('pages.user.posts.show', ['title' => 'Detail Posting', 'post' => $article]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit(Banner $banner)
     {
         //
     }
@@ -51,7 +52,7 @@ class PostDataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Article $article)
+    public function update(UpdateBannerRequest $request, Banner $banner)
     {
         //
     }
@@ -59,7 +60,7 @@ class PostDataController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
+    public function destroy(Banner $banner)
     {
         //
     }

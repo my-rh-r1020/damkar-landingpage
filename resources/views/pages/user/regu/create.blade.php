@@ -4,7 +4,7 @@
 @section('dashboardBody')
 
 <div class="mb-10">
-    <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl">Create Artikel Baru</h3>
+    <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl">Create Regu Baru</h3>
 </div>
 
 @endsection

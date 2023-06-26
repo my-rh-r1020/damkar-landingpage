@@ -94,7 +94,7 @@ $currentUrl = request()->url();
                 </ul>
             </div>
             <div class="flex items-center">
-                <a href="/elapor" class="bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221] py-1 px-5 xl:px-6 rounded-md">E-Lapor</a>
+                <a href="http://ppid.tanjungpinangkota.go.id/" class="bg-redColorAlt text-white text-[17px] font-bebasNeue hover:bg-[#C10221] py-1 px-5 xl:px-6 rounded-md">E-Lapor</a>
                 <div id="nav-toggle" class="block cursor-pointer transition duration-300 hover:bg-redColor hover:text-white py-1 px-2 rounded-xl scale-75 lg:hidden ml-auto mr-1">
                     <i class='bx bx-menu text-5xl'></i>
                 </div>

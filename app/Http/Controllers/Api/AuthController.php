@@ -9,6 +9,11 @@ use Illuminate\Http\JsonResponse;
 
 class AuthController extends BaseController
 {
+    public function index()
+    {
+        return view('pages.user.login', ["title" => "Sign In"]);
+    }
+
     /**
      * Login api
      *

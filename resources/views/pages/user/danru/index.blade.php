@@ -7,7 +7,7 @@
     <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl">Data Danru</h3>
 </div>
 <div class="mb-5">
-    <a href="{{ route('posts.create') }}" class="px-3 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white text-base">Add Danru</a>
+    <a href="{{ route('danru.create') }}" class="px-3 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white text-base">Add Danru</a>
 </div>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-base text-left text-gray-500">

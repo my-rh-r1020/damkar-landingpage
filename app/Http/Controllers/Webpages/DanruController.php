@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers\Webpages;
 
-// Deklarasi Controller
 use App\Http\Controllers\Controller;
-
-use App\Http\Requests\StoreDanruRequest;
-use App\Http\Requests\UpdateDanruRequest;
 use App\Models\Danru;
 use App\Models\Regu;
+use App\Http\Requests\StoreDanruRequest;
+use App\Http\Requests\UpdateDanruRequest;
 
 class DanruController extends Controller
 {

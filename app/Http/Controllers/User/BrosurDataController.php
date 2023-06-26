@@ -3,17 +3,18 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Models\Article;
-use Illuminate\Http\Request;
+use App\Models\Browsur;
+use App\Http\Requests\StoreBrowsurRequest;
+use App\Http\Requests\UpdateBrowsurRequest;
 
-class PostDataController extends Controller
+class BrosurDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.user.posts.index', ['title' => 'Data Posting', 'posts' => Article::all()]);
+        return view('pages.user.brosur.index', ['title' => 'Data Brosur', 'brosurs' => Browsur::all()]);
     }
 
     /**
@@ -21,13 +22,13 @@ class PostDataController extends Controller
      */
     public function create()
     {
-        return view('pages.user.posts.create', ['title' => 'Buat Posting']);
+        //
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreBrowsurRequest $request)
     {
         //
     }
@@ -35,15 +36,15 @@ class PostDataController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Browsur $browsur)
     {
-        return view('pages.user.posts.show', ['title' => 'Detail Posting', 'post' => $article]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit(Browsur $browsur)
     {
         //
     }
@@ -51,7 +52,7 @@ class PostDataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Article $article)
+    public function update(UpdateBrowsurRequest $request, Browsur $browsur)
     {
         //
     }
@@ -59,7 +60,7 @@ class PostDataController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
+    public function destroy(Browsur $browsur)
     {
         //
     }

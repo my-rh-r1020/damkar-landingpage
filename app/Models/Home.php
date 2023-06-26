@@ -13,25 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 class Home
 {
     // Private Function
-    private static $herobanner_items = [
-        [
-            "banner-damkar" => "herobanner-1.jpg",
-            "banner-subtitle" => "Dinas Pemadam Kebakaran dan Penyelamatan Kota Tanjungpinang",
-            "banner-title" => "Pantang Pulang Sebelum Padam"
-        ],
-        [
-            "banner-damkar" => "herobanner-2.jpg",
-            "banner-subtitle" => "Dinas Pemadam Kebakaran dan Penyelamatan Kota Tanjungpinang",
-            "banner-title" => "Waspada Penyebab Kebakaran"
-        ],
-        [
-            "banner-damkar" => "herobanner-3.jpg",
-            "banner-subtitle" => "Dinas Pemadam Kebakaran dan Penyelamatan Kota Tanjungpinang",
-            "banner-title" => "STOP Membakar Lahan"
-        ],
-
-    ];
-
     private static $service_items = [
         [
             "url" => "#",
@@ -59,47 +40,10 @@ class Home
         ],
     ];
 
-    private static $services_gallery = [
-        [
-            "url" => "#",
-            "image-banner" => "services-01.jpg",
-            "gallery-title" => "Response Time",
-            "gallery-subtitle" => "Natus error sit voluptatem"
-        ],
-        [
-            "url" => "#",
-            "image-banner" => "services-02.jpg",
-            "gallery-title" => "Safety Education",
-            "gallery-subtitle" => "Natus error sit voluptatem"
-        ],
-        [
-            "url" => "#",
-            "image-banner" => "services-03.jpg",
-            "gallery-title" => "Alarm Inspection",
-            "gallery-subtitle" => "Natus error sit voluptatem"
-        ],
-        [
-            "url" => "#",
-            "image-banner" => "services-04.jpg",
-            "gallery-title" => "Effective Methods",
-            "gallery-subtitle" => "Natus error sit voluptatem"
-        ]
-    ];
-
     // Public Function
-    public static function herobannerdata()
-    {
-        // Ambil semua data blog via collection
-        return collect(self::$herobanner_items);
-    }
-
     public static function servicesdata()
     {
+        // Ambil semua data blog via collection
         return collect(self::$service_items);
-    }
-
-    public static function gallerydata()
-    {
-        return collect(self::$services_gallery);
     }
 }

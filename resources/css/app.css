@@ -73,9 +73,6 @@
     .sidebar-menu-text {
         @apply text-2xl text-whiteColorAlt hover:text-white font-bebasNeue transition ease-in-out duration-300;
     }
-    .herobanner-slider {
-        @apply scale-75 p-8 bg-blackColor hover:bg-slate-700 transition-all duration-300 rounded-sm;
-    }
     .contact-icon {
         @apply p-[14px] mr-[14px] bg-[#FAF8F8] rounded-full;
     }

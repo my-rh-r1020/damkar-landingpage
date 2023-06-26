@@ -1,6 +1,6 @@
 <aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto bg-lightGrey">
-        <header class="mt-3 mb-8">
+        <header class="mt-3 mb-10">
             <a href="{{ route('dashboard') }}">
                 <div class="flex items-center justify-center gap-2">
                     <img src="/images/logo-damkar.png" alt="disdamkarmat-logo" class="w-[70px]">
@@ -9,39 +9,62 @@
             </a>
         </header>
         <ul class="space-y-2 font-medium">
-            <h5 class="sidebar-title">Overview</h5>
             <li>
                 <a href="{{ route('dashboard') }}" class="sidebar-listmenu {{ Request::is('dashboard') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-dashboard text-xl'></i>
                     <span class="text-base">Dashboard</span>
                 </a>
             </li>
-            <li>
-                <a href="#" class="sidebar-listmenu">
-                    <i class='bx bx-grid-alt text-gray-500 text-xl'></i>
-                    <span class="text-base">Menu 2</span>
-                </a>
-            </li>
 
-            <h5 class="sidebar-title pt-4">Data</h5>
+            <h5 class="sidebar-title pt-4">Danru</h5>
             <li>
-                <a href="{{ route('danru.index') }}" class="sidebar-listmenu {{ Request::is('dashboard/danru*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-gray-500 text-xl'></i>
+                <a href="{{ route('dashboard.danru') }}" class="sidebar-listmenu {{ Request::is('dashboard/danru*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-xl'></i>
                     <span class="text-base">Danru</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('posts.index') }}" class="sidebar-listmenu {{ Request::is('dashboard/articles*') ? 'sidebar-listmenu-active' : '' }}">
+                <a href="{{ route('dashboard.regu') }}" class="sidebar-listmenu {{ Request::is('dashboard/regu*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-xl'></i>
-                    <span class="text-base">Post</span>
+                    <span class="text-base">Regu</span>
+                </a>
+            </li>
+
+            <h5 class="sidebar-title pt-4">Artikel</h5>
+            <li>
+                <a href="{{ route('dashboard.articles') }}" class="sidebar-listmenu {{ Request::is('dashboard/articles*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-xl'></i>
+                    <span class="text-base">Artikel</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="sidebar-listmenu">
-                    <i class='bx bxs-data text-gray-500 text-xl'></i>
-                    <span class="text-base">Album</span>
+                <a href="{{ route('dashboard.categories') }}" class="sidebar-listmenu {{ Request::is('dashboard/kategori*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-xl'></i>
+                    <span class="text-base">Kategori</span>
                 </a>
             </li>
+
+            <h5 class="sidebar-title pt-4">Gallery</h5>
+            <li>
+                <a href="#" class="sidebar-listmenu {{ Request::is('dashboard/gallery*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-gray-500 text-xl'></i>
+                    <span class="text-base">Gallery</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('dashboard.banners') }}" class="sidebar-listmenu {{ Request::is('dashboard/banner*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-xl'></i>
+                    <span class="text-base">Banner</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('dashboard.brosurs') }}" class="sidebar-listmenu {{ Request::is('dashboard/brosur*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-xl'></i>
+                    <span class="text-base">Brosur</span>
+                </a>
+            </li>
+
+            <h5 class="sidebar-title pt-4">Insendentil</h5>
             <li>
                 <a href="#" class="sidebar-listmenu">
                     <i class='bx bxs-data text-gray-500 text-xl'></i>
@@ -49,13 +72,7 @@
                 </a>
             </li>
 
-            <h5 class="sidebar-title pt-4">Others</h5>
-            <li>
-                <a href="#" class="sidebar-listmenu">
-                    <i class='bx bx-cog text-gray-500 text-xl'></i>
-                    <span class="text-base">Settings</span>
-                </a>
-            </li>
+            {{-- <h5 class="sidebar-title pt-4">Others</h5>
             <li>
                 <form action="/logout" method="post">
                     @csrf
@@ -64,7 +81,7 @@
                         <span class="text-base">Logout</span>
                     </button>
                 </form>
-            </li>
+            </li> --}}
 
             {{-- <li>
                 <button type="button" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-200" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">

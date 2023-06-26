@@ -7,10 +7,14 @@ use App\Http\Controllers\Webpages\DanruController;
 use App\Http\Controllers\Webpages\ArticleController;
 use App\Http\Controllers\Webpages\CategoryController;
 use App\Http\Controllers\ELapor\ELaporController;
+use App\Http\Controllers\User\BannerDataController;
+use App\Http\Controllers\User\BrosurDataController;
 use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\PostDataController;
 use App\Http\Controllers\User\DanruDataController;
+use App\Http\Controllers\User\KategoriDataController;
+use App\Http\Controllers\User\ReguDataController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,47 +28,82 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Homepage
 Route::get('/', [HomepageController::class, "index"])->name('beranda');
 
-// Profile
-Route::get('/sejarah', [ProfileController::class, 'profileIndex'])->name('sejarah');
-Route::get('/tupoksi', [ProfileController::class, 'tupoksi'])->name('tupoksi');
-Route::get('/struktur-organisasi', [ProfileController::class, 'strukturOrganisasi'])->name('organisasi');
-Route::get('/danru', [DanruController::class, 'index'])->name('danru');
+Route::controller(ProfileController::class)->group(function () {
+    Route::get('/sejarah', 'profileIndex')->name('sejarah');
+    Route::get('/tupoksi', 'tupoksi')->name('tupoksi');
+    Route::get('/struktur-organisasi', 'strukturOrganisasi')->name('organisasi');
+});
 
-// Berita
-Route::get('/berita', [ArticleController::class, 'index'])->name('berita');
-Route::get('/berita/{article:slug}', [ArticleController::class, 'show'])->name('berita.detail');
-Route::get('/category/{category:slug}', [CategoryController::class, 'show'])->name('catgegory.index');
+Route::controller(DanruController::class)->group(function () {
+    Route::get('/danru', 'index')->name('danru');
+});
 
-Route::get('/grafik', [LinksController::class, 'grafikKebakaran'])->name('grafik');
-Route::get('/gallery', [LinksController::class, 'galleryDamkar'])->name('gallery');
+Route::controller(ArticleController::class)->group(function () {
+    Route::get('/berita', 'index')->name('berita');
+    Route::get('/berita/{article:slug}', 'show')->name('berita.detail');
+    Route::get('/edukasi', 'indexEdukasi')->name('edukasi');
+    Route::get('/edukasi/{article:slug}', 'showEdukasi')->name('edukasi.detail');
+});
 
-// Edukasi
-Route::get('/edukasi', [ArticleController::class, 'indexEdukasi'])->name('edukasi');
-Route::get('/edukasi/{article:slug}', [ArticleController::class, 'showEdukasi']);
+Route::controller(CategoryController::class)->group(function () {
+    Route::get('/category/{category:slug}', 'show')->name('catgegory.index');
+});
 
-Route::get('/elapor', [ELaporController::class, "index"])->name('elapor');
+Route::controller(LinksController::class)->group(function () {
+    Route::get('/grafik', 'grafikKebakaran')->name('grafik');
+    Route::get('/gallery', 'galleryDamkar')->name('gallery');
+    Route::get('/redkar', 'redKar')->name('redkar');
+});
+
 Route::get('/insendentil', [ELaporController::class, 'insendentil'])->name('insendentil');
-Route::get('/redkar', [LinksController::class, 'redKar'])->name('redkar');
 
-// Sign In & Sign Out
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate'])->name('login');
-Route::post('/logout', [LoginController::class, 'logout']);
+// Guest Session
+Route::middleware('guest')->group(function () {
+    // Login
+    Route::controller(LoginController::class)->group(function () {
+        Route::get('login', 'index')->name('login');
+        Route::post('login', 'authenticate');
+    });
+});
 
-// Dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+// User Session
+Route::middleware('auth')->group(function () {
+    // Dashboard
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-// Dashboard => Articles
-Route::resource('/dashboard/articles', PostDataController::class)->names([
-    'index' => 'posts.index',
-    'create' => 'posts.create'
-])->middleware('auth');
+    Route::prefix('dashboard')->group(function () {
+        // Danru
+        Route::resource('/danru', DanruDataController::class)->names([
+            'index' => 'dashboard.danru',
+            'create' => 'danru.create'
+        ]);
+        // Regu
+        Route::resource('/regu', ReguDataController::class)->names([
+            'index' => 'dashboard.regu',
+            'create' => 'regu.create'
+        ]);
+        // Article
+        Route::resource('/articles', PostDataController::class)->names([
+            'index' => 'dashboard.articles',
+            'create' => 'article.create'
+        ]);
+        // Kategori
+        Route::resource('/kategori', KategoriDataController::class)->names([
+            'index' => 'dashboard.categories',
+            'create' => 'category.create'
+        ]);
+        // Banner
+        Route::resource('/banner', BannerDataController::class)->names([
+            'index' => 'dashboard.banners'
+        ]);
+        // Brosur
+        Route::resource('/brosur', BrosurDataController::class)->names([
+            'index' => 'dashboard.brosurs'
+        ]);
+    });
 
-// Dashboard => Danru
-Route::resource('/dashboard/danru', DanruDataController::class)->names([
-    'index' => 'danru.index',
-    'create' => 'danru.create'
-])->middleware('auth');
+    // Logout
+    Route::post('/logout', [LoginController::class, 'logout']);
+});
