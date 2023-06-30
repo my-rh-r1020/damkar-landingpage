@@ -4,6 +4,8 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Article;
+use App\Models\Category;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\Request;
 
 class PostDataController extends Controller
@@ -13,7 +15,13 @@ class PostDataController extends Controller
      */
     public function index()
     {
-        return view('pages.user.posts.index', ['title' => 'Data Posting', 'posts' => Article::all()]);
+        $posts = Article::orderBy('id')->paginate(10);
+
+        return view(
+            'pages.user.posts.index',
+            compact('posts'),
+            ['title' => 'Data Posting']
+        )->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
     /**
@@ -21,7 +29,7 @@ class PostDataController extends Controller
      */
     public function create()
     {
-        return view('pages.user.posts.create', ['title' => 'Buat Posting']);
+        return view('pages.user.posts.create', ['title' => 'Form New Artikel', 'categories' => Category::get()]);
     }
 
     /**
@@ -29,7 +37,7 @@ class PostDataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request;
     }
 
     /**
@@ -62,5 +70,14 @@ class PostDataController extends Controller
     public function destroy(Article $article)
     {
         //
+    }
+
+    /**
+     * Slug Handle for Create.
+     */
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Article::class, 'slug', $request->title);
+        return response()->json(['slug' => $slug]);
     }
 }

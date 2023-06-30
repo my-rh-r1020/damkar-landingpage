@@ -13,7 +13,13 @@ class KategoriDataController extends Controller
      */
     public function index()
     {
-        return view('pages.user.kategori.index', ['title' => 'Data Kategori', 'categories' => Category::all()]);
+        $categories = Category::orderBy('id')->paginate(10);
+
+        return view(
+            'pages.user.kategori.index',
+            compact('categories'),
+            ['title' => 'Data Kategori']
+        )->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
     /**
@@ -21,7 +27,7 @@ class KategoriDataController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.user.kategori.create', ['title' => 'Form New Kategori']);
     }
 
     /**
@@ -29,7 +35,15 @@ class KategoriDataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'slug' => 'required'
+        ]);
+
+        // Add New Data
+        Category::create($request->all());
+
+        return redirect()->route('dashboard.categories')->with('success', 'Berhasil tambah data kategori');
     }
 
     /**
@@ -45,7 +59,7 @@ class KategoriDataController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('pages.user.kategori.edit', compact('category'), ['title' => 'Form Edit Kategori']);
     }
 
     /**
@@ -53,7 +67,15 @@ class KategoriDataController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'slug' => 'required'
+        ]);
+
+        // Update Data
+        $category->update($request->all());
+
+        return redirect()->route('dashboard.categories')->with('success', 'Berhasil update data kategori');
     }
 
     /**

@@ -13,6 +13,7 @@ use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\PostDataController;
 use App\Http\Controllers\User\DanruDataController;
+use App\Http\Controllers\User\InsendentilDataController;
 use App\Http\Controllers\User\KategoriDataController;
 use App\Http\Controllers\User\ReguDataController;
 use Illuminate\Support\Facades\Route;
@@ -57,7 +58,7 @@ Route::controller(LinksController::class)->group(function () {
     Route::get('/redkar', 'redKar')->name('redkar');
 });
 
-Route::get('/insendentil', [ELaporController::class, 'insendentil'])->name('insendentil');
+// Route::get('/insendentil', [ELaporController::class, 'insendentil'])->name('insendentil');
 
 // Guest Session
 Route::middleware('guest')->group(function () {
@@ -74,25 +75,27 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::prefix('dashboard')->group(function () {
+        // Insendentil
+        Route::resource('/insendentil', InsendentilDataController::class)->names([
+            'index' => 'dashboard.insendentil'
+        ]);
+
         // Danru
         Route::resource('/danru', DanruDataController::class)->names([
-            'index' => 'dashboard.danru',
-            'create' => 'danru.create'
+            'index' => 'dashboard.danru'
         ]);
         // Regu
         Route::resource('/regu', ReguDataController::class)->names([
-            'index' => 'dashboard.regu',
-            'create' => 'regu.create'
+            'index' => 'dashboard.regu'
         ]);
         // Article
+        Route::get('/articles/checkSlug', [PostDataController::class, 'checkSlug']);
         Route::resource('/articles', PostDataController::class)->names([
-            'index' => 'dashboard.articles',
-            'create' => 'article.create'
+            'index' => 'dashboard.articles'
         ]);
         // Kategori
         Route::resource('/kategori', KategoriDataController::class)->names([
-            'index' => 'dashboard.categories',
-            'create' => 'category.create'
+            'index' => 'dashboard.categories'
         ]);
         // Banner
         Route::resource('/banner', BannerDataController::class)->names([

@@ -7,7 +7,7 @@
     <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl">Data Danru</h3>
 </div>
 <div class="mb-5">
-    <a href="{{ route('danru.create') }}" class="px-3 py-2 rounded-md bg-blue-500 hover:bg-blue-600 text-white text-base">Add Danru</a>
+    <a href="{{ route('danru.create') }}" class="px-3 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-base">Add Danru</a>
 </div>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-base text-left text-gray-500">
@@ -31,7 +31,7 @@
             @foreach($danrus as $danru)
             <tr class="bg-white border-b hover:bg-gray-50 text-gray-800">
                 <td class="px-6 py-4">
-                    {{ $loop->iteration }}
+                    {{ ++$i }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                     {{ $danru->nama_lengkap }}
@@ -40,14 +40,17 @@
                     {{ $danru->regu->nama_regu }}
                 </td>
                 <td class="flex items-center px-6 py-4 space-x-3">
-                    <a href="/dashboard/danru/{{ $danru->id }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl'></i></a>
-                    <a href="#" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl'></i></a>
+                    <a href="{{ route('danru.show',$danru->id) }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl'></i></a>
+                    <a href="{{ route('danru.edit',$danru->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl'></i></a>
                     <a href="#" class="font-medium text-red-500 hover:text-red-700"><i class='bx bxs-x-circle text-xl'></i></a>
                 </td>
             </tr>
             @endforeach
         </tbody>
     </table>
+    <div class="mx-4 my-6">
+        {!! $danrus->links() !!}
+    </div>
 </div>
 
 @endsection

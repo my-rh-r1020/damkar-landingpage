@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Danru;
+use App\Models\Regu;
 use Illuminate\Http\Request;
 
 class DanruDataController extends Controller
@@ -13,7 +14,13 @@ class DanruDataController extends Controller
      */
     public function index()
     {
-        return view('pages.user.danru.index', ['title' => 'Data Danru', 'danrus' => Danru::all()]);
+        $danrus = Danru::orderBy('id')->paginate(10);
+
+        return view(
+            'pages.user.danru.index',
+            compact('danrus'),
+            ['title' => 'Data Danru',]
+        )->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
     /**
@@ -21,7 +28,9 @@ class DanruDataController extends Controller
      */
     public function create()
     {
-        //
+        $regus = Regu::all();
+
+        return view('pages.user.danru.create', compact('regus'), ['title' => 'Form New Danru']);
     }
 
     /**
@@ -29,7 +38,17 @@ class DanruDataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request;
+        // $request->validate([
+        //     'regu_id' => 'required',
+        //     'avatar' => 'required',
+        //     'nama_lengkap' => 'required'
+        // ]);
+
+        // // Add New Danru
+        // Danru::create($request->all());
+
+        // return redirect()->route('dashboard.danru')->with('success', 'Berhasil tambah data danru');
     }
 
     /**
@@ -37,7 +56,7 @@ class DanruDataController extends Controller
      */
     public function show(Danru $danru)
     {
-        return view('pages.user.danru.show', ['title' => 'Detail Danru', 'danru' => $danru]);
+        return view('pages.user.danru.show', compact('danru'), ['title' => 'Detail Danru']);
     }
 
     /**
@@ -45,7 +64,7 @@ class DanruDataController extends Controller
      */
     public function edit(Danru $danru)
     {
-        //
+        return view('pages.user.danru.edit', compact('danru'), ['title' => 'Form Edit Danru', 'regus' => Regu::all()]);
     }
 
     /**

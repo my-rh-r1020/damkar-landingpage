@@ -1,7 +1,3 @@
-@php
-$currentUrl = request()->url();
-@endphp
-
 <header class="bg-white">
     <div class="px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px] 2xl:px-[100px] pt-[2px] pb-[5px]">
         <nav class="flex items-center justify-between relative">
@@ -80,11 +76,11 @@ $currentUrl = request()->url();
                             </li>
                         </ul>
                     </li>
-                    <li class="relative">
+                    {{-- <li class="relative">
                         <a href="{{ route('insendentil') }}">
                             <span class="nav-link">Insendentil</span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="relative">
                         <a href="{{ route('redkar') }}">
                             <span class="nav-link">Red Kar</span>
@@ -132,7 +128,7 @@ $currentUrl = request()->url();
             <li class="sidebar-menu-list"><a href="{{ route('grafik') }}" class="mb-2"><span class="sidebar-menu-text">Informasi Data</span></a></li>
             <li class="sidebar-menu-list"><a href="{{ route('gallery') }}" class="mb-2"><span class="sidebar-menu-text">Galery</span></a></li>
             <li class="sidebar-menu-list"><a class="mb-2"><span class="sidebar-menu-text">Edu Damkar</span></a></li>
-            <li class="sidebar-menu-list"><a href="{{ route('insendentil') }}" class="mb-2"><span class="sidebar-menu-text">Insendentil</span></a></li>
+            {{-- <li class="sidebar-menu-list"><a href="{{ route('insendentil') }}" class="mb-2"><span class="sidebar-menu-text">Insendentil</span></a></li> --}}
             <li class="sidebar-menu-list"><a href="{{ route('redkar') }}" class="mb-2"><span class="sidebar-menu-text">Red Kar</span></a></li>
         </ul>
 

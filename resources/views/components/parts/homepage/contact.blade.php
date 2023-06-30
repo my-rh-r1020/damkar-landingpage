@@ -55,7 +55,7 @@
                     </p>
                 </div>
                 <div class="flex flex-wrap">
-                    <a href="/elapor" class="red-button mr-10 mb-2">E-Lapor</a>
+                    <a href="http://ppid.tanjungpinangkota.go.id/" class="red-button mr-10 mb-2">E-Lapor</a>
                     <a href="tel:077124949" class="flex flex-wrap items-center">
                         <span class="contact-icon">
                             <i class='bx bx-phone-call text-2xl'></i>

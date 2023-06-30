@@ -13,7 +13,13 @@ class ReguDataController extends Controller
      */
     public function index()
     {
-        return view('pages.user.regu.index', ['title' => 'Data Regu', 'regus' => Regu::all()]);
+        $regus = Regu::orderBy('id')->paginate(10);
+
+        return view(
+            'pages.user.regu.index',
+            compact('regus'),
+            ['title' => 'Data Regu']
+        )->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
     /**
@@ -21,7 +27,7 @@ class ReguDataController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.user.regu.create', ['title' => 'Form New Regu']);
     }
 
     /**
@@ -29,7 +35,15 @@ class ReguDataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama_regu' => 'required',
+            'lokasi' => 'required'
+        ]);
+
+        // Add New Data
+        Regu::create($request->all());
+
+        return redirect()->route('dashboard.regu')->with('success', 'Berhasil tambah data regu');
     }
 
     /**
@@ -45,7 +59,7 @@ class ReguDataController extends Controller
      */
     public function edit(Regu $regu)
     {
-        //
+        return view('pages.user.regu.edit', compact('regu'), ['title' => 'Form Edit Regu']);
     }
 
     /**
@@ -53,7 +67,15 @@ class ReguDataController extends Controller
      */
     public function update(Request $request, Regu $regu)
     {
-        //
+        $request->validate([
+            'nama_regu' => 'required',
+            'lokasi' => 'required'
+        ]);
+
+        // Update Data
+        $regu->update($request->all());
+
+        return redirect()->route('dashboard.regu')->with('success', 'Berhasil update data regu');
     }
 
     /**
@@ -61,6 +83,8 @@ class ReguDataController extends Controller
      */
     public function destroy(Regu $regu)
     {
-        //
+        $regu->delete();
+
+        return redirect()->route('dashboard.regu')->with('success', 'Berhasil delete data regu');
     }
 }

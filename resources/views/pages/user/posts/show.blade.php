@@ -15,7 +15,7 @@
             {!! $post->content_text !!}
         </article>
         <div>
-            <a href="{{ route('posts.index') }}" class="p-2 bg-slate-300 hover:bg-slate-400 hover:text-white rounded-md">
+            <a href="{{ route('dashboard.articles') }}" class="bg-slate-400 hover:bg-slate-500 text-white text-sm lg:text-base px-4 py-2 rounded-md">
                 <i class='bx bx-arrow-back'></i>
                 <span class="text-base">Kembali</span>
             </a>

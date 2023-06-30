@@ -12,7 +12,7 @@
                 {{-- <x-alert type="error" :message="session('signinError')"/> --}}
                 @endif
                 <div class="main-title">
-                    <h3 class="text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2 lg:mb-4">Sign In</h3>
+                    <h3 class="text-blackColor text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl mb-2 lg:mb-4">Login</h3>
                     <span class="text-greyColorAlt">Enter your email and password to login</span>
                 </div>
                 <form action="/login" method="post">

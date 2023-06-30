@@ -16,6 +16,14 @@
                 </a>
             </li>
 
+            <h5 class="sidebar-title pt-4">Insendentil</h5>
+            <li>
+                <a href="{{ route('dashboard.insendentil') }}" class="sidebar-listmenu {{ Request::is('dashboard/insendentil*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-data text-gray-500 text-xl'></i>
+                    <span class="text-base">Insendentil</span>
+                </a>
+            </li>
+
             <h5 class="sidebar-title pt-4">Danru</h5>
             <li>
                 <a href="{{ route('dashboard.danru') }}" class="sidebar-listmenu {{ Request::is('dashboard/danru*') ? 'sidebar-listmenu-active' : '' }}">
@@ -61,14 +69,6 @@
                 <a href="{{ route('dashboard.brosurs') }}" class="sidebar-listmenu {{ Request::is('dashboard/brosur*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-xl'></i>
                     <span class="text-base">Brosur</span>
-                </a>
-            </li>
-
-            <h5 class="sidebar-title pt-4">Insendentil</h5>
-            <li>
-                <a href="#" class="sidebar-listmenu">
-                    <i class='bx bxs-data text-gray-500 text-xl'></i>
-                    <span class="text-base">Insendentil</span>
                 </a>
             </li>
 
