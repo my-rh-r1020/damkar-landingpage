@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="w-full md:w-6/12 lg:w-7/12">
-            <img src="/images/damkar-tpi.jpg" alt="" class="h-full">
+            <img src="/assets/images/webpages/damkar-tpi.jpg" alt="login-image" class="h-full">
         </div>
     </div>
 </section>

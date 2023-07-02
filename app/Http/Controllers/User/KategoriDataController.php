@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class KategoriDataController extends Controller
 {
@@ -36,12 +37,14 @@ class KategoriDataController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'slug' => 'required'
+            'name' => 'required|string|min:3|max:50'
         ]);
 
         // Add New Data
-        Category::create($request->all());
+        Category::create([
+            'name' => $request->get('name'),
+            'slug' => Str::slug($request->get('name'))
+        ]);
 
         return redirect()->route('dashboard.categories')->with('success', 'Berhasil tambah data kategori');
     }
@@ -68,12 +71,14 @@ class KategoriDataController extends Controller
     public function update(Request $request, Category $category)
     {
         $request->validate([
-            'name' => 'required',
-            'slug' => 'required'
+            'name' => 'required|string|min:3|max:50',
         ]);
 
         // Update Data
-        $category->update($request->all());
+        $category->update([
+            'name' => $request->get('name'),
+            'slug' => Str::slug($request->get('name'))
+        ]);
 
         return redirect()->route('dashboard.categories')->with('success', 'Berhasil update data kategori');
     }
@@ -83,6 +88,8 @@ class KategoriDataController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+
+        return redirect()->route('dashboard.categories')->with('success', 'Berhasil delete data kategori');
     }
 }

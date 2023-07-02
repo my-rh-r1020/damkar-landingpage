@@ -1,23 +1,23 @@
 <header class="bg-white">
     <div class="px-[10px] md:px-[20px] lg:px-[30px] xl:px-[50px] 2xl:px-[100px] pt-[2px] pb-[5px]">
         <nav class="flex items-center justify-between relative">
-            <div class="py-[9px] pl-[15px]">
+            <div class="py-[9px]">
                 <a href="{{ url('/') }}">
-                    <img src="/images/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
+                    <img src="/assets/images/logo/logo-tpi-damkar.png" alt="logo-disdamkarmat" class="w-[130px]">
                 </a>
             </div>
             <div class="hidden lg:block">
                 <ul class="nav-menu gap-x-7">
                     <li class="relative">
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/') }}" class="py-8">
                             <span class="nav-link">Beranda</span>
                             <div class="{{ Request::is('/') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="dropdown-items">
-                        <div class="nav-link">Profil
+                        <a class="nav-link py-8">Profil
                             <div class="{{ Request::is('sejarah') || Request::is('tupoksi') || Request::is('struktur-organisasi') || Request::is('danru') ? 'nav-active' : 'hidden' }}"></div>
-                        </div>
+                        </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-list {{ Request::is('sejarah') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
@@ -42,27 +42,27 @@
                         </ul>
                     </li>
                     <li class="relative">
-                        <a href="{{ route('berita') }}">
+                        <a href="{{ route('berita') }}" class="py-8">
                             <span class="nav-link">Berita</span>
                             <div class="{{ Request::is('berita*') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="{{ route('grafik') }}">
+                        <a href="{{ route('grafik') }}" class="py-8">
                             <span class="nav-link">Informasi Data</span>
                             <div class="{{ Request::is('grafik') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="relative">
-                        <a href="{{ route('gallery') }}">
+                        <a href="{{ route('gallery') }}" class="py-8">
                             <span class="nav-link">Galery</span>
                             <div class="{{ Request::is('gallery') ? 'nav-active' : 'hidden' }}"></div>
                         </a>
                     </li>
                     <li class="dropdown-items">
-                        <div class="nav-link">Edu Damkar
+                        <a class="nav-link py-8">Edu Damkar
                             <div class="{{ Request::is('edukasi*') || Request::is('himbauan*') ? 'nav-active' : 'hidden' }}"></div>
-                        </div>
+                        </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-list {{ Request::is('edukasi*') ? 'dropdown-list-active' : '' }}">
                                 <div class="dropdown-list-href">
@@ -82,7 +82,7 @@
                         </a>
                     </li> --}}
                     <li class="relative">
-                        <a href="{{ route('redkar') }}">
+                        <a href="{{ route('redkar') }}" class="py-8">
                             <span class="nav-link">Red Kar</span>
                             <div class="{{ Request::is('redkar') ? 'nav-active' : 'hidden' }}"></div>
                         </a>

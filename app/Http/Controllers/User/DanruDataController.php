@@ -38,17 +38,26 @@ class DanruDataController extends Controller
      */
     public function store(Request $request)
     {
-        return $request;
-        // $request->validate([
-        //     'regu_id' => 'required',
-        //     'avatar' => 'required',
-        //     'nama_lengkap' => 'required'
-        // ]);
+        $request->validate([
+            'nama_lengkap' => 'required|string|min:3|max:100',
+            'regu_id' => 'required',
+            'avatar' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+        ]);
 
-        // // Add New Danru
-        // Danru::create($request->all());
+        $input = $request->all();
 
-        // return redirect()->route('dashboard.danru')->with('success', 'Berhasil tambah data danru');
+        // Validation Avatar
+        if ($avatar = $request->file('avatar')) {
+            $destinationPath = 'assets/images/profile/';
+            $profileAvatar = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
+            $avatar->move($destinationPath, $profileAvatar);
+            $input['avatar'] = "$profileAvatar";
+        }
+
+        // Add New Danru
+        Danru::create($input);
+
+        return redirect()->route('dashboard.danru')->with('success', 'Berhasil tambah data danru');
     }
 
     /**
@@ -72,7 +81,11 @@ class DanruDataController extends Controller
      */
     public function update(Request $request, Danru $danru)
     {
-        //
+        $request->validate([
+            'regu_id' => 'required',
+            'avatar' => 'required',
+            'nama_lengkap' => 'required|string|min:3|max:100'
+        ]);
     }
 
     /**

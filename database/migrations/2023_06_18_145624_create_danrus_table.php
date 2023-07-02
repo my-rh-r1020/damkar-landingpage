@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('danrus', function (Blueprint $table) {
             $table->id();
             $table->foreignId('regu_id');
+            $table->foreignId('user_id');
             $table->string('avatar');
             $table->string('nama_lengkap');
             $table->timestamps();

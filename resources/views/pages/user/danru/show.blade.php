@@ -18,7 +18,7 @@
         </div>
         <div class="mb-12">
             <label class="block mb-6 text-sm lg:text-base font-medium text-gray-900" for="avatar">Avatar</label>
-            <img class="w-[50%] rounded-full px-8 mx-auto" src="/images/{{ $danru->avatar }}" alt="Rounded avatar">
+            <img class="w-[50%] rounded-full px-8 mx-auto" src="/assets/images/profile/{{ $danru->avatar }}" alt="Rounded avatar">
         </div>
         <div class="flex justify-between mb-4">
             <a href="{{ route('dashboard.danru') }}" class="bg-slate-400 hover:bg-slate-500 text-white text-sm lg:text-base px-4 py-2 rounded-md">Kembali</a>

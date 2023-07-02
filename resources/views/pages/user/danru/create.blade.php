@@ -11,13 +11,17 @@
         @csrf
         <div class="mb-6">
             <label for="nama_lengkap" class="block mb-2 text-sm lg:text-base font-medium text-gray-900">Nama Lengkap</label>
-            <input type="text" id="nama_lengkap" name="nama_lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nama Lengkap Anda" required>
+            <input type="text" id="nama_lengkap" name="nama_lengkap" value="{{ old('nama_lengkap') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nama Lengkap Anda" required>
         </div>
         <div class="mb-6">
-            <label for="regu" class="block mb-2 text-sm lg:text-base font-medium text-gray-900">Pilih Regu</label>
-            <select id="regu" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            <label for="regu_id" class="block mb-2 text-sm lg:text-base font-medium text-gray-900">Pilih Regu</label>
+            <select id="regu_id" name="regu_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                 @foreach($regus as $regu)
-                <option value="{{ $regu->id }}">{{ $regu->nama_regu }} - {{ $regu->lokasi }}</option>
+                    @if(old('regu_id') == $regu->id)
+                    <option value="{{ $regu->id }}" selected>{{ $regu->nama_regu }} - {{ $regu->lokasi }}</option>
+                    @else
+                    <option value="{{ $regu->id }}">{{ $regu->nama_regu }} - {{ $regu->lokasi }}</option>
+                    @endif
                 @endforeach
             </select>
         </div>

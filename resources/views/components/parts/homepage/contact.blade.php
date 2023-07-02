@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-7/12">
-            <img src="/images/contact-img2.jpg" alt="contact-image" class="mx-auto rounded-md">
+            <img src="/assets/images/webpages/contact-img2.jpg" alt="contact-image" class="mx-auto rounded-md">
         </div>
     </div>
 </x-layout>

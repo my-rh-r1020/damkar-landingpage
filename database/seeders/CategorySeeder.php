@@ -17,17 +17,20 @@ class CategorySeeder extends Seeder
     {
         Category::create([
             'name' => 'Berita',
-            'slug' => 'berita'
+            'slug' => 'berita',
+            'user_id' => 1
         ]);
 
         Category::create([
             'name' => 'Pengetahuan',
-            'slug' => 'pengetahuan'
+            'slug' => 'pengetahuan',
+            'user_id' => 1
         ]);
 
         Category::create([
             'name' => 'Himbauan',
-            'slug' => 'himbauan'
+            'slug' => 'himbauan',
+            'user_id' => 1
         ]);
     }
 }

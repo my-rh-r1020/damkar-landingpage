@@ -5,8 +5,8 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Category;
-use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostDataController extends Controller
 {
@@ -37,7 +37,25 @@ class PostDataController extends Controller
      */
     public function store(Request $request)
     {
-        return $request;
+        $request->validate([
+            'title' => 'required|string|min:3|max:250',
+            'category_id' => 'required',
+            // 'cover' => 'required',
+            'content_text' => 'required|min:3',
+        ]);
+
+        // Add New Data
+        Article::create([
+            'title' => $request->get('title'),
+            'category_id' => $request->get('category_id'),
+            // 'cover' => $request->get('cover'),
+            'content_text' => $request->get('content_text'),
+            'excerpt' => Str::limit(strip_tags($request->get('content_text')), 50),
+            'slug' => Str::slug($request->get('title')),
+            'user_id' => auth()->user()->id
+        ]);
+
+        return redirect()->route('dashboard.articles')->with('success', 'Berhasil tambah data artikel');
     }
 
     /**
@@ -70,14 +88,5 @@ class PostDataController extends Controller
     public function destroy(Article $article)
     {
         //
-    }
-
-    /**
-     * Slug Handle for Create.
-     */
-    public function checkSlug(Request $request)
-    {
-        $slug = SlugService::createSlug(Article::class, 'slug', $request->title);
-        return response()->json(['slug' => $slug]);
     }
 }

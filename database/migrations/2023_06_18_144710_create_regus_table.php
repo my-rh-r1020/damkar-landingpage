@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('regus', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->string('nama_regu')->unique();
             $table->string('lokasi');
             $table->timestamps();

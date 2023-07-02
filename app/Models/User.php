@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -42,9 +44,39 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    // Relasi User dengan Role
+    public function role(): BelongsTo
+    {
+        return $this->belongsTo(Role::class);
+    }
+
     // Relasi User dengan Artikel
-    public function articles()
+    public function articles(): HasMany
     {
         return $this->hasMany(Article::class);
+    }
+
+    // Relasi User dengan Danru
+    public function danrus(): HasMany
+    {
+        return $this->hasMany(Danru::class);
+    }
+
+    // Relasi User dengan Kategori
+    public function categories(): HasMany
+    {
+        return $this->hasMany(Category::class);
+    }
+
+    // Relasi User dengan Kategori
+    public function regus(): HasMany
+    {
+        return $this->hasMany(Regu::class);
+    }
+
+    // Relasi User dengan Kategori
+    public function gallerys(): HasMany
+    {
+        return $this->hasMany(Gallery::class);
     }
 }

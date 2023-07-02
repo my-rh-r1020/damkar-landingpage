@@ -8,7 +8,7 @@
             @foreach($serviceItems as $sItem)
             <a href="{{ $sItem['url'] }}">
                 <div class="services-card">
-                    <img src="/icons/{{ $sItem['icon-services'] }}" alt="emergency-help" class="mx-auto h-[90px]">
+                    <img src="/assets/icons/{{ $sItem['icon-services'] }}" alt="emergency-help" class="mx-auto h-[90px]">
                     <div class="text-center mb-8 mt-2">
                         <h4 class="font-bebasNeue text-2xl mb-2 leading-none">{{ $sItem['services-title'] }}</h4>
                         <span class="text-base text-greyColor">{{ $sItem['services-subtitle'] }}</span>
@@ -27,7 +27,7 @@
         @foreach($brosurs as $brosur)
         <div class="services-gallery-data">
             <div class="relative cursor-pointer">
-                <img src="/images/{{ $brosur->cover }}" alt="response-time" class="services-gallery-images">
+                <img src="/assets/images/webpages/{{ $brosur->cover }}" alt="response-time" class="services-gallery-images">
                 <div class="services-gallery-bg">
                     <div class="services-gallery-text">
                         <div class="text-center">
@@ -100,7 +100,7 @@
         <div class="w-full px-[15px] md:w-1/2 lg:w-7/12">
             <div class="relative">
                 <div class="flex justify-end">
-                    <img src="/images/prevention-img.jpg" alt="prevention-img">
+                    <img src="/assets/images/webpages/prevention-img.jpg" alt="prevention-img">
                 </div>
                 <div class="flex absolute bottom-6 left-6">
                     <div class="bg-redColorAlt mr-6">

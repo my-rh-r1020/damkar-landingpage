@@ -10,7 +10,7 @@
                     @foreach($articles as $article)
                     <a href="/edukasi/{{ $article->slug }}" class="bg-white mt-8 md:mt-0">
                         <div class="blogs-img-container">
-                            <img src="/images/{{ $article->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
+                            <img src="/assets/images/articles/{{ $article->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
                         </div>
                     </a>
                     <div class="bg-white px-4 xl:px-6 py-3 md:py-4 xl:py-8">

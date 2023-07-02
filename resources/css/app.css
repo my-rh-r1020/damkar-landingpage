@@ -44,7 +44,7 @@
         @apply opacity-100 pointer-events-auto;
     }
     .dropdown-menu {
-        @apply absolute z-20 w-max bg-blackColor opacity-0 top-7 overflow-clip pointer-events-none transition-opacity ease-out duration-300;
+        @apply absolute z-20 w-max bg-blackColor opacity-0 top-14 overflow-clip pointer-events-none transition-opacity ease-out duration-300;
     }
     .dropdown-list {
         @apply text-whiteColorAlt hover:text-white py-2 px-4;

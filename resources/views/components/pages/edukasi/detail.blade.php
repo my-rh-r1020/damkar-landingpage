@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="pt-1 pb-6">
-                <img src="/images/{{ $post->cover }}" alt="gambar-berita" class="w-full">
+                <img src="/assets/images/articles/{{ $post->cover }}" alt="gambar-berita" class="w-full">
             </div>
             <article class="text-justify text-sm lg:text-base text-blackColor mb-16">
                 {!! $post->content_text !!}

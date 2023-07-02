@@ -3,7 +3,7 @@
         <header class="mt-3 mb-10">
             <a href="{{ route('dashboard') }}">
                 <div class="flex items-center justify-center gap-2">
-                    <img src="/images/logo-damkar.png" alt="disdamkarmat-logo" class="w-[70px]">
+                    <img src="/assets/images/logo/logo-damkar.png" alt="disdamkarmat-logo" class="w-[70px]">
                     <span class="text-lg font-semibold">Disdamkarmat</span>
                 </div>
             </a>
@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('dashboard.categories') }}" class="sidebar-listmenu {{ Request::is('dashboard/kategori*') ? 'sidebar-listmenu-active' : '' }}">
+                <a href="{{ route('dashboard.categories') }}" class="sidebar-listmenu {{ Request::is('dashboard/categories*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-xl'></i>
                     <span class="text-base">Kategori</span>
                 </a>

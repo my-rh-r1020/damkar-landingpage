@@ -43,7 +43,7 @@
             <div class="swiper-slide bg-white px-[15px]">
                 <a href="/berita/{{ $post->slug }}">
                     <div class="blogs-img-container">
-                        <img src="/images/{{ $post->cover }}" alt="berita-damkar" class="blogs-img-view">
+                        <img src="/assets/images/articles/{{ $post->cover }}" alt="berita-damkar" class="blogs-img-view">
                     </div>
                 </a>
                 <div class="mt-5">

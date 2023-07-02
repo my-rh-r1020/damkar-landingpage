@@ -89,12 +89,11 @@ Route::middleware('auth')->group(function () {
             'index' => 'dashboard.regu'
         ]);
         // Article
-        Route::get('/articles/checkSlug', [PostDataController::class, 'checkSlug']);
         Route::resource('/articles', PostDataController::class)->names([
             'index' => 'dashboard.articles'
         ]);
         // Kategori
-        Route::resource('/kategori', KategoriDataController::class)->names([
+        Route::resource('/categories', KategoriDataController::class)->names([
             'index' => 'dashboard.categories'
         ]);
         // Banner

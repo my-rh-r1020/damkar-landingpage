@@ -2,7 +2,7 @@
     <div class="main-container">
         <div class="flex flex-wrap">
             <div class="redkar-column lg:w-5/12">
-                <img src="images/redkar-logo.jpg" alt="redkar-logo" class="mb-5 w-[75%] mx-auto cursor-pointer rounded-md">
+                <img src="/assets/images/webpages/redkar-logo.jpg" alt="redkar-logo" class="mb-5 w-[75%] mx-auto cursor-pointer rounded-md">
             </div>
             <div class="redkar-column flex items-center lg:w-6/12">
                 <div>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <div>
-                <img src="images/redkar-3.jpg" alt="peran-redkar" class="cursor-pointer rounded-md">
+                <img src="/assets/images/webpages/redkar-3.jpg" alt="peran-redkar" class="cursor-pointer rounded-md">
             </div>
         </div>
     </div>

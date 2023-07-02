@@ -17,4 +17,10 @@ class Danru extends Model
     {
         return $this->belongsTo(Regu::class);
     }
+
+    // Relasi Danru dengan User
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
