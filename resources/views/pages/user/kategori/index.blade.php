@@ -3,12 +3,10 @@
 
 @section('dashboardBody')
 
-<div class="mb-10">
-    <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl">Data Kategori Artikel</h3>
-</div>
 <div class="mb-5">
+    <h3 class="main-content-header mb-10">Data Kategori</h3>
     {{-- <a href="{{ route('categories.create') }}" class="px-3 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-base">Add Kategori</a> --}}
-    <button data-modal-target="kategori-new-modal" data-modal-toggle="kategori-new-modal" class="px-3 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-base" type="button">
+    <button data-modal-target="kategori-new-modal" data-modal-toggle="kategori-new-modal" class="main-blue-btn" type="button">
         Add Kategori
     </button>
 </div>
@@ -37,13 +35,13 @@
                     {{ $category->name }}
                 </td>
                 <td class="flex items-center px-6 py-4 space-x-3">
-                    <a href="{{ route('categories.edit',$category->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl'></i></a>
-                    <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="font-medium text-red-500 hover:text-red-700" type="button">
-                        <i class='bx bxs-x-circle text-xl'></i>
-                    </button>
+                    <a href="{{ route('categories.edit',$category->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl lg:text-2xl'></i></a>
+                    {{-- <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="font-medium text-red-500 hover:text-red-700" type="button">
+                        <i class='bx bxs-x-circle text-xl lg:text-2xl'></i>
+                    </button> --}}
 
                     {{-- Modal Hapus Data --}}
-                    <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    {{-- <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                         <div class="relative w-full max-w-md max-h-full">
                             <div class="relative bg-white rounded-lg shadow">
                                 <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="popup-modal">
@@ -71,15 +69,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     {{-- <form action="{{ route('categories.destroy',$category->id) }}" method="post">
-                    @csrf
-                    @method('DELETE')
+                        @csrf
+                        @method('DELETE')
 
-                    <button type="submit" class="font-medium text-red-500 hover:text-red-700">
+                        <button type="submit" class="font-medium text-red-500 hover:text-red-700">
                         <i class='bx bxs-x-circle text-xl'></i>
-                    </button>
+                        </button>
                     </form> --}}
                 </td>
             </tr>
@@ -105,17 +103,16 @@
                     <h3 class="mb-4 text-xl font-medium text-gray-900">Form Kategori</h3>
                     <form class="space-y-6" action="{{ route('categories.store') }}" method="post">
                         @csrf
-
                         <div>
-                            <label for="name" class="block mb-2 text-sm lg:text-base font-medium text-gray-900">Kategori</label>
-                            <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Kategori Baru" required>
+                            <label for="name" class="main-form-label">Kategori</label>
+                            <input type="text" id="name" name="name" class="main-form-input" placeholder="Kategori Baru" required>
                         </div>
                         <div class="flex justify-between">
+                            <button data-modal-hide="kategori-new-modal" type="submit" class="main-blue-btn">
+                                Simpan Data
+                            </button>
                             <button data-modal-hide="kategori-new-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-2 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-4 py-2.5 hover:text-gray-900 focus:z-10">
                                 Cancel
-                            </button>
-                            <button data-modal-hide="kategori-new-modal" type="submit" class="text-white bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center px-4 py-2.5 text-center">
-                                Submit
                             </button>
                         </div>
                     </form>

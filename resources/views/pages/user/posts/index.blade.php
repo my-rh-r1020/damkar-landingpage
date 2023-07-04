@@ -3,11 +3,9 @@
 
 @section('dashboardBody')
 
-<div class="mb-10">
-    <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl">Data Artikel</h3>
-</div>
 <div class="mb-5">
-    <a href="{{ route('articles.create') }}" class="px-3 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-base">Add Artikel</a>
+    <h3 class="main-content-header mb-10">Data Artikel</h3>
+    <a href="{{ route('articles.create') }}" class="main-blue-btn">Add Artikel</a>
 </div>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-base text-left text-gray-500">
@@ -40,9 +38,9 @@
                     {{ $post->category->name }}
                 </td>
                 <td class="flex items-center px-6 py-4 space-x-3">
-                    <a href="{{ route('articles.show',$post->slug) }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl'></i></a>
-                    <a href="#" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl'></i></a>
-                    <a href="#" class="font-medium text-red-500 hover:text-red-700"><i class='bx bxs-x-circle text-xl'></i></a>
+                    <a href="{{ route('articles.show',$post->slug) }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl lg:text-2xl'></i></a>
+                    <a href="{{ route('articles.edit',$post->slug) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl lg:text-2xl'></i></a>
+                    <a href="#" class="font-medium text-red-500 hover:text-red-700"><i class='bx bxs-x-circle text-xl lg:text-2xl'></i></a>
                 </td>
             </tr>
             @endforeach

@@ -1,19 +1,26 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
+use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Gallery;
-use App\Http\Requests\StoreGalleryRequest;
-use App\Http\Requests\UpdateGalleryRequest;
+use Illuminate\Http\Request;
 
-class GalleryController extends Controller
+class GalleryDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $gallerys = Gallery::orderBy('id')->paginate(10);
+
+        return view(
+            'pages.user.gallery.index',
+            compact('gallerys'),
+            ['title' => 'Data Gallery']
+        )->with('i', (request()->input('page', 1) - 1) * 10);;
     }
 
     /**
@@ -21,13 +28,15 @@ class GalleryController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+
+        return view('pages.user.gallery.create', compact('categories'), ['title' => 'Form New Gallery']);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreGalleryRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -51,7 +60,7 @@ class GalleryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateGalleryRequest $request, Gallery $gallery)
+    public function update(Request $request, Gallery $gallery)
     {
         //
     }

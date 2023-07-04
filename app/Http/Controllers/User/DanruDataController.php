@@ -38,13 +38,13 @@ class DanruDataController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $input = $request->validate([
             'nama_lengkap' => 'required|string|min:3|max:100',
             'regu_id' => 'required',
-            'avatar' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+            'avatar' => 'required|image|mimes:jpeg,png,jpg|max:1024'
         ]);
 
-        $input = $request->all();
+        $input['user_id'] = auth()->user()->id;
 
         // Validation Avatar
         if ($avatar = $request->file('avatar')) {
@@ -81,11 +81,28 @@ class DanruDataController extends Controller
      */
     public function update(Request $request, Danru $danru)
     {
-        $request->validate([
+        $input = $request->validate([
+            'nama_lengkap' => 'required|string|min:3|max:100',
             'regu_id' => 'required',
-            'avatar' => 'required',
-            'nama_lengkap' => 'required|string|min:3|max:100'
+            'avatar' => 'image|mimes:jpeg,png,jpg|max:1024'
         ]);
+
+        $input['user_id'] = auth()->user()->id;
+
+        // Validation Avatar
+        if ($avatar = $request->file('avatar')) {
+            $destinationPath = 'assets/images/profile/';
+            $profileAvatar = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
+            $avatar->move($destinationPath, $profileAvatar);
+            $input['avatar'] = "$profileAvatar";
+        } else {
+            unset($input['avatar']);
+        }
+
+        // Update Danru
+        $danru->update($input);
+
+        return redirect()->route('dashboard.danru')->with('success', 'Berhasil update data danru');
     }
 
     /**
@@ -93,6 +110,8 @@ class DanruDataController extends Controller
      */
     public function destroy(Danru $danru)
     {
-        //
+        $danru->delete();
+
+        return redirect()->route('dashboard.danru')->with('success', 'Berhasil hapus data danru');
     }
 }

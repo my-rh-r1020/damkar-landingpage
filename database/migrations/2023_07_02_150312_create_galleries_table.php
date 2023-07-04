@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('deskripsi');
             $table->string('dokumentasi')->nullable();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

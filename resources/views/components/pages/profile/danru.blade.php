@@ -18,7 +18,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 mt-6">
                             @foreach($list->danrus as $danru)
                             <div class="rounded-md py-6 hover:bg-blue-200 text-center cursor-pointer">
-                                <img src="/assets/images/webpages/{{ $danru->avatar }}" alt="profil-danru" class="w-[20%] md:w-[40%] rounded-full mx-auto mb-4">
+                                <img src="/assets/images/profile/{{ $danru->avatar }}" alt="profil-danru" class="w-[20%] md:w-[40%] rounded-full mx-auto mb-4">
                                 <span class="font-bebasNeue tracking-widest uppercase text-xl">{{ $danru->nama_lengkap }}</span>
                             </div>
                             @endforeach

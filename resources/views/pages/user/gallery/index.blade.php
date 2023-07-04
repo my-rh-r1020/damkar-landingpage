@@ -4,8 +4,8 @@
 @section('dashboardBody')
 
 <div class="mb-5">
-    <h3 class="main-content-header mb-10">Data Regu Danru</h3>
-    <a href="{{ route('regu.create') }}" class="main-blue-btn">Add Regu</a>
+    <h3 class="main-content-header mb-10">Data Gallery</h3>
+    <a href="{{ route('gallery.create') }}" class="main-blue-btn">Add Gallery</a>
 </div>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-base text-left text-gray-500">
@@ -15,10 +15,13 @@
                     #
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Nama Regu
+                    Thumbnail
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Lokasi
+                    Judul
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Kategori
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Action
@@ -26,20 +29,21 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($regus as $regu)
+            {{-- @foreach($gallerys as $gallery)
             <tr class="bg-white border-b hover:bg-gray-50 text-gray-800">
                 <td class="px-6 py-4">
                     {{ ++$i }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    {{ $regu->nama_regu }}
+                    {{ $gallery->nama_lengkap }}
                 </td>
                 <td class="px-6 py-4">
-                    {{ $regu->lokasi }}
+                    {{ $gallery->regu->nama_regu }}
                 </td>
                 <td class="flex items-center px-6 py-4 space-x-3">
-                    <a href="{{ route('regu.edit',$regu->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl lg:text-2xl'></i></a>
-                    <form action="{{ route('regu.destroy',$regu->id) }}" method="POST">
+                    <a href="{{ route('danru.show',$danru->id) }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl lg:text-2xl'></i></a>
+                    <a href="{{ route('danru.edit',$danru->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl lg:text-2xl'></i></a>
+                    <form action="{{ route('danru.destroy',$danru->id) }}" method="post">
                         @csrf
                         @method('DELETE')
 
@@ -49,11 +53,11 @@
                     </form>
                 </td>
             </tr>
-            @endforeach
+            @endforeach --}}
         </tbody>
     </table>
     <div class="mx-4 my-6">
-        {!! $regus->links() !!}
+        {!! $gallerys->links() !!}
     </div>
 </div>
 

@@ -28,7 +28,7 @@ class HomepageController extends Controller
                 "descPrevention" => "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia eiusmod consequuntur do tempor incididunt ut labore.",
                 "subTestimonials" => "Testimoni",
                 "descTestimonials" => "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "posts" => Article::all()->where('category_id', '1')
+                "posts" => Article::all()->where('category_id', 1)
             ]
         );
     }

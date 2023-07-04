@@ -9,10 +9,12 @@ use App\Http\Controllers\Webpages\CategoryController;
 use App\Http\Controllers\ELapor\ELaporController;
 use App\Http\Controllers\User\BannerDataController;
 use App\Http\Controllers\User\BrosurDataController;
+use App\Http\Controllers\User\ContactController;
 use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\PostDataController;
 use App\Http\Controllers\User\DanruDataController;
+use App\Http\Controllers\User\GalleryDataController;
 use App\Http\Controllers\User\InsendentilDataController;
 use App\Http\Controllers\User\KategoriDataController;
 use App\Http\Controllers\User\ReguDataController;
@@ -79,7 +81,6 @@ Route::middleware('auth')->group(function () {
         Route::resource('/insendentil', InsendentilDataController::class)->names([
             'index' => 'dashboard.insendentil'
         ]);
-
         // Danru
         Route::resource('/danru', DanruDataController::class)->names([
             'index' => 'dashboard.danru'
@@ -96,6 +97,10 @@ Route::middleware('auth')->group(function () {
         Route::resource('/categories', KategoriDataController::class)->names([
             'index' => 'dashboard.categories'
         ]);
+        // Gellery
+        Route::resource('/gallery', GalleryDataController::class)->names([
+            'index' => 'dashboard.gallery'
+        ]);
         // Banner
         Route::resource('/banner', BannerDataController::class)->names([
             'index' => 'dashboard.banners'
@@ -103,6 +108,10 @@ Route::middleware('auth')->group(function () {
         // Brosur
         Route::resource('/brosur', BrosurDataController::class)->names([
             'index' => 'dashboard.brosurs'
+        ]);
+        // Kontak
+        Route::resource('/contact', ContactController::class)->names([
+            'index' => 'dashboard.contact'
         ]);
     });
 

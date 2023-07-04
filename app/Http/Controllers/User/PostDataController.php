@@ -20,7 +20,7 @@ class PostDataController extends Controller
         return view(
             'pages.user.posts.index',
             compact('posts'),
-            ['title' => 'Data Posting']
+            ['title' => 'Data Artikel']
         )->with('i', (request()->input('page', 1) - 1) * 10);
     }
 
@@ -29,7 +29,7 @@ class PostDataController extends Controller
      */
     public function create()
     {
-        return view('pages.user.posts.create', ['title' => 'Form New Artikel', 'categories' => Category::get()]);
+        return view('pages.user.posts.create', ['title' => 'Form New Artikel', 'categories' => Category::all()]);
     }
 
     /**
@@ -37,23 +37,27 @@ class PostDataController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $input = $request->validate([
             'title' => 'required|string|min:3|max:250',
             'category_id' => 'required',
-            // 'cover' => 'required',
+            'cover' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'content_text' => 'required|min:3',
         ]);
 
+        $input['excerpt'] = Str::limit(strip_tags($request->content_text), 100);
+        $input['slug'] = Str::slug($request->title);
+        $input['user_id'] = auth()->user()->id;
+
+        // Validation Cover Article
+        if ($cover = $request->file('cover')) {
+            $destinationPath = 'assets/images/articles/';
+            $coverArticle = date('YmdHis') . "." . $cover->getClientOriginalExtension();
+            $cover->move($destinationPath, $coverArticle);
+            $input['cover'] = "$coverArticle";
+        }
+
         // Add New Data
-        Article::create([
-            'title' => $request->get('title'),
-            'category_id' => $request->get('category_id'),
-            // 'cover' => $request->get('cover'),
-            'content_text' => $request->get('content_text'),
-            'excerpt' => Str::limit(strip_tags($request->get('content_text')), 50),
-            'slug' => Str::slug($request->get('title')),
-            'user_id' => auth()->user()->id
-        ]);
+        Article::create($input);
 
         return redirect()->route('dashboard.articles')->with('success', 'Berhasil tambah data artikel');
     }
@@ -63,7 +67,7 @@ class PostDataController extends Controller
      */
     public function show(Article $article)
     {
-        return view('pages.user.posts.show', ['title' => 'Detail Posting', 'post' => $article]);
+        return view('pages.user.posts.show', ['title' => 'Detail Artikel', 'post' => $article]);
     }
 
     /**
@@ -71,7 +75,7 @@ class PostDataController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        return view('pages.user.posts.edit', compact('article'), ['title' => 'Form Edit Artikel', 'categories' => Category::all()]);
     }
 
     /**
@@ -79,7 +83,31 @@ class PostDataController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $input = $request->validate([
+            'title' => 'required|string|min:3|max:250',
+            'category_id' => 'required',
+            'cover' => 'image|mimes:jpeg,png,jpg|max:2048',
+            'content_text' => 'required|min:3',
+        ]);
+
+        $input['excerpt'] = Str::limit(strip_tags($request->content_text), 100);
+        $input['slug'] = Str::slug($request->title);
+        $input['user_id'] = auth()->user()->id;
+
+        // Validation Cover Article
+        if ($cover = $request->file('cover')) {
+            $destinationPath = 'assets/images/articles/';
+            $coverArticle = date('YmdHis') . "." . $cover->getClientOriginalExtension();
+            $cover->move($destinationPath, $coverArticle);
+            $input['cover'] = "$coverArticle";
+        } else {
+            unset($input['cover']);
+        }
+
+        // Update Article
+        $article->update($input);
+
+        return redirect()->route('dashboard.articles')->with('success', 'Berhasil updated data artikel');
     }
 
     /**
@@ -87,6 +115,8 @@ class PostDataController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        $article->delete();
+
+        return redirect()->route('dashboard.articles')->with('success', 'Berhasil hapus data artikel');
     }
 }

@@ -233,22 +233,6 @@
     }
 
     /* DASHBOARD */
-    .fixed-sidebar {
-        @apply top-0 left-0 overflow-y-auto;
-    }
-    /* Ubah ukuran dan gaya scrollbar */
-    .fixed-sidebar::-webkit-scrollbar {
-        @apply w-2;
-    }
-    .fixed-sidebar::-webkit-scrollbar-track {
-        @apply bg-white;
-    }
-    .fixed-sidebar::-webkit-scrollbar-thumb {
-        @apply bg-bgGreyColor rounded;
-    }
-    .fixed-sidebar::-webkit-scrollbar-thumb:hover {
-        @apply bg-slate-300;
-    }
     .sidebar-title {
         @apply text-[#ABB3C4] text-sm mb-2;
     }
@@ -257,5 +241,20 @@
     }
     .sidebar-listmenu-active {
         @apply bg-blue-400 hover:bg-blue-500 text-white;
+    }
+    .main-content-header {
+        @apply font-semibold text-2xl md:text-3xl xl:text-4xl;
+    }
+    .main-blue-btn {
+        @apply bg-blue-600 hover:bg-blue-700 text-white text-sm lg:text-base px-4 py-2 rounded-md;
+    }
+    .main-gray-btn {
+        @apply bg-slate-400 hover:bg-slate-500 text-white text-sm lg:text-base px-4 py-2 rounded-md;
+    }
+    .main-form-label {
+        @apply block mb-2 text-sm md:text-base xl:text-lg font-medium text-gray-900;
+    }
+    .main-form-input {
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm lg:text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
     }
 }

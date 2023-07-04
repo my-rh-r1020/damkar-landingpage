@@ -19,7 +19,7 @@
             <h5 class="sidebar-title pt-4">Insendentil</h5>
             <li>
                 <a href="{{ route('dashboard.insendentil') }}" class="sidebar-listmenu {{ Request::is('dashboard/insendentil*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-gray-500 text-xl'></i>
+                    <i class='bx bxs-report text-xl'></i>
                     <span class="text-base">Insendentil</span>
                 </a>
             </li>
@@ -27,13 +27,13 @@
             <h5 class="sidebar-title pt-4">Danru</h5>
             <li>
                 <a href="{{ route('dashboard.danru') }}" class="sidebar-listmenu {{ Request::is('dashboard/danru*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-xl'></i>
+                    <i class='bx bx-user text-xl'></i>
                     <span class="text-base">Danru</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('dashboard.regu') }}" class="sidebar-listmenu {{ Request::is('dashboard/regu*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-xl'></i>
+                    <i class='bx bxs-group text-xl'></i>
                     <span class="text-base">Regu</span>
                 </a>
             </li>
@@ -41,25 +41,25 @@
             <h5 class="sidebar-title pt-4">Artikel</h5>
             <li>
                 <a href="{{ route('dashboard.articles') }}" class="sidebar-listmenu {{ Request::is('dashboard/articles*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-xl'></i>
+                    <i class='bx bxs-detail text-xl'></i>
                     <span class="text-base">Artikel</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('dashboard.categories') }}" class="sidebar-listmenu {{ Request::is('dashboard/categories*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-xl'></i>
+                    <i class='bx bxs-category text-xl'></i>
                     <span class="text-base">Kategori</span>
                 </a>
             </li>
 
             <h5 class="sidebar-title pt-4">Gallery</h5>
             <li>
-                <a href="#" class="sidebar-listmenu {{ Request::is('dashboard/gallery*') ? 'sidebar-listmenu-active' : '' }}">
-                    <i class='bx bxs-data text-gray-500 text-xl'></i>
+                <a href="{{ route('dashboard.gallery') }}" class="sidebar-listmenu {{ Request::is('dashboard/gallery*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-image text-xl'></i>
                     <span class="text-base">Gallery</span>
                 </a>
             </li>
-            <li>
+            {{-- <li>
                 <a href="{{ route('dashboard.banners') }}" class="sidebar-listmenu {{ Request::is('dashboard/banner*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-xl'></i>
                     <span class="text-base">Banner</span>
@@ -69,6 +69,14 @@
                 <a href="{{ route('dashboard.brosurs') }}" class="sidebar-listmenu {{ Request::is('dashboard/brosur*') ? 'sidebar-listmenu-active' : '' }}">
                     <i class='bx bxs-data text-xl'></i>
                     <span class="text-base">Brosur</span>
+                </a>
+            </li> --}}
+
+            <h5 class="sidebar-title pt-4">Informasi</h5>
+            <li>
+                <a href="{{ route('dashboard.contact') }}" class="sidebar-listmenu {{ Request::is('dashboard/contact*') ? 'sidebar-listmenu-active' : '' }}">
+                    <i class='bx bxs-contact text-xl'></i>
+                    <span class="text-base">Kontak</span>
                 </a>
             </li>
 

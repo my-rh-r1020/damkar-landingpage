@@ -36,15 +36,15 @@ class KategoriDataController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $input = $request->validate([
             'name' => 'required|string|min:3|max:50'
         ]);
 
+        $input['slug'] = Str::slug($request->get('name'));
+        $input['user_id'] = auth()->user()->id;
+
         // Add New Data
-        Category::create([
-            'name' => $request->get('name'),
-            'slug' => Str::slug($request->get('name'))
-        ]);
+        Category::create($input);
 
         return redirect()->route('dashboard.categories')->with('success', 'Berhasil tambah data kategori');
     }
