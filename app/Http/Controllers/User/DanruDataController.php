@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Danru;
 use App\Models\Regu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class DanruDataController extends Controller
 {
@@ -44,15 +45,22 @@ class DanruDataController extends Controller
             'avatar' => 'required|image|mimes:jpeg,png,jpg|max:1024'
         ]);
 
+        // Avatar Validation
+        if ($avatar = $request->file('avatar')) {
+            $avatarName = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
+            $avatar->storeAs('profil-img', $avatarName);
+            $input['avatar'] = $avatarName;
+        }
+
         $input['user_id'] = auth()->user()->id;
 
-        // Validation Avatar
-        if ($avatar = $request->file('avatar')) {
-            $destinationPath = 'assets/images/profile/';
-            $profileAvatar = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
-            $avatar->move($destinationPath, $profileAvatar);
-            $input['avatar'] = "$profileAvatar";
-        }
+        // Avatar Validation v2
+        // if ($avatar = $request->file('avatar')) {
+        //     $destinationPath = 'assets/images/profile/';
+        //     $profileAvatar = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
+        //     $avatar->move($destinationPath, $profileAvatar);
+        //     $input['avatar'] = "$profileAvatar";
+        // }
 
         // Add New Danru
         Danru::create($input);
@@ -87,17 +95,26 @@ class DanruDataController extends Controller
             'avatar' => 'image|mimes:jpeg,png,jpg|max:1024'
         ]);
 
-        $input['user_id'] = auth()->user()->id;
-
-        // Validation Avatar
+        // Avatar Validation
         if ($avatar = $request->file('avatar')) {
-            $destinationPath = 'assets/images/profile/';
-            $profileAvatar = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
-            $avatar->move($destinationPath, $profileAvatar);
-            $input['avatar'] = "$profileAvatar";
+            $avatarName = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
+            $avatar->storeAs('profil-img', $avatarName);
+            $input['avatar'] = $avatarName;
         } else {
             unset($input['avatar']);
         }
+
+        $input['user_id'] = auth()->user()->id;
+
+        // Avatar Validation v2
+        // if ($avatar = $request->file('avatar')) {
+        //     $destinationPath = 'assets/images/profile/';
+        //     $profileAvatar = date('YmdHis') . "." . $avatar->getClientOriginalExtension();
+        //     $avatar->move($destinationPath, $profileAvatar);
+        //     $input['avatar'] = "$profileAvatar";
+        // } else {
+        //     unset($input['avatar']);
+        // }
 
         // Update Danru
         $danru->update($input);
@@ -111,6 +128,11 @@ class DanruDataController extends Controller
     public function destroy(Danru $danru)
     {
         $danru->delete();
+
+        // Avatar Deleted
+        if ($danru->avatar) {
+            Storage::delete($danru->avatar);
+        }
 
         return redirect()->route('dashboard.danru')->with('success', 'Berhasil hapus data danru');
     }

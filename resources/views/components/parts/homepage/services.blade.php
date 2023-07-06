@@ -27,11 +27,11 @@
         @foreach($brosurs as $brosur)
         <div class="services-gallery-data">
             <div class="relative cursor-pointer">
-                <img src="/assets/images/webpages/{{ $brosur->cover }}" alt="response-time" class="services-gallery-images">
+                <img src="{{ asset('storage/galleries-img/'.$brosur->thumbnail) }}" alt="response-time" class="services-gallery-images">
                 <div class="services-gallery-bg">
                     <div class="services-gallery-text">
                         <div class="text-center">
-                            <span class="services-gallery-title">{{ $brosur->judul }}</span>
+                            <span class="services-gallery-title">{{ $brosur->title }}</span>
                             <p class="services-gallery-subtitle">{{ $brosur->deskripsi }}</p>
                         </div>
                     </div>

@@ -19,6 +19,12 @@ class Category extends Model
         return $this->hasMany(Article::class);
     }
 
+    // Relasi Artikel dengan Kategori
+    public function gallerys(): HasMany
+    {
+        return $this->hasMany(Gallery::class);
+    }
+
     // Relasi Kategori dengan User
     public function user(): BelongsTo
     {

@@ -41,7 +41,8 @@
         <div class="mb-12">
             <label class="main-form-label" for="avatar">Avatar</label>
             <div class="border border-gray-200 py-4">
-                <img class="w-[50%] rounded-full px-8 mx-auto" src="/assets/images/profile/{{ $danru->avatar }}" alt="Rounded avatar">
+                <img class="w-[50%] rounded-full px-8 mx-auto" src="{{ asset('storage/profil-img/'.$danru->avatar) }}" alt="Rounded avatar">
+                {{-- <img class="w-[50%] rounded-full px-8 mx-auto" src="/assets/images/profile/{{ $danru->avatar }}" alt="Rounded avatar"> --}}
             </div>
         </div>
         <div class="flex justify-between mb-4">

@@ -41,7 +41,8 @@
         <div class="mb-6">
             <label class="main-form-label" for="cover">Thumbnail Artikel</label>
             <div class="border border-gray-200 py-4">
-                <img class="w-[60%] mx-auto" src="/assets/images/articles/{{ $article->cover }}" alt="Thumbnail Artikel">
+                <img class="w-[60%] mx-auto" src="{{ asset('storage/articles-img/'.$article->cover) }}" alt="Thumbnail Artikel">
+                {{-- <img class="w-[60%] mx-auto" src="/assets/images/articles/{{ $article->cover }}" alt="Thumbnail Artikel"> --}}
             </div>
         </div>
         <div class="mb-6">

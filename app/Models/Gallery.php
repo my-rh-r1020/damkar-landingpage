@@ -17,4 +17,10 @@ class Gallery extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    // Relasi Gallery dengan Kategori
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

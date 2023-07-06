@@ -29,15 +29,6 @@
                     @endif
                 @endforeach
             </select>
-            {{-- <select id="category_id" name="category_id" class="main-form-input">
-                @foreach($categories as $category)
-                    @if(old('category_id') == $category->id)
-                    <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
-                    @else
-                    <option value="{{ $category->id }}">{{ $category->name }}</option>
-                    @endif
-                @endforeach
-            </select> --}}
         </div>
         <div class="mb-6">
             <label class="main-form-label" for="cover">Upload Gambar</label>

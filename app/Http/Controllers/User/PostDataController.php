@@ -44,17 +44,24 @@ class PostDataController extends Controller
             'content_text' => 'required|min:3',
         ]);
 
+        // Article Cover Validation
+        if ($cover = $request->file('cover')) {
+            $coverName = date('YmdHis') . "." . $cover->getClientOriginalExtension();
+            $cover->storeAs('articles-img', $coverName);
+            $input['cover'] = $coverName;
+        }
+
         $input['excerpt'] = Str::limit(strip_tags($request->content_text), 100);
         $input['slug'] = Str::slug($request->title);
         $input['user_id'] = auth()->user()->id;
 
-        // Validation Cover Article
-        if ($cover = $request->file('cover')) {
-            $destinationPath = 'assets/images/articles/';
-            $coverArticle = date('YmdHis') . "." . $cover->getClientOriginalExtension();
-            $cover->move($destinationPath, $coverArticle);
-            $input['cover'] = "$coverArticle";
-        }
+        // Article Cover Validation v2
+        // if ($cover = $request->file('cover')) {
+        //     $destinationPath = 'assets/images/articles/';
+        //     $coverArticle = date('YmdHis') . "." . $cover->getClientOriginalExtension();
+        //     $cover->move($destinationPath, $coverArticle);
+        //     $input['cover'] = "$coverArticle";
+        // }
 
         // Add New Data
         Article::create($input);
@@ -90,19 +97,28 @@ class PostDataController extends Controller
             'content_text' => 'required|min:3',
         ]);
 
+        // Article Cover Validation
+        if ($cover = $request->file('cover')) {
+            $coverName = date('YmdHis') . "." . $cover->getClientOriginalExtension();
+            $cover->storeAs('articles-img', $coverName);
+            $input['cover'] = $coverName;
+        } else {
+            unset($input['cover']);
+        }
+
         $input['excerpt'] = Str::limit(strip_tags($request->content_text), 100);
         $input['slug'] = Str::slug($request->title);
         $input['user_id'] = auth()->user()->id;
 
-        // Validation Cover Article
-        if ($cover = $request->file('cover')) {
-            $destinationPath = 'assets/images/articles/';
-            $coverArticle = date('YmdHis') . "." . $cover->getClientOriginalExtension();
-            $cover->move($destinationPath, $coverArticle);
-            $input['cover'] = "$coverArticle";
-        } else {
-            unset($input['cover']);
-        }
+        // Article Cover Validation v2
+        // if ($cover = $request->file('cover')) {
+        //     $destinationPath = 'assets/images/articles/';
+        //     $coverArticle = date('YmdHis') . "." . $cover->getClientOriginalExtension();
+        //     $cover->move($destinationPath, $coverArticle);
+        //     $input['cover'] = "$coverArticle";
+        // } else {
+        //     unset($input['cover']);
+        // }
 
         // Update Article
         $article->update($input);

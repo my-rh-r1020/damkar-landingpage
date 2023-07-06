@@ -29,21 +29,24 @@
             </tr>
         </thead>
         <tbody>
-            {{-- @foreach($gallerys as $gallery)
+            @foreach($galleries as $gallery)
             <tr class="bg-white border-b hover:bg-gray-50 text-gray-800">
                 <td class="px-6 py-4">
                     {{ ++$i }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    {{ $gallery->nama_lengkap }}
+                    <img src="{{ asset('storage/galleries-img/'.$gallery->thumbnail) }}" class="w-[150px]" alt="list gallery">
                 </td>
                 <td class="px-6 py-4">
-                    {{ $gallery->regu->nama_regu }}
+                    {{ $gallery->title }}
+                </td>
+                <td class="px-6 py-4">
+                    {{ $gallery->category->name }}
                 </td>
                 <td class="flex items-center px-6 py-4 space-x-3">
-                    <a href="{{ route('danru.show',$danru->id) }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl lg:text-2xl'></i></a>
-                    <a href="{{ route('danru.edit',$danru->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl lg:text-2xl'></i></a>
-                    <form action="{{ route('danru.destroy',$danru->id) }}" method="post">
+                    <a href="{{ route('gallery.show',$gallery->id) }}" class="font-medium text-slate-500 hover:text-slate-700"><i class='bx bx-show text-xl lg:text-2xl'></i></a>
+                    <a href="{{ route('gallery.edit',$gallery->id) }}" class="font-medium text-blue-500 hover:text-blue-700"><i class='bx bxs-edit text-xl lg:text-2xl'></i></a>
+                    <form action="{{ route('gallery.destroy',$gallery->id) }}" method="post">
                         @csrf
                         @method('DELETE')
 
@@ -53,11 +56,11 @@
                     </form>
                 </td>
             </tr>
-            @endforeach --}}
+            @endforeach
         </tbody>
     </table>
     <div class="mx-4 my-6">
-        {!! $gallerys->links() !!}
+        {!! $galleries->links() !!}
     </div>
 </div>
 

@@ -112,7 +112,8 @@
                     @foreach($posts as $post)
                     <a href="/berita/{{ $post->slug }}" class="bg-white mt-8 md:mt-0">
                         <div class="blogs-img-container">
-                            <img src="/assets/images/articles/{{ $post->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md">
+                            <img src="{{ asset('storage/articles-img/'.$post->cover) }}" alt="gambar-berita" class="blogs-img-view rounded-md">
+                            {{-- <img src="/assets/images/articles/{{ $post->cover }}" alt="gambar-berita" class="blogs-img-view rounded-md"> --}}
                         </div>
                     </a>
                     <div class="bg-white px-4 xl:px-6 py-3 md:py-4 xl:py-8">

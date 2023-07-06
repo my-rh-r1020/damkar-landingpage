@@ -12,7 +12,8 @@
           <div>
             <button type="button" class="flex text-sm rounded-full focus:ring-2 focus:ring-gray-300" aria-expanded="false" data-dropdown-toggle="dropdown-user">
               <span class="sr-only">Open user menu</span>
-              <img src="/assets/images/profile/{{ auth()->user()->avatar }}" alt="Avatar" class="w-10 h-10 rounded-full">
+              <img src="{{ asset('storage/profil-img/'.auth()->user()->avatar) }}" alt="Avatar" class="w-10 h-10 rounded-full">
+              {{-- <img src="/assets/images/profile/{{ auth()->user()->avatar }}" alt="Avatar" class="w-10 h-10 rounded-full"> --}}
             </button>
           </div>
           <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow" id="dropdown-user">
